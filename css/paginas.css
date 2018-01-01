@@ -1,3 +1,5 @@
+/*PAGINA TEMAS*/
+
 .alimentacao mark{
 	background-color: var(--alimentacao-cor2);
 	color: inherit;
@@ -252,11 +254,64 @@
 
 
 .alimentacao .hvr-overline-from-left:before {
-	background: var(--alimentacao-cor3);
+	background: var(--alimentacao-cor1);
 }
 .consumos .hvr-overline-from-left:before {
-	background: var(--consumos-cor3);
+	background: var(--consumos-cor1);
 }
 .sexualidade .hvr-overline-from-left:before {
-	background: var(--sexualidade-cor3);
+	background: var(--sexualidade-cor1);
+}
+
+
+
+/*PAGINA_CONTEUDO*/
+.alimentacao .cabecalhoArtigo p{
+	color: var(--alimentacao-cor1);
+}
+.consumos .cabecalhoArtigo p{
+	color: var(--consumos-cor1);
+}
+.sexualidade .cabecalhoArtigo p{
+	color: var(--sexualidade-cor1);
+}
+
+.alimentacao cite:before {
+	color: var(--alimentacao-cor1);
+}
+.consumos cite:before {
+	color: var(--consumos-cor1);
+}
+.sexualidade cite:before {
+	color: var(--sexualidade-cor1);
+}
+
+.alimentacao cite:after {
+	color: var(--alimentacao-cor1);
+}
+.consumos cite:after {
+	color: var(--consumos-cor1);
+}
+.sexualidade cite:after {
+	color: var(--sexualidade-cor1);
+}
+
+.alimentacao .artigosRelacionados{
+	color: var(--alimentacao-cor1);
+}
+.consumos .artigosRelacionados{
+	color: var(--consumos-cor1);
+}
+.sexualidade .artigosRelacionados{
+	color: var(--sexualidade-cor1);
+}
+
+.alimentacao .artigosRelacionados{
+	background-color: var(--alimentacao-back);
+}
+.consumos .artigosRelacionados{
+	background-color: var(--consumos-back);
+}
+.sexualidade .artigosRelacionados{
+	background-color: var(--sexualidade-back);
 }
