@@ -3,18 +3,32 @@
     <head lang="pt">
         <meta charset="UTF-8">
         <title>Your PEL</title>
+
+        <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />-->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" />
+
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="imgfundo">
             <header class="cabecalho">
                 <nav class="navbar">
-                    <h1 class="logo">YourPEL</h1>
+                    <a href="index.html" class="logo">YourPEL</a>
                     <input type="button" id="forum" value="Fórum">
                     <ul id="topicosMenu">
                         <li class="divulgacao">Divulgação</li>
-                        <li class="sobre">Sobre Nós</li>
-                        <li class="temas">Temas</li>
+                        <li class="parceiros">Parceiros</li>
+                        <li class="sobre">Sobre</li>
+                        <li class="temas">Temas
+                            <div class="dropdown">
+                            <button class="setaTemasMenu"> </button>
+                            <div class="submenus">
+                                <a  style="color: #032133;" href="alimentacao.html"> Alimentação</a>
+                                <a  style="color: #032133;" href="sexualidade.html">Sexualidade</a>
+                                <a  style="color: #032133;" href="substancias.html">Consumos Nocivos</a>
+                            </div>
+                            </div>
+                        </li>
                         <li class="destaques"><a href="destaques.html">Destaques</a></li>
                     </ul>
                 </nav>
@@ -33,7 +47,7 @@
                     atenção relativamente, aos determinantes da saúde relacionados com o
                     estilo de vida.
                 </p>
-                <p class="saberM">Sabe mais sobre o YourPEL</p>
+                <p class="saberM"><span style="padding-right: 1em;">Sabe mais sobre o YourPEL</span><img src="imagens/arrow.svg"></p>
             </div>
             <div id="zonaTemas">
                 <h1 class="tTemas">Descobre tudo sobre os nossos <mark>três temas</mark>principais</h1>
@@ -55,11 +69,12 @@
                 <img src="imagens/linhaSep.png" id="sep">
             </div>
             <div id="promForum">
+                <div class="linha_divisoria"></div>
                 <h1>Visita o nosso <mark>fórum</mark><br/>e descobre muito mais</h1>
                 <p class="txtIntro">Dispomos de várias salas onde podes discutir sobre os assuntos que
                     mais te preocupam ou pelos quais sentes curiosidade em saber mais
                 </p>
-                <p class="saberM">Descobre o Fórum</p>
+                <p class="saberM"><span style="padding-right: 1em;">Descobre o Fórum</span><img src="imagens/arrow.svg"></p>
             </div>
         </div>
         <footer>
@@ -67,38 +82,59 @@
                 <h1 class="logoRodape">YourPEL</h1>
                 <img id="facebookIcon" src="imagens/facebook_icon.png">
                 <img id="youtubeIcon" src="imagens/youtube_icon-icons.com_59209.png">
-                <div class="zonaYourPEL">
-                    <a href="#" style="text-decoration: none; color: #ffffff;">YourPEL </a>
+                <div class="zonaGeral">
+                    <!--<a href="#" style="text-decoration: none; color: #ffffff;">YourPEL </a>
                     <br>
                     <a href="#" style="text-decoration: none; color: #bce4ff;">Projeto </a>
                     <br>
                     <a href="#" style="text-decoration: none; color: #bce4ff;">Parceiros </a>
                     <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Divulgação </a>
+                    <a href="#" style="text-decoration: none; color: #bce4ff;">Divulgação </a>-->
+                    <a href="index.html" class="estilo">Home</a>
+                    <br>
+                    <a href="destaques.html" class="estilo">Destaques </a>
+                    <br>
+                    <a href="sobre.html" class="estilo">Sobre </a>
+                    <br>
+                </div>
+
+                <div class="zonaGeral2">
+                    <a href="parceiros.html" class="estilo">Parcerias</a>
+                    <br>
+                    <a href="#" class="estilo">Divulgação</a>
+                    <br>
+                    <a href="#" class="estilo">Fórum</a>
+                    <br>
                 </div>
 
                 <div class="zonaArtigos">
-                    <a href="#" style="text-decoration: none; color: #ffffff;">Artigos </a>
+                    <a href="alimentacao.html" class="estilo">Alimentação</a>
+                    <br>
+                    <a href="sexualidade.html" class="estilo">Sexualidade</a>
+                    <br>
+                    <a href="substancias.html" class="estilo">Consumos nocivos</a>
+                    <br>
+                    <!--<a href="#" style="text-decoration: none; color: #ffffff;">Artigos </a>
                     <br>
                     <a href="#" style="text-decoration: none; color: #bce4ff;">Alimentação </a>
                     <br>
                     <a href="#" style="text-decoration: none; color: #bce4ff;">Sexualidade </a>
                     <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Consumos nocivos </a>
+                    <a href="#" style="text-decoration: none; color: #bce4ff;">Consumos nocivos </a>-->
                 </div>
 
                 <div class="zonaContactos">
-                    <a href="#" style="text-decoration: none; color: #ffffff;">Contactos </a>
+                    <p class="styConta" style="color: #1070B0;">Contactos</p>
                     <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">+351 243 307 200 </a>
+                    <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
                     <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Quinta do Mergulhão Srª da Guia 2005-075 Santarém </a>
-                    <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">geral@essaude.ipsantarem.pt  </a>
+                    <!--<a href="#" style="text-decoration: none; color: #bce4ff;">Quinta do Mergulhão Srª da Guia 2005-075 Santarém </a>
+                    <br>-->
+                    <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
                 </div>
             </div>
             <div id="zonaCopyrights">
-                <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS  </p>
+                <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS</p>
                 <img id="iconsRodape" src="imagens/iconsRodape.png">
             </div>
         </footer>

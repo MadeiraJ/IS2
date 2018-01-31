@@ -2,130 +2,213 @@
 <html>
     <head lang="pt">
         <meta charset="UTF-8">
-        <title>Destaques Your PEL</title>
+        <title>Sobre o Your PEL</title>
+
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body>
+    <body style="background-color: #F7FAFC;">
         <div class="rectangle-2">
             <nav class="navbar">
-                <h1 class="logo">YourPEL</h1>
+                <a href="index.html" class="logo">YourPEL</a>
                 <input type="button" id="forum" value="Fórum">
                 <ul id="topicosMenu">
                     <li class="divulgacao">Divulgação</li>
-                    <li class="sobre">Sobre Nós</li>
-                    <li class="temas">Temas</li>
+                    <li class="parceiros">Parceiros</li>
+                    <li class="sobre">Sobre</li>
+                    <li class="temas">Temas
+                        <div class="dropdown">
+                            <button class="setaTemasMenu"> </button>
+                            <div class="submenus">
+                                <a  style="color: #032133;" href="alimentacao.html"> Alimentação</a>
+                                <a  style="color: #032133;" href="sexualidade.html">Sexualidade</a>
+                                <a  style="color: #032133;" href="substancias.html">Consumos Nocivos</a>
+                            </div>
+                        </div>
+                    </li>
                     <li class="destaques"><a href="destaques.html">Destaques</a></li>
                 </ul>
             </nav>
         </div>
-        <div id="TituloZonaConteudo">
-            <p class="destaquesTitulo">Sobre o Your PEL</p>
-            <p class="aqui-podes-encontrar"><mark>Promover e Empoderar para a Literacia</mark> em saúde na população jovem</p>
-        </div>
-        <div id="zonaConteudo">
-            <p class="textoSobre">As mudanças ocorridas nos últimos anos na saúde da população portuguesa melhoraram significativamente, contudo, os jovens requerem particular atenção relativamente, aos determinantes da saúde relacionados com o estilo de vida. A evidência científica em promoção da saúde em meio escolar, a inovação e a necessidade de recentrar a ação nos resultados implica o desenvolvimento de intervenções mais adequadas à população jovem. Além de capacitar as pessoas e as comunidades para agir, implica reconhecer as suas competências e potencialidades e facilitar as suas escolhas.
-                O projeto “Your PEL - Promover e Empoderar para a Literacia em saúde na população jovem” tem como finalidade ajudar esta geração a atingir a plenitude do seu potencial de saúde. Centra-se numa abordagem da saúde ao longo do ciclo de vida, especificamente uma juventude à procura de um futuro saudável e integra três áreas específicas: alimentação, consumos nocivos e sexualidade.</p>
-            <p class="objetivos">Objetivos</p>
-            <p class="textoObjetivos"> &#10148; Desenvolver um instrumento de avaliação do impacto dos programas de educação para a saúde desenvolvidos em meio escolar nas áreas da alimentação, consumos nocivos e sexualidade ao nível do 3º ciclo do ensino básico</p>
-            <p class="textoObjetivos"> &#x2771; Monitorizar os determinantes de saúde e a efetividade das estratégias desenvolvidas</p>
-            <p class="textoSobre" style="margin-top: 5%">Trata-se de um projeto multiregiões alinhado com a estratégia nacional de especialização inteligente, numa parceria entre três Institutos Politécnicos e dois Agrupamentos de Escolares enquanto instituições beneficiárias e um ACES enquanto instituição não beneficiária. A participação de instituições da área da educação e da saúde contribui para o desenvolvimento de sinergias em prol de mudanças necessárias para a obtenção de ganhos em saúde.</p>
-            <p class="objetivos">As atividades definidas integram um plano de trabalho de que se destacam:</p>
-            <p class="textoObjetivos"> &#x2771; Conceção do instrumento de avaliação do impacto do programa de educação para saúde</p>
-            <p class="textoObjetivos"> &#x2771; Desenvolvimento de uma plataforma web de comunicação</p>
-            <p class="textoObjetivos"> &#x2771; Criação dum programa de intervenção na população escolar do 3º ciclo do ensino básico nas áreas da alimentação, consumos nocivos e sexualidade</p>
-            <p class="textoSobre" style="margin-top: 5%">O plano de divulgação de resultados e disseminação do conhecimento é consonante com a abrangência territorial alargada e corresponde aos domínios da saúde e das tecnologias aplicadas à saúde. O impacto do conhecimento científico e tecnológico gerado pelo projeto e disseminado contribuirá para a valorização regional e nacional, numa lógica de translação do conhecimento.</p>
-        </div>
-
+            <div id="TituloZonaConteudo">
+                <p class="destaquesTitulo">Sobre o Your PEL</p>
+                <p class="subTituloSobre"><mark>Promover e Empoderar para a Literacia</mark> em saúde na população jovem</p>
+            </div>
+            <div id="zonaConteudoSobre">
+                <img id="imgSobre" src="imagens/imgInicial.jpg">
+                <p class="textoSobre">As mudanças ocorridas nos últimos anos na saúde da população portuguesa melhoraram
+                    significativamente, contudo, os jovens requerem particular atenção relativamente, aos determinantes da
+                    saúde relacionados com o estilo de vida. A evidência científica em promoção da saúde em meio escolar,
+                    a inovação e a necessidade de recentrar a ação nos resultados implica o desenvolvimento de intervenções
+                    mais adequadas à população jovem. Além de capacitar as pessoas e as comunidades para agir, implica
+                    reconhecer as suas competências e potencialidades e facilitar as suas escolhas.
+                    O projeto “Your PEL - Promover e Empoderar para a Literacia em saúde na população jovem” tem como
+                    finalidade ajudar esta geração a atingir a plenitude do seu potencial de saúde. Centra-se numa
+                    abordagem da saúde ao longo do ciclo de vida, especificamente uma juventude à procura de um futuro
+                    saudável e integra três áreas específicas: alimentação, consumos nocivos e sexualidade.</p>
+                <p class="objetivos">Objetivos</p>
+                <p class="textoObjetivos">
+                    <img src="imagens/arrow.svg">
+                    <span style="padding-left: 2em;">Desenvolver um instrumento de avaliação do impacto dos programas de educação
+                        para a saúde desenvolvidos em meio escolar nas áreas da alimentação, consumos nocivos e sexualidade
+                        ao nível do 3º ciclo do ensino básico
+                    </span>
+                </p>
+                <p class="textoObjetivos">
+                    <img src="imagens/arrow.svg">
+                    <span style="padding-left: 2em;">Monitorizar os determinantes de saúde e a efetividade das estratégias
+                        desenvolvidas
+                    </span>
+                </p>
+                <p class="textoSobre" style="margin-top: 5%">Trata-se de um projeto multiregiões alinhado com a estratégia nacional de especialização inteligente, numa parceria entre três Institutos Politécnicos e dois Agrupamentos de Escolares enquanto instituições beneficiárias e um ACES enquanto instituição não beneficiária. A participação de instituições da área da educação e da saúde contribui para o desenvolvimento de sinergias em prol de mudanças necessárias para a obtenção de ganhos em saúde.</p>
+                <p class="objetivos">As atividades definidas integram um plano de trabalho de que se destacam:</p>
+                <p class="textoObjetivos">
+                    <img src="imagens/arrow.svg">
+                    <span style="padding-left: 2em;">Conceção do instrumento de avaliação do impacto do programa de educação para saúde</span>
+                </p>
+                <p class="textoObjetivos">
+                    <img src="imagens/arrow.svg">
+                    <span style="padding-left: 2em;">Desenvolvimento de uma plataforma web de comunicação</span>
+                </p>
+                <p class="textoObjetivos">
+                    <img src="imagens/arrow.svg">
+                    <span style="padding-left: 2em;">Criação dum programa de intervenção na população escolar do 3º ciclo do
+                        ensino básico nas áreas da alimentação, consumos nocivos e sexualidade
+                    </span>
+                </p>
+                <p class="textoSobre" style="margin-top: 5%">O plano de divulgação de resultados e disseminação do conhecimento é consonante com a abrangência territorial alargada e corresponde aos domínios da saúde e das tecnologias aplicadas à saúde. O impacto do conhecimento científico e tecnológico gerado pelo projeto e disseminado contribuirá para a valorização regional e nacional, numa lógica de translação do conhecimento.</p>
+            </div>
         <div id="zonaEquipa">
-            <p class="textoUltimosVideos">Conhece a nossa <mark>equipa</mark></p>
+            <p class="textoEquipa">Conhece a nossa <mark>equipa</mark></p>
             <div class="equipaBox">
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
                 <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="descricaoMembroEquipa">Investigador Responsável</p>
             </div>
             <div class="equipaBox" style= "margin-left: 24%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">José Amendoeira</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
             </div>
             <div class="equipaBox" style= "margin-left: 41%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">Ana Spínola</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
             </div>
             <div class="equipaBox" style= "margin-left: 58%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">Maria do Carmo Pereira</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
             </div>
             <div class="equipaBox" style= "margin-left: 75%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">Maria Clara André</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
             </div>
-            <div class="equipaBox" style= "margin-top: 40%" >
+            <div class="equipaBox" style= "margin-top: 33%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">Celeste Godinho</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
             </div>
-            <div class="equipaBox" style= "margin-top: 40%; margin-left: 24%" >
+            <div class="equipaBox" style= "margin-top: 33%; margin-left: 24%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">Filipe Madeira</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
             </div>
-            <div class="equipaBox" style= "margin-top: 40%; margin-left: 41%" >
+            <div class="equipaBox" style= "margin-top: 33%; margin-left: 41%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">José Carlos Quaresma</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
             </div>
-            <div class="equipaBox" style= "margin-top: 40%; margin-left: 58%" >
+            <div class="equipaBox" style= "margin-top: 33%; margin-left: 58%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">Manuela Ferreira</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
             </div>
-            <div class="equipaBox" style= "margin-top: 40%; margin-left: 75%" >
+            <div class="equipaBox" style= "margin-top: 33%; margin-left: 75%" >
                 <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
-                <p class="nomeMembroEquipa">Hélia Dias</p>
-                <p class="descricaoMembroEquipa"> Investigador Responsável</p>
+                <p class="nomeMembroEquipa">Mónica Ferreira</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
+            </div>
+            <div class="equipaBox" style= "margin-top: 60%;" >
+                <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
+                <p class="nomeMembroEquipa">Maria Teresa Simões</p>
+                <p class="descricaoMembroEquipa">Investigador</p>
+            </div>
+            <div class="equipaBox" style= "margin-top: 60%;  margin-left: 24%" >
+                <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
+                <p class="nomeMembroEquipa">Nuno Martins</p>
+                <p class="descricaoMembroEquipa">Outro</p>
+            </div>
+            <div class="equipaBox" style= "margin-top: 60%;  margin-left: 41%" >
+                <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
+                <p class="nomeMembroEquipa">Maria Helena Góis</p>
+                <p class="descricaoMembroEquipa">Outro</p>
+            </div>
+            <div class="equipaBox" style= "margin-top: 60%;  margin-left: 58%" >
+                <img src="imagens/gradienttest.png" width="100%" height="55%" style="border-top-left-radius: 5px; border-top-right-radius: 5px">
+                <p class="nomeMembroEquipa">Ana Rita Carolino</p>
+                <p class="descricaoMembroEquipa">Outro</p>
             </div>
         </div>
 
-        <footer>
-            <div class="rodape">
+        <footer style="float: left; margin-top: 98%;">
+            <div class="rodape" style="margin-top: 0%;">
                 <h1 class="logoRodape">YourPEL</h1>
                 <img id="facebookIcon" src="imagens/facebook_icon.png">
                 <img id="youtubeIcon" src="imagens/youtube_icon-icons.com_59209.png">
-                <div class="zonaYourPEL">
-                    <a href="#" style="text-decoration: none; color: #ffffff;">YOUR PEL </a>
+                <div class="zonaGeral">
+                    <!--<a href="#" style="text-decoration: none; color: #ffffff;">YourPEL </a>
                     <br>
                     <a href="#" style="text-decoration: none; color: #bce4ff;">Projeto </a>
                     <br>
                     <a href="#" style="text-decoration: none; color: #bce4ff;">Parceiros </a>
                     <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Divulgação </a>
+                    <a href="#" style="text-decoration: none; color: #bce4ff;">Divulgação </a>-->
+                    <a href="index.html" class="estilo">Home</a>
+                    <br>
+                    <a href="destaques.html" class="estilo">Destaques </a>
+                    <br>
+                    <a href="sobre.html" class="estilo">Sobre </a>
+                    <br>
+                </div>
+
+                <div class="zonaGeral2">
+                    <a href="parceiros.html" class="estilo">Parcerias</a>
+                    <br>
+                    <a href="#" class="estilo">Divulgação</a>
+                    <br>
+                    <a href="#" class="estilo">Fórum</a>
+                    <br>
                 </div>
 
                 <div class="zonaArtigos">
-                    <a href="#" style="text-decoration: none; color: #ffffff;">Artigos </a>
+                    <a href="alimentacao.html" class="estilo">Alimentação</a>
+                    <br>
+                    <a href="sexualidade.html" class="estilo">Sexualidade</a>
+                    <br>
+                    <a href="substancias.html" class="estilo">Consumos nocivos</a>
+                    <br>
+                    <!--<a href="#" style="text-decoration: none; color: #ffffff;">Artigos </a>
                     <br>
                     <a href="#" style="text-decoration: none; color: #bce4ff;">Alimentação </a>
                     <br>
                     <a href="#" style="text-decoration: none; color: #bce4ff;">Sexualidade </a>
                     <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Consumos nocivos </a>
+                    <a href="#" style="text-decoration: none; color: #bce4ff;">Consumos nocivos </a>-->
                 </div>
 
                 <div class="zonaContactos">
-                    <a href="#" style="text-decoration: none; color: #ffffff;">Contactos </a>
+                    <p class="styConta" style="color: #1070B0;">Contactos</p>
                     <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">+351 243 307 200 </a>
+                    <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
                     <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Quinta do Mergulhão Srª da Guia 2005-075 Santarém </a>
-                    <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">geral@essaude.ipsantarem.pt  </a>
+                    <!--<a href="#" style="text-decoration: none; color: #bce4ff;">Quinta do Mergulhão Srª da Guia 2005-075 Santarém </a>
+                    <br>-->
+                    <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
                 </div>
             </div>
-            <div id="zonaCopyrights">
+            <div id="zonaCopyrights" style="margin-top: 18%;">
                 <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS  </p>
                 <img id="iconsRodape" src="imagens/iconsRodape.png">
             </div>
