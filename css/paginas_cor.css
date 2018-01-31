@@ -109,12 +109,30 @@
 		color: var(--sexualidade-cor1);
 	}
 
+	.conteudo .alimentacao {
+		border: 3px solid #FFF;
+    	border-radius: 6px;
+		border-color: var(--alimentacao-cor2);
+	}
+	.conteudo .consumos {
+		border: 3px solid #FFF;
+    	border-radius: 6px;
+		border-color: var(--consumos-cor2);
+	}
+	.conteudo .sexualidade {
+		border: 3px solid #FFF;
+    	border-radius: 6px;
+		border-color: var(--sexualidade-cor2);
+	}
 
 	.alimentacao .post{
 		border-color: var(--alimentacao-cor2);
 	}
 	.consumos .post{
 		border-color: var(--consumos-cor2);
+	}
+	.conteudo .consumos .post {
+    	border: none;
 	}
 	.sexualidade .post{
 		border-color: var(--sexualidade-cor2);

@@ -160,25 +160,73 @@
 	            padding-bottom: 2%;
 	        }
 
-	    	/*TAG*/
-    			
-    			.tag {
-    				display: inline-block;
-					border-radius: 6px;
-					padding: 2%;
-    			}
+	        /*PAGINAS DESTAQUES*/
+				.conteudo iframe{
+			        width: 100%;
+			        border-top-left-radius: 5px;
+			        border-top-right-radius: 5px;
+			    }
 
-    			.tag img {
-        			width: 1.3vw!important;
-    			}
+		    	/*TAG*/
+	    			.topoBloco {
+	    				padding: 1vw;
+	    			}
 
-    			.tag a {
-    				font-size: 1.3vw;
-    				font-weight: 900;
-					letter-spacing: 2px;
-					line-height: 10px;
-					text-decoration: none;
-    			}
+	    			.topoBloco .tituloArtigo{
+	    				float: left;
+	    				display: inline-block;
+	    				max-width: 57%;
+	    			}
+
+	    			.topoBloco .titulo{
+	    				line-height: 0;
+	    				float: left;
+	    				display: inline-block;
+	    				max-width: 57%;
+	    			}
+
+	    			.topoBloco .tag {
+	    				display: inline-block;
+	    				float: right;
+						border-radius: 6px;
+						padding: 2%;
+	    			}
+
+	    			.topoBloco .tag img {
+	        			width: 1.3vw;
+	    			}
+
+	    			.topoBloco .tag a {
+	    				font-size: 1.3vw;
+	    				font-weight: 900;
+						letter-spacing: 2px;
+						line-height: 10px;
+						text-decoration: none;
+	    			}
+	    		
+	    		/*BLOCOS*/
+		    		.conteudo .titulo {
+			            font-size: 1.48vw;
+			            font-weight: 800;
+			            letter-spacing: 2px;
+			            line-height: 2.52vw;
+			            font-family: "Raleway Bold";
+			            margin-top: 0;
+		        	}
+
+		        	.conteudo .texto {
+			            color: #062940;
+			            font-size: 1.48vw;
+			            font-weight: 600;
+			            line-height: 2.52vw;
+		        	}
+
+		        	.conteudo img {
+		        		width: 100%;
+		        	}
+
+		        	
+
 
 		/*ZONA GLOSSARIO*/
 		    #zonaGlossario{
