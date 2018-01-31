@@ -16,6 +16,9 @@
 	--sexualidade-back: #EFEDFF;
 }
 
+.main{
+	padding-bottom: 10%;
+}
 
 /*INICIO PAGINAS TEMAS*/
 	/*TITULO PRINCIPAL*/
@@ -377,7 +380,7 @@
 		/*ZONA DOCUMENTOS*/
 		    #zonaDocumentos{
 		        margin-top: 10%;
-		        margin-bottom: 10%;
+		        /*margin-bottom: 10%;*/
 		    }
 
 		    #zonaDocumentos .titulo{
