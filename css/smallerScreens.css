@@ -1,0 +1,411 @@
+/*DISPOSITIVOS MAIS PEQUENOS*/
+    /*RODAPE*/
+        @media only screen and (max-width: 880px) {
+            /*RODAPE*/
+                #rodape {
+                    position: relative;
+                    width: 100%;
+                    background-color: #062940;
+                    padding-bottom: 8%;
+                    clear: both;
+                }
+
+                #rodape #logoRodape {
+                    position: relative;
+                    width: 100%;
+                    color: #FFFFFF;
+                    font-family: "Permanent Marker";
+                    font-size: 24px;
+                    line-height: 37px;
+                    text-align: center;
+                    margin: 0;
+                    float: left;
+                    padding: 0;
+                    padding-top: 3.97%;
+                }
+
+                #rodape #icons {
+                    position: relative;
+                    width: 100%;
+                    padding: 0%;
+                    float: left;
+                    padding-bottom: 4%;
+                    padding-top: 4%;
+                }
+
+                #rodape #icons #linhaIc{
+                    margin: auto;
+                    width: 110px;
+                }
+
+                #rodape #icons #facebookIcon, #rodape #icons #youtubeIcon, #rodape #icons #instagramIcon{
+                    width: 31px;
+                    height: 31px;
+                }
+
+                #rodape #icons #youtubeIcon, #rodape #icons #instagramIcon{
+                    margin-left: 7%;
+                    padding: 0;
+                }
+
+                #rodape .menu {
+                    position: relative;
+                    margin-top: 0%;
+                    float: left;
+                    margin-left: 10%;
+                    width: 80%;
+                    padding: 0;
+                    text-align: center;
+                    font-size: 14px;
+                }
+
+                #rodape .zonaContactos {
+                    margin-top: 5%;
+                }
+
+                #zonaCopyrights {
+                    text-align: center !important;
+                    padding: 0;
+                    padding-top: 2%;
+                }
+
+                #zonaCopyrights .copyrights {
+                    padding: 0;
+                    width: 100%;
+                    font-size: 11px;
+                    line-height: 34px;
+                }
+
+                #zonaCopyrights #icParceiros {
+                    padding: 0;
+                    padding-top: 4%;
+                    width: 100%;
+                }
+        }
+
+        @media only screen and (max-width: 1100px) and (min-width: 880px){
+            /*RODAPE*/
+                #rodape #logoRodape {
+                    font-size: 24px;
+                    line-height: 37px;
+                }
+
+                #rodape #icons #facebookIcon, #rodape #icons #youtubeIcon, #rodape #icons #instagramIcon{
+                    width: 31px;
+                    height: 31px;
+                }
+
+                #rodape .menu {
+                    font-size: 14px;
+                }
+
+                #zonaCopyrights .copyrights{
+                    font-size: 11px;
+                    line-height: 34px;
+                }
+        }
+
+    @media only screen and (max-width: 600px) {
+        /*PAGINA TEMAS*/
+            /*TITULO PRINCIPAL*/
+                .paginaTema .destaquesTitulo{
+                    font-size: 8vw;
+                }
+
+                .paginaTema .aqui-podes-encontrar{
+                    font-size: 4vw;
+                    line-height: normal;
+                }
+
+            /*POSTS E SABIAS QUE*/
+                .paginaTema .post .tituloArtigo {
+                    font-size: 5vw;
+                    line-height: normal;
+                    margin-bottom: 3%;
+                }
+
+                .paginaTema .post .textoArtigo{
+                    font-size: 3.6vw;
+                    line-height: normal;
+                }
+
+                .paginaTema .sabiasQue .tituloArtigo {
+                    font-size: 5vw;
+                    line-height: normal;
+                }
+
+                .paginaTema .sabiasQue .textoArtigo {
+                    font-size: 3.6vw;
+                    line-height: normal;
+                }
+
+                .conteudo .texto{
+                    display: none;
+                }
+
+            /*COLS E BLOCOS*/
+                .col1 {
+                    width: auto;
+                    float: none;
+                    margin: 0 auto;
+                }
+
+                .col2 {
+                    width: auto;
+                    float: none;
+                    margin: 0 auto;
+                }
+                .col3 {
+                    width: auto;
+                    float: none;
+                    margin: 0 auto;
+                }
+
+                .bloco-1{
+                    display: inline-block;
+                }
+                .bloco-2{
+                    display: inline-block;
+                    width: auto;
+                    float: none;
+                }
+
+            /*GERAL*/
+                .texto{
+                    display: block;
+                }
+
+                .paginaTema .post .zonaTexto {
+                    padding: 6%;
+                }
+
+                .carregarMais {
+                    width: 30%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    padding-top: 5%;
+                    padding-bottom: 5%;
+                    font-size: 3vw;
+                    line-height: normal;
+                }
+
+            /*ZONA VIDEOS*/
+                #zonaDeVideos .postVideo{
+                    float: none;
+                    width: auto;
+                }
+
+                #zonaDeVideos .titulo {
+                    width: auto;
+                    font-size: 5vw;
+                    line-height: normal;
+                    margin-bottom: 3%;
+                }
+
+                #zonaDeVideos .postVideo{
+                    margin: 0 auto;
+                    margin-bottom: 3%;
+                }
+
+                #zonaDeVideos .postVideo .titulo {
+                    font-size: 5vw;
+                    line-height: normal;
+                }
+
+                #zonaDeVideos .postVideo .texto{
+                    font-size: 3.6vw;
+                    line-height: normal;
+                }
+
+            /*ZONA GLOSSARIO*/
+                #zonaGlossario .descricao {
+                    font-size: 3.6vw;
+                    line-height: normal;
+                    width: auto;
+                }
+
+                #zonaGlossario h1 {
+                    font-size: 5vw;
+                }
+
+                #zonaGlossario .titulo {
+                    width: auto;
+                    font-size: 5vw;
+                    line-height: normal;
+                    margin-bottom: 3%;
+                }
+
+                #glossario .abecedario {
+                    width: 10%;
+                    margin-left: 2%;
+                }
+
+                #glossario .letra {
+                    width: auto;
+                    height: 3vw;
+                    font-size: 4vw;
+                }
+
+                #glossario .definicao {
+                    display: block;
+                    width: auto;
+                    padding: 0;
+                }
+
+                #glossario .definicao h1{
+                    font-size: 3.6vw;
+                    line-height: normal;
+                }
+
+                #glossario .definicao p{
+                    font-size: 3vw;
+                    line-height: normal;
+                }
+
+            /*ZONA DOCUMENTOS*/
+                #zonaDocumentos .titulo{
+                    font-size: 5vw;
+                }
+
+                #zonaDocumentos .documentos{
+                    font-size: 3vw;
+                    line-height: normal;
+                }
+
+                #zonaDocumentos .documentos img{
+                    display: none;
+                }
+
+            /*ZONA LINKS*/
+                #zonaLinks .titulo{
+                    font-size: 5vw;
+                }
+
+                #zonaLinks .linkUteis{
+                    font-size: 3vw;
+                    line-height: normal;
+                }
+
+                #zonaLinks .linkUteis img{
+                    display: none;
+                }
+
+        /*PAGINA ARTIGO*/
+            .artigo .cabecalhoArtigo .detalhe{
+                width: auto;
+            }
+
+            .artigo .cabecalhoArtigo .detalhe p{
+                font-size: 3vw;
+                line-height: normal;
+            }
+
+            .artigo .artigosRelacionados a{
+                display: block;
+                width: auto;
+            }
+
+            .artigo .artigosRelacionados .bloco-1 {
+                width: 80%;
+            }
+
+            .artigo .artigosRelacionados .bloco-1 .zonaTexto{
+                padding: 5%;
+            }
+
+            .artigo .artigosRelacionados .bloco-1 .tituloArtigo {
+                font-size: 3vw;
+            }
+
+            .artigo .artigosRelacionados .bloco-1 .textoArtigo {
+                font-size: 2.6vw;
+            }
+
+            .artigo .conteudo p{
+                font-size: 3vw;
+                line-height: 3.8vw;
+                width: 90%;
+            }
+
+            .artigo cite{
+                font-size: 3.6vw;
+            }
+
+        /*PAGINA DESTAQUES*/
+            .index .intro .terco h1 {
+                font-size: 8vw;
+                line-height: normal;
+            }
+
+            .index .intro .terco {
+                width: 75%;
+            }
+
+            .index .intro .terco h3 {
+                font-size: 4vw;
+                line-height: normal;
+            }
+
+            .index .intro .terco button {
+                font-size: 4vw;
+                line-height: normal;
+            }
+
+            .index .metade {
+                float: none;
+                display: block;
+                width: 80%;
+            }
+
+            .index .metade h1 {
+                width: 90%;
+                font-size: 5vw;
+                line-height: normal;
+                margin-bottom: 5%;
+            }
+
+            .index .metade p {
+                width: 90%;
+                font-size: 4vw;
+                line-height: normal;
+            }
+            
+            .index .metade a {
+                font-size: 4vw;
+                line-height: normal;
+            }
+
+            .index .zona .titulo {
+                width: 80%;
+                font-size: 5vw;
+                line-height: normal;
+            }
+
+            .index .zona .titulo mark {
+                font-size: 5vw;
+                line-height: normal;
+            }
+
+            .index .colorizar .zona {
+                width: 95%;
+            }
+
+            .index .comprido .bloco {
+                float: none;
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 5%;
+            }
+
+            .index .comprido h1 {
+                font-size: 6vw;
+                line-height: normal;
+            }
+
+            .index .comprido .bloco p {
+                color: #062940;
+                font-size: 4vw;
+                line-height: normal;
+            }
+    }

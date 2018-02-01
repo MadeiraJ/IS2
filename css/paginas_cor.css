@@ -149,6 +149,26 @@
 		color: var(--sexualidade-cor1);
 	}
 
+	.alimentacao .tituloArtigo{
+		color: var(--alimentacao-cor1);
+	}
+	.consumos .tituloArtigo{
+		color: var(--consumos-cor1);
+	}
+	.sexualidade .tituloArtigo{
+		color: var(--sexualidade-cor1);
+	}
+
+	.alimentacao .titulo{
+		color: var(--alimentacao-cor1);
+	}
+	.consumos .titulo{
+		color: var(--consumos-cor1);
+	}
+	.sexualidade .titulo{
+		color: var(--sexualidade-cor1);
+	}
+
 	.alimentacao .sabiasQue{
 		border-color: var(--alimentacao-cor2);
 		background-color: var(--alimentacao-cor2);
@@ -378,4 +398,25 @@
 	}
 	.sexualidade .artigosRelacionados{
 		background-color: var(--sexualidade-back);
+	}
+
+/*PAGINA DESTAQUES*/
+	.comprido .alimentacao h1 {
+		color: var(--alimentacao-cor1);
+	}
+	.comprido .consumos h1 {
+		color: var(--consumos-cor1);
+	}
+	.comprido .sexualidade h1 {
+		color: var(--sexualidade-cor1);
+	}
+
+	.index .comprido .alimentacao {
+		border-color: var(--alimentacao-cor2);
+	}
+	.index .comprido .consumos {
+		border-color: var(--consumos-cor2);
+	}
+	.index .comprido .sexualidade {
+		border-color: var(--sexualidade-cor2);
 	}

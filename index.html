@@ -3,140 +3,85 @@
     <head lang="pt">
         <meta charset="UTF-8">
         <title>Your PEL</title>
-
-        <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />-->
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" />
-
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/paginas.css"/>
+        <link rel="stylesheet" href="css/paginas_cor.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/smallerScreens.css"/>
+        <script src="js/wow.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script>
+          new WOW().init();
+        </script>
     </head>
-    <body>
-        <div class="imgfundo">
-            <header class="cabecalho">
-                <nav class="navbar">
-                    <a href="index.html" class="logo">YourPEL</a>
-                    <input type="button" id="forum" value="Fórum">
-                    <ul id="topicosMenu">
-                        <li class="divulgacao">Divulgação</li>
-                        <li class="parceiros">Parceiros</li>
-                        <li class="sobre">Sobre</li>
-                        <li class="temas">Temas
-                            <div class="dropdown">
-                            <button class="setaTemasMenu"> </button>
-                            <div class="submenus">
-                                <a  style="color: #032133;" href="alimentacao.html"> Alimentação</a>
-                                <a  style="color: #032133;" href="sexualidade.html">Sexualidade</a>
-                                <a  style="color: #032133;" href="substancias.html">Consumos Nocivos</a>
-                            </div>
-                            </div>
-                        </li>
-                        <li class="destaques"><a href="destaques.html">Destaques</a></li>
-                    </ul>
-                </nav>
-                <h1 class="tituloPrin">Your PEL</h1>
-                <p class="tituloExt">
-                    Promover e Empoderar para a Literacia em saúde na população jovem
-                </p>
-                <input type="button" id="forumV" value="Visita o Fórum">
-            </header>
-        </div>
-        <div class="main">
-            <div id="intro">
-                <h1>O YourPEL ajuda-te com as tuas<mark>dúvidas.</mark></h1>
-                <p class="txtIntro">As mudanças ocorridas nos últimos anos na saúde da população portuguesa
-                    melhoraram significativamente, contudo, os jovens requerem particular
-                    atenção relativamente, aos determinantes da saúde relacionados com o
-                    estilo de vida.
-                </p>
-                <p class="saberM"><span style="padding-right: 1em;">Sabe mais sobre o YourPEL</span><img src="imagens/arrow.svg"></p>
-            </div>
-            <div id="zonaTemas">
-                <h1 class="tTemas">Descobre tudo sobre os nossos <mark>três temas</mark>principais</h1>
-                <div class="tSexual">
-                    <h1>Sexualidade</h1>
-                    <p>Respostas a todas as tuas questões</p>
-                    <img src="imagens/imgSexual.png">
-                </div>
-                <div class="tAlimen">
-                    <h1>Alimentação</h1>
-                    <p>Descobre os nossos artigos sobre alimentação</p>
-                    <img src="imagens/imgAlimen.png">
-                </div>
-                <div class="tCons">
-                    <h1>Consumos Nocivos</h1>
-                    <p>Informa-te sobre os cuidados e precauções</p>
-                    <img src="imagens/imgCons.png">
-                </div>
-                <img src="imagens/linhaSep.png" id="sep">
-            </div>
-            <div id="promForum">
-                <div class="linha_divisoria"></div>
-                <h1>Visita o nosso <mark>fórum</mark><br/>e descobre muito mais</h1>
-                <p class="txtIntro">Dispomos de várias salas onde podes discutir sobre os assuntos que
-                    mais te preocupam ou pelos quais sentes curiosidade em saber mais
-                </p>
-                <p class="saberM"><span style="padding-right: 1em;">Descobre o Fórum</span><img src="imagens/arrow.svg"></p>
+    <body class="index">
+        <div class="intro zona">
+            <div class="bloco terco">
+                <h1>Your PEL</h1>
+                <h3>Promover e Empoderar para a Literacia em saúde na população jovem</h3>
+                <a href="forum.html" class="hvr-grow"><button type="button">Visita o Fórum</button></a>
             </div>
         </div>
-        <footer>
-            <div class="rodape">
-                <h1 class="logoRodape">YourPEL</h1>
-                <img id="facebookIcon" src="imagens/facebook_icon.png">
-                <img id="youtubeIcon" src="imagens/Rodape/youtube_icon.png">
-                <div class="zonaGeral">
-                    <!--<a href="#" style="text-decoration: none; color: #ffffff;">YourPEL </a>
-                    <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Projeto </a>
-                    <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Parceiros </a>
-                    <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Divulgação </a>-->
-                    <a href="index.html" class="estilo">Home</a>
-                    <br>
-                    <a href="destaques.html" class="estilo">Destaques </a>
-                    <br>
-                    <a href="sobre.html" class="estilo">Sobre </a>
-                    <br>
-                </div>
 
-                <div class="zonaGeral2">
-                    <a href="parceiros.html" class="estilo">Parcerias</a>
-                    <br>
-                    <a href="#" class="estilo">Divulgação</a>
-                    <br>
-                    <a href="#" class="estilo">Fórum</a>
-                    <br>
-                </div>
-
-                <div class="zonaArtigos">
-                    <a href="alimentacao.html" class="estilo">Alimentação</a>
-                    <br>
-                    <a href="sexualidade.html" class="estilo">Sexualidade</a>
-                    <br>
-                    <a href="substancias.html" class="estilo">Consumos nocivos</a>
-                    <br>
-                    <!--<a href="#" style="text-decoration: none; color: #ffffff;">Artigos </a>
-                    <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Alimentação </a>
-                    <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Sexualidade </a>
-                    <br>
-                    <a href="#" style="text-decoration: none; color: #bce4ff;">Consumos nocivos </a>-->
-                </div>
-
-                <div class="zonaContactos">
-                    <p class="styConta" style="color: #1070B0;">Contactos</p>
-                    <br>
-                    <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
-                    <br>
-                    <!--<a href="#" style="text-decoration: none; color: #bce4ff;">Quinta do Mergulhão Srª da Guia 2005-075 Santarém </a>
-                    <br>-->
-                    <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
-                </div>
+        <div class="zona">
+            <div class="bloco metade">
+                <h1 class="wow fadeIn">O YourPEL ajuda-te com as tuas <mark>dúvidas</mark>.</h1>
             </div>
-            <div id="zonaCopyrights">
-                <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS</p>
-                <img id="iconsRodape" src="imagens/iconsRodape.png">
+            <div class="bloco metade">
+                <p class="wow fadeIn">As mudanças ocorridas nos últimos anos na saúde da população portuguesa melhoraram significativamente, contudo, os jovens requerem particular atenção relativamente, aos determinantes da saúde relacionados com o estilo de vida.
+                <a href="#">Sabe mais sobre o YourPEL<img src="imagens/arrow.svg"></a></p>
             </div>
-        </footer>
+            <div class="clear"></div>
+        </div>
+        <div class="colorizar">
+        <div class="zona">
+            <h1 class="titulo wow fadeIn">Descobre tudo sobre os nossos <mark>três temas</mark> principais</h1>
+        </div>
+
+            <div class="zona comprido">
+                <a href="sexualidade.html">
+                    <div class="sexualidade bloco terco wow fadeIn hvr-grow">
+                        <h1>Sexualidade</h1>
+                        <p>Respostas a todas as tuas questões</p>
+                        <img src="imagens/imgSexual.png">
+                        <div class="clear"></div>
+                    </div>
+                </a>
+                
+                <a href="alimentacao.html">
+                    <div class="alimentacao bloco terco wow fadeIn hvr-grow">
+                        <h1>Alimentação</h1>
+                        <p>Descobre os nossos artigos sobre alimentação</p>
+                        <img src="imagens/imgAlimen.png">
+                        <div class="clear"></div>
+                    </div>
+                </a>
+
+                <a href="substancias.html">
+                    <div class="consumos bloco terco wow fadeIn hvr-grow">
+                        <h1>Consumos Nocivos</h1>
+                        <p>Informa-te sobre os cuidados e precauções</p>
+                        <img src="imagens/imgCons.png">
+                        <div class="clear"></div>
+                    </div>
+                </a>
+                <div class="clear"></div>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="zona forum">
+                <div class="bloco metade">
+                    <h1 class="wow fadeIn">Visita o nosso <mark>fórum</mark> e descobre muito mais</h1>
+                </div>
+
+                <div class="bloco metade">
+                    <p class="wow fadeIn">Dispomos de várias salas onde podes discutir sobre os assuntos que mais te preocupam ou pelos quais sentes curiosidade em saber mais
+                    <a href="#">Descobre o Fórum<img src="imagens/arrow.svg"></a></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
     </body>
 </html>
