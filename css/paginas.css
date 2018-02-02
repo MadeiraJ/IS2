@@ -201,7 +201,6 @@
 	    	}
 
 		    #glossario .abecedario{
-		        width: 7%;
 		        border-radius: 41.5px;
 		        list-style-type: none;
 		        margin-left: 5%;
@@ -215,12 +214,11 @@
 		    }
 
 		    #glossario .letra{
-		        width: 2vw;
-		        height: 2vw;
+		        width: 3vw;
 
 		        color: #FFFFFF;
 		        font-family: "Raleway Bold";
-		        font-size: 1.92vw;
+		        font-size: 2vw;
 		        font-weight: 800;
 		        letter-spacing: 2px;
 		        line-height: 1.779vw;
@@ -810,4 +808,87 @@
     	width: 50%;
     	height: 4px;
     	margin: 0 auto;
+	}
+
+/*INICIO PARCERIAS*/
+	.parceiros .zona {
+		margin-top: 10%;
+		width: auto;
+	}
+
+	.parceiros .topo h1 {
+		color: #062940;
+		font-family: "Raleway ExtraBold";
+		font-size: 4.3vw;
+		font-weight: 900;
+		line-height: 5.5vw;
+		text-align: center;
+	}
+
+	.parceiros .topo p {
+		width: 33%;
+		color: #17A2FF;	
+		font-size: 2.1vw;
+		font-weight: bold;
+		line-height: 2.81vw;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.parcerias {
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 10%;
+	}
+
+	.parcerias .parceiro {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 31%;
+		height: 37vw;
+		margin-right: 1%;
+		margin-left: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		border: 3px solid #BCE4FF;
+		border-radius: 6px;
+		background-color: #FFFFFF;
+		box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
+		float: left;
+	}
+
+	.parcerias .parceiro img {
+		width: 100%;
+	}
+
+	.parcerias .parceiro .parceria {
+		margin-right: 11%;
+		margin-left: 11%;
+		color: #007FD4;
+		font-size: 1.2vw;
+		font-weight: 900;
+		letter-spacing: 2px;
+		line-height: 1.4vw;
+		text-align: center;
+	}
+
+	.parcerias .parceiro .nomeInstituto{
+		margin-right: 11%;
+		margin-left: 11%;
+		color: #062940;
+		font-size: 1.8vw;
+		font-weight: 800;
+		line-height: 2.5vw;
+		text-align: center;
+		font-family: "Raleway ExtraBold"
+	}
+
+	.parcerias .parceiro .nomeEscola {
+		margin-right: 11%;
+		margin-left: 11%;
+		color: #062940;
+		font-size: 1.63vw;
+		font-weight: 600;
+		line-height: 2.52vw;
+		text-align: center;
 	}

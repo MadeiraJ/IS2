@@ -109,33 +109,34 @@
         /*PAGINA TEMAS*/
             /*TITULO PRINCIPAL*/
                 .paginaTema .destaquesTitulo{
-                    font-size: 8vw;
+                    font-size: 10vw;
                 }
 
                 .paginaTema .aqui-podes-encontrar{
-                    font-size: 4vw;
+                    font-size: 5vw;
                     line-height: normal;
+                    width: 90%;
                 }
 
             /*POSTS E SABIAS QUE*/
                 .paginaTema .post .tituloArtigo {
-                    font-size: 5vw;
+                    font-size: 6vw;
                     line-height: normal;
                     margin-bottom: 3%;
                 }
 
                 .paginaTema .post .textoArtigo{
-                    font-size: 3.6vw;
-                    line-height: normal;
-                }
-
-                .paginaTema .sabiasQue .tituloArtigo {
                     font-size: 5vw;
                     line-height: normal;
                 }
 
+                .paginaTema .sabiasQue .tituloArtigo {
+                    font-size: 6vw;
+                    line-height: normal;
+                }
+
                 .paginaTema .sabiasQue .textoArtigo {
-                    font-size: 3.6vw;
+                    font-size: 5vw;
                     line-height: normal;
                 }
 
@@ -180,12 +181,12 @@
                 }
 
                 .carregarMais {
-                    width: 30%;
+                    width: 40%;
                     padding-left: 10%;
                     padding-right: 10%;
                     padding-top: 5%;
                     padding-bottom: 5%;
-                    font-size: 3vw;
+                    font-size: 5vw;
                     line-height: normal;
                 }
 
@@ -197,7 +198,7 @@
 
                 #zonaDeVideos .titulo {
                     width: auto;
-                    font-size: 5vw;
+                    font-size: 7vw;
                     line-height: normal;
                     margin-bottom: 3%;
                 }
@@ -208,42 +209,42 @@
                 }
 
                 #zonaDeVideos .postVideo .titulo {
-                    font-size: 5vw;
+                    font-size: 6vw;
                     line-height: normal;
                 }
 
                 #zonaDeVideos .postVideo .texto{
-                    font-size: 3.6vw;
+                    font-size: 5vw;
                     line-height: normal;
                 }
 
             /*ZONA GLOSSARIO*/
                 #zonaGlossario .descricao {
-                    font-size: 3.6vw;
+                    font-size: 5vw;
                     line-height: normal;
                     width: auto;
                 }
 
                 #zonaGlossario h1 {
-                    font-size: 5vw;
+                    font-size: 6vw;
                 }
 
                 #zonaGlossario .titulo {
+                    width: 80%;
                     width: auto;
-                    font-size: 5vw;
+                    font-size: 7vw;
                     line-height: normal;
                     margin-bottom: 3%;
                 }
 
                 #glossario .abecedario {
-                    width: 10%;
-                    margin-left: 2%;
+                    margin-right: 10%;
                 }
 
                 #glossario .letra {
-                    width: auto;
-                    height: 3vw;
-                    font-size: 4vw;
+                    font-size: 6vw;
+                    padding: 1vw;
+                    margin: 0 auto;
                 }
 
                 #glossario .definicao {
@@ -253,22 +254,22 @@
                 }
 
                 #glossario .definicao h1{
-                    font-size: 3.6vw;
+                    font-size: 6vw;
                     line-height: normal;
                 }
 
                 #glossario .definicao p{
-                    font-size: 3vw;
+                    font-size: 5vw;
                     line-height: normal;
                 }
 
             /*ZONA DOCUMENTOS*/
                 #zonaDocumentos .titulo{
-                    font-size: 5vw;
+                    font-size: 7vw;
                 }
 
                 #zonaDocumentos .documentos{
-                    font-size: 3vw;
+                    font-size: 5vw;
                     line-height: normal;
                 }
 
@@ -278,11 +279,11 @@
 
             /*ZONA LINKS*/
                 #zonaLinks .titulo{
-                    font-size: 5vw;
+                    font-size: 7vw;
                 }
 
                 #zonaLinks .linkUteis{
-                    font-size: 3vw;
+                    font-size: 5vw;
                     line-height: normal;
                 }
 
@@ -405,6 +406,43 @@
 
             .index .comprido .bloco p {
                 color: #062940;
+                font-size: 4vw;
+                line-height: normal;
+            }
+
+        /*PAGINA PARCEIROS*/
+            .parceiros .topo h1 {
+                font-size: 11vw;
+                line-height: normal;
+            }
+
+            .parceiros .topo p {
+                width: 80%;
+                font-size: 5vw;
+                line-height: normal;
+            }
+
+            .parcerias .parceiro {
+                display: block;
+                float: none;
+                width: 80%;
+                height: auto;
+                min-height: 30vw;
+                margin: 0 auto;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .parcerias .parceiro .nomeEscola {
+                display: none;
+            }
+
+            .parcerias .parceiro .parceria {
+                font-size: 3vw;
+                line-height: normal;
+            }
+
+            .parcerias .parceiro .nomeInstituto {
                 font-size: 4vw;
                 line-height: normal;
             }
