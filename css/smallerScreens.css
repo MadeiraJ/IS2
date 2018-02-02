@@ -140,10 +140,6 @@
                     line-height: normal;
                 }
 
-                .conteudo .texto{
-                    display: none;
-                }
-
             /*COLS E BLOCOS*/
                 .col1 {
                     width: auto;
@@ -332,7 +328,7 @@
                 font-size: 3.6vw;
             }
 
-        /*PAGINA DESTAQUES*/
+        /*PAGINA INDEX*/
             .index .intro .terco h1 {
                 font-size: 8vw;
                 line-height: normal;
@@ -410,6 +406,60 @@
                 line-height: normal;
             }
 
+        /*PAGINA DESTAQUES*/
+
+            .destaques .card .blocoTopo .titulo {
+                font-size: 5vw;
+                line-height: normal;
+            }
+
+            .destaques .card .blocoTopo .tag {
+                display: none;
+            }
+
+            .destaques .texto {
+                font-size: 4vw;
+                line-height: normal;
+            }
+
+            .destaques .zonaVideos h1 {
+                font-size: 7vw;
+                width: 80%;
+                line-height: normal;
+            }
+
+            .destaques .zonaVideos .video {
+                float: none;
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 10%;
+            }
+
+            .destaques .zonaForum .metade {
+                float: none;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .destaques .zonaForum .metade h1 {
+                font-size: 6vw;
+                line-height: normal;
+                width: 100%;
+            }
+
+            .destaques .zonaForum .metade p {
+                margin-top: 5%;
+                font-size: 5vw;
+                line-height: normal;
+                width: 100%;
+            }
+
+            .destaques .zonaForum .metade a {
+                font-size: 5vw;
+                line-height: normal;
+                width: 100%;
+            }
+            
         /*PAGINA PARCEIROS*/
             .parceiros .topo h1 {
                 font-size: 11vw;

@@ -401,22 +401,32 @@
 	}
 
 /*PAGINA DESTAQUES*/
-	.comprido .alimentacao h1 {
+	.destaques .comprido .alimentacao h1 {
 		color: var(--alimentacao-cor1);
 	}
-	.comprido .consumos h1 {
+	.destaques .comprido .consumos h1 {
 		color: var(--consumos-cor1);
 	}
-	.comprido .sexualidade h1 {
+	.destaques .comprido .sexualidade h1 {
 		color: var(--sexualidade-cor1);
 	}
 
-	.index .comprido .alimentacao {
+	.destaques .comprido .alimentacao {
 		border-color: var(--alimentacao-cor2);
 	}
-	.index .comprido .consumos {
+	.destaques .comprido .consumos {
 		border-color: var(--consumos-cor2);
 	}
-	.index .comprido .sexualidade {
+	.destaques .comprido .sexualidade {
 		border-color: var(--sexualidade-cor2);
+	}
+
+	.destaques .alimentacao.sabias-que {
+		background-color: var(--alimentacao-cor2);
+	}
+	.destaques .consumos.sabias-que {
+		background-color: var(--consumos-cor2);
+	}
+	.destaques .sexualidade.sabias-que {
+		background-color: var(--sexualidade-cor2);
 	}

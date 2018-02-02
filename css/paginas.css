@@ -156,7 +156,7 @@
 	        }
 
 	        .paginaTema .sabiasQue .textoArtigo {
-	            color: #062940;
+	            color: var(--geral-cor1);
 	            font-size: 1.48vw;
 	            font-weight: 600;
 	            line-height: 2.52vw;
@@ -265,7 +265,7 @@
 		    }
 
 		    #glossario .definicao p{
-		        color: #062940;
+		        color: var(--geral-cor1);
 		        font-family: "Raleway Medium";
 		        font-size: 1.186vw;
 		        font-weight: 600;
@@ -527,68 +527,49 @@
     }
 
 /*INICIO DESTAQUES*/
-	.conteudo iframe{
-        width: 100%;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-    }
+	.destaques .conteudo {
+		margin-top: 8%;
+    	margin-left: 8%;
+    	width: 84%;
+	}
 
-    .destaques .conteudo .bloco1{
-    	padding: 0;
-    	margin: 0 auto;
-    }
-
-    .destaques .conteudo .bloco2{
-    	padding: 0;
-    	margin: 0 auto;
-    }
-
-    .destaques .conteudo .textoBloco {
+    .destaques .textoBloco {
     	padding: 1vw;
+    	padding-left: 2vw;
+    	padding-right: 2vw;
     }
 
-    .destaques .conteudo .titulo {
+    .destaques .titulo {
     	line-height: 0;
     }
 
-    .fadeIn a{
-    	display: block;
-    }
 
 
 	/*TAG*/
-
-		.blocoTopo {
+		.destaques .card .blocoTopo {
 			margin: 0 auto;
-			text-align: center;
+			text-align: left;
 		}
 
-		.blocoTopo .tituloArtigo{
+		.destaques .card .blocoTopo .titulo {
 			display: inline-block;
 			width: auto;
 			font-size: 1.4vw;
 		}
 
-		.blocoTopo .titulo{
-			line-height: 0;
-			display: inline-block;
-			width: auto;
-			font-size: 1.4vw;
-		}
-
-		.blocoTopo .tag {
+		.destaques .card .blocoTopo .tag {
 			display: inline-block;
 			border-radius: 6px;
 			padding: 2%;
 			margin-left: 1%;
 		}
 
-		.blocoTopo .tag img {
+		.destaques .card .blocoTopo .tag img {
 			width: 1vw;
 		}
 
-		.blocoTopo .tag a {
-			font-size: 1vw;
+		.destaques .card .blocoTopo .tag a {
+			font-size: 0.9vw;
 			font-weight: 900;
 			letter-spacing: 2px;
 			line-height: 10px;
@@ -596,25 +577,115 @@
 		}
 	
 	/*BLOCOS*/
-		.conteudo .titulo {
+
+		.destaques .bloco-2 {
+			margin-top: 1%;
+		}
+
+		.destaques .listaDestaques {
+    		margin: 0 auto;
+    	}
+
+		.destaques .card {
+			display: block;
+			background-color: #FFF;
+			/*margin: 0 auto;*/
+		}
+
+		.destaques .card iframe {
+        	width: 100%;
+        	border-top-left-radius: 5px;
+        	border-top-right-radius: 5px;
+    	}
+
+    	.destaques .card img {
+    		width: 100%;
+        	border-top-left-radius: 5px;
+        	border-top-right-radius: 5px;
+    	}
+
+		.destaques .card .titulo {
             font-size: 1.48vw;
             font-weight: 800;
             letter-spacing: 2px;
             line-height: 2.52vw;
+			margin: 0 auto;
             font-family: "Raleway Bold";
             margin-top: 0;
     	}
 
-    	.conteudo .texto {
-            color: #062940;
+    	.destaques .texto {
+            color: var(--geral-cor1);
             font-size: 1.48vw;
             font-weight: 600;
             line-height: 2.52vw;
+            /*font-family: "Raleway Light";*/
     	}
 
-    	.conteudo img {
-    		width: 100%;
+    	.destaques .zonaVideos {
+    		margin-top: 15%;
     	}
+
+    	.destaques .zonaVideos h1 {
+    		color: var(--geral-cor2);
+    		width: 30%;
+    		margin: 0 auto;
+			font-family: "Raleway Medium";
+			font-size: 2.37vw;
+			font-weight: 900;
+			line-height: 3.4vw;
+			text-align: center;
+			margin-bottom: 10%;
+		}
+
+		.destaques .zonaVideos .video {
+			width: 30%;
+			margin: 1%;
+			float: left;
+		}
+
+		.destaques .metade {
+			width: 50%;
+			float: left;
+		}
+
+		.destaques .zonaForum {
+			margin-top: 10%
+		}
+
+		.destaques .zonaForum .metade h1 {
+			width: 60%;
+			margin: 0 auto;
+			color: var(--geral-cor2);
+			font-family: "Raleway Bold";
+			font-size: 2.38vw;
+			font-weight: 900;
+		}
+
+		.destaques .zonaForum .metade p {
+			width: 60%;
+			margin: 0 auto;
+			color: #4A4A4A;
+			font-family: "Raleway Medium";
+			font-size: 1.42vw;
+			font-weight: 600;
+			line-height: 2.22vw;
+		}
+
+		.destaques .metade a {
+			display: block;
+			font-family: "Raleway Medium";
+			font-size: 1.42vw;
+			font-weight: 600;
+			line-height: 2.22vw;
+			color: var(--geral-cor2);
+			margin-top: 6%;
+		}
+
+		.destaques .carregarMais {
+			background-color: var(--geral-cor2);
+			margin-top: 5%;
+		}
 
 /*INICIO INDICE*/
 	.index .zona {
@@ -672,7 +743,7 @@
 		padding-bottom: 1.335vw;
 
 		border-radius: 4px;
-		background-color: #17A2FF;
+		background-color: var(--geral-cor2);
 		box-shadow: 0 2px 4px 0 rgba(3,44,72,0.09);
 		border: none;
 
@@ -688,7 +759,7 @@
 	.index .metade h1 {
 		width: 60%;
 		margin: 0 auto;
-		color: #17A2FF;
+		color: var(--geral-cor2);
 		font-family: "Raleway Bold";
 		font-size: 2.38vw;
 		font-weight: 900;
@@ -710,7 +781,7 @@
 		font-size: 1.42vw;
 		font-weight: 600;
 		line-height: 2.22vw;
-		color: #17A2FF;
+		color: var(--geral-cor2);
 		margin-top: 6%;
 	}
 
@@ -724,7 +795,7 @@
 	}
 
 	.index .zona .titulo {
-		color: #17A2FF;
+		color: var(--geral-cor2);
 		font-family: "Raleway ExtraBold";
 		font-size: 2.373vw;
 		font-weight: 900;
@@ -735,7 +806,7 @@
 	}
 
 	.index .zona .titulo mark {
-		color: #17A2FF;
+		color: var(--geral-cor2);
 		font-family: "Raleway ExtraBold";
 		font-size: 2.373vw;
 		font-weight: 900;
@@ -787,7 +858,7 @@
 	}
 
 	.index .comprido .bloco p {
-		color: #062940;
+		color: var(--geral-cor1);
 		font-size: 1.49vw;
 		font-weight: bold;
 		line-height: 2.224vw;
@@ -800,16 +871,6 @@
 		padding-top: 10%;
 	}
 
-	.hr {
-		padding-top: 10%;
-    	background-image: url(../imagens/linhaSep.png);
-    	background-repeat: no-repeat;
-    	background-position: bottom;
-    	width: 50%;
-    	height: 4px;
-    	margin: 0 auto;
-	}
-
 /*INICIO PARCERIAS*/
 	.parceiros .zona {
 		margin-top: 10%;
@@ -817,7 +878,7 @@
 	}
 
 	.parceiros .topo h1 {
-		color: #062940;
+		color: var(--geral-cor1);
 		font-family: "Raleway ExtraBold";
 		font-size: 4.3vw;
 		font-weight: 900;
@@ -827,7 +888,7 @@
 
 	.parceiros .topo p {
 		width: 33%;
-		color: #17A2FF;	
+		color: var(--geral-cor2);	
 		font-size: 2.1vw;
 		font-weight: bold;
 		line-height: 2.81vw;
@@ -875,7 +936,7 @@
 	.parcerias .parceiro .nomeInstituto{
 		margin-right: 11%;
 		margin-left: 11%;
-		color: #062940;
+		color: var(--geral-cor1);
 		font-size: 1.8vw;
 		font-weight: 800;
 		line-height: 2.5vw;
@@ -886,7 +947,7 @@
 	.parcerias .parceiro .nomeEscola {
 		margin-right: 11%;
 		margin-left: 11%;
-		color: #062940;
+		color: var(--geral-cor1);
 		font-size: 1.63vw;
 		font-weight: 600;
 		line-height: 2.52vw;

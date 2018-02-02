@@ -16,6 +16,16 @@
             clear: both;
         }
 
+        .hr {
+            padding-top: 10%;
+            background-image: url(../imagens/linhaSep.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 50%;
+            height: 4px;
+            margin: 0 auto;
+        }
+
     /*Botões*/
         .carregarMais {
             width: 15%;
