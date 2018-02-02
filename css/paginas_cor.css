@@ -430,3 +430,14 @@
 	.destaques .sexualidade.sabias-que {
 		background-color: var(--sexualidade-cor2);
 	}
+
+/*INDICE*/
+.alimentacao.bloco h1 {
+	color: var(--alimentacao-cor1);
+}
+.consumos.bloco h1 {
+	color: var(--consumos-cor1);
+}
+.sexualidade.bloco h1 {
+	color: var(--sexualidade-cor1);
+}
