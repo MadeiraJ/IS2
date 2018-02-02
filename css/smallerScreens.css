@@ -118,6 +118,10 @@
                     width: 90%;
                 }
 
+                .paginaTema .texto p {
+                    display: none;
+                }
+
             /*POSTS E SABIAS QUE*/
                 .paginaTema .post .tituloArtigo {
                     font-size: 6vw;
