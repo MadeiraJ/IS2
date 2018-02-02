@@ -4,6 +4,7 @@
             margin: 0;
             padding: 0;
         }
+
         a {
             text-decoration: none;
         }
@@ -14,6 +15,16 @@
 
         .clear{
             clear: both;
+        }
+
+        .hr {
+            padding-top: 10%;
+            background-image: url(../imagens/linhaSep.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            width: 50%;
+            height: 4px;
+            margin: 0 auto;
         }
 
     /*Botões*/
@@ -54,14 +65,132 @@
         }
 
 
-.imgfundo{
-    position: absolute;
-    height: 164%;
-    width: 100%;
-    background-image: url("../imagens/imgInicial.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    .imgfundo{
+        position: absolute;
+        height: 164%;
+        width: 100%;
+        background-image: url("../imagens/imgInicial.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /*RODAPE*/
+    #rodape {
+        position: relative;
+        width: 100%;
+        background-color: #062940;
+        padding-bottom: 8%;
+    }
+
+    #rodape #logoRodape{
+        position: relative;
+        width: 10.26%;
+        color: #FFFFFF;
+        font-family: "Permanent Marker";
+        font-size: 28px;
+        line-height: 41px;
+        text-align: center;
+        margin: 0;
+        margin-top: 3.97%;
+        margin-left: 5.94%;
+        float: left;
+    }
+
+    #rodape #icons{
+        width: 20%;
+        padding-left: 6.4%;
+        padding-top: 9.47%;
+    }
+
+    #rodape #icons #facebookIcon, #rodape #icons #youtubeIcon, #rodape #icons #instagramIcon{
+        position: relative;
+        width: 35px;
+        height: 35px;
+        float: left;
+    }
+
+
+    #rodape #icons #youtubeIcon, #rodape #icons #instagramIcon{
+        padding-left: 7.13%;
+    }
+
+    #rodape .estilo{
+        text-decoration: none;
+        color: #17A2FF;
+    }
+
+    #rodape .menu{
+        position: relative;
+        width: 15%;
+        font-family: "Raleway SemiBold";
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 38px;
+    }
+
+    #rodape .zonaGeral, #rodape .zonaGeral2{
+        padding-left: 8%;
+        margin-top: -5%;
+        float: left;
+    }
+
+    #rodape .zonaGeral2{
+        padding-left: 0%;
+    }
+
+    #rodape .zonaArtigos{
+        position: relative;
+        padding-left: 0%;
+        margin-top: -5%;
+        float: left;
+    }
+
+    #rodape .zonaContactos{
+        position: relative;
+        padding-left: 3%;
+        margin-top: -5%;
+        float: left;
+    }
+
+    #rodape .zonaContactos .styConta{
+        position: relative;
+        margin: 0;
+    }
+
+    #zonaCopyrights {
+        position: relative;
+        width: 100%;
+        background-color: #F7FAFC;
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+
+    #zonaCopyrights .copyrights{
+        position: relative;
+        color: #3ea2f3;
+        font-family: "Raleway Medium";
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 38px;
+        margin: 0;
+        float: left;
+        padding-left: 7.2%;
+    }
+
+    #zonaCopyrights #icParceiros{
+        position: relative;
+        float: right;
+        width: 45%;
+        margin: 0;
+        padding-right: 4.9%;
+    }
+
+    #zonaCopyrights #icParceiros .parceiros{
+        position: relative;
+        width: 20%;
+        padding-left: 4%;
+    }
 
 /*BLOCOS*/
     .bloco-1 {
@@ -769,3 +898,4 @@ a { color: inherit; }
     font-family: "Permanent Marker";
     src: url("../fonts/PermanentMarker.ttf");
 }
+        }

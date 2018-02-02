@@ -109,12 +109,30 @@
 		color: var(--sexualidade-cor1);
 	}
 
+	.conteudo .alimentacao {
+		border: 3px solid #FFF;
+    	border-radius: 6px;
+		border-color: var(--alimentacao-cor2);
+	}
+	.conteudo .consumos {
+		border: 3px solid #FFF;
+    	border-radius: 6px;
+		border-color: var(--consumos-cor2);
+	}
+	.conteudo .sexualidade {
+		border: 3px solid #FFF;
+    	border-radius: 6px;
+		border-color: var(--sexualidade-cor2);
+	}
 
 	.alimentacao .post{
 		border-color: var(--alimentacao-cor2);
 	}
 	.consumos .post{
 		border-color: var(--consumos-cor2);
+	}
+	.conteudo .consumos .post {
+    	border: none;
 	}
 	.sexualidade .post{
 		border-color: var(--sexualidade-cor2);
@@ -128,6 +146,26 @@
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .post .tituloArtigo{
+		color: var(--sexualidade-cor1);
+	}
+
+	.alimentacao .tituloArtigo{
+		color: var(--alimentacao-cor1);
+	}
+	.consumos .tituloArtigo{
+		color: var(--consumos-cor1);
+	}
+	.sexualidade .tituloArtigo{
+		color: var(--sexualidade-cor1);
+	}
+
+	.alimentacao .titulo{
+		color: var(--alimentacao-cor1);
+	}
+	.consumos .titulo{
+		color: var(--consumos-cor1);
+	}
+	.sexualidade .titulo{
 		color: var(--sexualidade-cor1);
 	}
 
@@ -360,4 +398,35 @@
 	}
 	.sexualidade .artigosRelacionados{
 		background-color: var(--sexualidade-back);
+	}
+
+/*PAGINA DESTAQUES*/
+	.destaques .comprido .alimentacao h1 {
+		color: var(--alimentacao-cor1);
+	}
+	.destaques .comprido .consumos h1 {
+		color: var(--consumos-cor1);
+	}
+	.destaques .comprido .sexualidade h1 {
+		color: var(--sexualidade-cor1);
+	}
+
+	.destaques .comprido .alimentacao {
+		border-color: var(--alimentacao-cor2);
+	}
+	.destaques .comprido .consumos {
+		border-color: var(--consumos-cor2);
+	}
+	.destaques .comprido .sexualidade {
+		border-color: var(--sexualidade-cor2);
+	}
+
+	.destaques .alimentacao.sabias-que {
+		background-color: var(--alimentacao-cor2);
+	}
+	.destaques .consumos.sabias-que {
+		background-color: var(--consumos-cor2);
+	}
+	.destaques .sexualidade.sabias-que {
+		background-color: var(--sexualidade-cor2);
 	}
