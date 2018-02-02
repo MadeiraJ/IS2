@@ -21,11 +21,11 @@
 }
 
 /*INICIO PAGINAS TEMAS*/
-	/*TITULO PRINCIPAL*/
-		mark {
-			background-color: var(--geral-cor3);
-			color: inherit;
-		}
+/*TITULO PRINCIPAL*/
+mark {
+	background-color: var(--geral-cor3);
+	color: inherit;
+}
 
 	    .paginaTema .destaquesTitulo{
 	        margin-top: 2%;
@@ -953,3 +953,51 @@
 		line-height: 2.52vw;
 		text-align: center;
 	}
+
+
+/*TORDAO*/
+@media screen and (max-width: 900px) {
+	.tituloZonaConteudo {
+		padding-top: 15%;
+	}
+
+	@media screen and (max-width: 800px) {
+		.tituloZonaConteudo {
+			padding-top: 20%;
+		}
+
+		@media screen and (max-width: 700px) {
+			.tituloZonaConteudo {
+				padding-top: 25%;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.tituloZonaConteudo {
+				padding-top: 30%;
+			}
+		}
+
+		@media screen and (max-width: 500px) {
+			.tituloZonaConteudo {
+				padding-top: 35%;
+			}
+		}
+		@media screen and (max-width: 400px) {
+			.tituloZonaConteudo {
+				padding-top: 40%;
+			}
+
+			@media screen and (max-width: 300px) {
+				.tituloZonaConteudo {
+					padding-top: 45%;
+				}
+			}
+			@media screen and (max-width: 200px) {
+				.tituloZonaConteudo {
+					padding-top: 50%;
+				}
+			}
+		}
+	}
+}
+
