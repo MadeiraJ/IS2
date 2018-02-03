@@ -21,11 +21,11 @@
 }
 
 /*INICIO PAGINAS TEMAS*/
-/*TITULO PRINCIPAL*/
-mark {
-	background-color: var(--geral-cor3);
-	color: inherit;
-}
+	/*TITULO PRINCIPAL*/
+		mark {
+			background-color: var(--geral-cor3);
+			color: inherit;
+		}
 
 	    .paginaTema .destaquesTitulo{
 	        margin-top: 2%;
@@ -1018,3 +1018,4 @@ mark {
 	}
 }
 
+	}

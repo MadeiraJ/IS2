@@ -10,7 +10,6 @@
         }
         * {
             font-family: "Raleway Medium";
-
         }
 
         .clear{
@@ -228,6 +227,35 @@
         float: left;
     }
 
+/*FONTES*/
+    @font-face{
+        font-family: "Raleway ExtraBold";
+        src: url("../fonts/Raleway-ExtraBold.ttf");
+    }
+
+    @font-face{
+        font-family: "Raleway Bold";
+        src: url("../fonts/Raleway-Bold.ttf");
+    }
+
+    @font-face{
+        font-family: "Raleway Light";
+        src: url("../fonts/Raleway-Light.ttf");
+    }
+
+    @font-face{
+        font-family: "Raleway Medium";
+        src: url("../fonts/Raleway-Medium.ttf");
+    }
+    @font-face{
+        font-family: "Raleway SemiBold";
+        src: url("../fonts/Raleway-SemiBold.ttf");
+    }
+
+    @font-face{
+        font-family: "Permanent Marker";
+        src: url("../fonts/PermanentMarker.ttf");
+    }
 
 /*ANIMACOES*/
     /*ARTIGOS E BOTOES*/
@@ -276,6 +304,7 @@
 
         .hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
           right: 0;
+
         }
 
 
@@ -899,3 +928,4 @@ a { color: inherit; }
     src: url("../fonts/PermanentMarker.ttf");
 }
 
+        }
