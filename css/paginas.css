@@ -955,6 +955,23 @@ mark {
 	}
 
 
+
+/*PÁGINAS FORÚM*/
+
+/*TÓPICO ABERTO*/
+
+	.zonaConteudoForum{
+		width: auto;
+		height: auto;
+		background-color: #F7FAFC;
+	}
+
+/*FIM TÓPICO ABERTO*/
+
+/*FIM PÁGINAS FÓRUM*/
+
+
+
 /*TORDAO*/
 @media screen and (max-width: 900px) {
 	.tituloZonaConteudo {
