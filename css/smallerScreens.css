@@ -105,6 +105,164 @@
                 }
         }
 
+    /*MENU*/
+        @media screen and (max-width: 900px) {
+            .navbar {
+                position: relative;
+                display: inline-block;
+
+            }
+
+            .navbar ul {
+                display: none;
+            }
+
+            #forum {
+                display: none;
+            }
+
+            .forumMenu{
+                position: relative;
+                display: inline-block;
+                margin-left: 10%;
+            }
+
+            #menuSlide{
+                display: block;
+                color: #0A81D1;
+                margin-left: -20%;
+            }
+
+            #sidebar {
+                display: block;
+                position:relative;
+                top:0px;
+                right:0px;
+                float: right;
+                width:200px;
+                background: #F7FAFC;
+                text-align:center;
+                transform-origin:right;
+                transform:perspective(1200px) rotateY(90deg);
+                transition:all 400ms ease;
+                border-radius: 3%;
+            }
+
+            #sidebar li:hover{
+                background-color: #DBF0FD;
+                border-radius: 8%;
+            }
+
+            #sidebar ul li {
+                color:#032133;
+                font-size:15px;
+                width:100%;
+                line-height:50px;
+                text-decoration: none;
+                float: left;
+                position: relative;
+                list-style-type: none;
+                cursor:pointer;
+            }
+
+            #sidebar ul ul{
+                display: none;
+                position: relative;
+                padding-left:0;
+                margin-right: 250px;
+                width: 100%;
+                border-bottom: none;
+                text-decoration: none;
+                list-style-type: none;
+                cursor:pointer;
+            }
+
+            /*#sidebar ul li:hover> ul{
+                display: block;
+            }*/
+
+
+            #sidebar ul ul li:hover{
+                background-color: #032133;
+                border-radius: 8%;
+                color: #F7FAFC;
+
+            }
+
+            #sidebar.active {
+                transform:perspective(1200px) rotateY(0deg);
+            }
+
+            #botao_menuLateral {
+                position:absolute;
+                right:30px;
+                top:20px;
+                transition:right 200ms linear 0ms,transform 300ms ease 100ms;
+            }
+            #botao_menuLateral.active {
+                right:230px;
+                transform:rotate(360deg);
+            }
+            #botao_menuLateral span {
+                position:relative;
+                top:0px;
+                display:block;
+                background: #ffffff;
+                width:30px;
+                height:5px;
+                margin:5px 0px;
+                cursor:pointer;
+                transition:transform 300ms ease 200ms;
+            }
+            #botao_menuLateral.active span:nth-child(1) {
+                top:10px;
+                transform:rotate(45deg);
+            }
+            #botao_menuLateral.active span:nth-child(2) {
+                opacity:0;
+            }
+            #botao_menuLateral.active span:nth-child(3) {
+                top:-10px;
+                transform:rotate(-45deg);
+            }
+            
+            #clear{
+                clear: both;
+            }
+
+            .logo{
+                margin-top: 2%;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+
+        #sidebar{
+            width: 130px;
+        }
+
+        #sidebar ul li {
+            font-size: 13px;
+        }
+
+        #botao_menuLateral.active {
+            top:30px ;
+            right:140px;
+        }
+
+        #menuSlide{
+            margin-left: -30.5%;
+        }
+
+        #botao_menuLateral span {
+            width:23px;
+        }
+
+        .logo{
+            margin-top: 6%;
+        }
+        }
+
     @media only screen and (max-width: 600px) {
         /*PAGINA TEMAS*/
             /*TITULO PRINCIPAL*/
