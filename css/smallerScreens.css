@@ -106,6 +106,52 @@
         }
 
     /*MENU*/
+        /*TORDAO*/
+            @media screen and (max-width: 900px) {
+                .tituloZonaConteudo {
+                    padding-top: 15%;
+                }
+
+                @media screen and (max-width: 800px) {
+                    .tituloZonaConteudo {
+                        padding-top: 20%;
+                    }
+
+                    @media screen and (max-width: 700px) {
+                        .tituloZonaConteudo {
+                            padding-top: 25%;
+                        }
+                    }
+                    @media screen and (max-width: 600px) {
+                        .tituloZonaConteudo {
+                            padding-top: 30%;
+                        }
+                    }
+
+                    @media screen and (max-width: 500px) {
+                        .tituloZonaConteudo {
+                            padding-top: 35%;
+                        }
+                    }
+                    @media screen and (max-width: 400px) {
+                        .tituloZonaConteudo {
+                            padding-top: 40%;
+                        }
+
+                        @media screen and (max-width: 300px) {
+                            .tituloZonaConteudo {
+                                padding-top: 45%;
+                            }
+                        }
+                        @media screen and (max-width: 200px) {
+                            .tituloZonaConteudo {
+                                padding-top: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
         @media screen and (max-width: 900px) {
             .navbar {
                 position: relative;
@@ -658,4 +704,74 @@
                 font-size: 4vw;
                 line-height: normal;
             }
+
+        /*PAGINA GALERIA*/
+            .galeria .topo h1 {
+                font-size: 11vw;
+                line-height: normal;
+            }
+
+            .galeria .topo p {
+                width: 80%;
+                font-size: 5vw;
+                line-height: normal;
+            }
+
+            .imagens .imagem {
+                float: none;
+                height: 80vw;
+                width: 80vw;
+                margin: 0 auto;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
     }
+
+    @media only screen and (max-width: 800px) and (min-width: 600px) {
+        /*PAGINA PARCEIROS*/
+            .parceiros .topo h1 {
+                font-size: 11vw;
+                line-height: normal;
+            }
+
+            .parceiros .topo p {
+                width: 80%;
+                font-size: 5vw;
+                line-height: normal;
+            }
+
+            .parceiros .parcerias {
+                width: 90%;
+                text-align: center;
+
+            }
+
+            .parcerias .parceiro {
+                width: 48%;
+                height: 45vw;
+            }
+
+
+        /*PAGINA GALERIA*/
+            .galeria .topo h1 {
+                font-size: 11vw;
+                line-height: normal;
+            }
+
+            .galeria .topo p {
+                width: 80%;
+                font-size: 5vw;
+                line-height: normal;
+            }
+
+            .galeria .imagens {
+                width: 90%;
+                text-align: center;
+
+            }
+
+            .imagens .imagem {
+                width: 47%;
+                height: 45vw;
+            }
+        }

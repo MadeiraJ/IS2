@@ -698,9 +698,10 @@
 	.index .intro {
 		margin: 0 auto;
 		height: 66vw;
-		background-image: url("../imagens/imgInicial.jpg");
+		background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,22,0.65) 100%, url("../imagens/imgInicial.jpg") no-repeat);
 		background-size: contain;
 		background-repeat: no-repeat;
+		/*background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://www.skrenta.com/images/stackoverflow.jpg') no-repeat;*/
 	}
 
 	.index .bloco {
@@ -958,6 +959,63 @@
 		text-align: center;
 	}
 
+/*INICIO GALERIA*/
+	.galeria .zona {
+		padding-top: 10%;
+		padding-bottom: 10%;
+		width: auto;
+		background-color: #F7FAFC;
+	}
+
+	.galeria .topo h1 {
+		color: var(--geral-cor1);
+		font-family: "Raleway ExtraBold";
+		font-size: 4.3vw;
+		font-weight: 900;
+		line-height: 5.5vw;
+		text-align: center;
+	}
+
+	.galeria .topo p {
+		width: 50%;
+		color: var(--geral-cor2);	
+		font-size: 2.1vw;
+		font-weight: bold;
+		line-height: 2.81vw;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.imagens {
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+
+	.imagens .imagem {
+		box-sizing: border-box;
+		width: 27vw;
+		height: 27vw;
+		margin: 1vw;
+		border: 3px solid #BCE4FF;
+		border-radius: 6px;
+		background-color: #FFFFFF;
+		box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
+		float: left;
+
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	overflow: hidden
+	}
+
+	.imagens .imagem img {
+		flex-shrink: 0;
+    	min-width: 100%;
+    	min-height: 100%
+	}
+
 /*INICIO FORÚM*/
 
 	/*TÓPICO ABERTO*/
@@ -969,52 +1027,3 @@
 		}
 
 
-
-
-/*TORDAO*/
-@media screen and (max-width: 900px) {
-	.tituloZonaConteudo {
-		padding-top: 15%;
-	}
-
-	@media screen and (max-width: 800px) {
-		.tituloZonaConteudo {
-			padding-top: 20%;
-		}
-
-		@media screen and (max-width: 700px) {
-			.tituloZonaConteudo {
-				padding-top: 25%;
-			}
-		}
-		@media screen and (max-width: 600px) {
-			.tituloZonaConteudo {
-				padding-top: 30%;
-			}
-		}
-
-		@media screen and (max-width: 500px) {
-			.tituloZonaConteudo {
-				padding-top: 35%;
-			}
-		}
-		@media screen and (max-width: 400px) {
-			.tituloZonaConteudo {
-				padding-top: 40%;
-			}
-
-			@media screen and (max-width: 300px) {
-				.tituloZonaConteudo {
-					padding-top: 45%;
-				}
-			}
-			@media screen and (max-width: 200px) {
-				.tituloZonaConteudo {
-					padding-top: 50%;
-				}
-			}
-		}
-	}
-}
-
-	}

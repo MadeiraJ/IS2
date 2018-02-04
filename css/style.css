@@ -321,7 +321,7 @@
             font-family: "Raleway SemiBold";
             font-size: 18px;
             font-weight: 900;
-            line-height: 38px;
+            line-height:; 2.6vw;
         }
 
         #rodape .zonaGeral, #rodape .zonaGeral2{
@@ -502,4 +502,3 @@
           right: 0;
 
         }
-
