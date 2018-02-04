@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/animate.css"/>
         <link rel="stylesheet" href="css/smallerScreens.css"/>
         <script src="js/wow.js"></script>
+        <script src="js/galeria.js"></script>
+        <script src="js/detalheImagem.js"></script>
         <!--<script src="js/glossario.js"></script>-->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <script>
@@ -16,118 +18,87 @@
         </script>
     </head>
     <body class="galeria">
-        <div class="zona topo">
-            <h1>Galeria</h1>
-            <p>Uma seleção das nossas <mark>fotografias preferidas</mark> tiradas ao longos dos nossos eventos</p>
-        </div>
+        <div id="vistaGeral" style="display: block">
+            <div class="zona topo">
+                <h1>Galeria</h1>
+                <p>Uma seleção das nossas <mark>fotografias preferidas</mark> tiradas ao longos dos nossos eventos</p>
+            </div>
+            <div class="imagens">
+                <script type="text/javascript">
+                    var feed=new ody({get:"user",
+                        resolution:"standard_resolution",
+                        template:'<li class="imagem fadeIn hvr-grow"><a onclick="clickDetalhe(this)" name="{{link}}*{{caption}}" target="_blank" style="background-image:url({{image}});background-size: cover;"><img src="https://lh3.googleusercontent.com/-P-gOTAfNfZ4/V2RPSYvECxI/AAAAAAAABng/Efqy2Oxjqm4lrmDhT07PBtlgYRb_MlJ7QCCo/s576/questyerror.png"></img></a></li>',
+                        userId:7032903222,
+                        accessToken:"7032903222.1677ed0.d8d9e20287354164b8b4b226ed11be64"
+                    });
+                    feed.run();
+                </script>
+                <div id='ody'></div>
+                <div class="clear"></div>
+            </div>
+            <footer>
+                <div id="rodape">
+                    <h1 id="logoRodape">YourPEL</h1>
+                    <div id="icons">
+                        <p id="linhaIc"><img id="facebookIcon" src="imagens/Rodape/facebook_icon.png"/>
+                            <img id="instagramIcon" src="imagens/Rodape/facebook_icon.png"/>
+                            <img id="youtubeIcon" src="imagens/Rodape/youtube_icon.png"/></p>
+                    </div>
+                    <div class="zonaGeral menu">
+                        <a href="index.html" class="estilo">Home</a>
+                        <br>
+                        <a href="destaques.html" class="estilo">Destaques </a>
+                        <br>
+                        <a href="sobre.html" class="estilo">Sobre </a>
+                        <br>
+                    </div>
 
-        <div class="imagens">
-            <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
+                    <div class="zonaGeral2 menu">
+                        <a href="parceiros.html" class="estilo">Parcerias</a>
+                        <br>
+                        <a href="#" class="estilo">Divulgação</a>
+                        <br>
+                        <a href="#" class="estilo">Fórum</a>
+                        <br>
+                    </div>
 
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
+                    <div class="zonaArtigos menu">
+                        <a href="alimentacao.html" class="estilo">Alimentação</a>
+                        <br>
+                        <a href="sexualidade.html" class="estilo">Sexualidade</a>
+                        <br>
+                        <a href="substancias.html" class="estilo">Consumos nocivos</a>
+                        <br>
+                    </div>
 
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
+                    <div class="zonaContactos menu">
+                        <p class="styConta" style="color: #1070B0;">Contactos</p>
+                        <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
+                        <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
+                <div id="zonaCopyrights">
+                    <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS</p>
+                    <div id="icParceiros">
+                        <a href="http://www.poci-compete2020.pt/"><img id="comp" class="estilo parceiros" src="imagens/Rodape/comp2020.png"/></a>
+                        <a href="https://www.portugal2020.pt/"><img id="port" class="estilo parceiros" src="imagens/Rodape/port2020.png"/></a>
+                        <a href="https://europa.eu/european-union/index_pt"><img id="eu" class="estilo parceiros" src="imagens/Rodape/UE.png"/></a>
+                        <a href="https://www.fct.pt/"><img id="fct" class="estilo parceiros" src="imagens/Rodape/fct.png"/></a>
+                    </div>
                 </div>
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
-
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
-                <a href="#">
-                <div class="imagem fadeIn hvr-grow">
-                    <img src="imagens/alimentacao3.jpg">
-                </div>
-            </a>
-
-            <div class="clear"></div>
+            </footer>
         </div>
-        <footer>
-    <div id="rodape">
-        <h1 id="logoRodape">YourPEL</h1>
-        <div id="icons">
-            <p id="linhaIc"><img id="facebookIcon" src="imagens/Rodape/facebook_icon.png"/>
-                <img id="instagramIcon" src="imagens/Rodape/facebook_icon.png"/>
-                <img id="youtubeIcon" src="imagens/Rodape/youtube_icon.png"/></p>
+        <div id="fotoDetalhe" style="display: none;">
+            <a id="fechar" onclick="clickFechar()"></a>
+            <a id="direita" onclick="clickMudar('direita')" style="display: none;"></a>
+            <a id="esquerda" onclick="clickMudar('esquerda')" style="display: none;"></a>
+            <div class="imagem">
+                <iframe id="img01" target="_blank" scrolling='NO' style="background-size: cover;">
+                </iframe>
+            </div>
+            <p id="coment">
+            </p>
         </div>
-        <div class="zonaGeral menu">
-            <a href="index.html" class="estilo">Home</a>
-            <br>
-            <a href="destaques.html" class="estilo">Destaques </a>
-            <br>
-            <a href="sobre.html" class="estilo">Sobre </a>
-            <br>
-        </div>
-
-        <div class="zonaGeral2 menu">
-            <a href="parceiros.html" class="estilo">Parcerias</a>
-            <br>
-            <a href="#" class="estilo">Divulgação</a>
-            <br>
-            <a href="#" class="estilo">Fórum</a>
-            <br>
-        </div>
-
-        <div class="zonaArtigos menu">
-            <a href="alimentacao.html" class="estilo">Alimentação</a>
-            <br>
-            <a href="sexualidade.html" class="estilo">Sexualidade</a>
-            <br>
-            <a href="substancias.html" class="estilo">Consumos nocivos</a>
-            <br>
-        </div>
-
-        <div class="zonaContactos menu">
-            <p class="styConta" style="color: #1070B0;">Contactos</p>
-            <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
-            <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div id="zonaCopyrights">
-        <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS</p>
-        <div id="icParceiros">
-            <a href="http://www.poci-compete2020.pt/"><img id="comp" class="estilo parceiros" src="imagens/Rodape/comp2020.png"/></a>
-            <a href="https://www.portugal2020.pt/"><img id="port" class="estilo parceiros" src="imagens/Rodape/port2020.png"/></a>
-            <a href="https://europa.eu/european-union/index_pt"><img id="eu" class="estilo parceiros" src="imagens/Rodape/UE.png"/></a>
-            <a href="https://www.fct.pt/"><img id="fct" class="estilo parceiros" src="imagens/Rodape/fct.png"/></a>
-        </div>
-    </div>
-</footer>
     </body>
 </html>
