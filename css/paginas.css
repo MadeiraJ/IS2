@@ -407,7 +407,6 @@
 		        padding-right: 1vw;
 		    }
 
-
 /*INICIO ARTIGOS*/
     .artigo{
         font-family: "Raleway Medium";
@@ -698,7 +697,8 @@
 	.index .intro {
 		margin: 0 auto;
 		height: 66vw;
-		background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,22,0.65) 100%, url("../imagens/imgInicial.jpg") no-repeat);
+		/*background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,22,0.65) 100%, url("../imagens/imgInicial.jpg") no-repeat);*/
+		background-image: url("../imagens/imgInicial.jpg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		/*background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('http://www.skrenta.com/images/stackoverflow.jpg') no-repeat;*/
@@ -1010,7 +1010,6 @@
 		padding:0px !important;
 		float:left;
 		box-sizing: border-box;
-		border: 3px solid #BCE4FF;
 		border-radius: 6px;
 		box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
 		display: flex;
@@ -1025,8 +1024,8 @@
 		position:relative;
 		display:inline-block;
 		border-radius: 8px;
-		opacity:.8;
-		filter:alpha(opacity=80);
+		opacity:.9;
+		filter:alpha(opacity=90);
 		width: 100%;
 	}
 
