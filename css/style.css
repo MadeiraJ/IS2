@@ -401,6 +401,11 @@
     }
 
     @font-face{
+        font-family: "Raleway SemiBold";
+        src: url("../fonts/Raleway-SemiBold.ttf");
+    }
+
+    @font-face{
         font-family: "Raleway Light";
         src: url("../fonts/Raleway-Light.ttf");
     }
@@ -409,14 +414,20 @@
         font-family: "Raleway Medium";
         src: url("../fonts/Raleway-Medium.ttf");
     }
-    @font-face{
-        font-family: "Raleway SemiBold";
-        src: url("../fonts/Raleway-SemiBold.ttf");
-    }
-
+    
     @font-face{
         font-family: "Permanent Marker";
         src: url("../fonts/PermanentMarker.ttf");
+    }
+
+    @font-face{
+        font-family: "DroidSerif Bold";
+        src: url("../fonts/DroidSerif-Bold.ttf");
+    }
+
+    @font-face{
+        font-family: "DroidSerif";
+        src: url("../fonts/DroidSerif.ttf");
     }
 
 /*ANIMACOES*/
