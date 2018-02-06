@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/smallerScreens.css"/>
     <script src="js/wow.js"></script>
-    <!--<script src="js/glossario.js"></script>-->
+    <script src="js/glossario.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script>
       new WOW().init();
@@ -237,86 +237,38 @@
             <div id="zonaGlossario">
                     <p class="titulo wow fadeInDown">Glossário da alimentação</p>
                     <p class="descricao wow fadeIn">Pesquisa aqui as palavras que não conheces ou então procura alfabeticamente no glossário</p>
-                    <div id="glossario">
-                        <ul class="abecedario">
-                            <li class="letra">a</li>
-                            <li class="letra">b</li>
-                            <li class="letra">c</li>
-                            <li class="letra">d</li>
-                            <li class="letra">e</li>
-                            <li class="letra">f</li>
-                            <li class="letra">g</li>
-                            <li class="letra">h</li>
-                            <li class="letra">i</li>
-                            <li class="letra">j</li>
-                            <li class="letra">k</li>
-                            <li class="letra">l</li>
-                            <li class="letra">m</li>
-                            <li class="letra">n</li>
-                            <li class="letra">o</li>
-                            <li class="letra">p</li>
-                            <li class="letra">q</li>
-                            <li class="letra">r</li>
-                            <li class="letra">s</li>
-                            <li class="letra">t</li>
-                            <li class="letra">u</li>
-                            <li class="letra">v</li>
-                            <li class="letra">w</li>
-                            <li class="letra">x</li>
-                            <li class="letra">y</li>
-                            <li class="letra">z</li>
-                        </ul>
-                        <div class="zonaDefi">
-                        <div id="lD">
-                            <h1>d</h1>
-                            <div class="definicao">
-                                <h1>DESIDRATAÇÃO</h1>
-                                <p>A desidratação resulta da eliminação de água e sais minerais do organismo e acontece quando o balanço hídrico é negativo, quando as perdas de água não são repostas.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DIGESTÃO</h1>
-                                <p>Transformação dos alimentos ingeridos em substâncias mais simples, ao longo do tubo digestivo, através de processos mecânicos e químicos.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DISPEPSIA</h1>
-                                <p>Digestão difícil e dolorosa; qualquer que seja a causa.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DISTÚRBIO ALIMENTAR COMPULSIVO</h1>
-                                <p>Quem sofre de distúrbio alimentar compulsivo passa o dia a comer, come excessivamente às escondidas ou sente-se incapaz de controlar a comida que ingere.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DIVERTÍCULO</h1>
-                                <p>Cavidade em forma de saco, anatómica ou patológica, que é projectada através da parede intestinal para fora do intestino.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DOSE DIÁRIA RECOMENDADA (DDR)</h1>
-                                <p>Estabelecido pela União Europeia, representa a quantidade mínima diária de vitaminas e minerais, recomendada para satisfazer as necessidades de um indivíduo adulto.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DESIDRATAÇÃO</h1>
-                                <p>A desidratação resulta da eliminação de água e sais minerais do organismo e acontece quando o balanço hídrico é negativo, quando as perdas de água não são repostas.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DIGESTÃO</h1>
-                                <p>Transformação dos alimentos ingeridos em substâncias mais simples, ao longo do tubo digestivo, através de processos mecânicos e químicos.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DISTÚRBIO ALIMENTAR COMPULSIVO</h1>
-                                <p>Quem sofre de distúrbio alimentar compulsivo passa o dia a comer, come excessivamente às escondidas ou sente-se incapaz de controlar a comida que ingere.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DIVERTÍCULO</h1>
-                                <p>Cavidade em forma de saco, anatómica ou patológica, que é projectada através da parede intestinal para fora do intestino.</p>
-                            </div>
-                            <div class="definicao">
-                                <h1>DOSE DIÁRIA RECOMENDADA (DDR)</h1>
-                                <p>Estabelecido pela União Europeia, representa a quantidade mínima diária de vitaminas e minerais, recomendada para satisfazer as necessidades de um indivíduo adulto.</p>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                        </div>
+                <div id="glossario">
+                    <ul class="abecedario" id="abecedario" onClick="mudarConteudo()">
+                        <li id="a" class="letra">a</li>
+                        <li id="b" class="letra">b</li>
+                        <li id="c" class="letra">c</li>
+                        <li id="d" class="letra">d</li>
+                        <li id="e" class="letra">e</li>
+                        <li id="f" class="letra">f</li>
+                        <li id="g" class="letra">g</li>
+                        <li id="h" class="letra">h</li>
+                        <li id="i" class="letra">i</li>
+                        <li id="j" class="letra">j</li>
+                        <li id="k" class="letra">k</li>
+                        <li id="l" class="letra">l</li>
+                        <li id="m" class="letra">m</li>
+                        <li id="n" class="letra">n</li>
+                        <li id="o" class="letra">o</li>
+                        <li id="p" class="letra">p</li>
+                        <li id="q" class="letra">q</li>
+                        <li id="r" class="letra">r</li>
+                        <li id="s" class="letra">s</li>
+                        <li id="t" class="letra">t</li>
+                        <li id="u" class="letra">u</li>
+                        <li id="v" class="letra">v</li>
+                        <li id="w" class="letra">w</li>
+                        <li id="x" class="letra">x</li>
+                        <li id="y" class="letra">y</li>
+                        <li id="z" class="letra">z</li>
+                    </ul>
+                    <div class="zonaDefi" id="zonaDefi">
                     </div>
+                </div>
             </div>
 
             <div id="zonaLinks">
