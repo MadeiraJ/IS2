@@ -71,6 +71,12 @@
             position: fixed;
             top: 0;
             z-index: 90;
+
+        }
+
+        .index .rectangle-2{
+            background-color: transparent;
+            position: absolute;
         }
 
         .navbar {
@@ -90,10 +96,11 @@
             font-size: 175%;
             line-height: 145%;
             text-align: center;
-            margin-top: 0.65%;
+            margin-top: 0.55%;
             float: left;
             margin-left: 5.35%;
             text-decoration: none;
+            cursor: pointer;
         }
 
         #topicosMenu{
@@ -110,6 +117,7 @@
             overflow: hidden;
             float: right !important;
             margin-right: 2.78% !important;
+            margin-top: 0.5%;
         }
 
         #topicosMenu li{
@@ -129,7 +137,8 @@
 
         #topicosMenu .temas {
             width: 61px;
-            margin-right: 1.5%
+            height: 15%;
+            margin-right: 1.5%;
         }
 
         #topicosMenu .sobre {
@@ -155,8 +164,24 @@
             background-repeat: no-repeat;
             position: absolute;
             border: none;
-            top: 25%;
+            top: 10%;
             right: -30%;
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+            z-index: 100;
+            outline: none;
+        }
+
+        #setaTemasSideMenu{
+            background-color: transparent;
+            background-image: url("../imagens/arrowmenu_mod2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: fixed;
+            border: none;
+            top: 90.5%;
+            right: 21%;
             width: 12px;
             height: 12px;
             cursor: pointer;
@@ -175,19 +200,35 @@
             .submenus {
                 display: none;
                 position: absolute;
-                margin-top: 29%;
+                margin-top: 50%;
                 margin-right: 50%;
                 background-color: #F7FAFC;
-                min-width: 30%;
+                min-width: 50%;
                 z-index: 1005;
                 border-radius: 6px;
 
             }
 
+            .submenus :before {
+                content:"";
+                position: absolute;
+                right: 45%;
+                top: -10px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 10px 10px 10px;
+                border-color: transparent transparent #F7FAFC transparent;
+                z-index:9999;
+            }
+
+            #topicosMenu .temas:hover .submenus {
+                display: block;
+
+            }
 
             .dropdown:hover .submenus {
                 display: block;
-
             }
 
             .submenus a {
@@ -401,6 +442,11 @@
     }
 
     @font-face{
+        font-family: "Raleway SemiBold";
+        src: url("../fonts/Raleway-SemiBold.ttf");
+    }
+
+    @font-face{
         font-family: "Raleway Light";
         src: url("../fonts/Raleway-Light.ttf");
     }
@@ -409,14 +455,20 @@
         font-family: "Raleway Medium";
         src: url("../fonts/Raleway-Medium.ttf");
     }
-    @font-face{
-        font-family: "Raleway SemiBold";
-        src: url("../fonts/Raleway-SemiBold.ttf");
-    }
-
+    
     @font-face{
         font-family: "Permanent Marker";
         src: url("../fonts/PermanentMarker.ttf");
+    }
+
+    @font-face{
+        font-family: "DroidSerif Bold";
+        src: url("../fonts/DroidSerif-Bold.ttf");
+    }
+
+    @font-face{
+        font-family: "DroidSerif";
+        src: url("../fonts/DroidSerif.ttf");
     }
 
 /*ANIMACOES*/
@@ -466,5 +518,4 @@
 
         .hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
           right: 0;
-
         }

@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/smallerScreens.css"/>
     <script src="js/wow.js"></script>
+    <script src="js/responsive_menu.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script>
       new WOW().init();
   </script>
 </head>
 <body class="index paginaTema">
-    <!--<div class="rectangle-2">
+    <div class="rectangle-2" >
         <nav class="navbar">
             <a class="logo" href="index.html">YourPEL</a>
             <input type="button" class="active" id="forum" value="Fórum">
@@ -38,7 +39,9 @@
             </ul>
 
             <div id="sidebar" >
+                <button id="setaTemasSideMenu"> </button>
                 <ul id="menuSlide">
+                    <li><a href="destaques.html">Destaques</a></li>
                     <li><a href="#">Divulgação</a></li>
                     <li><a href="parceiros.html">Parceiros</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
@@ -51,6 +54,7 @@
                         </ul>
                     </li>
                 </ul>
+
                 <div id="clear"></div>
             </div>
             <div id="botao_menuLateral" onclick="toggleSidebar(this)">
@@ -59,12 +63,12 @@
                 <span></span>
             </div>
         </nav>
-    </div>-->
+    </div>
     <div class="main">
         <div class="intro zonaced">
             <div class="bloco terco">
-                <h1>Your PEL</h1>
-                <h3>Promover e Empoderar para a Literacia em saúde na população jovem</h3>
+                <h1 id="textoParaRemover">Your PEL</h1>
+                <h3 id="textoParaDescer">Promover e Empoderar para a Literacia em saúde na população jovem</h3>
                 <a href="forum.html" class="hvr-grow"><button type="button">Visita o Fórum</button></a>
             </div>
         </div>
