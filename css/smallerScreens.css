@@ -878,6 +878,74 @@
                 margin-top: 5% !important;
                 margin-bottom: 5% !important;
             }
+
+        /*INICIO SOBRE*/
+            .sobre .topo h1 {
+                color: var(--geral-cor1);
+                font-family: "Raleway ExtraBold";
+                font-size: 4.3vw;
+                font-weight: 900;
+                line-height: 5.5vw;
+                text-align: center;
+            }
+
+            .sobre .topo p {
+                width: 80%;
+                color: var(--geral-cor2);   
+                font-size: 5vw;
+                font-weight: bold;
+                line-height: 6vw;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .sobre .topo img {
+                margin: 5%;
+                width: 70%;
+            }
+
+            .sobre .zona.descricao {
+                width: 80%;
+            }
+
+            .sobre .zona.descricao p {
+                font-size: 3vw;
+                line-height: 5vw;
+            }
+
+            .sobre .zona.descricao .destacar {
+                font-size: 3vw;
+                line-height: 4.5vw;
+            }
+
+            .sobre .zona.descricao li {
+                font-size: 3vw;
+                line-height: 5vw;
+            }
+
+            .sobre .zona.equipa h1 {   
+                font-size: 5vw;
+                line-height: 7vw;
+            }
+
+            
+            .sobre .equipa .elementos .elemento {
+                width: 45%;
+            }
+
+            .sobre .equipa .elementos .elemento img {
+                width: 100%;
+            }
+
+            .sobre .equipa .elementos .elemento .nome {
+                font-size: 3vw;
+                line-height: 5vw;
+            }
+
+            .sobre .equipa .elementos .elemento .cargo {
+                font-size: 2.7vw;
+                line-height: 4.2vw;
+            }
     }
 
     @media only screen and (max-width: 800px) and (min-width: 600px) {
@@ -902,6 +970,74 @@
             .parcerias .parceiro {
                 width: 48%;
                 height: 45vw;
+            }
+
+        /*INICIO SOBRE*/
+            .sobre .topo h1 {
+                color: var(--geral-cor1);
+                font-family: "Raleway ExtraBold";
+                font-size: 4.3vw;
+                font-weight: 900;
+                line-height: 5.5vw;
+                text-align: center;
+            }
+
+            .sobre .topo p {
+                width: 80%;
+                color: var(--geral-cor2);   
+                font-size: 5vw;
+                font-weight: bold;
+                line-height: 6vw;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .sobre .topo img {
+                margin: 5%;
+                width: 70%;
+            }
+
+            .sobre .zona.descricao {
+                width: 80%;
+            }
+
+            .sobre .zona.descricao p {
+                font-size: 3vw;
+                line-height: 5vw;
+            }
+
+            .sobre .zona.descricao .destacar {
+                font-size: 3vw;
+                line-height: 4.5vw;
+            }
+
+            .sobre .zona.descricao li {
+                font-size: 3vw;
+                line-height: 5vw;
+            }
+
+            .sobre .zona.equipa h1 {   
+                font-size: 5vw;
+                line-height: 7vw;
+            }
+
+            
+            .sobre .equipa .elementos .elemento {
+                width: 30%;
+            }
+
+            .sobre .equipa .elementos .elemento img {
+                width: 100%;
+            }
+
+            .sobre .equipa .elementos .elemento .nome {
+                font-size: 3vw;
+                line-height: 5vw;
+            }
+
+            .sobre .equipa .elementos .elemento .cargo {
+                font-size: 2.7vw;
+                line-height: 4.2vw;
             }
 
 
@@ -929,104 +1065,104 @@
             }
         }
 
-    /*GALARIA FOTO DETALHE DISPOSITIVOS MOVEIS*/
-    @media only screen and (max-width: 1250px) {
-        #fotoDetalhe .imagem{
-            width: 30% !important;
+    /*GALERIA FOTO DETALHE DISPOSITIVOS MOVEIS*/
+        @media only screen and (max-width: 1250px) {
+            #fotoDetalhe .imagem{
+                width: 30% !important;
+            }
+
+            #img01{
+                height: 48vw !important;
+            }
         }
 
-        #img01{
-            height: 48vw !important;
-        }
-    }
 
+        @media only screen and (max-width: 870px) {
+            #fotoDetalhe .imagem{
+                width: 32% !important;
+            }
 
-    @media only screen and (max-width: 870px) {
-        #fotoDetalhe .imagem{
-            width: 32% !important;
-        }
+            #img01{
+                height: 56vw !important;
+            }
 
-        #img01{
-            height: 56vw !important;
-        }
+            #fotoDetalhe #direita{
+                margin-top: 22% !important;
+            }
 
-        #fotoDetalhe #direita{
-            margin-top: 22% !important;
-        }
+            #fotoDetalhe #esquerda{
+                margin-top: 21.5% !important;
+            }
 
-        #fotoDetalhe #esquerda{
-            margin-top: 21.5% !important;
-        }
-
-        #fotoDetalhe #coment{
-            font-size: 2vw !important;
-            margin-bottom: 3vw !important;
-            line-height: 3vw !important;
-        }
-    }
-
-    @media only screen and (max-width: 650px) {
-        #fotoDetalhe .imagem{
-            width: 44% !important;
+            #fotoDetalhe #coment{
+                font-size: 2vw !important;
+                margin-bottom: 3vw !important;
+                line-height: 3vw !important;
+            }
         }
 
-        #img01{
-            height: 74vw !important;
+        @media only screen and (max-width: 650px) {
+            #fotoDetalhe .imagem{
+                width: 44% !important;
+            }
+
+            #img01{
+                height: 74vw !important;
+            }
+
+            #fotoDetalhe #direita{
+                margin-top: 30% !important;
+                width: 7vw !important;
+                height: 7vw !important;
+            }
+
+            #fotoDetalhe #esquerda{
+                margin-top: 29.5% !important;
+                width: 8.2vw !important;
+                height: 8.2vw !important;
+            }
+
+            #fotoDetalhe #coment{
+                font-size: 2.6vw !important;
+            }
         }
 
-        #fotoDetalhe #direita{
-            margin-top: 30% !important;
-            width: 7vw !important;
-            height: 7vw !important;
+        @media only screen and (max-width: 510px) {
+            #fotoDetalhe .imagem{
+                width: 70% !important;
+            }
+
+            #img01{
+                height: 110vw !important;
+            }
+
+            #fotoDetalhe #direita{
+                margin-top: 43% !important;
+                margin-right: -2vw !important;
+            }
+
+            #fotoDetalhe #esquerda{
+                margin-top: 42.5% !important;
+                margin-left: 2vw !important;
+            }
+
+            #fotoDetalhe #fechar{
+                width: 6vw !important;
+                height: 6vw !important;
+            }
+
+            #fotoDetalhe #coment{
+                font-size: 3.4vw !important;
+                line-height: 5vw !important;
+            }
         }
 
-        #fotoDetalhe #esquerda{
-            margin-top: 29.5% !important;
-            width: 8.2vw !important;
-            height: 8.2vw !important;
-        }
+        @media only screen and (max-width: 350px) {
+            #img01{
+                height: 120vw !important;
+            }
 
-        #fotoDetalhe #coment{
-            font-size: 2.6vw !important;
+            #fotoDetalhe #coment{
+                font-size: 3.4vw !important;
+            }
         }
-    }
-
-    @media only screen and (max-width: 510px) {
-        #fotoDetalhe .imagem{
-            width: 70% !important;
-        }
-
-        #img01{
-            height: 110vw !important;
-        }
-
-        #fotoDetalhe #direita{
-            margin-top: 43% !important;
-            margin-right: -2vw !important;
-        }
-
-        #fotoDetalhe #esquerda{
-            margin-top: 42.5% !important;
-            margin-left: 2vw !important;
-        }
-
-        #fotoDetalhe #fechar{
-            width: 6vw !important;
-            height: 6vw !important;
-        }
-
-        #fotoDetalhe #coment{
-            font-size: 3.4vw !important;
-            line-height: 5vw !important;
-        }
-    }
-
-    @media only screen and (max-width: 350px) {
-        #img01{
-            height: 120vw !important;
-        }
-
-        #fotoDetalhe #coment{
-            font-size: 3.4vw !important;
-        }
-    }
