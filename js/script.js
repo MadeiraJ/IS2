@@ -1,5 +1,13 @@
 $(document).ready(function () {
-    var listaResultados = [
+    var classe = $('body').attr('class');
+    if(classe.includes("alimentacao"))
+        classe = "ALIMENTACAO";
+    else if (classe.includes("sexulidade"))
+        classe = "SEXUALIDADE";
+    else if(classe.includes("substancias"))
+        classe = "SUBSTANCIAS";
+
+    var listaDestaques/* = [
             {
                 tipo : "ARTIGO",
                 imagem : "imagens/alimentacao_1.png",
@@ -12,31 +20,90 @@ $(document).ready(function () {
                 tipo : "SABIAS-QUE",
                 texto : "Se isto funcionar eu mando-me de uma janela",
             }
-    ];
-    var artigoEmDestaque = {
+    ]*/;
+    var artigoEmDestaque/* = {
         imagem : "imagens/alimentacao_1.png",
         video : null,
         titulo : "Por favor funcemina",
         texto : "Se isto funcionar eu mando-me de 2 janelas",
         url : "artigo_exemplo.html"
-    };
+    }*/;
 
-    /*$.ajax({
-        url: "/api/handler/getDestaques?type=1",
+    var listaDeVideos = [
+        {
+            video : "LINK",
+            titulo : "Por favor funciona",
+            texto : "Isto é um texto"
+        },
+        {
+            video : "LINK",
+            titulo : "Por favor funciona",
+            texto : "Isto é um texto"
+        }
+    ];
+
+    var listaDeLinks = [
+        {
+            link: "https://google.com",
+            nome: "um url",
+        },
+        {
+            link: "https://sapo.pt",
+            nome: "outro url",
+        }
+    ];
+
+    var listaDeDocumentos = [
+        {
+            link: "https://google.com",
+            nome: "um url",
+        },
+        {
+            link: "https://sapo.pt",
+            nome: "outro url",
+        }
+    ];
+
+    $.ajax({
+        url: `/api/handler/getDestaques?type=${classe}`,
         type: "POST",
         dataType: "json",
         success: function (result) {
-            listaResultados = result;
+            listaDestaques = result;
         }
     });
-    $.ajax({
-        url: "/api/handler/getArtigoEmDestaque?type=1",
+    /*$.ajax({
+        url: `/handler/getArtigoEmDestaque?type=${classe}`,
         type: "POST",
         dataType: "json",
         success: function (result) {
             artigoEmDestaque = result;
         }
-    });*/
+    });
+    $.ajax({
+        url: `/api/handler/getVideos?type=${classe}`,
+        type: "POST",
+        dataType: "json",
+        success: function (result) {
+            listaDeVideos = result;
+        }
+    });
+    $.ajax({
+        url: `/api/handler/getLinks?type=${classe}`,
+        type: "POST",
+        dataType: "json",
+        success: function (result) {
+            artigoEmDestaque = result;
+        }
+    });
+    $.ajax({
+        url: `/api/handler/getDocumentos?type=${classe}`,
+        type: "POST",
+        dataType: "json",
+        success: function (result) {
+            artigoEmDestaque = result;
+        }
+    });
 
     addArtigoEmDestaque(
         artigoEmDestaque.imagem,
@@ -45,22 +112,22 @@ $(document).ready(function () {
         artigoEmDestaque.url
     );
 
-    for (var i = 0; i < listaResultados.length; i++) {
-        var tipoBloco =  listaResultados[i].tipo;
+    for (var i = 0; i < listaDestaques.length; i++) {
+        var tipoBloco =  listaDestaques[i].tipo;
         if(tipoBloco == "ARTIGO"){
             addBlocoArtigo(
                 i + 1,
-                listaResultados[i].imagem,
-                listaResultados[i].titulo,
-                listaResultados[i].texto,
-                listaResultados[i].url,
+                listaDestaques[i].imagem,
+                listaDestaques[i].titulo,
+                listaDestaques[i].texto,
+                listaDestaques[i].url,
             );
         }
 
         else if(tipoBloco == "SABIAS-QUE"){
             addBlocoSabiasQue(
                 i + 1,
-                listaResultados[i].texto,
+                listaDestaques[i].texto,
             );
         }
     }
