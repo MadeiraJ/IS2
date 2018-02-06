@@ -20,9 +20,11 @@ function mostraMenu(){
     if (document.getElementById("submenuSlide").style.display == "none"){
         document.getElementById("submenuSlide").style.display = "block";
         document.getElementById("menuTemas").style.backgroundColor = "#DBF0FD";
+        document.getElementById("setaTemasSideMenu").style.display = "none";
     }
     else {
         document.getElementById("submenuSlide").style.display = "none";
         document.getElementById("menuTemas").style.backgroundColor = "#F7FAFC";
+        document.getElementById("setaTemasSideMenu").style.display = "block";
     }
 }
