@@ -2,135 +2,102 @@ $(document).ready(function () {
     var classe = $('body').attr('class');
     if(classe.includes("alimentacao"))
         classe = "ALIMENTACAO";
-    else if (classe.includes("sexulidade"))
+    else if (classe.includes("sexualidade"))
         classe = "SEXUALIDADE";
-    else if(classe.includes("substancias"))
-        classe = "SUBSTANCIAS";
+    else if(classe.includes("consumos"))
+        classe = "CONSUMOS";
 
-    var listaDestaques/* = [
-            {
-                tipo : "ARTIGO",
-                imagem : "imagens/alimentacao_1.png",
-                video : null,
-                titulo : "Por favor funciona",
-                texto : "Isto é um texto",
-                url : "artigo_exemplo.html"
-            },
-            {
-                tipo : "SABIAS-QUE",
-                texto : "Se isto funcionar eu mando-me de uma janela",
+    $.ajax({
+        url: `/handlers/Handler1.ashx?type=1`,
+        type: "POST",
+        data: {classe: classe},
+        dataType: "json",
+        success: function (listaDestaques) {
+            for (var i = 0; i < listaDestaques.length; i++) {
+                listaDestaques[i] = JSON.parse(listaDestaques[i]);
+                var tipoBloco =  listaDestaques[i].tipo;
+                if(tipoBloco == "ARTIGO"){
+                    addBlocoArtigo(
+                        i + 1,
+                        listaDestaques[i].imagem,
+                        listaDestaques[i].titulo,
+                        listaDestaques[i].texto,
+                        listaDestaques[i].url
+                    );
+                }
+
+                else if(tipoBloco == "SABIAS-QUE"){
+                    addBlocoSabiasQue(
+                        i + 1,
+                        listaDestaques[i].texto
+                    );
+                }
             }
-    ]*/;
-    var artigoEmDestaque/* = {
-        imagem : "imagens/alimentacao_1.png",
-        video : null,
-        titulo : "Por favor funcemina",
-        texto : "Se isto funcionar eu mando-me de 2 janelas",
-        url : "artigo_exemplo.html"
-    }*/;
-
-    var listaDeVideos = [
-        {
-            video : "LINK",
-            titulo : "Por favor funciona",
-            texto : "Isto é um texto"
-        },
-        {
-            video : "LINK",
-            titulo : "Por favor funciona",
-            texto : "Isto é um texto"
-        }
-    ];
-
-    var listaDeLinks = [
-        {
-            link: "https://google.com",
-            nome: "um url",
-        },
-        {
-            link: "https://sapo.pt",
-            nome: "outro url",
-        }
-    ];
-
-    var listaDeDocumentos = [
-        {
-            link: "https://google.com",
-            nome: "um url",
-        },
-        {
-            link: "https://sapo.pt",
-            nome: "outro url",
-        }
-    ];
-
-    $.ajax({
-        url: `/api/handler/getDestaques?type=${classe}`,
-        type: "POST",
-        dataType: "json",
-        success: function (result) {
-            listaDestaques = result;
-        }
-    });
-    /*$.ajax({
-        url: `/handler/getArtigoEmDestaque?type=${classe}`,
-        type: "POST",
-        dataType: "json",
-        success: function (result) {
-            artigoEmDestaque = result;
         }
     });
     $.ajax({
-        url: `/api/handler/getVideos?type=${classe}`,
+        url: `/handlers/Handler1.ashx?type=2`,
         type: "POST",
+        data: {classe: classe},
         dataType: "json",
-        success: function (result) {
-            listaDeVideos = result;
-        }
-    });
-    $.ajax({
-        url: `/api/handler/getLinks?type=${classe}`,
-        type: "POST",
-        dataType: "json",
-        success: function (result) {
-            artigoEmDestaque = result;
-        }
-    });
-    $.ajax({
-        url: `/api/handler/getDocumentos?type=${classe}`,
-        type: "POST",
-        dataType: "json",
-        success: function (result) {
-            artigoEmDestaque = result;
-        }
-    });
-
-    addArtigoEmDestaque(
-        artigoEmDestaque.imagem,
-        artigoEmDestaque.titulo,
-        artigoEmDestaque.texto,
-        artigoEmDestaque.url
-    );
-
-    for (var i = 0; i < listaDestaques.length; i++) {
-        var tipoBloco =  listaDestaques[i].tipo;
-        if(tipoBloco == "ARTIGO"){
-            addBlocoArtigo(
-                i + 1,
-                listaDestaques[i].imagem,
-                listaDestaques[i].titulo,
-                listaDestaques[i].texto,
-                listaDestaques[i].url,
+        success: function (artigoEmDestaque) {
+            addArtigoEmDestaque(
+                artigoEmDestaque.imagem,
+                artigoEmDestaque.titulo,
+                artigoEmDestaque.texto,
+                artigoEmDestaque.url
             );
         }
-
-        else if(tipoBloco == "SABIAS-QUE"){
-            addBlocoSabiasQue(
-                i + 1,
-                listaDestaques[i].texto,
-            );
+    });
+    $.ajax({
+        url: `/handlers/Handler1.ashx?type=3`,
+        type: "POST",
+        data: { classe: classe },
+        dataType: "json",
+        success: function (listaDeVideos) {
+            for (var i = 0; i < listaDeVideos.length; i++) {
+                listaDeVideos[i] = JSON.parse(listaDeVideos[i]);
+                addVideo(
+                    listaDeVideos[i].link,
+                    listaDeVideos[i].titulo,
+                    listaDeVideos[i].texto
+                );
+            }
+            addClear('.listaVideos');
         }
-    }
+    });
+    $.ajax({
+        url: `/handlers/Handler1.ashx?type=4`,
+        type: "POST",
+        data: { classe: classe },
+        dataType: "json",
+        success: function (listaDeDocumentos) {
+            for (var i = 0; i < listaDeDocumentos.length; i++) {
+                listaDeDocumentos[i] = JSON.parse(listaDeDocumentos[i]);
+                addDocumento(
+                    classe,
+                    listaDeDocumentos[i].nome,
+                    listaDeDocumentos[i].url
+                );
+            }
+        }
+    });
+    $.ajax({
+        url: `/handlers/Handler1.ashx?type=5`,
+        type: "POST",
+        data: { classe: classe },
+        dataType: "json",
+        success: function (listaDeLinks) {
+            for (var i = 0; i < listaDeLinks.length; i++) {
+                listaDeLinks[i] = JSON.parse(listaDeLinks[i]);
+                addLink(
+                    classe,
+                    listaDeLinks[i].nome,
+                    listaDeLinks[i].url
+                );
+            }
+        }
+    });
 })
 
 function addArtigoEmDestaque(imagem, titulo, texto, url) {
@@ -187,4 +154,34 @@ function addBlocoSabiasQue(i, texto) {
                 </div>
             </div>`;
     $(inserirNaColuna).append(bloco);
+}
+
+function addVideo(link, titulo, texto) {
+    var video =
+        `<a href="#">
+        <div class="postVideo hvr-grow wow fadeIn">
+            <iframe src="${link}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <p class="titulo">${titulo}</p>
+            <p class="texto">${texto}</p>
+        </div>
+    </a>`;
+    $('.listaVideos').append(video);
+}
+
+function addLink(classe, nome, url) {
+    var imagem = "imagens/link_" + classe.toLowerCase() + ".png";
+    var link = `<a href="${url}" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
+        <br>`;
+    $('#zonaLinks').append(link);
+}
+
+function addDocumento(classe, nome, url) {
+    var imagem = "imagens/pin_" + classe.toLowerCase() + ".png";
+    var documento = `<a href="${url}" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
+            <br>`;
+    $('#zonaDocumentos').append(documento);
+}
+
+function addClear(classeCss) {
+    $(classeCss).append('<div class="clear"></div>');
 }

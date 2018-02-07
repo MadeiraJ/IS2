@@ -1,0 +1,26 @@
+#glossario .abecedario {
+	bottom: 0;
+	float: none;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	height: 16vw;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	padding: 0;
+	border-top: 1px #FFBC42 solid;
+}
+
+#glossario .letra {
+	display: table-cell;
+    color: #FFFFFF;
+    font-family: "Raleway Bold";
+    font-size: 10vw;
+    width: 15vw;
+    height: 15vw;
+	border-radius: 7.5vw;
+    font-weight: 800;
+	box-sizing: border-box;
+	border: 1px solid #FFF2D9;
+	background-color: #FFF2D9;
+	box-shadow: 0 2px 6px 2px rgba(255,188,66,0.03);
+}

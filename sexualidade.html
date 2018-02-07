@@ -11,6 +11,10 @@
     <script src="js/wow.js"></script>
     <script src="js/glossario.js"></script>
     <script src="js/responsive_menu.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--<script src="js/glossario.js"></script>-->
+  
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script>
       new WOW().init();
@@ -65,51 +69,6 @@
             </nav>
     </div>
     <div class="main">
-        <!--<div class="rectangle-2">
-            <nav class="navbar">
-                <a class="logo" href="index.html">YourPEL</a>
-                <input type="button" class="active" id="forum" value="Fórum">
-                <ul id="topicosMenu">
-                    <li class="divulgacao"><a href="#">Divulgação</a></li>
-                    <li class="parceiros"><a href="parceiros.html">Parceiros</a></li>
-                    <li class="sobre"><a href="sobre.html">Sobre</a></li>
-                    <li class="temas">Temas
-                        <div class="dropdown">
-                            <button class="setaTemasMenu"> </button>
-                            <div class="submenus">
-                                <a  style="color: #032133;" href="alimentacao.html"> Alimentação</a>
-                                <a  style="color: #032133;" href="sexualidade.html">Sexualidade</a>
-                                <a  style="color: #032133;" href="substancias.html">Consumos Nocivos</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="destaques"><a href="destaques.html">Destaques</a></li>
-                    <li class="forumMenu">Forum</li>
-                </ul>
-
-                <div id="sidebar" >
-                    <ul id="menuSlide">
-                        <li><a href="#">Divulgação</a></li>
-                        <li><a href="parceiros.html">Parceiros</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="#">Fórum</a></li>
-                        <li id="menuTemas" onclick="mostraMenu()">Temas
-                            <ul id="submenuSlide" style="display: none">
-                                <li><a href="alimentacao.html"> Alimentação</a></li>
-                                <li><a href="sexualidade.html">Sexualidade</a></li>
-                                <li><a href="substancias.html">Consumos Nocivos</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div id="clear"></div>
-                </div>
-                <div id="botao_menuLateral" onclick="toggleSidebar(this)">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>-->
         <div class="tituloZonaConteudo">
             <p class="destaquesTitulo">Sexualidade</p>
             <p class="aqui-podes-encontrar">Aqui podes encontrar publicações sobre tudo o que <mark>precisas de saber</mark> sobre sexualidade</p>
@@ -118,89 +77,13 @@
             <div class="conteudo">
                 <div class="col1">
                     <div class="bloco-1 texto wow fadeInDown">
-                        <p><mark>Artigos sobre</mark> todas as tuas questões</p>
-                    </div>
-
-                    <div class="wow fadeIn">
-                        <div class="bloco-1 sabiasQue">
-                            <p class="tituloArtigo">SABIAS QUE</p>
-                            <p class="textoArtigo">O elevado consumo de sal é responsável pela elevada prevalência de doenças como a hipertensão arterial.
-                            </p>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <div class="wow fadeIn">
-                            <div class="bloco-1 post hvr-grow">
-                                <img src="imagens/photo23.png">
-                                <div class="zonaTexto">
-                                    <p class="tituloArtigo">Visita regularmente o dentista: Doces a mais atraem cáries nos dentes</p>
-                                    <p class="textoArtigo">O elevado consumo de sal é responsável pela elevada prevalência de doenças como a hipertensão arterial.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <div class="wow fadeIn">
-                        <div class="bloco-1 sabiasQue">
-                            <p class="tituloArtigo">SABIAS QUE</p>
-                            <p class="textoArtigo">O elevado consumo de sal é responsável pela elevada prevalência de doenças como a hipertensão arterial.</p>
-                        </div>
+                            <p><mark>Artigos sobre</mark> todas as tuas questões</p>
                     </div>
                 </div>
-
-                <a href="#">
-                    <div class="wow fadeIn">
-                        <div class="bloco-2 post hvr-grow">
-                            <img src="imagens/photo22.png">
-                            <div class="zonaTexto">
-                                <p class="tituloArtigo">Uma alimentação equilibrada é essencial</p>
-                                <p class="textoArtigo">Para conseguir uma alimentação saudável é preciso conhecer bem as famílias dos alimentos e suas características…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
                 <div class="col2">
-                    <a href="#">
-                        <div class="wow fadeIn">
-                            <div class="bloco-1 post hvr-grow">
-                                <img src="imagens/photo24.png">
-                                <div class="zonaTexto">
-                                    <p class="tituloArtigo">Estudos revelam que o picante faz bem ao cerebro</p>
-                                    <p class="textoArtigo">Para conseguir uma alimentação saudável é preciso conhecer bem as famílias dos alimentos e suas características…</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <div class="wow fadeIn">
-                        <div class="bloco-1 sabiasQue">
-                            <p class="tituloArtigo">SABIAS QUE</p>
-                            <p class="textoArtigo">O elevado consumo de sal é responsável pela elevada prevalência de doenças como a hipertensão arterial.</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col3">
-                    <div class="wow fadeIn">
-                        <div class="bloco-1 sabiasQue">
-                            <p class="tituloArtigo">SABIAS QUE</p>
-                            <p class="textoArtigo">Pessoas portadoras de diabetes devem comer mais fibras do que pessoas que não sofram dessa condição. A fibra ajuda a prevenir problemas do estômago e reduzem os níveis de colesterol.
-                            </p>
-                        </div>
-                    </div>
-
-                    <a href="#">
-                        <div class="wow fadeIn">
-                            <div class="bloco-1 post hvr-grow">
-                                <img src="imagens/photo25.png">
-                                <div class="zonaTexto">
-                                    <p class="tituloArtigo">Dicas sobre dietas para quem é intolerante a glúten</p>
-                                    <p class="textoArtigo">O elevado consumo de sal é responsável pela elevada prevalência de doenças como a hipertensão arterial.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
                 </div>
                 <div class="clear"></div>
                 <a href="#" class="wow fadeIn hvr-grow carregarMais">Carregar mais</a>
@@ -209,30 +92,6 @@
             <div id="zonaDeVideos">
                     <p class="titulo wow fadeInDown"><mark>Vídeos educativos</mark> de respostas às tuas perguntas</p>
                     <div class="listaVideos">
-                        <a href="#">
-                            <div class="postVideo hvr-grow wow fadeIn">
-                                <iframe src="https://www.youtube.com/embed/lbLVhHF9RZQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                                <p class="titulo">Sementes de Sésamo e...</p>
-                                <p class="texto">Muda a tua alimentação, muda a tua vida</p>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div class="postVideo hvr-grow wow fadeIn">
-                                <iframe src="https://www.youtube.com/embed/lbLVhHF9RZQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                                <p class="titulo">Sementes de Sésamo e...</p>
-                                <p class="texto">Muda a tua alimentação, muda a tua vida</p>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div class="postVideo hvr-grow wow fadeIn">
-                                <iframe src="https://www.youtube.com/embed/lbLVhHF9RZQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                                <p class="titulo">Sementes de Sésamo e...</p>
-                                <p class="texto">Muda a tua alimentação, muda a tua vida</p>
-                            </div>
-                        </a>
-                        <div class="clear"></div>
                     </div>
                     <a href="#" class="wow fadeIn hvr-grow carregarMais">Carregar mais</a>
             </div>
@@ -278,30 +137,10 @@
 
             <div id="zonaLinks">
                     <p class="titulo wow fadeInDown">Links Uteis</p>
-                    <a href="#"><p class="linkUteis hvr-overline-from-left"><img src="imagens/link_sexualidade.png">Peso &amp; Medida - Obesidade e Comportamentos Associados</p></a>
-                    <br>
-                    <a href="#" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="imagens/link_sexualidade.png">Associação Portuguesa de Nutricionistas - APN</p></a>
-                    <br>
-                    <a href="#" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="imagens/link_sexualidade.png">Faculdade de Ciências da Nutrição e Alimentação da Universidade do Porto</p></a>
-                    <br>
-                    <a href="#" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="imagens/link_sexualidade.png">Ministério da Saúde - Portal da Saúde</p></a>
-                    <br>
-                    <a href="#" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="imagens/link_sexualidade.png">ADEXO - Portal da Obesidade</p></a>
-                    <br>
             </div>
 
             <div id="zonaDocumentos">
                     <p class="titulo fadeInDown">Documentos Úteis</p>
-                    <a href="#" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="imagens/pin_sexualidade.png">Peso &amp; Medida - Obesidade e Comportamentos Associados</p></a>
-                    <br>
-                    <a href="#" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="imagens/pin_sexualidade.png">Associação Portuguesa de Nutricionistas - APN</p></a>
-                    <br>
-                    <a href="#" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="imagens/pin_sexualidade.png">Faculdade de Ciências da Nutrição e Alimentação da Universidade do Porto</p></a>
-                    <br>
-                    <a href="#" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="imagens/pin_sexualidade.png">Ministério da Saúde - Portal da Saúde</p></a>
-                    <br>
-                    <a href="#" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="imagens/pin_sexualidade.png">ADEXO - Portal da Obesidade</p></a>
-                    <br>
             </div>
         </div>
     </div>

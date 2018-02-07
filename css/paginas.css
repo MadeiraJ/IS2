@@ -495,7 +495,7 @@
         margin-top: 8%;
     }
 
-    .artigo cite{
+    .artigo blockquote{
         margin-top: 5%;
         margin-bottom: 5%;
         quotes: "\201C""\201D""\2018""\2019";
@@ -505,7 +505,7 @@
         font-size: 2vw;
     }
     
-    .artigo cite:before {
+    .artigo blockquote:before {
         content: open-quote;
         font-size: 2em;
 
@@ -514,7 +514,7 @@
         vertical-align: -0.2em;
     }
 
-    .artigo cite:after {
+    .artigo blockquote:after {
         content: close-quote;
         font-size: 2em;
 
@@ -523,7 +523,7 @@
         vertical-align: -0.2em;   
     }
 
-    .artigo cite p {
+    .artigo blockquote p {
         display: inline;
         line-height: normal;
     }
