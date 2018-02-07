@@ -329,13 +329,13 @@
 		background-color: var(--sexualidade-cor1);
 	}
 
-	.alimentacao #glossario .letra:hover{
+	.alimentacao #glossario .letra:hover, .alimentacao #glossario .ativo{
 		color: var(--alimentacao-cor1);
 	}
-	.consumos #glossario .letra:hover{
+	.consumos #glossario .letra:hover, .consumos #glossario .ativo{
 		color: var(--consumos-cor1);
 	}
-	.sexualidade #glossario .letra:hover{
+	.sexualidade #glossario .letra:hover, .sexualidade #glossario .ativo{
 		color: var(--sexualidade-cor1);
 	}
 

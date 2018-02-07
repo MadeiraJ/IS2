@@ -1,95 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head lang="pt">
-    <meta charset="UTF-8">
-    <title>Alimentação</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/paginas.css"/>
-    <link rel="stylesheet" href="css/paginas_cor.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/smallerScreens.css"/>
-    <script src="js/wow.js"></script>
-    <script src="js/responsive_menu.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/script.js"></script>
-    <!--<script src="js/glossario.js"></script>-->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script>
-        new WOW().init();
-    </script>
-</head>
 
-<body class="paginaTema alimentacao">
-    <div class="rectangle-2">
-        <nav class="navbar">
-            <a class="logo" href="index.html">YourPEL</a>
-            <input type="button" class="active" id="forum" value="Fórum">
-            <ul id="topicosMenu">
-                <li class="divulgacao"><a href="#">Divulgação</a></li>
-                <li class="parceiros"><a href="parceiros.html">Parceiros</a></li>
-                <li class="sobre"><a href="sobre.html">Sobre</a></li>
-                <li class="temas">Temas
-                    <div class="dropdown">
-                        <button class="setaTemasMenu"> </button>
-                        <div class="submenus">
-                            <a  style="color: #032133;" href="alimentacao.html"> Alimentação</a>
-                            <a  style="color: #032133;" href="sexualidade.html">Sexualidade</a>
-                            <a  style="color: #032133;" href="substancias.html">Consumos Nocivos</a>
+    <head lang="pt">
+        <meta charset="UTF-8">
+        <title>Alimentação</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/paginas.css"/>
+        <link rel="stylesheet" href="css/paginas_cor.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/smallerScreens.css"/>
+        <script src="js/wow.js"></script>
+        <script src="js/responsive_menu.js"></script>
+        <script src="js/glossario.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script>
+            new WOW().init();
+        </script>
+    </head>
+
+    <body class="paginaTema alimentacao">
+        <div class="rectangle-2">
+            <nav class="navbar">
+                <a class="logo" href="index.html">YourPEL</a>
+                <input type="button" class="active" id="forum" value="Fórum">
+                <ul id="topicosMenu">
+                    <li class="divulgacao"><a href="#">Divulgação</a></li>
+                    <li class="parceiros"><a href="parceiros.html">Parceiros</a></li>
+                    <li class="sobre"><a href="sobre.html">Sobre</a></li>
+                    <li class="temas">Temas
+                        <div class="dropdown">
+                            <button class="setaTemasMenu"> </button>
+                            <div class="submenus">
+                                <a  style="color: #032133;" href="alimentacao.html"> Alimentação</a>
+                                <a  style="color: #032133;" href="sexualidade.html">Sexualidade</a>
+                                <a  style="color: #032133;" href="substancias.html">Consumos Nocivos</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="destaques"><a href="destaques.html">Destaques</a></li>
+                    <li class="forumMenu">Forum</li>
+                </ul>
+
+                <div id="sidebar" >
+                    <button id="setaTemasSideMenu"> </button>
+                    <ul id="menuSlide">
+                        <li><a href="destaques.html">Destaques</a></li>
+                        <li><a href="#">Divulgação</a></li>
+                        <li><a href="parceiros.html">Parceiros</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="#">Fórum</a></li>
+                        <li id="menuTemas" onclick="mostraMenu()">Temas
+                            <ul id="submenuSlide" style="display: none">
+                                <li><a href="alimentacao.html"> Alimentação</a></li>
+                                <li><a href="sexualidade.html">Sexualidade</a></li>
+                                <li><a href="substancias.html">Consumos Nocivos</a></li>
+                            </ul>
+                        </li>
+                        <li class="destaques"><a href="destaques.html">Destaques</a></li>
+                        <li class="forumMenu">Forum</li>
+                    </ul>
+
+                    <div id="clear"></div>
+                </div>
+                <div id="botao_menuLateral" onclick="toggleSidebar(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="tituloZonaConteudo">
+                <p class="destaquesTitulo">Alimentação</p>
+                <p class="aqui-podes-encontrar">Aqui podes encontrar publicações sobre tudo o que <mark>precisas de saber</mark> sobre nutrição</p>
+            </div>
+
+            <div id="zonaConteudo">
+                <div class="conteudo">
+                    <div class="col1">
+                        <div class="bloco-1 texto wow fadeInDown">
+                            <p><mark>Artigos sobre</mark> todas as tuas questões</p>
                         </div>
                     </div>
-                </li>
-                <li class="destaques"><a href="destaques.html">Destaques</a></li>
-                <li class="forumMenu">Forum</li>
-            </ul>
+                  
+                    <div class="col2">
+                    </div>
 
-            <div id="sidebar" >
-                <button id="setaTemasSideMenu"> </button>
-                <ul id="menuSlide">
-                    <li><a href="destaques.html">Destaques</a></li>
-                    <li><a href="#">Divulgação</a></li>
-                    <li><a href="parceiros.html">Parceiros</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="#">Fórum</a></li>
-                    <li id="menuTemas" onclick="mostraMenu()">Temas
-                        <ul id="submenuSlide" style="display: none">
-                            <li><a href="alimentacao.html"> Alimentação</a></li>
-                            <li><a href="sexualidade.html">Sexualidade</a></li>
-                            <li><a href="substancias.html">Consumos Nocivos</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div id="clear"></div>
-            </div>
-            <div id="botao_menuLateral" onclick="toggleSidebar(this)">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </div>
-<div class="main">
-    <div class="tituloZonaConteudo">
-        <p class="destaquesTitulo">Alimentação</p>
-        <p class="aqui-podes-encontrar">Aqui podes encontrar publicações sobre tudo o que <mark>precisas de saber</mark> sobre nutrição</p>
-    </div>
-
-    <div id="zonaConteudo">
-        <div class="conteudo">
-            <div class="col1">
-                <div class="bloco-1 texto wow fadeInDown">
-                    <p><mark>Artigos sobre</mark> todas as tuas questões</p>
+                    <div class="col3">
+                    </div>
                 </div>
-            </div>
-
-            <div class="col2">
-            </div>
-
-            <div class="col3">
-            </div>
-        </div>
-        <div class="clear"></div>
-        <a href="#" class="wow fadeIn hvr-grow carregarMais">Carregar mais</a>
-
+                <div class="clear"></div>
+                <a href="#" class="wow fadeIn hvr-grow carregarMais">Carregar mais</a>
+              
         <div id="zonaDeVideos">
             <p class="titulo wow fadeInDown"><mark>Vídeos educativos</mark> para uma alimentação saudável</p>
             <div class="listaVideos">
@@ -98,90 +100,44 @@
         <div class="clear"></div>
         <a href="#" class="hvr-grow carregarMais">Carregar mais</a>
 
-        <div id="zonaGlossario">
-            <p class="titulo wow fadeInDown">Glossário da alimentação</p>
-            <p class="descricao wow fadeIn">Pesquisa aqui as palavras que não conheces ou então procura alfabeticamente no glossário</p>
-            <div id="glossario">
-                <ul class="abecedario">
-                    <li class="letra">a</li>
-                    <li class="letra">b</li>
-                    <li class="letra">c</li>
-                    <li class="letra">d</li>
-                    <li class="letra">e</li>
-                    <li class="letra">f</li>
-                    <li class="letra">g</li>
-                    <li class="letra">h</li>
-                    <li class="letra">i</li>
-                    <li class="letra">j</li>
-                    <li class="letra">k</li>
-                    <li class="letra">l</li>
-                    <li class="letra">m</li>
-                    <li class="letra">n</li>
-                    <li class="letra">o</li>
-                    <li class="letra">p</li>
-                    <li class="letra">q</li>
-                    <li class="letra">r</li>
-                    <li class="letra">s</li>
-                    <li class="letra">t</li>
-                    <li class="letra">u</li>
-                    <li class="letra">v</li>
-                    <li class="letra">w</li>
-                    <li class="letra">x</li>
-                    <li class="letra">y</li>
-                    <li class="letra">z</li>
-                </ul>
-                <div class="zonaDefi">
-                    <div id="lD">
-                        <h1>d</h1>
-                        <div class="definicao">
-                            <h1>DESIDRATAÇÃO</h1>
-                            <p>A desidratação resulta da eliminação de água e sais minerais do organismo e acontece quando o balanço hídrico é negativo, quando as perdas de água não são repostas.</p>
+                <a href="#" class="hvr-grow carregarMais">Carregar mais</a>
+
+                <div id="zonaGlossario">
+                    <p class="titulo wow fadeInDown">Glossário da alimentação</p>
+                    <p class="descricao wow fadeIn">Pesquisa aqui as palavras que não conheces ou então procura alfabeticamente no glossário</p>
+                    <div id="glossario">
+                        <ul class="abecedario" id="abecedario" onClick="mudarConteudo()">
+                            <li id="a" class="letra">a</li>
+                            <li id="b" class="letra">b</li>
+                            <li id="c" class="letra">c</li>
+                            <li id="d" class="letra">d</li>
+                            <li id="e" class="letra">e</li>
+                            <li id="f" class="letra">f</li>
+                            <li id="g" class="letra">g</li>
+                            <li id="h" class="letra">h</li>
+                            <li id="i" class="letra">i</li>
+                            <li id="j" class="letra">j</li>
+                            <li id="k" class="letra">k</li>
+                            <li id="l" class="letra">l</li>
+                            <li id="m" class="letra">m</li>
+                            <li id="n" class="letra">n</li>
+                            <li id="o" class="letra">o</li>
+                            <li id="p" class="letra">p</li>
+                            <li id="q" class="letra">q</li>
+                            <li id="r" class="letra">r</li>
+                            <li id="s" class="letra">s</li>
+                            <li id="t" class="letra">t</li>
+                            <li id="u" class="letra">u</li>
+                            <li id="v" class="letra">v</li>
+                            <li id="w" class="letra">w</li>
+                            <li id="x" class="letra">x</li>
+                            <li id="y" class="letra">y</li>
+                            <li id="z" class="letra">z</li>
+                        </ul>
+                        <div class="zonaDefi" id="zonaDefi">
                         </div>
-                        <div class="definicao">
-                            <h1>DIGESTÃO</h1>
-                            <p>Transformação dos alimentos ingeridos em substâncias mais simples, ao longo do tubo digestivo, através de processos mecânicos e químicos.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DISPEPSIA</h1>
-                            <p>Digestão difícil e dolorosa; qualquer que seja a causa.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DISTÚRBIO ALIMENTAR COMPULSIVO</h1>
-                            <p>Quem sofre de distúrbio alimentar compulsivo passa o dia a comer, come excessivamente às escondidas ou sente-se incapaz de controlar a comida que ingere.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DIVERTÍCULO</h1>
-                            <p>Cavidade em forma de saco, anatómica ou patológica, que é projectada através da parede intestinal para fora do intestino.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DOSE DIÁRIA RECOMENDADA (DDR)</h1>
-                            <p>Estabelecido pela União Europeia, representa a quantidade mínima diária de vitaminas e minerais, recomendada para satisfazer as necessidades de um indivíduo adulto.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DESIDRATAÇÃO</h1>
-                            <p>A desidratação resulta da eliminação de água e sais minerais do organismo e acontece quando o balanço hídrico é negativo, quando as perdas de água não são repostas.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DIGESTÃO</h1>
-                            <p>Transformação dos alimentos ingeridos em substâncias mais simples, ao longo do tubo digestivo, através de processos mecânicos e químicos.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DISTÚRBIO ALIMENTAR COMPULSIVO</h1>
-                            <p>Quem sofre de distúrbio alimentar compulsivo passa o dia a comer, come excessivamente às escondidas ou sente-se incapaz de controlar a comida que ingere.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DIVERTÍCULO</h1>
-                            <p>Cavidade em forma de saco, anatómica ou patológica, que é projectada através da parede intestinal para fora do intestino.</p>
-                        </div>
-                        <div class="definicao">
-                            <h1>DOSE DIÁRIA RECOMENDADA (DDR)</h1>
-                            <p>Estabelecido pela União Europeia, representa a quantidade mínima diária de vitaminas e minerais, recomendada para satisfazer as necessidades de um indivíduo adulto.</p>
-                        </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
-            </div>
-        </div>
 
         <div id="zonaLinks">
             <p class="titulo wow fadeInDown">Links Uteis</p>
@@ -191,58 +147,58 @@
             <p class="titulo wow fadeInDown">Documentos Úteis</p>
         </div>
     </div>
-</div>
-<footer>
-    <div id="rodape">
-        <h1 id="logoRodape">YourPEL</h1>
-        <div id="icons">
-            <p id="linhaIc"><img id="facebookIcon" src="imagens/Rodape/facebook_icon.png"/>
-                <img id="instagramIcon" src="imagens/Rodape/facebook_icon.png"/>
-                <img id="youtubeIcon" src="imagens/Rodape/youtube_icon.png"/></p>
         </div>
-        <div class="zonaGeral menu">
-            <a href="index.html" class="estilo">Home</a>
-            <br>
-            <a href="destaques.html" class="estilo">Destaques </a>
-            <br>
-            <a href="sobre.html" class="estilo">Sobre </a>
-            <br>
-        </div>
+        <footer>
+            <div id="rodape">
+                <h1 id="logoRodape">YourPEL</h1>
+                <div id="icons">
+                    <p id="linhaIc"><img id="facebookIcon" src="imagens/Rodape/facebook_icon.png"/>
+                        <img id="instagramIcon" src="imagens/Rodape/facebook_icon.png"/>
+                        <img id="youtubeIcon" src="imagens/Rodape/youtube_icon.png"/></p>
+                </div>
+                <div class="zonaGeral menu">
+                    <a href="index.html" class="estilo">Home</a>
+                    <br>
+                    <a href="destaques.html" class="estilo">Destaques </a>
+                    <br>
+                    <a href="sobre.html" class="estilo">Sobre </a>
+                    <br>
+                </div>
 
-        <div class="zonaGeral2 menu">
-            <a href="parceiros.html" class="estilo">Parcerias</a>
-            <br>
-            <a href="#" class="estilo">Divulgação</a>
-            <br>
-            <a href="#" class="estilo">Fórum</a>
-            <br>
-        </div>
+                <div class="zonaGeral2 menu">
+                    <a href="parceiros.html" class="estilo">Parcerias</a>
+                    <br>
+                    <a href="#" class="estilo">Divulgação</a>
+                    <br>
+                    <a href="#" class="estilo">Fórum</a>
+                    <br>
+                </div>
 
-        <div class="zonaArtigos menu">
-            <a href="alimentacao.html" class="estilo">Alimentação</a>
-            <br>
-            <a href="sexualidade.html" class="estilo">Sexualidade</a>
-            <br>
-            <a href="substancias.html" class="estilo">Consumos nocivos</a>
-            <br>
-        </div>
+                <div class="zonaArtigos menu">
+                    <a href="alimentacao.html" class="estilo">Alimentação</a>
+                    <br>
+                    <a href="sexualidade.html" class="estilo">Sexualidade</a>
+                    <br>
+                    <a href="substancias.html" class="estilo">Consumos nocivos</a>
+                    <br>
+                </div>
 
-        <div class="zonaContactos menu">
-            <p class="styConta" style="color: #1070B0;">Contactos</p>
-            <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
-            <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div id="zonaCopyrights">
-        <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS</p>
-        <div id="icParceiros">
-            <a href="http://www.poci-compete2020.pt/"><img id="comp" class="estilo parceiros" src="imagens/Rodape/comp2020.png"/></a>
-            <a href="https://www.portugal2020.pt/"><img id="port" class="estilo parceiros" src="imagens/Rodape/port2020.png"/></a>
-            <a href="https://europa.eu/european-union/index_pt"><img id="eu" class="estilo parceiros" src="imagens/Rodape/UE.png"/></a>
-            <a href="https://www.fct.pt/"><img id="fct" class="estilo parceiros" src="imagens/Rodape/fct.png"/></a>
-        </div>
-    </div>
-</footer>
-</body>
+                <div class="zonaContactos menu">
+                    <p class="styConta" style="color: #1070B0;">Contactos</p>
+                    <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
+                    <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div id="zonaCopyrights">
+                <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS</p>
+                <div id="icParceiros">
+                    <a href="http://www.poci-compete2020.pt/"><img id="comp" class="estilo parceiros" src="imagens/Rodape/comp2020.png"/></a>
+                    <a href="https://www.portugal2020.pt/"><img id="port" class="estilo parceiros" src="imagens/Rodape/port2020.png"/></a>
+                    <a href="https://europa.eu/european-union/index_pt"><img id="eu" class="estilo parceiros" src="imagens/Rodape/UE.png"/></a>
+                    <a href="https://www.fct.pt/"><img id="fct" class="estilo parceiros" src="imagens/Rodape/fct.png"/></a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
