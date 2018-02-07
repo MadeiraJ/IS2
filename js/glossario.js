@@ -2,7 +2,6 @@
  * Created by joão Madeira on 02/01/2018.
  */
 window.addEventListener("load",montarDefinicoes,false);
-//window.addEventListener("load",init,false);
 
 var aLetra;
 var oConteudo;
@@ -15,26 +14,29 @@ var idAbecedario;
 
 var ativo = "ativo";
 
-function init(){
-    idAbecedario = document.querySelector("#abecedario");
-    letraAtual = document.querySelector("#a");
-    conteudoAtual = document.querySelector("#lA");
+var paginaAtual = 0;
+var nPaginas;
 
-    letraAtual.setAttribute("class","letra "+ativo);
-    conteudoAtual.style.display = "block";
-
-    idAbecedario.addEventListener("click",mudarConteudo,false);
-}
+var setaDireita, setaEsquerda;
 
 function montarDefinicoes() {
     var tema = document.body.className.split(" ")[1];
-    var qualFicheiro;
-    if (tema == "alimentacao")
-        qualFicheiro = "../IS2/xml/glossarioA.xml";
-    else if (tema == "consumos")
-        qualFicheiro = "../IS2/xml/glossarioC.xml";
-    else if (tema == "sexualidade")
-        qualFicheiro = "../IS2/xml/glossarioS.xml";
+    setaDireita = document.querySelector("#direita");
+    setaEsquerda = document.querySelector("#esquerda");
+    var tipoTema;
+
+    if (tema == "alimentacao"){
+        tipoTema = "A";
+    }
+    else if (tema == "consumos"){
+        tipoTema = "C";
+    }
+    else if (tema == "sexualidade"){
+        tipoTema = "S";
+    }
+
+    setaDireita.style.backgroundImage = 'url("../IS2/imagens/temas/setaDireita'+tipoTema+'.png")';
+    setaEsquerda.style.backgroundImage = 'url("../IS2/imagens/temas/setaEsquerda'+tipoTema+'.png")';
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -42,7 +44,7 @@ function montarDefinicoes() {
             myFunction(this);
         }
     };
-    xhttp.open("GET", qualFicheiro, true);
+    xhttp.open("GET", "../IS2/xml/glossario"+tipoTema+".xml", true);
     xhttp.send();
 }
 
@@ -53,44 +55,100 @@ function myFunction(xml) {
 
     for (var i = 0; i <= letras.length - 1; i++){
         var divLetra = document.createElement("div");
-            divLetra.setAttribute("id", "l"+(letras[i].getAttribute('id')).toUpperCase());
-            divLetra.setAttribute("style", "display: none");
-            divLetra.setAttribute("class", "definicoes");
-            var qualLetra = document.createElement("h1");
-            qualLetra.innerHTML = letras[i].getAttribute('id');
-            divLetra.appendChild(qualLetra);
-            if(letras[i].childNodes.length > 1){
-                var conteLetra = letras[i].childNodes;
-                for (var j = 0; j <= conteLetra.length - 1; j++) {
-                    if (conteLetra[j].hasChildNodes()) {
-                        var definicao = document.createElement("div");
-                        definicao.setAttribute("class", "definicao");
+        divLetra.setAttribute("id", "l"+(letras[i].getAttribute('id')).toUpperCase());
+        divLetra.setAttribute("style", "display: none");
+        divLetra.setAttribute("class", "definicoes");
+        var qualLetra = document.createElement("h1");
+        qualLetra.innerHTML = letras[i].getAttribute('id');
+        divLetra.appendChild(qualLetra);
+        if(letras[i].childNodes.length > 1){
+            var conteLetra = letras[i].childNodes;
+            for (var j = 0; j <= conteLetra.length - 1; j++) {
+                if (conteLetra[j].hasChildNodes()) {
+                    var definicao = document.createElement("div");
+                    definicao.setAttribute("style", "display: none");
+                    definicao.setAttribute("class", "definicao");
+                    var titulo = document.createElement("h1");
+                    titulo.innerHTML = conteLetra[j].childNodes[1].innerHTML;
+                    definicao.appendChild(titulo);
 
-                        var titulo = document.createElement("h1");
-                        titulo.innerHTML = conteLetra[j].childNodes[1].innerHTML;
-                        definicao.appendChild(titulo);
+                    var conteudo = document.createElement("p");
+                    conteudo.innerHTML = conteLetra[j].childNodes[3].innerHTML;
+                    definicao.appendChild(conteudo);
 
-                        var conteudo = document.createElement("p");
-                        conteudo.innerHTML = conteLetra[j].childNodes[3].innerHTML;
-                        definicao.appendChild(conteudo);
-
-                        divLetra.appendChild(definicao);
-                    }
+                    divLetra.appendChild(definicao);
                 }
             }
-            var clear = document.createElement("div");
-            clear.setAttribute("class", "clear");
-            divLetra.appendChild(clear);
-            zonaDefi.appendChild(divLetra);
+        }
+        var clear = document.createElement("div");
+        clear.setAttribute("class", "clear");
+        clear.setAttribute("style", "display: block !important");
+        divLetra.appendChild(clear);
+        zonaDefi.appendChild(divLetra);
     }
     init();
 }
 
+function init(){
+    idAbecedario = document.querySelector("#abecedario");
+    letraAtual = document.querySelector("#a");
+    conteudoAtual = document.querySelector("#lA");
+
+    verElementos(false);
+
+    letraAtual.setAttribute("class","letra "+ativo);
+    conteudoAtual.style.display = "block";
+
+    idAbecedario.addEventListener("click",mudarConteudo,false);
+}
+
+function verElementos(esconder){
+    nPaginas = Math.ceil((conteudoAtual.childNodes.length - 2)/10);
+    if(nPaginas == 0){
+        setaDireita.style.display = "none";
+        setaEsquerda.style.display = "none";
+    } else if(nPaginas == 1){
+        for (var i = 1; i < conteudoAtual.childNodes.length - 1; i++) {
+            conteudoAtual.childNodes[i].style.display = "inline-block";
+        }
+        setaDireita.style.display = "none";
+        setaEsquerda.style.display = "none";
+    } else {
+        var priPagina;
+        if(paginaAtual == 0){
+            priPagina = paginaAtual + 1;
+            var fim = priPagina + 10;
+            mudardisplay(esconder,priPagina,"block","none",fim);
+        } else {
+            priPagina = parseInt(paginaAtual+"1");
+            var fim = conteudoAtual.childNodes.length - 1;
+            if(fim> priPagina && fim < priPagina+9){
+                mudardisplay(esconder,priPagina,"none","block",fim);
+            } else {
+                fim = priPagina + 10;
+                mudardisplay(esconder,priPagina,"block","block",fim);
+            }
+        }
+    }
+}
+
+function mudardisplay(esconder,priPagina,displayD,displayE,fim){
+    var i = priPagina;
+    for(i; i < fim; i++){
+        if(esconder)
+            conteudoAtual.childNodes[i].style.display = "none";
+        else{
+            conteudoAtual.childNodes[i].style.display = "inline-block";
+            setaDireita.style.display = displayD;
+            setaEsquerda.style.display = displayE;
+        }
+    }
+}
 
 function mudarConteudo(e) {
     var oClicado = e.target;
     idLetra = oClicado.id;
-    if(idLetra != "abecedario")
+    if(idLetra != "abecedario"){}
         contCorresp();
 
 }
@@ -107,4 +165,15 @@ function contCorresp(){
 
     letraAtual = aLetra;
     conteudoAtual = oConteudo;
+
+    verElementos(false);
+}
+
+function clickMudarPagina(onde){
+    verElementos(true);
+    if(onde=="direita")
+        paginaAtual += 1;
+    else
+        paginaAtual -= 1;
+    verElementos(false);
 }

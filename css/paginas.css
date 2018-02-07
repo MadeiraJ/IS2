@@ -278,6 +278,30 @@
 		        margin-top: 1%;
 		    }
 
+			#glossario #direita{
+				position: relative;
+				float: right;
+				/*background-image: url("../imagens/temas/setaDireitaA.png");*/
+				width: 4vw;
+				height: 4vw;
+				background-size: cover;
+				cursor: pointer;
+				margin-top: -10%;
+				margin-right: 33vw;
+			}
+
+			#glossario #esquerda{
+				position: relative;
+				float: left;
+				/*background-image: url("../imagens/temas/setaEsquerdaA.png");*/
+				width: 4vw;
+				height: 4vw;
+				background-size: cover;
+				cursor: pointer;
+				margin-left: 39vw;
+				margin-top: -10%;
+			}
+
 		/*ZONA VIDEOS*/
 		    #zonaDeVideos{
 		        margin-top: 15%;
