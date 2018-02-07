@@ -12,6 +12,8 @@
         <script src="js/wow.js"></script>
         <script src="js/responsive_menu.js"></script>
         <script src="js/glossario.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <script>
             new WOW().init();
@@ -98,48 +100,49 @@
             </div>
         </div>
         <div class="clear"></div>
+        
+
         <a href="#" class="hvr-grow carregarMais">Carregar mais</a>
 
-                <a href="#" class="hvr-grow carregarMais">Carregar mais</a>
+        <div id="zonaGlossario">
+            <p class="titulo wow fadeInDown">Glossário da alimentação</p>
+            <p class="descricao wow fadeIn">Pesquisa aqui as palavras que não conheces ou então procura alfabeticamente no glossário</p>
 
-                <div id="zonaGlossario">
-                    <p class="titulo wow fadeInDown">Glossário da alimentação</p>
-                    <p class="descricao wow fadeIn">Pesquisa aqui as palavras que não conheces ou então procura alfabeticamente no glossário</p>
-                    <div id="glossario">
-                        <ul class="abecedario" id="abecedario" onClick="mudarConteudo()">
-                            <li id="a" class="letra">a</li>
-                            <li id="b" class="letra">b</li>
-                            <li id="c" class="letra">c</li>
-                            <li id="d" class="letra">d</li>
-                            <li id="e" class="letra">e</li>
-                            <li id="f" class="letra">f</li>
-                            <li id="g" class="letra">g</li>
-                            <li id="h" class="letra">h</li>
-                            <li id="i" class="letra">i</li>
-                            <li id="j" class="letra">j</li>
-                            <li id="k" class="letra">k</li>
-                            <li id="l" class="letra">l</li>
-                            <li id="m" class="letra">m</li>
-                            <li id="n" class="letra">n</li>
-                            <li id="o" class="letra">o</li>
-                            <li id="p" class="letra">p</li>
-                            <li id="q" class="letra">q</li>
-                            <li id="r" class="letra">r</li>
-                            <li id="s" class="letra">s</li>
-                            <li id="t" class="letra">t</li>
-                            <li id="u" class="letra">u</li>
-                            <li id="v" class="letra">v</li>
-                            <li id="w" class="letra">w</li>
-                            <li id="x" class="letra">x</li>
-                            <li id="y" class="letra">y</li>
-                            <li id="z" class="letra">z</li>
-                        </ul>
-                        <div class="zonaDefi" id="zonaDefi">
-                        </div>
-                        <a id="direita" onclick="clickMudarPagina('direita')" style="display: none;"></a>
-                        <a id="esquerda" onclick="clickMudarPagina('esquerda')" style="display: none;"></a>
-                    </div>
+            <div id="glossario">
+                <ul class="abecedario" id="abecedario" onClick="mudarConteudo()">
+                    <li id="a" class="letra">a</li>
+                    <li id="b" class="letra">b</li>
+                    <li id="c" class="letra">c</li>
+                    <li id="d" class="letra">d</li>
+                    <li id="e" class="letra">e</li>
+                    <li id="f" class="letra">f</li>
+                    <li id="g" class="letra">g</li>
+                    <li id="h" class="letra">h</li>
+                    <li id="i" class="letra">i</li>
+                    <li id="j" class="letra">j</li>
+                    <li id="k" class="letra">k</li>
+                    <li id="l" class="letra">l</li>
+                    <li id="m" class="letra">m</li>
+                    <li id="n" class="letra">n</li>
+                    <li id="o" class="letra">o</li>
+                    <li id="p" class="letra">p</li>
+                    <li id="q" class="letra">q</li>
+                    <li id="r" class="letra">r</li>
+                    <li id="s" class="letra">s</li>
+                    <li id="t" class="letra">t</li>
+                    <li id="u" class="letra">u</li>
+                    <li id="v" class="letra">v</li>
+                    <li id="w" class="letra">w</li>
+                    <li id="x" class="letra">x</li>
+                    <li id="y" class="letra">y</li>
+                    <li id="z" class="letra">z</li>
+                </ul>
+                <div class="zonaDefi" id="zonaDefi">
                 </div>
+                <a id="direita" onclick="clickMudarPagina('direita')" style="display: none;"></a>
+                <a id="esquerda" onclick="clickMudarPagina('esquerda')" style="display: none;"></a>
+            </div>
+        </div>
 
         <div id="zonaLinks">
             <p class="titulo wow fadeInDown">Links Uteis</p>

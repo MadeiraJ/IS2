@@ -35,8 +35,8 @@ function montarDefinicoes() {
         tipoTema = "S";
     }
 
-    setaDireita.style.backgroundImage = 'url("../IS2/imagens/temas/setaDireita'+tipoTema+'.png")';
-    setaEsquerda.style.backgroundImage = 'url("../IS2/imagens/temas/setaEsquerda'+tipoTema+'.png")';
+    setaDireita.style.backgroundImage = 'url("./imagens/temas/setaDireita'+tipoTema+'.png")';
+    setaEsquerda.style.backgroundImage = 'url("./imagens/temas/setaEsquerda'+tipoTema+'.png")';
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -44,7 +44,7 @@ function montarDefinicoes() {
             myFunction(this);
         }
     };
-    xhttp.open("GET", "../IS2/xml/glossario"+tipoTema+".xml", true);
+    xhttp.open("GET", "./xml/glossario"+tipoTema+".xml", true);
     xhttp.send();
 }
 
