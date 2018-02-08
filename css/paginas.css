@@ -17,7 +17,9 @@
 }
 
 .main {
+	padding-top: 7%;
 	padding-bottom: 10%;
+	background-color: #FFF;
 }
 
 /*INICIO PAGINAS TEMAS*/
@@ -59,8 +61,7 @@
 	    }
 
 	    .tituloZonaConteudo{
-	        position: relative;
-	        padding-top: 10%;
+	        padding-top: 5%;
 	        padding-bottom: 6%;
 	        margin: 0 auto;
 	        text-align: center;
@@ -719,6 +720,9 @@
 		}
 
 /*INICIO INDICE*/
+	.index .main {
+		padding-top: 0;
+	}
 	.index .zona {
 		margin-top: 10%;
 		width: auto;
@@ -1271,9 +1275,7 @@
 	}
 
 /*INICIO FORÚM*/
-
 	/*TÓPICO ABERTO*/
-
 		.zonaConteudoForum{
 			width: auto;
 			height: auto;
