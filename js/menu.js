@@ -11,7 +11,25 @@ $(document).ready(function () {
     slideout.toggle();
   });
 
-/*  var fixed = document.querySelector('.zonaMenu');
+  slideout.on('beforeopen', function () {
+    $('.main')
+      .css('filter','brightness(0.4)')
+      .css('webkitFilter','brightness(0.4)')
+      .css('mozFilter','brightness(0.4)')
+      .css('oFilter','brightness(0.4)')
+      .css('msFilter','brightness(0.4)');
+  });
+
+  slideout.on('beforeclose', function () {
+    $('.main')
+      .css('filter','none')
+      .css('webkitFilter','none')
+      .css('mozFilter','none')
+      .css('oFilter','none')
+      .css('msFilter','none');
+  });
+
+  var fixed = document.querySelector('.zonaMenu');
 
   slideout.on('translate', function(translated) {
     fixed.style.transform = 'translateX(' + translated + 'px)';
@@ -33,5 +51,5 @@ $(document).ready(function () {
 
   slideout.on('close', function () {
     fixed.style.transition = '';
-  });*/
+  });
 });
