@@ -6,7 +6,6 @@ $(document).ready(function () {
     'tolerance': 70
   });
 
-
   document.querySelector('.botao-mobile').addEventListener('click', function() {
     slideout.toggle();
   });
@@ -51,5 +50,13 @@ $(document).ready(function () {
 
   slideout.on('close', function () {
     fixed.style.transition = '';
+  });
+
+
+  $('.submenus').click(function(){
+    if($('#dropmenu').is(":visible"))
+      $('#dropmenu').hide();
+    else
+      $('#dropmenu').show();
   });
 });

@@ -181,25 +181,48 @@
             display: none;
         }
 
-        .mobile .topicosMenu li {
-            text-decoration: none;
-            color: #0A81D1;
-            list-style: none;
-            font-family: "Raleway SemiBold";
+        .mobile .topicosMenu {
+            color: #032133;
             font-size: 6vw;
-            line-height: 8vw;
-            margin: 1vw;
-            border: 1px black solid;
-            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            text-decoration: none;
+            list-style-type: none;
+            cursor: pointer;
+            margin-left: 5vw;
         }
 
-        .mobile .topicosMenu li a {
-            text-decoration: none;
-            color: #0A81D1;
-            text-align: center;
-            font-family: "Raleway SemiBold";
+        .mobile .topicosMenu a {
+            color: #032133;
             font-size: 6vw;
-            line-height: 8vw;
+            width: 100%;
+            line-height: 50px;
+            text-decoration: none;
+            float: left;
+            position: relative;
+            list-style-type: none;
+            cursor: pointer;
+        }
+
+        .mobile #dropmenu {
+            margin: 0 auto;
+            display: none;
+        }
+
+        .mobile .topicosMenu a {
+            display: inline-block;
+        }
+
+        .mobile .topicosMenu li {
+            color: #032133;
+            font-size: 6vw;
+            width: 100%;
+            line-height: 50px;
+            text-decoration: none;
+            float: left;
+            position: relative;
+            list-style-type: none;
+            cursor: pointer;
         }
 
         .mobile .menu-mobile {
@@ -226,6 +249,9 @@
             margin-top: -2vw;
         }
 
+        .menu-mobile .dropmenu {
+            display: none;
+        }
 
         body {
             width: 100%;
