@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/menu.css"/>
     <script src="js/wow.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/slideout.min.js"></script>
+    <script src="js/jquery.color-2.1.2.min.js"></script>
     <script src="js/menu.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script>
@@ -19,26 +19,7 @@
   </script>
 </head>
 <body class="index paginaTema">
-    <div class="mobile">
-        <nav class="menu-mobile">
-            <div class="topicosMenu">
-                <a href="destaques.html">Destaques</a>
-                <div class="submenus">Temas ><ul id="dropmenu">
-                        <li><a href="alimentacao.html">Alimentação</a></li>
-                        <li><a href="sexualidade.html">Sexualidade</a></li>
-                        <li><a href="substancias.html">Consumos Nocivos</a></li>
-                    </ul>
-                </div>
-                <a href="sobre.html">Sobre</a>
-                <a href="parceiros.html">Parcerias</a>
-                <a href="#">Divulgação</a>
-                <a href="#">Fórum</a>
-            </div>
-        </nav>
-    </div>
-    
-    <div class="main">
-    <div class="zonaMenu">
+<div class="zonaMenu">
         <nav class="navbar">
             <a class="logo" href="index.html">YourPEL</a>
             <ul class="topicosMenu">
@@ -62,11 +43,27 @@
             </ul>
             <input type="button" class="active" value="Fórum">
         </nav>
-        <div class="menu mobile">
-            <button class="botao-mobile">☰</button>
+        <div class="navbar-mobile mobile">
             <a class="logo" href="index.html">YourPEL</a>
+            <button class="botao-mobile">☰</button>
+            <div class="clear"></div>
         </div>
+        <nav class="menu-mobile mobile">
+            <div class="topicosMenu">
+                <button>x</button>
+                <a href="destaques.html">Destaques</a>
+                <a class="temas" href="alimentacao.html">Alimentação</a>
+                <a class="temas" href="sexualidade.html">Sexualidade</a>
+                <a class="temas" href="substancias.html">Consumos Nocivos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="parceiros.html">Parcerias</a>
+                <a href="#">Divulgação</a>
+                <a href="#">Fórum</a>
+            </div>
+        </nav>
     </div>
+    
+    <div class="main">
         <div class="intro zonaced">
             <div class="bloco terco">
                 <h1>Your PEL</h1>
