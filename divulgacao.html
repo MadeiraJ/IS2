@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt">
+    <meta charset="UTF-8">
+    <title>Divulgação Your PEL</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/paginas.css"/>
+    <link rel="stylesheet" href="css/paginas_cor.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/smallerScreens.css"/>
+    <link rel="stylesheet" href="css/divulgacao_style.css"/>
+    <script src="js/wow.js"></script>
+    <script src="js/responsive_menu.js"></script>
+    <script src="js/publicacoes.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script>
+      new WOW().init();
+  </script>
+</head>
+<body class="divulgacaoPag">
+    <div class="rectangle-2">
+        <nav class="navbar">
+            <a class="logo" href="index.html">YourPEL</a>
+            <input type="button" class="active" id="forum" value="Fórum">
+            <ul id="topicosMenu">
+                <li class="divulgacao"><a href="#">Divulgação</a></li>
+                <li class="parceiros"><a href="parceiros.html">Parceiros</a></li>
+                <li class="sobre"><a href="sobre.html">Sobre</a></li>
+                <li class="temas">Temas
+                    <div class="dropdown">
+                        <button class="setaTemasMenu"> </button>
+                        <div class="submenus">
+                            <a  style="color: #032133;" href="alimentacao.html"> Alimentação</a>
+                            <a  style="color: #032133;" href="sexualidade.html">Sexualidade</a>
+                            <a  style="color: #032133;" href="substancias.html">Consumos Nocivos</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="destaques"><a href="destaques.html">Destaques</a></li>
+                <li class="forumMenu">Forum</li>
+            </ul>
+
+            <div id="sidebar" >
+                <button id="setaTemasSideMenu"> </button>
+                <ul id="menuSlide">
+                    <li><a href="destaques.html">Destaques</a></li>
+                    <li><a href="#">Divulgação</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#">Fórum</a></li>
+                    <li id="menuTemas" onclick="mostraMenu()">Temas
+                        <ul id="submenuSlide" style="display: none">
+                            <li><a href="alimentacao.html"> Alimentação</a></li>
+                            <li><a href="sexualidade.html">Sexualidade</a></li>
+                            <li><a href="substancias.html">Consumos Nocivos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="clear"></div>
+            </div>
+            <div id="botao_menuLateral" onclick="toggleSidebar(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+       <!-- <div class="tituloZonaConteudo">
+            <p class="divulgacaoTitulo">Divulgação</p>
+            <p class="aqui-podes-encontrar">Espaço reservado para mostrar as noticias mais recentes, eventos e publicações UMIS</p>
+        </div>-->
+        <div id="vistaGeral" style="display: block">
+            <div class="zona topo">
+                <h1>Divulgação</h1>
+                <p>Espaço reservado para mostrar as noticias mais recentes, eventos e publicações dos parceiros</p>
+            </div>
+        </div>
+        <div class="contentorDasNoticias">
+            <p class="noticias">Noticias</p>
+            <div class="contentorNoticia">
+                <div class="imagemNoticia"></div>
+                <div class="zonaTextoNoticia">
+                    <p class="postadoNoticia">Postado a 12 Janeiro 2017</p>
+                    <p class="tituloNoticia">Estudos revelam que o YourPEL faz bem ao cérebro</p>
+                    <p class="textoNoticia">Segundo os estudiosos, cerca de 23% das crianças entram na escola obesas…</p>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="contentorNoticia">
+                <div class="imagemNoticia"></div>
+                <div class="zonaTextoNoticia">
+                    <p class="postadoNoticia">Postado a 12 Janeiro 2017</p>
+                    <p class="tituloNoticia">Estudos revelam que o YourPEL faz bem ao cérebro</p>
+                    <p class="textoNoticia">Segundo os estudiosos, cerca de 23% das crianças entram na escola obesas…</p>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <p class="mostrarMais">Mostrar mais</p>
+        </div>
+        <div class="contentorDosEventos">
+            <p class="eventos">Eventos</p>
+            <div class="contentorEvento">
+                <div class="zonaTextoEvento">
+                    <p class="proximoEvento">PRÓXIMO EVENTO</p>
+                    <p class="dataEvento">20 setembro</p>
+                    <p class="horasEvento">14:30-18:00</p>
+                    <p class="localEvento">Escola Superior de Saúde de Santarém </p>
+                    <p class="tituloEvento">Open Day</p>
+                    <p class="descricaoEvento">Apresentação do projeto Your PEL - Promover e Empoderar para a Literacia em saúde na população jovem</p>
+                </div>
+                <div class="imagemEventos"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="contentorEvento">
+                <div class="zonaTextoEvento">
+                    <p class="proximoEvento">PRÓXIMO EVENTO</p>
+                    <p class="dataEvento">20 setembro</p>
+                    <p class="horasEvento">14:30-18:00</p>
+                    <p class="localEvento">Escola Superior de Saúde de Santarém </p>
+                    <p class="tituloEvento">Open Day</p>
+                    <p class="descricaoEvento">Apresentação do projeto Your PEL - Promover e Empoderar para a Literacia em saúde na população jovem</p>
+                </div>
+                <div class="imagemEventos"></div>
+                <div class="clear"></div>
+            </div>
+            <p class="mostrarMais">Mostrar mais</p>
+        </div>
+        <div class="contentorDasPublicacoes">
+            <p class="publicacoes">Publicações</p>
+            <p class="tituloPublicacao">Principais publicações associadas à suboperação UMIS – UNIDADE DE MONITORIZAÇÃO DE INDICADORES EM SAÚDE</p>
+            <div class="contentorPublicacoes">
+                <div class="divSeccao">
+                    <span class="tituloSeccao"> Livros publicados/organizados ou edições</span>
+                         <div class="iconMaisMenos">
+                             <img class="botaoMaisMenos" onclick="mostraPublicacao(this)" src="imagens/icon_mais.png">
+                         </div>
+                    <div class="zonaPublicacoes" style="display: none">
+                        <ul>
+                            <li>Amendoeira, José J. P. (2006). Uma biografia partilhada da enfermagem. a segunda metade do século XX. ed. 1, 1 vol., ISBN: 972-8485-67-0. Coimbra: Formasau.</li>
+                            <li> Silva, Mário (2010). Adesão ao regime terapêutico. Coimbra. Formasau. ISBN 978-989-8269-10-2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="divSeccao">
+                    <span class="tituloSeccao"> Capítulos de livros publicados</span>
+                    <div class="iconMaisMenos">
+                        <img class="botaoMaisMenos" onclick="mostraPublicacao(this)" src="imagens/icon_mais.png">
+                    </div>
+                    <div class="zonaPublicacoes" style="display: none">
+                        <ul>
+                            <li>Amendoeira, José J. P. (2006). Uma biografia partilhada da enfermagem. a segunda metade do século XX. ed. 1, 1 vol., ISBN: 972-8485-67-0. Coimbra: Formasau.</li>
+                            <li> Silva, Mário (2010). Adesão ao regime terapêutico. Coimbra. Formasau. ISBN 978-989-8269-10-2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="divSeccao">
+                    <span class="tituloSeccao"> Artigos em revistas com arbitragem científica</span>
+                    <div class="iconMaisMenos">
+                        <img class="botaoMaisMenos" onclick="mostraPublicacao(this)" src="imagens/icon_mais.png">
+                    </div>
+                    <div class="zonaPublicacoes" style="display: none">
+                    </div>
+                </div>
+                <div class="divSeccao">
+                    <span class="tituloSeccao"> Artigos publicados em livro de Atas</span>
+                    <div class="iconMaisMenos">
+                        <img class="botaoMaisMenos" onclick="mostraPublicacao(this)" src="imagens/icon_mais.png">
+                    </div>
+                    <div class="zonaPublicacoes" style="display: none">
+                    </div>
+                </div>
+                <div class="divSeccao">
+                    <span class="tituloSeccao"> Comunicações orais e posters em atividades científicas</span>
+                    <div class="iconMaisMenos">
+                        <img class="botaoMaisMenos" onclick="mostraPublicacao(this)" src="imagens/icon_mais.png">
+                    </div>
+                    <div class="zonaPublicacoes" style="display: none">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="rodape">
+            <h1 id="logoRodape">YourPEL</h1>
+            <div id="icons">
+                <p id="linhaIc"><img id="facebookIcon" src="imagens/Rodape/facebook_icon.png"/>
+                    <img id="instagramIcon" src="imagens/Rodape/facebook_icon.png"/>
+                    <img id="youtubeIcon" src="imagens/Rodape/youtube_icon.png"/></p>
+            </div>
+            <div class="zonaGeral menu">
+                <a href="index.html" class="estilo">Home</a>
+                <br>
+                <a href="destaques.html" class="estilo">Destaques </a>
+                <br>
+                <a href="sobre.html" class="estilo">Sobre </a>
+                <br>
+            </div>
+
+            <div class="zonaGeral2 menu">
+                <a href="parceiros.html" class="estilo">Parcerias</a>
+                <br>
+                <a href="#" class="estilo">Divulgação</a>
+                <br>
+                <a href="#" class="estilo">Fórum</a>
+                <br>
+            </div>
+
+            <div class="zonaArtigos menu">
+                <a href="alimentacao.html" class="estilo">Alimentação</a>
+                <br>
+                <a href="sexualidade.html" class="estilo">Sexualidade</a>
+                <br>
+                <a href="substancias.html" class="estilo">Consumos nocivos</a>
+                <br>
+            </div>
+
+            <div class="zonaContactos menu">
+                <p class="styConta" style="color: #1070B0;">Contactos</p>
+                <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
+                <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="zonaCopyrights">
+            <p class="copyrights">© 2018 IPSANTARÉM — Design by ESGTS</p>
+            <div id="icParceiros">
+                <a href="http://www.poci-compete2020.pt/"><img id="comp" class="estilo parceiros" src="imagens/Rodape/comp2020.png"/></a>
+                <a href="https://www.portugal2020.pt/"><img id="port" class="estilo parceiros" src="imagens/Rodape/port2020.png"/></a>
+                <a href="https://europa.eu/european-union/index_pt"><img id="eu" class="estilo parceiros" src="imagens/Rodape/UE.png"/></a>
+                <a href="https://www.fct.pt/"><img id="fct" class="estilo parceiros" src="imagens/Rodape/fct.png"/></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

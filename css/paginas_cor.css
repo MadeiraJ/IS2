@@ -86,7 +86,20 @@
 		background-color: var(--sexualidade-cor2);
     }
 
-    .alimentacao .tag a {
+	.forum_alimentacao .tag {
+		background-color: var(--alimentacao-cor1);
+	}
+
+	.forum_consumos .tag {
+		background-color: var(--consumos-cor1);
+	}
+
+	.forum_sexualidade .tag {
+		background-color: var(--sexualidade-cor1);
+	}
+
+
+	.alimentacao .tag a {
     	color: var(--alimentacao-cor1);
     }
     .consumos .tag a {
@@ -95,6 +108,16 @@
     .sexualidade .tag a {
     	color: var(--sexualidade-cor1);
     }
+
+	.forum_alimentacao .tag a {
+		color: #ffffff;
+	}
+	.forum_consumos .tag a {
+		color: #ffffff;
+	}
+	.forum_sexualidade .tag a {
+		color: #ffffff;
+	}
 
 	.alimentacao .texto p mark{
 		background-color: var(--alimentacao-cor2);
