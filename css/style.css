@@ -10,6 +10,8 @@
         }
         * {
             font-family: "Raleway Medium";
+            margin: 0;
+            padding: 0 auto;
         }
 
         .clear{
