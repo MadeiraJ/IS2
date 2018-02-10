@@ -459,26 +459,25 @@
                    }
 
 
-
-
 /*FIM MENU*/
 
-    @media only screen and (max-width: 600px) {
-        /*PAGINA TEMAS*/
+        @media only screen and (max-width: 600px) {
+            /*PAGINA TEMAS*/
             /*TITULO PRINCIPAL*/
-                .paginaTema .destaquesTitulo{
-                    font-size: 10vw;
-                }
 
-                .paginaTema .aqui-podes-encontrar{
-                    font-size: 5vw;
-                    line-height: normal;
-                    width: 90%;
-                }
+            .paginaTema .destaquesTitulo{
+                font-size: 10vw;
+            }
 
-                .paginaTema .texto p {
-                    display: none;
-                }
+            .paginaTema .aqui-podes-encontrar{
+                font-size: 5vw;
+                line-height: normal;
+                width: 90%;
+            }
+
+            .paginaTema .texto p {
+                display: none;
+            }
 
             /*POSTS E SABIAS QUE*/
                 .paginaTema .post .tituloArtigo {
@@ -946,6 +945,185 @@
                 font-size: 2.7vw;
                 line-height: 4.2vw;
             }
+
+            /*PAGINA DIVLGACAO*/
+
+            /*titulo*/
+            .divulgacaoPag .topo h1 {
+                font-size: 11vw !important;
+                line-height: normal;
+            }
+
+            .divulgacaoPag .topo p {
+                width: 80% !important;
+                font-size: 5vw !important;
+                line-height: normal !important;
+            }
+            /*noticias*/
+            .noticias{
+                font-size: 10vw !important;
+            }
+
+            .eventos{
+                font-size: 10vw !important;
+            }
+
+            .publicacoes{
+                font-size: 10vw !important;
+            }
+
+            .tituloSeccao{
+                font-size: 6vw !important;
+            }
+
+            .contentorDasNoticias {
+                width: 55% !important;
+               /* height: auto !important;*/
+
+            }
+
+            .contentorNoticia {
+                width: 145% !important;
+                height: auto !important;
+                margin-bottom: 7vw !important;
+            }
+
+            .imagemNoticia {
+                width: 100% !important;
+                height: 50vw !important;
+            }
+
+            .zonaTextoNoticia {
+                width: 100% !important;
+                height: auto !important;
+
+            }
+
+            .postadoNoticia{
+                font-size: 4vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw  !important;
+            }
+
+            .tituloNoticia{
+                font-size: 6vw !important;
+                line-height: 8vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw  !important;
+            }
+
+            .textoNoticia{
+                font-size: 4.5vw !important;
+                line-height: 8vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw !important;
+            }
+
+            .mostrarMais{
+                font-size: 6vw !important;
+            }
+
+            /*eventos*/
+
+            .contentorDosEventos {
+                width: 55% !important;
+                /* height: auto !important;*/
+
+            }
+
+            .contentorEvento {
+                width: 145% !important;
+                height: auto !important;
+                margin-bottom: 7vw !important;
+            }
+
+            .zonaTextoEvento{
+                float: left !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .imagemEventos{
+                float: left !important;
+                width: 100% !important;
+                height: 40vh !important;
+            }
+
+            .proximoEvento{
+                font-size: 4vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw  !important;
+            }
+
+            .dataEvento{
+                font-size: 8vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw  !important;
+            }
+
+            .horasEvento{
+                font-size: 6vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw  !important;
+            }
+
+            .localEvento{
+                font-size: 6vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw  !important;
+            }
+
+            .tituloEvento{
+                font-size: 10vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw  !important;
+            }
+
+            .descricaoEvento{
+                font-size: 6vw !important;
+                margin-left: 1vw  !important;
+                margin-right: 1vw  !important;
+            }
+
+            /*publicaçoes*/
+
+
+            .contentorDasPublicacoes {
+                width: 55% !important;
+                /* height: auto !important;*/
+
+            }
+
+            .tituloPublicacao{
+                font-size: 6vw !important;
+                line-height: 6vw !important ;
+                width: 150% !important;
+            }
+
+            .contentorPublicacoes{
+                width: 145% !important;
+                height: auto !important;
+                margin-bottom: 7vw !important;
+            }
+
+            .divSeccao{
+                margin-bottom: 10vw !important;
+            }
+
+            .tituloSeccao{
+                font-size: 6vw !important;
+                line-height:13vw !important ;
+                width: 100% !important;
+                letter-spacing: 0.3vw !important;
+            }
+
+            .zonaPublicacoes{
+                font-size: 5vw !important;
+            }
+
+
+
+
     }
 
     @media only screen and (max-width: 800px) and (min-width: 600px) {
@@ -1063,7 +1241,194 @@
                 width: 48% !important;
                 margin: 1% !important;
             }
+
+        /*PAGINA DIVLGACAO*/
+        .divulgacaoPag .topo h1 {
+            font-size: 11vw !important;
+            line-height: normal;
         }
+
+        .divulgacaoPag .topo p {
+            width: 80% !important;
+            font-size: 5vw !important;
+            line-height: normal !important;
+        }
+        .noticias{
+            font-size: 10vw !important;
+        }
+
+
+        .tituloSeccao{
+            font-size: 6vw !important;
+        }
+
+        .contentorDasNoticias {
+            width: 55% !important;
+            /* height: auto !important;*/
+
+        }
+
+        .contentorNoticia {
+            width: 145% !important;
+            height: auto !important;
+            margin-bottom: 7vw !important;
+        }
+
+        .imagemNoticia {
+            width: 100% !important;
+            height: 50vw !important;
+        }
+
+        .zonaTextoNoticia {
+            width: 100% !important;
+            height: auto !important;
+
+        }
+
+        .postadoNoticia{
+            font-size: 4vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw  !important;
+        }
+
+        .tituloNoticia{
+            font-size: 6vw !important;
+            line-height: 8vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw  !important;
+        }
+
+        .textoNoticia{
+            font-size: 4.5vw !important;
+            line-height: 8vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw !important;
+        }
+
+        .mostrarMais{
+            font-size: 6vw !important;
+        }
+
+        /*eventos*/
+
+
+        .eventos{
+            font-size: 10vw !important;
+        }
+
+
+        .contentorDosEventos {
+            width: 55% !important;
+            /* height: auto !important;*/
+
+        }
+
+        .contentorEvento {
+            width: 145% !important;
+            height: auto !important;
+            margin-bottom: 7vw !important;
+        }
+
+        .zonaTextoEvento{
+            float: left !important;
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        .imagemEventos{
+            float: left !important;
+            width: 100% !important;
+            height: 40vh !important;
+        }
+
+        .proximoEvento{
+            font-size: 4vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw  !important;
+        }
+
+        .dataEvento{
+            font-size: 8vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw  !important;
+        }
+
+        .horasEvento{
+            font-size: 6vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw  !important;
+        }
+
+        .localEvento{
+            font-size: 6vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw  !important;
+        }
+
+        .tituloEvento{
+            font-size: 10vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw  !important;
+        }
+
+        .descricaoEvento{
+            font-size: 6vw !important;
+            margin-left: 1vw  !important;
+            margin-right: 1vw  !important;
+        }
+
+        /*publicaçoes*/
+
+        .publicacoes{
+            font-size: 8vw !important;
+        }
+
+        .contentorDasPublicacoes {
+            width: 55% !important;
+            /* height: auto !important;*/
+
+        }
+
+        .tituloPublicacao{
+            font-size: 6vw !important;
+            line-height: 6vw !important ;
+            width: 150% !important;
+        }
+
+        .contentorPublicacoes{
+            width: 145% !important;
+            height: auto !important;
+            margin-bottom: 7vw !important;
+        }
+
+        .divSeccao{
+            margin-bottom: 10vw !important;
+        }
+
+        .tituloSeccao{
+            font-size: 6vw !important;
+            line-height:13vw !important ;
+            width: 100% !important;
+            letter-spacing: 0.3vw !important;
+        }
+
+        .zonaPublicacoes{
+            font-size: 5vw !important;
+        }
+        }
+
+
+
+    @media only screen and (max-width: 1250px) {
+        .contentorNoticia {
+        min-width: 130% !important;
+
+        }
+
+        .imagem{
+
+        }
+    }
 
     /*GALERIA FOTO DETALHE DISPOSITIVOS MOVEIS*/
         @media only screen and (max-width: 1250px) {
@@ -1166,3 +1531,4 @@
                 font-size: 3.4vw !important;
             }
         }
+
