@@ -309,6 +309,10 @@
 		        position: initial;
 		    }
 
+			#zonaDeVideos a {
+				cursor: pointer;
+			}
+
 		    #zonaDeVideos iframe{
 		        width: 100%;
 		    }
@@ -367,6 +371,109 @@
 
 		    #zonaDeVideos button {
 		        margin-top: 5%;
+			}
+
+		/*ZONA VIDEOS DETALHE*/
+			#zonavideoDetalhe #fechar{
+				position: relative;
+				background-image: url("../imagens/DetalheVideo/fecharA.png");
+				width: 3.4vw;
+				height: 3.4vw;
+				float: right;
+				margin-top: -40%;
+				margin-right: 2%;
+				background-size: cover;
+				cursor: pointer;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo{
+				position: relative;
+				width: 70%;
+				margin: auto;
+				margin-top: 5%;
+				border: 3px solid #FFF2D9;
+				border-radius: 6px;
+				padding: 1vw;
+				padding-bottom: 2vw;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo .video {
+				position: relative;
+				float: left;
+				width: 62%;
+				height: 27vw;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo .video iframe {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
+
+			#zonavideoDetalhe #vistaPlaylist {
+				position: relative;
+				width: 35%;
+				float: right;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				height: 27vw;
+				margin-top: -33.5vw;
+				list-style-type: none;
+				padding: 0 !important;
+			}
+
+			#zonavideoDetalhe #vistaPlaylist li div {
+				font-family: "Raleway Bold";
+				font-size: 15px;
+				background: rgba(0, 0, 0, 0.5);
+				display: none;
+				position: absolute;
+				width: 100%;
+				height: 48%;
+				color: #FFFFFF;
+				margin: 0;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo #vistaPlaylist li p {
+				width: 90%;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-top: 5%;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo #vistaPlaylist li:hover div {
+				display: block !important;
+				cursor: pointer;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo #vistaPlaylist li img {
+				width: 100%;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo #info {
+				position: relative;
+				float: left;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-top: 2%;
+				width: 90%;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo #info #tituloVideo {
+				position: relative;
+				font-family: "Raleway Bold";
+				font-size: 2.37vw;
+				font-weight: 900;
+				line-height: 3.4vw;
+			}
+
+			#zonavideoDetalhe #zonaVerVideo #info #descricaoVideo {
+				position: relative;
+				font-family: "Raleway Light";
+				font-size: 1.186vw;
+				font-weight: 600;
+				line-height: 1.779vw;
 			}
 
 		/*ZONA LINKS*/

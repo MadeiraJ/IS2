@@ -296,13 +296,13 @@
 	}
 
 
-	.alimentacao #zonaDeVideos .titulo{
+	.alimentacao #zonaDeVideos .titulo, .alimentacao #zonavideoDetalhe #zonaVerVideo #info #tituloVideo{
 		color: var(--alimentacao-cor1);
 	}
-	.consumos #zonaDeVideos .titulo{
+	.consumos #zonaDeVideos .titulo, .consumos #zonavideoDetalhe #zonaVerVideo #info #tituloVideo{
 		color: var(--consumos-cor1);
 	}
-	.sexualidade #zonaDeVideos .titulo{
+	.sexualidade #zonaDeVideos .titulo, .sexualidade #zonavideoDetalhe #zonaVerVideo #info #tituloVideo{
 		color: var(--sexualidade-cor1);
 	}
 

@@ -16,14 +16,14 @@
     <script src="js/menu.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/script.js"></script>
-    <!--<script src="js/glossario.js"></script>-->
-  
+    <script src="js/detalheVideo.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script>
       new WOW().init();
   </script>
 </head>
 <body class="paginaTema sexualidade">
+    <div id="zonaMain" style="display: block">
     <div class="zonaMenu">
         <nav class="navbar">
             <a class="logo" href="index.html">YourPEL</a>
@@ -91,6 +91,14 @@
             <div id="zonaDeVideos">
                     <p class="titulo wow fadeInDown"><mark>Vídeos educativos</mark> de respostas às tuas perguntas</p>
                     <div class="listaVideos">
+                        <!--PARA TESTE-->
+                        <a onclick="verVideo(this)" name="https://www.youtube.com/watch?v=8tpc_AKpDiU&list=PLuYPQRe9XElqaK1BcPqoR7rt9XY18XWof&index=3">
+                            <div class="postVideo hvr-grow wow fadeIn">
+                                <iframe src="https://www.youtube.com/embed/8tpc_AKpDiU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                                <p class="titulo">Sementes de Sésamo e...</p>
+                                <p class="texto">Muda a tua alimentação, muda a tua vida</p>
+                            </div>
+                        </a>
                     </div>
                     <a href="#" class="wow fadeIn hvr-grow carregarMais">Carregar mais</a>
             </div>
@@ -195,5 +203,21 @@
         </div>
     </div>
 </footer>
+        </div>
+    <div id="zonavideoDetalhe" style="display: none;">
+        <div id="zonaVerVideo">
+            <div id="vistaVideo" class="video">
+            </div>
+            <div id="info">
+                <h1 id="tituloVideo">Coiso</h1>
+                <p id="descricaoVideo">Coiso sososososo sososososo oooooooooooo oooooooooooso sosososo sososososo osososo sososos
+                    osos ossosnjhf osososo sososos </p>
+                <div class="clear"></div>
+            </div>
+            <ul id="vistaPlaylist"></ul>
+            <div class="clear"></div>
+        </div>
+        <a id="fechar" onclick="fechar()"></a>
+    </div>
 </body>
 </html>
