@@ -334,33 +334,44 @@
           }
 
       /*PAGINA INDEX*/
+          .index .intro {
+            display: flex;
+            margin: 0 auto;
+            height: 100vh;
+            background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,22,0.65) 100%), url(../imagens/imgInicial-min.jpg) no-repeat;
+            opacity: 0.8;
+            background-size: cover;
+          }
+
           .index .intro .terco h1 {
-              font-size: 8vw;
-              line-height: normal;
+            font-size: 8vw;
+            line-height: normal;
+            margin-bottom: 3vw;
           }
 
           .index .intro .terco {
-              width: 75%;
+            align-self: center;
+            width: 75%;
           }
 
           .index .intro .terco h3 {
-              font-size: 4vw;
-              line-height: normal;
-              margin-top: 25%;
+            font-size: 5vw;
+            line-height: normal;
           }
 
           .index .intro .terco button {
-              font-size: 4vw;
-              line-height: normal;
-              width: 32vw;
-              height: 12vw;
-              margin: 0 auto;
+            margin-top: 15%;
+            font-size: 4vw;
+            line-height: normal;
+            width: 40vw;
+            height: 16vw;
+            margin: 0 auto;
           }
 
           .index .metade {
-              float: none;
-              display: block;
-              width: 80%;
+            float: none;
+            display: block;
+            width: 80%;
           }
 
           .index .metade h1 {
@@ -413,10 +424,6 @@
               color: #062940;
               font-size: 4vw;
               line-height: normal;
-          }
-
-          .index .bloco.terco h1{
-            display: none;
           }
 
       /*PAGINA DESTAQUES*/

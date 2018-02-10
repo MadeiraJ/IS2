@@ -183,6 +183,7 @@
         }
 
         .menu-mobile .topicosMenu {
+            border-top: 1px white solid;
             height: 100vh;
             padding: 0;
             display: none;
@@ -222,10 +223,11 @@
             border: none;
             font-weight: bolder;
             position: absolute;
-            right: 4vw;
+            right: 5vw;
             top: 0vw;
-            margin: 5vw;
+            margin: 4vw;
             z-index: 10;
+            font-size: 7vw;
         }
 
         .menu-mobile .topicosMenu .temas {

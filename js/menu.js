@@ -6,7 +6,6 @@ $(document).ready(function () {
     if (menu.is(":visible")){
       $('html').css({"overflow": "initial"});
       menu.slideToggle("slow", function () {
-        //$('.index .zonaMenu').css("background-color", indexColor);
         $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
       });
     }
@@ -14,7 +13,7 @@ $(document).ready(function () {
     else {
       indexColor = $('.index .zonaMenu').css("background-color");
       menu.slideToggle("slow", function () {});
-        $('.index .zonaMenu').css("background-color", "rgba(6, 41, 64, 1)");
+      $('.index .zonaMenu').css("background-color", "rgba(6, 41, 64, 1)");
       $('html').css({"overflow": "hidden"});
     }
   });
@@ -23,7 +22,7 @@ $(document).ready(function () {
     var menu = $('.menu-mobile .topicosMenu');
     $('html').css({"overflow": "initial"});
     menu.slideToggle("slow", function () {
-      $('.index .zonaMenu').css("background-color", indexColor);
+      $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
     });
   })
   $(window).scroll(function(){
