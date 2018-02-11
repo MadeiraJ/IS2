@@ -110,7 +110,7 @@
     letter-spacing: 2px;
     line-height: 10px;
     text-decoration: none;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     letter-spacing: 2px;
 }
 
@@ -118,7 +118,7 @@
     margin-left: 2%;
     margin-top: 1%;
     color: #062940;
-    font-family: Raleway;
+    font-family: "Raleway Bold";
     font-size: 24px;
     font-weight: 800;
     line-height: 34px;
@@ -134,7 +134,7 @@
     position: relative;
     margin-left: 2%;
     color: #AEBAC2;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
@@ -146,7 +146,7 @@
     margin-top: 6%;
     margin-left: 1.5%;
     color: #24D7B4;
-    font-family: Raleway;
+    font-family: "Raleway Bold";
     font-size: 16px;
     font-weight: 800;
 }
@@ -157,7 +157,7 @@
     margin-top: 6%;
     margin-left: 1.5%;
     color: #FF6262;
-    font-family: Raleway;
+    font-family: "Raleway Bold";
     font-size: 16px;
     font-weight: 800;
 }
@@ -172,7 +172,7 @@
 .topicoNrRespostas{
     position: relative;
     color: #74B2DB;
-    font-family: Raleway;
+    font-family: "Raleway Bold";
     font-size: 18px;
     font-weight: 800;
 }
@@ -200,7 +200,7 @@
     transition: background-color .3s;
     border: 1px solid #BCE4FF;
     margin: 0 4px;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 18px;
     font-weight: 800;
 }
@@ -225,7 +225,7 @@
     padding-top: 4.5%;
     margin-left: 3.5%;
     color: #062940;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 24px;
     font-weight: 900;
 }
@@ -241,7 +241,7 @@
 .topicoNrRespostasAberto{
     position: relative;
     color: #74B2DB;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 18px;
     font-weight: 800;
 
@@ -268,7 +268,7 @@
     margin-top: 2%;
     margin-left: 3%;
     color: #74B2DB;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 18px;
     font-weight: 800;
     line-height: 26px;
@@ -280,7 +280,7 @@
 .textoResposta{
     position: relative;
     color: #062940;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 22px;
     font-weight: 600;
     margin-left: 3%;
@@ -295,7 +295,7 @@
     margin-right: 5%;
     padding-bottom: 1%;
     color: #24D7B4;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 16px;
     font-weight: 800;
 
@@ -325,7 +325,7 @@
 
 .topicoResponder{
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 18px;
     font-weight: 900;
     line-height: 21px;
@@ -352,7 +352,7 @@
 
 .linkProximoTopico{
     color: #74B2DB;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 18px;
     font-weight: 800;
     line-height: 26px;
@@ -360,7 +360,7 @@
 
 .linkVoltarLista{
     color: #74B2DB;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 18px;
     font-weight: 800;
     line-height: 26px;

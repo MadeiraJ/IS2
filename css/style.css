@@ -93,6 +93,7 @@
             width: 20%;
             padding-left: 6.1%;
             padding-top: 9.47%;
+            position: absolute;
         }
 
         #rodape #icons #facebookIcon, #rodape #icons #youtubeIcon, #rodape #icons #instagramIcon{
@@ -123,7 +124,7 @@
 
         #rodape .zonaGeral, #rodape .zonaGeral2{
             padding-left: 8%;
-            margin-top: -5%;
+            margin-top: 5%;
             float: left;
         }
 
@@ -134,14 +135,14 @@
         #rodape .zonaArtigos{
             position: relative;
             padding-left: 0%;
-            margin-top: -5%;
+            margin-top: 5%;
             float: left;
         }
 
         #rodape .zonaContactos{
             position: relative;
             padding-left: 3%;
-            margin-top: -5%;
+            margin-top: 5%;
             float: left;
         }
 
