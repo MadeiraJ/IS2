@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c252c76b-d282-47f2-af20-1129b9e12a33" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/divulgacao.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/divulgacao_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forum_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/forum_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/forum_topicoAberto.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/publicacoes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/paginas_cor.css" afterPath="$PROJECT_DIR$/css/paginas_cor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/arrowleftforum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/arrowrightforum.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/bullet_publi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/chat_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/evento1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/icon_mais.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/icon_menos.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/search_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imagens/tag_forum.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/divulgacao.html" afterPath="$PROJECT_DIR$/divulgacao.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/divulgacao_style.css" afterPath="$PROJECT_DIR$/css/divulgacao_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forum_index.html" afterPath="$PROJECT_DIR$/forum_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/forum_style.css" afterPath="$PROJECT_DIR$/css/forum_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forum_topicoAberto.html" afterPath="$PROJECT_DIR$/forum_topicoAberto.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/smallerScreens.css" afterPath="$PROJECT_DIR$/css/smallerScreens.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sobre.html" afterPath="$PROJECT_DIR$/sobre.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Versão 1.iws" />
@@ -35,51 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="divulgacao_style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/divulgacao_style.css">
+      <file leaf-file-name="forum_style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/forum_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2782" max-vertical-offset="5287">
-              <caret line="171" column="49" selection-start-line="171" selection-start-column="49" selection-end-line="171" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forum_topicoAberto.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum_topicoAberto.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.846153" vertical-offset="699" max-vertical-offset="3026">
-              <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="divulgacao.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/divulgacao.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7214022" vertical-offset="1734" max-vertical-offset="4165">
-              <caret line="125" column="43" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="smallerScreens.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/smallerScreens.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="21400" max-vertical-offset="26180">
-              <caret line="1277" column="22" selection-start-line="1277" selection-start-column="22" selection-end-line="1277" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.42857143" vertical-offset="839" max-vertical-offset="7191">
+              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -111,13 +77,13 @@
         <option value="$PROJECT_DIR$/sobre.html" />
         <option value="$PROJECT_DIR$/alimentacao.html" />
         <option value="$PROJECT_DIR$/css/paginas_cor.css" />
-        <option value="$PROJECT_DIR$/css/forum_style.css" />
-        <option value="$PROJECT_DIR$/forum_topicoAberto.html" />
         <option value="$PROJECT_DIR$/js/publicacoes.js" />
-        <option value="$PROJECT_DIR$/forum_index.html" />
-        <option value="$PROJECT_DIR$/css/smallerScreens.css" />
         <option value="$PROJECT_DIR$/css/divulgacao_style.css" />
         <option value="$PROJECT_DIR$/divulgacao.html" />
+        <option value="$PROJECT_DIR$/forum_topicoAberto.html" />
+        <option value="$PROJECT_DIR$/css/forum_style.css" />
+        <option value="$PROJECT_DIR$/forum_index.html" />
+        <option value="$PROJECT_DIR$/css/smallerScreens.css" />
       </list>
     </option>
   </component>
@@ -228,11 +194,158 @@
       <recent name="C:\Users\joão Madeira\Desktop\YOURPEL_INDEX_DESTAQUES_SOBRE_PARCEIROS\Versão 3\imagens" />
     </key>
   </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/alimentacao(2).html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/alimentacao.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/artigo_exemplo(2).html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/artigo_exemplo.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/css/paginas.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/css/paginas_cor.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/css/smallerScreens.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/css/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/destaques(2).html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/destaques.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/divulgacao.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/forum_index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/forum_topicoAberto.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/galeria.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/parceiros.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/sexualidade(2).html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/sexualidade.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/sobre.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/substancias(2).html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/substancias.html</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/css/menu.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/imagens/DetalheVideo/fecharA.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/imagens/DetalheVideo/fecharC.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/imagens/DetalheVideo/fecharS.png</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/index(2).html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/detalheVideo.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/jquery.color-2.1.2.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/menu.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/teste.html</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/coiso.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/js/responsive_menu.js</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -240,10 +353,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -285,7 +394,13 @@
       <option name="project" value="LOCAL" />
       <updated>1517925048969</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="forum e divulgacao adicionados">
+      <created>1518212428156</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518212428156</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -303,14 +418,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -329,7 +444,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="menu atualizado(resto das paginas)" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu atualizado(resto das paginas)" />
+    <MESSAGE value="forum e divulgacao adicionados" />
+    <option name="LAST_COMMIT_MESSAGE" value="forum e divulgacao adicionados" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -500,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/paginas_cor.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1035088" vertical-offset="1377" max-vertical-offset="8007">
-          <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/substancias(2).html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6239">
@@ -518,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="28.461538" vertical-offset="1454" max-vertical-offset="3519">
           <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coiso.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9855856" vertical-offset="48" max-vertical-offset="1989">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -556,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/responsive_menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46815833" vertical-offset="0" max-vertical-offset="581">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/glossario.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34767643" vertical-offset="2365" max-vertical-offset="3128">
@@ -591,14 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/forum_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7021">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/sectional.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29259896" vertical-offset="0" max-vertical-offset="2601">
@@ -621,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/publicacoes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26333907" vertical-offset="0" max-vertical-offset="663">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sobre.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846" vertical-offset="816" max-vertical-offset="4233">
@@ -642,26 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/paginas.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="21879">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37638375" vertical-offset="153" max-vertical-offset="4250">
-          <caret line="21" column="286" selection-start-line="21" selection-start-column="286" selection-end-line="21" selection-end-column="286" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#1;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#2;n#a#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="8942">
@@ -670,34 +730,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum_topicoAberto.html">
+    <entry file="file://$PROJECT_DIR$/js/publicacoes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.846153" vertical-offset="699" max-vertical-offset="3026">
-          <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
-          <folding />
+        <state vertical-scroll-proportion="0.40963855" vertical-offset="0" max-vertical-offset="663">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc;n#mostraPublicacao#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/smallerScreens.css">
+    <entry file="file://$PROJECT_DIR$/css/paginas.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="21400" max-vertical-offset="26180">
-          <caret line="1277" column="22" selection-start-line="1277" selection-start-column="22" selection-end-line="1277" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="23749">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/divulgacao_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2782" max-vertical-offset="5287">
-          <caret line="171" column="49" selection-start-line="171" selection-start-column="49" selection-end-line="171" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="5321">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="42" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum_topicoAberto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36624774" vertical-offset="1530" max-vertical-offset="3043">
+          <caret line="102" column="42" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/divulgacao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7214022" vertical-offset="1734" max-vertical-offset="4165">
-          <caret line="125" column="43" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="884" max-vertical-offset="4148">
+          <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -709,6 +781,40 @@
             <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#2;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/paginas_cor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33221477" vertical-offset="1298" max-vertical-offset="8007">
+          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/smallerScreens.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8244406" vertical-offset="28574" max-vertical-offset="29427">
+          <caret line="1709" column="0" selection-start-line="1709" selection-start-column="0" selection-end-line="1709" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7045045" vertical-offset="2686" max-vertical-offset="4250">
+          <caret line="181" column="30" selection-start-line="181" selection-start-column="30" selection-end-line="181" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/forum_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42857143" vertical-offset="839" max-vertical-offset="7191">
+          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
