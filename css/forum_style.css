@@ -1,21 +1,30 @@
 /*FORUM INDEX*/
 /*Base*/
-.forum_index .main{
+.forum .main{
     background-color: #F7FAFC;
 }
 
-.paginaTema .forumTitulo{
-    margin-top: 2%;
-    font-size: 4vw;
+.forum .topo h1 {
+    color: var(--geral-cor1);
+    font-family: "Raleway ExtraBold";
+    font-size: 4.3vw;
+    font-weight: 900;
+    line-height: 5.5vw;
     text-align: center;
-    font-family: "Raleway ExtraBold";
+    margin-bottom: 3%;
+    margin-top: 5%;
 }
 
-.tituloZonaConteudo .forumTitulo{
-    font-family: "Raleway ExtraBold";
+.forum .topo p {
+    width: 50%;
+    color: var(--geral-cor2);
+    font-size: 2.1vw;
+    font-weight: bold;
+    line-height: 2.81vw;
+    text-align: center;
+    margin: 0 auto;
 }
-
-.forum_index .conteudo{
+.forum .conteudo{
     position: relative;
     margin-top: 8%;
     margin-left: 8%;
@@ -57,8 +66,8 @@
     float: right;
     margin-top: 3%;
     margin-right: 3%;
-    height: 57px;
-    width: 192px;
+    height: 5vw;
+    width: 13vw;
     border: none;
     border-radius: 5px;
     background-color: #17A2FF;
@@ -92,7 +101,7 @@
     background-color: #F7FAFC;
 }
 
-.forum_index .div_topico .tag {
+.forum .div_topico .tag {
     display: inline-block;
     border-radius: 6px;
     padding: 0.5%;
@@ -100,11 +109,11 @@
     margin-top: 3%;
 }
 
-.forum_index .div_topico .tag img {
+.forum .div_topico .tag img {
     width: 1vw;
 }
 
-.forum_index .div_topico .tag a {
+.forum .div_topico .tag a {
     font-size: 0.7vw;
     font-weight: 800;
     letter-spacing: 2px;
@@ -233,9 +242,10 @@
 .zonaNrRespostasAberto{
     position:relative;
     float: left;
-    margin-top:-1%;
+    margin-top:1%;
     margin-left: 3%;
     z-index: 5;
+
 }
 
 .topicoNrRespostasAberto{
@@ -286,14 +296,14 @@
     margin-left: 3%;
     margin-right: 3%;
     padding-bottom: 3%;
-
+    margin-top: 3%;
 }
 
 .quemRespondeu{
     position: relative;
     float: right;
     margin-right: 5%;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     color: #24D7B4;
     font-family: Raleway;
     font-size: 16px;
