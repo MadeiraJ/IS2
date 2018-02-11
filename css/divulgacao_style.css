@@ -1,6 +1,6 @@
 /*DIVULGACAO*/
 
-.divulgacaoPag{
+.divulgacaoPag .main{
     position: relative;
     background-color: #F7FAFC;
 
@@ -29,6 +29,7 @@
     font-weight: 900;
     line-height: 5.5vw;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .divulgacaoPag .topo p {
@@ -75,7 +76,7 @@
     position: relative;
     width: 30%;
     height: 100%;
-   background-image: url("../imagens/alimentacao_3.jpg");
+    background-image: url("../imagens/alimentacao_3.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,7 +190,7 @@
 
 .dataEvento{
     position: relative;
-    margin-top: -1%;
+    margin-top: 0%;
     color: #17A2FF;
     font-family: Raleway;
     font-size: 42px;
@@ -197,39 +198,39 @@
 
 }.horasEvento{
      position: relative;
-     margin-top: -5%;
+     margin-top: 1%;
      color: #17A2FF;
      font-family: Raleway;
      font-size: 22px;
      font-weight: bold;
  }
 
- .localEvento{
-     position: relative;
-     margin-top: -1%;
-     color: #17A2FF;
-     font-family: Raleway;
-     font-size: 22px;
-     font-weight: bold;
- }
+.localEvento{
+    position: relative;
+    margin-top: 1%;
+    color: #17A2FF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: bold;
+}
 
- .tituloEvento{
-     position: relative;
-     margin-top: 10%;
-     color: #0A81D1;
-     font-family: Raleway;
-     font-size: 45px;
-     font-weight: 900;
-     margin-bottom: 0;
- }
+.tituloEvento{
+    position: relative;
+    margin-top: 10%;
+    color: #0A81D1;
+    font-family: Raleway;
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
 
- .descricaoEvento{
-     position: relative;
-     color: #032133;
-     font-family: Raleway;
-     font-size: 27px;
-     font-weight: 700;
- }
+.descricaoEvento{
+    position: relative;
+    color: #032133;
+    font-family: Raleway;
+    font-size: 27px;
+    font-weight: 700;
+}
 
 
 /*FIM EVENTOS*/
@@ -257,6 +258,7 @@
 
 .tituloPublicacao{
     width: 55%;
+    margin-left: 0;
     color: #0A81D1;
     font-family: Raleway;
     font-size: 22px;
