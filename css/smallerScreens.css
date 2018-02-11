@@ -227,12 +227,13 @@
 
               #zonaGlossario h1 {
                   font-size: 6vw;
+                  line-height: normal;
               }
 
               #zonaGlossario .titulo {
                   width: 80%;
                   width: auto;
-                  font-size: 7vw;
+                  font-size: 5vw;
                   line-height: normal;
                   margin-bottom: 3%;
               }
@@ -242,7 +243,7 @@
               }
 
               #glossario .letra {
-                  font-size: 6vw;
+                  font-size: 5vw;
                   padding: 1vw;
                   margin: 0 auto;
               }
@@ -254,12 +255,12 @@
               }
 
               #glossario .definicao h1{
-                  font-size: 6vw;
+                  font-size: 5vw;
                   line-height: normal;
               }
 
               #glossario .definicao p{
-                  font-size: 5vw;
+                  font-size: 4vw;
                   line-height: normal;
               }
 
