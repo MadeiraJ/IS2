@@ -11,6 +11,7 @@
         }
 
         .zonaMenu .navbar {
+            width: 90%;
             width: -webkit-fill-available;
             width: -moz-available;
             display: table;

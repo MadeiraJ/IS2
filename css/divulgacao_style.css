@@ -95,7 +95,7 @@
 
 .postadoNoticia{
     color: #74B2DB;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 18px;
     font-weight: 800;
     line-height: 26px;
@@ -103,7 +103,7 @@
 
 .tituloNoticia{
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 24px;
     font-weight: 800;
     line-height: 34px;
@@ -111,7 +111,7 @@
 
 .textoNoticia{
     color: #032133;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 18px;
     font-weight: 600;
     line-height: 28px;
@@ -121,7 +121,7 @@
     position: relative;
     margin-top: 4%;
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 22px;
     font-weight: 900;
     line-height: 26px;
@@ -182,7 +182,7 @@
     position: relative;
     margin-top: 5%;
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 15px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -192,7 +192,7 @@
     position: relative;
     margin-top: 0%;
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 42px;
     font-weight: 900;
 
@@ -200,7 +200,7 @@
      position: relative;
      margin-top: 1%;
      color: #17A2FF;
-     font-family: Raleway;
+     font-family: "Raleway Medium";
      font-size: 22px;
      font-weight: bold;
  }
@@ -209,7 +209,7 @@
     position: relative;
     margin-top: 1%;
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 22px;
     font-weight: bold;
 }
@@ -218,7 +218,7 @@
     position: relative;
     margin-top: 10%;
     color: #0A81D1;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 45px;
     font-weight: 900;
     margin-bottom: 0;
@@ -227,7 +227,7 @@
 .descricaoEvento{
     position: relative;
     color: #032133;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 27px;
     font-weight: 700;
 }
@@ -260,7 +260,7 @@
     width: 55%;
     margin-left: 0;
     color: #0A81D1;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 22px;
     font-weight: bold;
     line-height: 38px;
@@ -275,7 +275,7 @@
 .tituloSeccao{
     position: relative;
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 32px;
     font-weight: 900;
     line-height: 46px;
@@ -289,7 +289,7 @@
 
 .zonaPublicacoes{
     color: #062940;
-    font-family: Raleway;
+    font-family: "Raleway Medium";
     font-size: 22px;
     font-weight: 600;
     line-height: 36px;
