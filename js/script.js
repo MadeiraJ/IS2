@@ -158,9 +158,9 @@ function addBlocoSabiasQue(i, texto) {
 
 function addVideo(link, titulo, texto) {
     var video =
-        `<a href="#">
+        `<a onclick="verVideo(this)" name="${link}">
         <div class="postVideo hvr-grow wow fadeIn">
-            <iframe src="${link}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/${link.split('&list=')[0].split('watch?v=')[1]}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
             <p class="titulo">${titulo}</p>
             <p class="texto">${texto}</p>
         </div>
