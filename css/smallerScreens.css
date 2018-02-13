@@ -1630,9 +1630,31 @@
                 margin-top: 3% !important;
             }
 
+            /*galeria*/
+
+            .galeria {
+                font-size: 10vw !important;
+            }
+
+            .introGaleria {
+                font-size: 6vw !important;
+                line-height: 8vw !important;
+                width: 100% !important;
+                margin-bottom: 20% !important;
+            }
+
+            .btn_galeria {
+                width: 45vw !important;
+                height: 13vw !important;
+                font-size: 4.5vw !important;
+                margin-left: 0% !important;
+                margin-top: -4% !important;
+                margin-bottom: 16%;
+            }
+
             /*publicaçoes*/
             .publicacoes {
-                font-size: 8vw !important;
+                font-size: 10vw !important;
             }
 
             .contentorDasPublicacoes {
