@@ -1,21 +1,20 @@
 var vistaVideo, playlistID, vistaPlaylist, index;
 var urlVideo, id;
 var videos;
-var zonaVerVideo;
+var zonavideoDetalhe,zonaVerVideo;
 var main, close;
 var titulo, descricao;
-var cor;
+var cor, corBorda;
 function verVideo(elemento){
   main = document.getElementById('zonaMain');
-  zonaVerVideo = document.getElementById('zonavideoDetalhe');
+  zonavideoDetalhe = document.getElementById('zonavideoDetalhe');
+  zonaVerVideo = document.getElementById('zonaVerVideo');
   close = document.getElementById('fechar');
-  titulo = document.getElementById('tituloVideo');
-  descricao = document.getElementById('descricaoVideo');
+  titulo = document.getElementById('tituloVideo') != null? document.getElementById('tituloVideo'):document.getElementById('titulo');
+  descricao = document.getElementById('descricaoVideo') != null? document.getElementById('descricaoVideo'):document.getElementById('descricao');
 
-  mudarInfo(true, elemento);
-
-  verCores();
-
+  verCores(elemento);
+  zonaVerVideo.style.border = "3px solid "+corBorda;
   urlVideo = elemento.getAttribute("name");
   
   vistaVideo = document.getElementById('vistaVideo');
@@ -25,22 +24,31 @@ function verVideo(elemento){
   getPlaylistData(playlistID);
 }
 
-function verCores(){
-  var tema = document.body.className.split(" ")[1];
-  if (tema == "alimentacao") {
-    cor = "#F2A618";
-    close.style.backgroundImage = 'url("./imagens/DetalheVideo/fecharA.png")';
-  }else if (tema == "consumos") {
-    cor = "#24D7B4";
-    close.style.backgroundImage = 'url("./imagens/DetalheVideo/fecharC.png")';
-  }else if (tema == "sexualidade") {
-    cor = "#6153CC";
-    close.style.backgroundImage = 'url("./imagens/DetalheVideo/fecharS.png")';
-  }
+function verCores(elemento){
+    var tema;
+    if (document.body.className == "paginaTema destaques"){
+      tema = elemento.firstElementChild.className.split(" ")[0];
+    } else {
+      tema = document.body.className.split(" ")[1];
+    }
+    if (tema == "alimentacao") {
+      cor = "#F2A618";
+      corBorda = "#FFF2D9";
+      close.style.backgroundImage = 'url("./imagens/DetalheVideo/fecharA.png")';
+    }else if (tema == "consumos") {
+      cor = "#24D7B4";
+      corBorda = "#DBF8F3";
+      close.style.backgroundImage = 'url("./imagens/DetalheVideo/fecharC.png")';
+    }else if (tema == "sexualidade") {
+      cor = "#6153CC";
+      corBorda = "#E8E6F8";
+      close.style.backgroundImage = 'url("./imagens/DetalheVideo/fecharS.png")';
+    }
+  titulo.style.color = cor;
 }
 
 function mudarInfo(infoDoSite, elemento){
-  if(infoDoSite){
+  if(infoDoSite && document.body.className != "paginaTema destaques"){
     titulo.innerHTML = elemento.firstElementChild.children[1].innerHTML;
     descricao.innerHTML = elemento.firstElementChild.children[2].innerHTML;
   } else {
@@ -87,6 +95,7 @@ function buildHTML(data){ //Turns JSON data into HTML elements
   }
   vistaPlaylist.innerHTML = list_data; //After the for loop, insert that list of links into the html
   verificarQual();
+  mudarInfo(true, videos[index]);
 }
 
 function verificarQual(){
@@ -102,7 +111,7 @@ function verificarQual(){
   construirVideo(id);
   vistaPlaylist.childNodes[index].childNodes[0].style.display = "block";
   vistaPlaylist.childNodes[index].childNodes[0].style.color = cor;
-  zonaVerVideo.style.display = "block";
+  zonavideoDetalhe.style.display = "block";
   main.style.display = "none";
 }
 
@@ -122,6 +131,6 @@ function mudarVideo(elemento){
 }
 
 function fechar(){
-  zonaVerVideo.style.display = "none";
+  zonavideoDetalhe.style.display = "none";
   main.style.display = "block";
 }

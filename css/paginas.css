@@ -376,13 +376,12 @@
 
 		/*ZONA VIDEOS DETALHE*/
 			#zonavideoDetalhe #fechar{
-				position: relative;
-				background-image: url("../imagens/DetalheVideo/fecharA.png");
+				position: absolute;
+				float: right;
+				right: 3%;
+				top: 4%;
 				width: 3.4vw;
 				height: 3.4vw;
-				float: right;
-				margin-top: -40%;
-				margin-right: 2%;
 				background-size: cover;
 				cursor: pointer;
 			}
@@ -392,7 +391,7 @@
 				width: 70%;
 				margin: auto;
 				margin-top: 5%;
-				border: 3px solid #FFF2D9;
+				/*border: 3px solid #FFF2D9;*/
 				border-radius: 6px;
 				padding: 1vw;
 				padding-bottom: 2vw;
@@ -415,11 +414,10 @@
 			#zonavideoDetalhe #vistaPlaylist {
 				position: relative;
 				width: 35%;
-				float: right;
 				overflow-y: scroll;
 				overflow-x: hidden;
 				height: 27vw;
-				margin-top: -33.5vw;
+				margin-right: 0vw;
 				list-style-type: none;
 				padding: 0 !important;
 			}
@@ -456,9 +454,9 @@
 				position: relative;
 				float: left;
 				margin-left: 5%;
-				margin-right: 5%;
+				margin-right: 2%;
 				margin-top: 2%;
-				width: 90%;
+				width: 96%;
 			}
 
 			#zonavideoDetalhe #zonaVerVideo #info #tituloVideo {

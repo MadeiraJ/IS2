@@ -27,7 +27,7 @@
                         listaDestaques[i].texto
                     );
                 }
-
+                
                 else if (tipoBloco == "VIDEO") {
                     addBlocoVideo(
                         i + 1,
@@ -76,25 +76,25 @@
         }
     });
 })
-// ver cores
+
 function addArtigoEmDestaque(tema, imagem, titulo, texto, url) {
     var bloco =
-            `<a href="${url}">
-                <div class ="${tema.toLowerCase()} bloco-2 card artigo wow fadeIn hvr-grow">
-                    <img src="${imagem}">
-                    <div class ="textoBloco">
-                        <div class ="blocoTopo">                                             
-                            <p class ="titulo">${titulo}</p>
-                            <div class ="tag">
-                                <img src="imagens/tag${tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase()}.png">
-                                <a href="${tema.toLowerCase()}.html">${tema.toUpperCase()}</a>
-                            </div>
-                            <div class ="clear"></div>
+        `<a href="${url}">
+            <div class ="${tema.toLowerCase()} bloco-2 card artigo wow fadeIn hvr-grow">
+                <img src="${imagem}">
+                <div class ="textoBloco">
+                    <div class ="blocoTopo">
+                        <p class ="titulo">${titulo}</p>
+                        <div class ="tag">
+                            <img src="imagens/tag${tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase()}.png">
+                            <a href="${tema.toLowerCase()}.html">${verNomeTema(tema)} </a>
                         </div>
-                        <p class ="texto">${texto}</p>
+                        <div class ="clear"></div>
                     </div>
+                    <p class ="texto">${texto}</p>
                 </div>
-            </a>`;
+            </div>
+        </a>`;
     $(".col1").after(bloco);
 }
 
@@ -113,8 +113,8 @@ function addBlocoArtigo(i, tema, imagem, titulo, texto, url) {
                         <div class ="blocoTopo">
                             <p class ="titulo">${titulo}</p>
                             <div class ="tag">
-                                <img src="imagens/tag${tema.charAt(0).toUpperCase() +tema.substr(1).toLowerCase()}.png">
-                                <a href="${tema.toLowerCase()}.html">${tema.toUpperCase()}</a>
+                                <img src="imagens/tag${tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase()}.png">
+                                <a href="${tema.toLowerCase()}.html">${verNomeTema(tema)}</a>
                             </div>
                             <div class ="clear"></div>
                         </div>
@@ -140,13 +140,13 @@ function addBlocoSabiasQue(i, tema, imagem, texto) {
                         <p class ="titulo">SABIAS QUE</p>
                         <div class ="tag">
                             <img src="imagens/tag${tema.charAt(0).toUpperCase() +tema.substr(1).toLowerCase()}.png">
-                            <a href="${tema.toLowerCase()}.html">${tema.toUpperCase()}</a>
+                            <a href="${tema.toLowerCase()}.html">${verNomeTema(tema)} </a>
                         </div>
                         <div class ="clear"></div>
                     </div>
                     <p class ="texto">${texto}</p>
                 </div>
-            </div>`;
+             </div>`;
     $(inserirNaColuna).append(bloco);
 }
 
@@ -158,46 +158,56 @@ function addBlocoVideo(i, tema, link, titulo, texto) {
         inserirNaColuna = ".col2";
 
     var bloco =
-            `<a href="#">
+            `<div onclick="verVideo(this)" name="${link}" style="cursor: pointer;">
                 <div class ="${tema.toLowerCase()} bloco-1 card video wow fadeIn hvr-grow">
-                    <iframe src="${link}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    <div class ="textoBloco">
-                        <div class ="blocoTopo">
-                            <p class ="titulo">VIDEOS</p>
-                            <div class ="tag">
-                                <img src="imagens/tag${tema.charAt(0).toUpperCase() +tema.substr(1).toLowerCase()}.png">
-                                <a href="${tema.toLowerCase()}.html">${tema.toUpperCase()}</a>
-                            </div>
-                            <div class ="clear"></div>
-                        </div>
-                        <p class ="texto">${texto}</p>
-                    </div>
-                </div>
-             </a>`;
-    $(inserirNaColuna).append(bloco);
-}
-
-function addVideo(tema, link, titulo, texto) {
-    var video =
-            `<a href="#">
-                <div class ="${tema.toLowerCase()} video card wow fadeIn hvr-grow">
-                    <iframe src="${link}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/${link.split('&list=')[0].split('watch?v=')[1]}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                     <div class ="textoBloco">
                         <div class ="blocoTopo">
                             <p class ="titulo">VIDEOS</p>
                             <div class ="tag">
                                 <img src="imagens/tag${tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase()}.png">
-                                <a href="${tema.toLowerCase()}.html">${tema.toUpperCase()}</a>
+                                <a href="${tema.toLowerCase()}.html">${verNomeTema(tema)}</a>
                             </div>
                             <div class ="clear"></div>
                         </div>
                         <p class ="texto">${texto}</p>
                     </div>
                 </div>
-             </a>`;
+             </div>`;
+    $(inserirNaColuna).append(bloco);
+}
+
+function addVideo(tema, link, titulo, texto) {
+    var video=
+            `<div onclick="verVideo(this)" name="${link}" style="cursor: pointer;">
+                <div class ="${tema.toLowerCase()} video card wow fadeIn hvr-grow">
+                    <iframe src="https://www.youtube.com/embed/${link.split('&list=')[0].split('watch?v=')[1]}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <div class ="textoBloco">
+                        <div class ="blocoTopo">
+                            <p class ="titulo">VIDEOS</p>
+                            <div class ="tag">
+                                <img src="imagens/tag${tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase()}.png">
+                                <a href="${tema.toLowerCase()}.html"> ${verNomeTema(tema)} </a>
+                            </div>
+                            <div class ="clear"></div>
+                        </div>
+                        <p class ="texto">${texto}</p>
+                    </div>              
+                </div>
+             </div>`;
     $('.listaVideos').append(video);
 }
 
 function addClear(classeCss) {
     $(classeCss).append('<div class="clear"></div>');
+}
+
+function verNomeTema(tema) {
+    if (tema == "ALIMENTACAO") {
+        return "ALIMENTAÇÃO";
+    } else if (tema == "CONSUMOS") {
+        return "CONSUMOS NOCIVOS";
+    } else {
+        return "SEXUALIDADE";
+    }
 }

@@ -899,7 +899,7 @@
           }
       }
 
-    }
+
 
     @media only screen and (max-width: 800px) and (min-width: 600px) {
         /*PAGINA PARCEIROS*/
@@ -1530,7 +1530,6 @@
             #zonavideoDetalhe #fechar {
                 width: 4.4vw;
                 height: 4.4vw;
-                margin-top: -122%;
             }
 
             #zonavideoDetalhe #zonaVerVideo .video {
