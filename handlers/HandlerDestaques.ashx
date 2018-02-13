@@ -46,7 +46,7 @@ public class HandlerDestaques : IHttpHandler {
 
         listaDeDestaques.Add(
             serializer.Serialize(
-                new { tema = "SEXUALIDADE", tipo = "VIDEO", link = @"https://www.youtube.com/embed/3M_5oYU-IsU", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
+                new { tema = "SEXUALIDADE", tipo = "VIDEO", link = @"https://www.youtube.com/watch?v=3M_5oYU-IsU&list=PLJQeCC1As9Poqoy_3R13mI1ReVD-P-bqt", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
         ));
 
         listaDeDestaques.Add(
@@ -61,7 +61,7 @@ public class HandlerDestaques : IHttpHandler {
 
         listaDeDestaques.Add(
             serializer.Serialize(
-                new { tema = "ALIMENTACAO", tipo = "VIDEO", link = @"https://www.youtube.com/embed/3M_5oYU-IsU", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
+                new { tema = "ALIMENTACAO", tipo = "VIDEO", link = @"https://www.youtube.com/watch?v=3M_5oYU-IsU&list=PLJQeCC1As9Poqoy_3R13mI1ReVD-P-bqt", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
         ));
 
         listaDeDestaques.Add(
@@ -71,7 +71,7 @@ public class HandlerDestaques : IHttpHandler {
 
         listaDeDestaques.Add(
             serializer.Serialize(
-                new { tema = "CONSUMOS", tipo = "VIDEO", link = @"https://www.youtube.com/embed/3M_5oYU-IsU", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
+                new { tema = "CONSUMOS", tipo = "VIDEO", link = @"https://www.youtube.com/watch?v=3M_5oYU-IsU&list=PLJQeCC1As9Poqoy_3R13mI1ReVD-P-bqt", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
         ));
 
         listaDeDestaques.Add(
@@ -121,17 +121,17 @@ public class HandlerDestaques : IHttpHandler {
         //Valores a serem apagados
         listaDeVideos.Add(
             serializer.Serialize(
-                new { tema = "ALIMENTACAO", link = @"https://www.youtube.com/embed/3M_5oYU-IsU", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
+                new { tema = "ALIMENTACAO", link = @"https://www.youtube.com/watch?v=3M_5oYU-IsU&list=PLJQeCC1As9Poqoy_3R13mI1ReVD-P-bqt", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
         ));
 
         listaDeVideos.Add(
             serializer.Serialize(
-                new { tema = "SEXUALIDADE", link = @"https://www.youtube.com/embed/6rYTz-KG5tQ", titulo = "Sociedade do mal", texto = "MAL" }
+                new { tema = "SEXUALIDADE", link = @"https://www.youtube.com/watch?v=0dVa81ecacE&list=PLrDezo9S25Je5OnmKCXCy_GPYUDQtj3dS", titulo = "Sociedade do mal", texto = "MAL" }
         ));
 
         listaDeVideos.Add(
             serializer.Serialize(
-                new { tema = "CONSUMOS", link = @"https://www.youtube.com/embed/6rYTz-KG5tQ", titulo = "Sociedade do mal", texto = "MAL" }
+                new { tema = "CONSUMOS", link = @"https://www.youtube.com/watch?v=0dVa81ecacE&list=PLrDezo9S25Je5OnmKCXCy_GPYUDQtj3dS", titulo = "Sociedade do mal", texto = "MAL" }
         ));
         json = serializer.Serialize(listaDeVideos);
 
