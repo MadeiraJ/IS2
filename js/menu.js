@@ -4,6 +4,7 @@ $(document).ready(function () {
 
     var menu = $('.menu-mobile .topicosMenu');
     if (menu.is(":visible")){
+      $('html').css({"overflow": "auto"});
       $('html').css({"overflow": "initial"});
       menu.slideToggle("slow", function () {
         $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
@@ -20,6 +21,7 @@ $(document).ready(function () {
 
   $('.menu-mobile button').click(function() {
     var menu = $('.menu-mobile .topicosMenu');
+    $('html').css({"overflow": "auto"});
     $('html').css({"overflow": "initial"});
     menu.slideToggle("slow", function () {
       $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
