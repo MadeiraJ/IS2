@@ -106,6 +106,14 @@
         }
 
   @media only screen and (max-width: 600px) {
+      .main {
+        padding-top: 13%;
+      }
+
+      .tituloZonaConteudo {
+        padding-top: 10%;
+      }
+
       /*PAGINA TEMAS*/
           /*TITULO PRINCIPAL*/
               .paginaTema .destaquesTitulo{
@@ -219,6 +227,16 @@
               }
 
           /*ZONA GLOSSARIO*/
+            #zonaGlossario .titulo {
+              font-size: 9vw;
+              line-height: normal;
+            }
+
+            #zonaGlossario .descricao {
+              width: 95%;
+              font-size: 6vw;
+              line-height: normal;
+            }
 
             #glossario {
               height: 100%;
@@ -258,8 +276,8 @@
               display: inline-block;
               font-family: "Raleway Bold";
               font-size: 12vw;
-              width: 18vw;
-              height: 18vw;
+              width: 17vw;
+              height: 17vw;
               border-radius: 9vw;
               font-weight: 800;
               box-sizing: border-box;
@@ -309,12 +327,12 @@
             }
 
             #glossario .gradiente { 
-              width: 100%;
+              width: 96vw;
               height: 18vw;
               display: block;
               position: absolute;
               content: '';
-              background-image: linear-gradient( to right, #FFFFFFFF, transparent 30%, transparent 70%, #FFFFFFFF );
+              background-image: linear-gradient( to right, #FFF, transparent 30%, transparent 70%, #FFF );
               pointer-events: none;
             }
 
@@ -409,6 +427,10 @@
           }
 
       /*PAGINA INDEX*/
+          .index .main {
+            padding-top: 0;
+          }
+
           .index .intro {
             display: flex;
             margin: 0 auto;
@@ -1953,3 +1975,12 @@
             /*FIM FORUM NOVO TOPICO*/
 
         }
+
+
+
+/*INDEX MENU*/
+  @media only screen and (max-height: 500px) {
+    .index .intro .terco h1 {
+      display: none;
+    }
+}
