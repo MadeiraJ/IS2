@@ -603,6 +603,13 @@
     }
 
     .artigo blockquote{
+    	width: 42.4%;
+        display: inline-block;
+        color: #4A4A4A;
+        font-family: "DroidSerif";
+        font-size: 1.8vw;
+        line-height: 2.6vw;
+        text-align: left;
         margin-top: 5%;
         margin-bottom: 5%;
         quotes: "\201C""\201D""\2018""\2019";
@@ -663,6 +670,133 @@
         padding-top: 3%;
     }
 
+/*INICIO NOTICIAS*/
+    .noticia{
+        font-family: "Raleway Medium";
+    }
+
+    .noticia .cabecalhoNoticia{
+		padding-top: 10%;
+        text-align: center;
+    }
+
+    .noticia .cabecalhoNoticia .titulo{
+        font-size: 4.299vw;
+        font-weight: 900;
+        line-height: 5.485vw;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .noticia .cabecalhoNoticia .detalhe{
+        font-size: 1.186vw;
+        font-weight: bold;
+        line-height: 1.927vw;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .noticia .cabecalhoNoticia .detalhe p{
+        display: inline-block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .noticia .cabecalhoNoticia .imagemCapa img{
+        width: 60%;
+    }
+
+    .noticia .conteudo{
+        margin-top: 5%;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .noticia .conteudo p{
+        width: 42.4%;
+        display: inline-block;
+        color: #4A4A4A;
+        font-family: "DroidSerif";
+        font-size: 1.8vw;
+        line-height: 2.6vw;
+        text-align: left;
+    }
+
+    .noticia .conteudo img{
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    .noticia blockquote{
+    	width: 42.4%;
+        display: inline-block;
+        color: #4A4A4A;
+        font-family: "DroidSerif";
+        font-size: 1.8vw;
+        line-height: 2.6vw;
+        text-align: left;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        quotes: "\201C""\201D""\2018""\2019";
+        display: -webkit-inline-box;
+        padding-left: 5%;
+        font-style: normal;
+        font-size: 2vw;
+    }
+    
+    .noticia blockquote:before {
+        content: open-quote;
+        font-size: 2em;
+
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.2em;
+    }
+
+    .noticia blockquote:after {
+        content: close-quote;
+        font-size: 2em;
+
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.2em;   
+    }
+
+    .noticia blockquote p {
+        display: inline;
+        line-height: normal;
+    }
+
+    .noticia .noticiasRelacionadas {
+        margin-top: 3%;
+        padding-top: 3%;
+        text-align: center;
+    }
+
+    .noticia .noticiasRelacionadoas a{
+        display: unset;
+        text-decoration: none;
+    }
+
+    .noticia .noticiasRelacionadosas bloco-1{
+        text-align: left;
+        width: 29%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .noticia .noticiasRelacionadosas bloco-1 .zonaTexto{
+        padding: 10%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    .noticia .noticiasRelacionadosas bloco-1 .textonoticia{
+        padding-top: 3%;
+    }
+
 /*INICIO DESTAQUES*/
 	.destaques .conteudo {
 		margin-top: 8%;
@@ -672,8 +806,6 @@
 
     .destaques .textoBloco {
     	padding: 1vw;
-    	padding-left: 2vw;
-    	padding-right: 2vw;
     }
 
     .destaques .titulo {
@@ -681,11 +813,11 @@
     }
 
 
-
 	/*TAG*/
 		.destaques .card .blocoTopo {
 			margin: 0 auto;
 			text-align: left;
+			margin-left: 0.6vw;
 		}
 
 		.destaques .card .blocoTopo .titulo {
@@ -752,11 +884,14 @@
     	}
 
     	.destaques .texto {
-            color: var(--geral-cor1);
+            color: var(--geral-cor1)!important;
             font-size: 1.48vw;
             font-weight: 600;
             line-height: 2.52vw;
-            /*font-family: "Raleway Light";*/
+            padding-left: 1vw;
+    		padding-right: 1vw;
+    		padding-top: 0.5vw;
+    		padding-bottom: 2vw;
     	}
 
     	.destaques .zonaVideos {
@@ -823,6 +958,13 @@
 		.destaques .carregarMais {
 			background-color: var(--geral-cor2);
 			margin-top: 5%;
+		}
+
+		.destques .sabias-que {
+			box-sizing: border-box;
+    		border: 3px solid #FFF;
+    		border-radius: 6px;
+    		box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
 		}
 
 /*INICIO INDICE*/
