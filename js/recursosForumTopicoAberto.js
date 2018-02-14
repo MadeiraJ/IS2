@@ -1,5 +1,7 @@
 ﻿$(document).ready(function () {
 
+   
+
     $.ajax({
         url: `/handlers/HandlerForumTopicoAberto.ashx?type=1`,
         type: "POST",
@@ -11,11 +13,59 @@
               respostas.texto,
               respostas.quemRespondeu
             );
+            contadorRespostas();
+        }
+    });
+    
+    $.ajax({
+        url: `/handlers/HandlerForumTopicoAberto.ashx?type=2`,
+        type: "POST",
+        /*data: { classe: classe },*/
+        dataType: "json",
+        success: function (descricao) {
+            addDescricao(
+              descricao.texto,
+              descricao.data
+            );
+        }
+
+    });
+
+    $.ajax({
+        url: `/handlers/HandlerForumTopicoAberto.ashx?type=3`,
+        type: "POST",
+        /*data: { classe: classe },*/
+        dataType: "json",
+        success: function (titulo) {
+            addTitulo(
+              titulo.texto
+            );
         }
     });
 
-   contadorRespostas();
+  
 })
+
+function addTitulo(texto) {
+    var inserirNaColuna = ".zonaTitulo";
+
+    var titulo =
+            ` <p class="tituloTopico">${texto}</p>`;
+
+    $(inserirNaColuna).append(titulo);
+}
+  
+function addDescricao(texto,data) {
+    var inserirNaColuna = ".div_descricao";
+
+    var descricao =
+            `<p class ="textoResposta" style="padding-top: 5%;  padding-bottom: 0;">${texto}</p>
+                <div class="clear"></div>
+                <p class ="dataDescricao">${data}</p>
+                <div class="clear"></div>`;
+
+    $(inserirNaColuna).append(descricao);
+}
 
 function contadorRespostas() {
 
@@ -31,18 +81,20 @@ function contadorRespostas() {
 }
 
     function addResposta(data,texto,quemRespondeu) {
-        var inserirNaColuna = ".div_Respostas";
+        var inserirNaColuna = ".zonaRespostas";
 
         var resposta =
-                `<p class ="dataResposta">Postado a ${data}</p>
+                ` <div class="div_Respostas" style="margin-top: 8%">
+                <p class ="dataResposta">Postado a ${data}</p>
                      <p class ="textoResposta">${texto}</p>
                          <div class ="clear"></div>
                      <p class ="quemRespondeu">Respondido por ${quemRespondeu}</p>
-                     <div class ="clear"></div>`;
+                     <div class ="clear"></div>
+                     </div>`;
 
         $(inserirNaColuna).append(resposta);
     }
-
+    
     
     
 
