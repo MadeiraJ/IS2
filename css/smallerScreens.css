@@ -1212,7 +1212,7 @@
         .forum .div_topico .tag img {
             width: 3vw !important;
         }
-        .forum .div_topico .tag a{
+        .forum .div_topico .tag .filtroTema{
             font-size: 3vw !important;
         }
 
@@ -1276,23 +1276,23 @@
         }
 
         .div_escolhaAlimentacao{
-            width: 70vw !important;
-            height: 12vh !important;
+            width: 72.2vw !important;
+            height: 24vh !important;
             margin-bottom: 8% !important;
             margin-top: 8% !important;
         }
 
         .div_escolhaConsumos{
-            width: 70vw !important;
-            height: 12vh !important;
+            width: 72.2vw !important;
+            height: 24vh !important;
             display: block !important;
             margin-bottom: 8% !important;
         }
 
 
         .div_escolhaSexualidade{
-            width: 70vw !important;
-            height: 12vh !important;
+            width: 72.2vw !important;
+            height: 24vh !important;
             display: block !important;
             margin-bottom: 8% !important;
         }
@@ -1709,6 +1709,7 @@
             .tituloTopico {
                 font-size: 6vw !important;
                 margin-bottom: 2%;
+                margin-left: 5.5% !important;
             }
 
             .topicoNrRespostasAberto {
@@ -1779,7 +1780,7 @@
                 width: 3vw !important;
             }
 
-            .forum .div_topico .tag a {
+            .forum .div_topico .tag .filtroTema {
                 font-size: 3vw !important;
             }
 
@@ -1797,16 +1798,27 @@
                 line-height: 10vw !important;
             }
 
+            .zonaDiaHoraEstado{
+                height: 16vw;
+            }
+
             .textoDiaHora {
                 font-size: 5vw !important;
+                float: none !important;
             }
 
             .topicoAtivo {
                 font-size: 5vw !important;
+                position: absolute !important;
+                margin-top: 1% !important;
+                margin-left: 2% !important;
             }
 
             .topicoFechado {
                 font-size: 5vw !important;
+                position: absolute !important;
+                margin-top: 1% !important;
+                margin-left: 2% !important;
             }
 
             .zonaMudançaPaginas {
@@ -1828,6 +1840,7 @@
 
             .novoTopico{
                 font-size: 5vw !important;
+                margin-left: 5.5% !important;
             }
             
             .textoTituloNovoTopico{
@@ -1837,30 +1850,37 @@
 
             .div_tituloNovoTopico{
                 margin-bottom: 8% !important;
+                margin-left: 5.5% !important;
+                margin-right: 5.5% !important;
             }
 
             .textoEscolha{
                 font-size: 5vw !important;
             }
 
+            .div_escolhaTipoTopico{
+                margin-left: 5.5% !important;
+                margin-right: 5.5% !important;
+            }
+
             .div_escolhaAlimentacao{
-                width: 70vw !important;
+                width: 72.8vw !important;
                 margin-bottom: 8% !important;
                 margin-top: 3% !important;
             }
 
             .div_escolhaConsumos{
-                width: 70vw !important;
+                width: 72.8vw !important;
                 display: block !important;
                 margin-bottom: 8% !important;
+                margin-left: 0% !important;
             }
 
-
             .div_escolhaSexualidade{
-                width: 70vw !important;
-
+                width: 72.8vw !important;
                 display: block !important;
                 margin-bottom: 8% !important;
+                margin-left: 0% !important;
             }
 
             .round label{
@@ -1869,7 +1889,8 @@
             }
 
             .div_descricaoNovoTopico{
-                width: 74vw !important;
+                margin-left: 5.5% !important;
+                margin-right: 5.5% !important;
             }
 
             .textoDescricao{
