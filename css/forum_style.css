@@ -197,14 +197,14 @@
 /*FIM TÓPICOS*/
 
 /*PAGINAÇÃO*/
-.zonaMudançaPaginas{
+.zonaMudancaPaginas {
     display: inline-block;
     margin-left: 35%;
     padding-bottom: 3%;
     padding-top: 3%;
 }
 
-.zonaMudançaPaginas a{
+.zonaMudancaPaginas a{
     color: #17A2FF;
     float: left;
     padding: 8px 16px;
@@ -217,12 +217,12 @@
     font-weight: 800;
 }
 
-.zonaMudançaPaginas a.active {
+.zonaMudancaPaginas a.active {
     border: 1px solid #74B2DB;
     color: #17A2FF;
 }
 
-.zonaMudançaPaginas a:not(.active) {
+.zonaMudancaPaginas a:not(.active) {
     color: #BCE4FF;
 }
 /*FIM PAGINAÇÃO*/
@@ -245,7 +245,7 @@
 .zonaNrRespostasAberto{
     position:relative;
     float: left;
-    margin-top:1%;
+    margin-top:4%;
     margin-left: 3%;
     z-index: 5;
 
@@ -263,6 +263,19 @@
 .simboloResposta{
     display: inline-block;
     vertical-align: middle;
+}
+
+
+.div_descricao{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 3%;
+    width: 90%;
+    height: 100%;
+    z-index: 5;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 1px #BCE4FF;
 }
 
 .div_Respostas{
@@ -290,6 +303,18 @@
 
 }
 
+.dataDescricao{
+    position: relative;
+    float: right;
+    margin-right: 3%;
+    color: #74B2DB;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
 
 .textoResposta{
     position: relative;
@@ -345,9 +370,9 @@
     line-height: 21px;
 }
 
-.zonaMudançaTopicos{
+.zonaMudancaTopicos {
     width: 100%;
-    height: 3vw;
+    height: 6vw;
 }
 
 .zonaProximo{
