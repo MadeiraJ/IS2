@@ -64,7 +64,7 @@
 .btn_novoTopico {
     position: relative;
     float: right;
-    margin-top: 3%;
+    margin-top: 3.5%;
     margin-right: 3%;
     height: 5vw;
     width: 13vw;
@@ -111,16 +111,17 @@
 
 .forum .div_topico .tag img {
     width: 1vw;
+    vertical-align: middle;
 }
 
-.forum .div_topico .tag a {
+.forum .div_topico .tag .filtroTema{
     font-size: 0.7vw;
     font-weight: 800;
-    letter-spacing: 2px;
     line-height: 10px;
     text-decoration: none;
     font-family: "Raleway medium";
     letter-spacing: 2px;
+    color: #ffffff;
 }
 
 .textoTopicos {
@@ -147,28 +148,30 @@
     font-size: 16px;
     font-weight: 800;
     line-height: 24px;
-
+    float: left;
 }
 
 .topicoAtivo{
     position: relative;
-    margin-top: 6%;
+    margin-top: 0.2%;
     margin-left: 1.5%;
     color: #24D7B4;
     font-family: "Raleway Bold";
     font-size: 16px;
     font-weight: 800;
+    float: left;
 }
 
 
 .topicoFechado{
     position: relative;
-    margin-top: 6%;
+    margin-top: 0.2%;
     margin-left: 1.5%;
     color: #FF6262;
     font-family: "Raleway Bold";
     font-size: 16px;
     font-weight: 800;
+    float: left;
 }
 
 .zonaNrRespostas{
@@ -259,6 +262,7 @@
 
 .simboloResposta{
     display: inline-block;
+    vertical-align: middle;
 }
 
 .div_Respostas{
@@ -343,21 +347,23 @@
 
 .zonaMudançaTopicos{
     width: 100%;
-    height: 9vw;
+    height: 3vw;
 }
 
 .zonaProximo{
     position: relative;
     float: right;
     margin-top: 2.5%;
-    margin-right: 4.5%;
+    margin-right: 3.5%;
+    margin-bottom: 2.5%;
 }
 
 .zonaAnterior{
     position: relative;
     float: left;
     margin-top: 2.5%;
-    margin-left: 4.5%;
+    margin-left: 3.5%;
+    margin-bottom: 2.5%;
 }
 
 .linkProximoTopico{
@@ -421,7 +427,7 @@
 
 .novoTopico {
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway medium";
     font-size: 2vw;
     font-weight: bold;
     line-height: 38px;
@@ -433,8 +439,7 @@
     position: relative;
     margin-top: 3%;
     margin-left: 3.5%;
-    margin-right: 3%;
-    width: 90%;
+    margin-right: 3.5%;
     height: 100%;
     z-index: 5;
     box-shadow: 0 1px 3px 1px #BCE4FF;
@@ -445,7 +450,7 @@
     height: auto;
     opacity: 0.8;
     color: #0970B5;
-    font-family: Raleway;
+    font-family: "Raleway light";
     font-size: 1.5vw;
     font-weight: 600;
     line-height: 36px;
@@ -458,17 +463,17 @@
 
 
 .div_escolhaTipoTopico {
-    width: 100%;
     height: auto;
-    margin-top: 2% ;
+    margin-top: 2%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
 }
 
 .div_escolhaAlimentacao{
     position: relative;
     float: left;
-    margin-left: 3.5%;
     height: 20%;
-    width: 24vw;
+    width: 30.5%;
     border-radius: 6px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 6px 2px rgba(242,166,24,0.2);
@@ -479,7 +484,7 @@
     position: relative;
     float: left;
     display: inline-block;
-    margin-left: 3.5%;
+    margin-left: 3.3%;
     height: 20%;
     width: 24vw;
     border-radius: 6px;
@@ -491,7 +496,7 @@
     position: relative;
     float: left;
     display: inline-block;
-    margin-left: 3.5%;
+    margin-left: 3.3%;
     height: 20%;
     width: 24vw;
     border-radius: 6px;
@@ -505,7 +510,7 @@
     float: left;
     opacity: 0.4;
     color: #0970B5;
-    font-family: Raleway;
+    font-family: "Raleway light";
     font-size: 1.5vw;
     font-weight: 600;
     line-height: 36px;
@@ -565,8 +570,7 @@
     position: relative;
     margin-top: 3%;
     margin-left: 3.5%;
-    margin-right: 3%;
-    width: 90%;
+    margin-right: 3.5%;
     z-index: 5;
     background-color: #F7FAFC;
     box-shadow: 0 1px 3px 1px #BCE4FF;
@@ -576,7 +580,7 @@
 .zonaTextoDescricao{
     position: relative;
     float: left;
-    width: 70vw;
+    width: 94%;
     height: auto;
     background-color: #ffffff;
     margin: 3% 3% 3% 3%;
@@ -592,7 +596,7 @@
     margin-top: 2%;
     margin-left: 2%;
     color: #A0C8E2;
-    font-family: Raleway;
+    font-family: "Raleway light";
     font-size: 22px;
     font-weight: 600;
     line-height: 36px;
@@ -611,13 +615,14 @@
     position: relative;
     float: left;
     color: #17A2FF;
-    font-family: Raleway;
+    font-family: "Raleway light";
     font-size: 18px;
     font-weight: 900;
     line-height: 21px;
     text-align: right;
     margin-top: 7%;
     margin-right: 6%;
+    cursor: pointer;
 }
 
 
