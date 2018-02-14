@@ -40,9 +40,12 @@ public class TemasHandler : IHttpHandler {
         var serializer = new JavaScriptSerializer();
 
         String tema = context.Request.Form["classe"].ToString();
+        var numeroArtigosRecebidos = Convert.ToInt32(context.Request.Form["numeroArtigosRecebidos"].ToString());
+        var numeroDeArtigosPedidos = Convert.ToInt32(context.Request.Form["numeroDeArtigosPedidos"].ToString());
+
         switch (tema)
         {
-            //fazer a query de acordo com o tema, de forma a a ir buscar todos os artigos e sabias ordenados pela data (de forma decrescente) EXCEPTO o artigo mais recente
+            //fazer a query de acordo com o tema, de forma a ir buscar um certo número de artigos e sabias ordenados pela data (de forma decrescente) EXCEPTO o artigo mais recente
             case "ALIMENTACAO":
                 break;
             case "SEXUALIDADE":
@@ -50,55 +53,13 @@ public class TemasHandler : IHttpHandler {
             case "CONSUMOS":
                 break;
         } //switch
+
         //Valores a serem apagados
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
-        ));
-        listaDeDestaques.Add(
-            serializer.Serialize(
-                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
-        ));
+        for(int i = 0; i < numeroDeArtigosPedidos; i++)
+            listaDeDestaques.Add(
+                serializer.Serialize(
+                    new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
+            ));
         json = serializer.Serialize(listaDeDestaques);
 
 
@@ -146,7 +107,10 @@ public class TemasHandler : IHttpHandler {
         var serializer = new JavaScriptSerializer();
 
         String tema = context.Request.Form["classe"].ToString();
-        //Fazer aqui a query à respetiva tabela, de forma a conseguir ter os videos do tema
+        var numeroVideosRecebidos = Convert.ToInt32(context.Request.Form["numeroVideosRecebidos"].ToString());
+        var numeroDeVideosPedidos = Convert.ToInt32(context.Request.Form["numeroDeVideosPedidos"].ToString());
+
+        //Fazer aqui a query à respetiva tabela, de forma a conseguir ter um certo numero de videos do tema
         switch (tema)
         {
             case "ALIMENTACAO":
@@ -158,15 +122,12 @@ public class TemasHandler : IHttpHandler {
         } //switch
 
         //Valores a serem apagados
-        listaDeVideos.Add(
-            serializer.Serialize(
-                new { link = @"https://www.youtube.com/watch?v=0dVa81ecacE&list=PLrDezo9S25Je5OnmKCXCy_GPYUDQtj3dS", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
-        ));
-
-        listaDeVideos.Add(
-            serializer.Serialize(
-                new { link = @"https://www.youtube.com/watch?v=3M_5oYU-IsU&list=PLJQeCC1As9Poqoy_3R13mI1ReVD-P-bqt", titulo = "Sociedade do mal", texto = "MAL" }
-        ));
+        for(int i = 0; i < numeroDeVideosPedidos; i++)
+            listaDeVideos.Add(
+                serializer.Serialize(
+                    new { link = @"https://www.youtube.com/watch?v=0dVa81ecacE&list=PLrDezo9S25Je5OnmKCXCy_GPYUDQtj3dS", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
+            ));
+            
         json = serializer.Serialize(listaDeVideos);
 
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head lang="pt">
     <meta charset="UTF-8">
@@ -14,6 +14,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.color-2.1.2.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/recursosForumIndex.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script>
       new WOW().init();
@@ -71,114 +72,13 @@
             </div>
         </div>
         <div class="conteudo">
-            <input type="button" class="btn_novoTopico" value="Criar um tópico">
-            <form action="#">
-                <input class="search_bar" type="text" name="search" placeholder="Procurar">
-            </form>
+            <input type="button" class="btn_novoTopico" value="Criar um tópico" onclick="window.location='forum_novoTopico.html';">
+            <input class="search_bar" type="text" name="search" placeholder="Procurar">
+
             <div class="zona_topicos">
-                <div class="div_topico forum_alimentacao" onclick="window.location='forum_topicoAberto.html';">
-                    <div class="tag">
-                        <img src="imagens/tag_forum.png">
-                        <a href="alimentacao.html">ALIMENTAÇÃO</a>
-                    </div>
-                    <div class="zonaNrRespostas">
-                        <div class="simboloResposta">
-                            <img src="imagens/chat_icon.png">
-                        </div>
-                        <span class="topicoNrRespostas">2 respostas</span>
-                    </div>
-                    <p class="textoTopicos">Faz mal comer muitos ovos diariamente?</p>
-                    <div class="zonaDiaHoraEstado">
-                        <span class="textoDiaHora">12 de Janeiro às 12:45</span>
-                        <span class="topicoAtivo">&#9679; Activo</span>
-                    </div>
-                </div>
-                <div class="div_topico forum_consumos">
-                    <div class="tag">
-                        <img src="imagens/tag_forum.png">
-                        <a href="substancias.html">CONSUMOS NOCIVOS</a>
-                    </div>
-                    <div class="zonaNrRespostas">
-                        <div class="simboloResposta">
-                            <img src="imagens/chat_icon.png">
-                        </div>
-                        <span class="topicoNrRespostas">2 respostas</span>
-                    </div>
-                    <p class="textoTopicos">O que é ser um Vieira?</p>
-                    <div class="zonaDiaHoraEstado">
-                        <span class="textoDiaHora">12 de Janeiro às 12:45</span>
-                        <span class="topicoFechado">&#9679; Fechado</span>
-                    </div>
-                </div>
-                <div class="div_topico forum_sexualidade">
-                    <div class="tag">
-                        <img src="imagens/tag_forum.png">
-                        <a href="sexualidade.html">SEXUALIDADE</a>
-                    </div>
-                    <div class="zonaNrRespostas">
-                        <div class="simboloResposta">
-                            <img src="imagens/chat_icon.png">
-                        </div>
-                        <span class="topicoNrRespostas">2 respostas</span>
-                    </div>
-                    <p class="textoTopicos">Porque é que as hormonas andam aos “saltos”?</p>
-                    <div class="zonaDiaHoraEstado">
-                        <span class="textoDiaHora">12 de Janeiro às 12:45</span>
-                        <span class="topicoAtivo">&#9679; Activo</span>
-                    </div>
-                </div>
-                <div class="div_topico forum_alimentacao">
-                    <div class="tag">
-                        <img src="imagens/tag_forum.png">
-                        <a href="alimentacao.html">ALIMENTAÇÃO</a>
-                    </div>
-                    <div class="zonaNrRespostas">
-                        <div class="simboloResposta">
-                            <img src="imagens/chat_icon.png">
-                        </div>
-                        <span class="topicoNrRespostas">2 respostas</span>
-                    </div>
-                    <p class="textoTopicos">Qual a quantidade de água deve ser ingerida, diariamente, por um adulto?</p>
-                    <div class="zonaDiaHoraEstado">
-                        <span class="textoDiaHora">12 de Janeiro às 12:45</span>
-                        <span class="topicoAtivo">&#9679; Activo</span>
-                    </div>
-                </div>
-                <div class="div_topico forum_consumos">
-                    <div class="tag">
-                        <img src="imagens/tag_forum.png">
-                        <a href="substancias.html">CONSUMOS NOCIVOS</a>
-                    </div>
-                    <div class="zonaNrRespostas">
-                        <div class="simboloResposta">
-                            <img src="imagens/chat_icon.png">
-                        </div>
-                        <span class="topicoNrRespostas">2 respostas</span>
-                    </div>
-                    <p class="textoTopicos">O que é síndrome de abstinência?</p>
-                    <div class="zonaDiaHoraEstado">
-                        <span class="textoDiaHora">12 de Janeiro às 12:45</span>
-                        <span class="topicoFechado">&#9679; Fechado</span>
-                    </div>
-                </div>
-                <div class="div_topico forum_sexualidade" onclick="window.location='forum_topicoAberto.html';">
-                    <div class="tag">
-                        <img src="imagens/tag_forum.png">
-                        <a href="sexualidade.html">SEXUALIDADE</a>
-                    </div>
-                    <div class="zonaNrRespostas">
-                        <div class="simboloResposta">
-                            <img src="imagens/chat_icon.png">
-                        </div>
-                        <span class="topicoNrRespostas">2 respostas</span>
-                    </div>
-                    <p class="textoTopicos">Ser lésbica ou gay é normal?</p>
-                    <div class="zonaDiaHoraEstado">
-                        <span class="textoDiaHora">12 de Janeiro às 12:45</span>
-                        <span class="topicoFechado">&#9679; Fechado</span>
-                    </div>
-                </div>
+
             </div>
+
             <div class="zonaMudançaPaginas">
                 <a style="border: none" href="#">Anterior</a>
                 <a href="#">1</a>

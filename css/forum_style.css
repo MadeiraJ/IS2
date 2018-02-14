@@ -1,638 +1,646 @@
 /*FORUM INDEX*/
-    /*Base*/
-        .forum .main{
-            background-color: #F7FAFC;
-        }
+/*Base*/
+.forum .main{
+    background-color: #F7FAFC;
+}
 
-        .forum .topo h1 {
-            color: var(--geral-cor1);
-            font-family: "Raleway ExtraBold";
-            font-size: 4.3vw;
-            font-weight: 900;
-            line-height: 5.5vw;
-            text-align: center;
-            margin-bottom: 3%;
-            margin-top: 5%;
-        }
+.forum .topo h1 {
+    color: var(--geral-cor1);
+    font-family: "Raleway ExtraBold";
+    font-size: 4.3vw;
+    font-weight: 900;
+    line-height: 5.5vw;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 5%;
+}
 
-        .forum .topo p {
-            width: 50%;
-            color: var(--geral-cor2);
-            font-size: 2.1vw;
-            font-weight: bold;
-            line-height: 2.81vw;
-            text-align: center;
-            margin: 0 auto;
-        }
-        .forum .conteudo{
-            position: relative;
-            margin-top: 8%;
-            margin-left: 8%;
-            width: 84%;
-            height: auto;
-            background-color: #ffffff;
-            box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
-        }
-    /*FIM BASE*/
+.forum .topo p {
+    width: 50%;
+    color: var(--geral-cor2);
+    font-size: 2.1vw;
+    font-weight: bold;
+    line-height: 2.81vw;
+    text-align: center;
+    margin: 0 auto;
+}
+.forum .conteudo{
+    position: relative;
+    margin-top: 8%;
+    margin-left: 8%;
+    width: 84%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
+}
+/*FIM BASE*/
 
-    /*SEARCH BAR*/
-        .search_bar{
-            position: relative;
-            margin-top: 3.5%;
-            margin-left: 3%;
-            width: 15%;
-            border: none;
-            font-size: 16px;
-            background-color: white;
-            background-image: url("../imagens/search_icon.png");
-            background-position: 5px ;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 40px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-        }
+/*SEARCH BAR*/
+.search_bar{
+    position: relative;
+    margin-top: 3.5%;
+    margin-left: 3%;
+    width: 15%;
+    border: none;
+    font-size: 16px;
+    background-color: white;
+    background-image: url("../imagens/search_icon.png");
+    background-position: 5px ;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
 
-        .search_bar:focus {
-            width: 60%;
-            border: 2px solid #4bc4f3;
-            border-radius: 4px;
-        }
-    /*FIM SEARCH BAR*/
+.search_bar:focus {
+    width: 60%;
+    border: 2px solid #4bc4f3;
+    border-radius: 4px;
+}
 
-    /*TÓPICOS*/
-        .btn_novoTopico {
-            position: relative;
-            float: right;
-            margin-top: 3%;
-            margin-right: 3%;
-            height: 5vw;
-            width: 13vw;
-            border: none;
-            border-radius: 5px;
-            background-color: #17A2FF;
-            color: #FFFFFF;
-            font-family: "Raleway medium";
-            font-size: 18px;
-            font-weight: 900;
-            cursor: pointer;
-        }
+/*FIM SEARCH BAR*/
 
-        .zona_topicos{
-            position: relative;
-            margin-top: 5%;
-            margin-left: 3%;
-            margin-right: 3%;
-            width: 94%;
-            height: 100%;
-            z-index: 5;
-        }
+/*TÓPICOS*/
+.btn_novoTopico {
+    position: relative;
+    float: right;
+    margin-top: 3.5%;
+    margin-right: 3%;
+    height: 5vw;
+    width: 13vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #17A2FF;
+    color: #FFFFFF;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+}
 
-        .div_topico{
-            position: relative;
-            width: 100%;
-            height: 20%;
-            z-index: 500;
-            cursor: pointer;
-            border-radius: 6px;
-        }
+.zona_topicos{
+    position: relative;
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    height: 100%;
+    z-index: 5;
+}
 
-        .div_topico:hover{
-            background-color: #F7FAFC;
-        }
+.div_topico{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    z-index: 500;
+    cursor: pointer;
+    border-radius: 6px;
+}
 
-        .forum .div_topico .tag {
-            display: inline-block;
-            border-radius: 6px;
-            padding: 0.5%;
-            margin-left: 2%;
-            margin-top: 3%;
-        }
+.div_topico:hover{
+    background-color: #F7FAFC;
+}
 
-        .forum .div_topico .tag img {
-            width: 1vw;
-        }
+.forum .div_topico .tag {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 0.5%;
+    margin-left: 2%;
+    margin-top: 3%;
+}
 
-        .forum .div_topico .tag a {
-            font-size: 0.7vw;
-            font-weight: 800;
-            letter-spacing: 2px;
-            line-height: 10px;
-            text-decoration: none;
-            font-family: "Raleway medium";
-            letter-spacing: 2px;
-        }
+.forum .div_topico .tag img {
+    width: 1vw;
+    vertical-align: middle;
+}
 
-        .textoTopicos {
-            margin-left: 2%;
-            margin-top: 1%;
-            color: #062940;
-            font-family: "Raleway Bold";
-            font-size: 24px;
-            font-weight: 800;
-            line-height: 34px;
-        }
+.forum .div_topico .tag .filtroTema{
+    font-size: 0.7vw;
+    font-weight: 800;
+    line-height: 10px;
+    text-decoration: none;
+    font-family: "Raleway medium";
+    letter-spacing: 2px;
+    color: #ffffff;
+}
 
-        .zonaDiaHoraEstado{
-            position:relative;
-            margin-top: 6%;
-            padding-bottom: 3%;
-        }
+.textoTopicos {
+    margin-left: 2%;
+    margin-top: 1%;
+    color: #062940;
+    font-family: "Raleway Bold";
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 34px;
+}
 
-        .textoDiaHora{
-            position: relative;
-            margin-left: 2%;
-            color: #AEBAC2;
-            font-family: "Raleway medium";
-            font-size: 16px;
-            font-weight: 800;
-            line-height: 24px;
+.zonaDiaHoraEstado{
+    position:relative;
+    margin-top: 6%;
+    padding-bottom: 3%;
+}
 
-        }
+.textoDiaHora{
+    position: relative;
+    margin-left: 2%;
+    color: #AEBAC2;
+    font-family: "Raleway medium";
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    float: left;
+}
 
-        .topicoAtivo{
-            position: relative;
-            margin-top: 6%;
-            margin-left: 1.5%;
-            color: #24D7B4;
-            font-family: "Raleway Bold";
-            font-size: 16px;
-            font-weight: 800;
-        }
+.topicoAtivo{
+    position: relative;
+    margin-top: 0.2%;
+    margin-left: 1.5%;
+    color: #24D7B4;
+    font-family: "Raleway Bold";
+    font-size: 16px;
+    font-weight: 800;
+    float: left;
+}
 
 
-        .topicoFechado{
-            position: relative;
-            margin-top: 6%;
-            margin-left: 1.5%;
-            color: #FF6262;
-            font-family: "Raleway Bold";
-            font-size: 16px;
-            font-weight: 800;
-        }
+.topicoFechado{
+    position: relative;
+    margin-top: 0.2%;
+    margin-left: 1.5%;
+    color: #FF6262;
+    font-family: "Raleway Bold";
+    font-size: 16px;
+    font-weight: 800;
+    float: left;
+}
 
-        .zonaNrRespostas{
-            position:relative;
-            float: right;
-            margin-top:3%;
-            margin-right: 2%;
-        }
+.zonaNrRespostas{
+    position:relative;
+    float: right;
+    margin-top:3%;
+    margin-right: 2%;
+}
 
-        .topicoNrRespostas{
-            position: relative;
-            color: #74B2DB;
-            font-family: "Raleway Bold";
-            font-size: 18px;
-            font-weight: 800;
-        }
+.topicoNrRespostas{
+    position: relative;
+    color: #74B2DB;
+    font-family: "Raleway Bold";
+    font-size: 18px;
+    font-weight: 800;
+}
 
-        .simboloResposta{
-            display: inline-block;
+.simboloResposta{
+    display: inline-block;
 
-        }
-    /*FIM TÓPICOS*/
+}
 
-    /*PAGINAÇÃO*/
-        .zonaMudançaPaginas{
-            display: inline-block;
-            margin-left: 35%;
-            padding-bottom: 3%;
-            padding-top: 3%;
-        }
+/*FIM TÓPICOS*/
 
-        .zonaMudançaPaginas a{
-            color: #17A2FF;
-            float: left;
-            padding: 8px 16px;
-            text-decoration: none;
-            transition: background-color .3s;
-            border: 1px solid #BCE4FF;
-            margin: 0 4px;
-            font-family: "Raleway medium";
-            font-size: 18px;
-            font-weight: 800;
-        }
+/*PAGINAÇÃO*/
+.zonaMudançaPaginas{
+    display: inline-block;
+    margin-left: 35%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
 
-        .zonaMudançaPaginas a.active {
-            border: 1px solid #74B2DB;
-            color: #17A2FF;
-        }
+.zonaMudançaPaginas a{
+    color: #17A2FF;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #BCE4FF;
+    margin: 0 4px;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 800;
+}
 
-        .zonaMudançaPaginas a:not(.active) {
-            color: #BCE4FF;
-        }
-    /*FIM PAGINAÇÃO*/
+.zonaMudançaPaginas a.active {
+    border: 1px solid #74B2DB;
+    color: #17A2FF;
+}
+
+.zonaMudançaPaginas a:not(.active) {
+    color: #BCE4FF;
+}
+/*FIM PAGINAÇÃO*/
 
 /*FIM FÓRUM INDEX*/
 
 
 /*FÓRUM TOPICO ABERTO*/
 
-    .tituloTopico {
-        position: relative;
-        padding-top: 4.5%;
-        margin-left: 3.5%;
-        color: #062940;
-        font-family: "Raleway medium";
-        font-size: 24px;
-        font-weight: 900;
-    }
+.tituloTopico {
+    position: relative;
+    padding-top: 4.5%;
+    margin-left: 3.5%;
+    color: #062940;
+    font-family: "Raleway medium";
+    font-size: 24px;
+    font-weight: 900;
+}
 
-    .zonaNrRespostasAberto{
-        position:relative;
-        float: left;
-        margin-top:1%;
-        margin-left: 3%;
-        z-index: 5;
+.zonaNrRespostasAberto{
+    position:relative;
+    float: left;
+    margin-top:1%;
+    margin-left: 3%;
+    z-index: 5;
 
-    }
+}
 
-    .topicoNrRespostasAberto{
-        position: relative;
-        color: #74B2DB;
-        font-family: "Raleway medium";
-        font-size: 18px;
-        font-weight: 800;
+.topicoNrRespostasAberto{
+    position: relative;
+    color: #74B2DB;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 800;
 
-    }
+}
 
-    .simboloResposta{
-        display: inline-block;
-    }
+.simboloResposta{
+    display: inline-block;
+    vertical-align: middle;
+}
 
-    .div_Respostas{
-        position: relative;
-        margin-top: 3%;
-        margin-left: 5%;
-        margin-right: 3%;
-        width: 90%;
-        height: 100%;
-        z-index: 5;
-        border-radius: 6px;
-        box-shadow: 0 1px 3px 1px #BCE4FF;
-    }
+.div_Respostas{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 3%;
+    width: 90%;
+    height: 100%;
+    z-index: 5;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 1px #BCE4FF;
+}
 
-    .dataResposta{
-        position: relative;
-        margin-top: 2%;
-        margin-left: 3%;
-        color: #74B2DB;
-        font-family: "Raleway medium";
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 26px;
-        padding-top: 3%;
+.dataResposta{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 3%;
+    color: #74B2DB;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    padding-top: 3%;
 
-    }
-
-
-    .textoResposta{
-        position: relative;
-        color: #062940;
-        font-family: "Raleway medium";
-        font-size: 22px;
-        font-weight: 600;
-        margin-left: 3%;
-        margin-right: 3%;
-        padding-bottom: 3%;
-        margin-top: 3%;
-    }
-
-    .quemRespondeu{
-        position: relative;
-        float: right;
-        margin-right: 5%;
-        padding-bottom: 2%;
-        color: #24D7B4;
-        font-family: "Raleway medium";
-        font-size: 16px;
-        font-weight: 800;
-
-    }
-
-    .div_Responder{
-        position: relative;
-        margin-top: 3%;
-        margin-left: 5%;
-        margin-right: 3%;
-        width: 90%;
-        height: 100%;
-        z-index: 5;
-        border-radius: 6px;
-        box-shadow: 0 1px 3px 1px #BCE4FF;
-        background-color: #F7FAFC;
-    }
+}
 
 
-    .zonaResponder{
-        margin-top:-1%;
-        margin-left: 3%;
-        z-index: 5;
-        padding-top: 4%;
-        padding-bottom: 4%;
-    }
+.textoResposta{
+    position: relative;
+    color: #062940;
+    font-family: "Raleway medium";
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 3%;
+    margin-top: 3%;
+}
 
-    .topicoResponder{
-        color: #17A2FF;
-        font-family: "Raleway medium";
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 21px;
-    }
+.quemRespondeu{
+    position: relative;
+    float: right;
+    margin-right: 5%;
+    padding-bottom: 2%;
+    color: #24D7B4;
+    font-family: "Raleway medium";
+    font-size: 16px;
+    font-weight: 800;
 
-    .zonaMudançaTopicos{
-        width: 100%;
-        height: 9vw;
-    }
+}
 
-    .zonaProximo{
-        position: relative;
-        float: right;
-        margin-top: 2.5%;
-        margin-right: 4.5%;
-    }
+.div_Responder{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 3%;
+    width: 90%;
+    height: 100%;
+    z-index: 5;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 1px #BCE4FF;
+    background-color: #F7FAFC;
+}
 
-    .zonaAnterior{
-        position: relative;
-        float: left;
-        margin-top: 2.5%;
-        margin-left: 4.5%;
-    }
 
-    .linkProximoTopico{
-        color: #74B2DB;
-        font-family: "Raleway medium";
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 26px;
-    }
+.zonaResponder{
+    margin-top:-1%;
+    margin-left: 3%;
+    z-index: 5;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
 
-    .linkVoltarLista{
-        color: #74B2DB;
-        font-family: "Raleway medium";
-        font-size: 18px;
-        font-weight: 800;
-        line-height: 26px;
+.topicoResponder{
+    color: #17A2FF;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21px;
+}
 
-    }
+.zonaMudançaTopicos{
+    width: 100%;
+    height: 3vw;
+}
 
-    /*REPONDER ATIVO*/
-        .div_ResponderAtivo{
-            position: relative;
-            margin-top: 3%;
-            margin-left: 5%;
-            margin-right: 3%;
-            width: 90%;
-            height: 100%;
-            z-index: 4;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            padding-left: 2%;
-            padding-right: 2%;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px 1px #BCE4FF;
-            background-color: #F7FAFC;
-        }
+.zonaProximo{
+    position: relative;
+    float: right;
+    margin-top: 2.5%;
+    margin-right: 3.5%;
+    margin-bottom: 2.5%;
+}
 
-        .zonaResponderAtivo{
-            padding-left: 4%;
-            padding-right: 4%;
-            padding-top: 4%;
-            padding-bottom: 10%;
-            z-index: 5;
-            background-color: #ffffff;
-        }
+.zonaAnterior{
+    position: relative;
+    float: left;
+    margin-top: 2.5%;
+    margin-left: 3.5%;
+    margin-bottom: 2.5%;
+}
 
-        .textoResponder{
-            width: 90%;
-            height: 10vw;
+.linkProximoTopico{
+    color: #74B2DB;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+}
 
-            font-size: 1.5vw;
-            resize: none;
-        }
+.linkVoltarLista{
+    color: #74B2DB;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
 
-    /*FIM RESPONDER ATIVO*/
+}
+
+/*REPONDER ATIVO*/
+
+.div_ResponderAtivo{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 3%;
+    width: 90%;
+    height: 100%;
+    z-index: 4;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 1px #BCE4FF;
+    background-color: #F7FAFC;
+}
+
+.zonaResponderAtivo{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 10%;
+    z-index: 5;
+    background-color: #ffffff;
+}
+
+.textoResponder{
+    width: 90%;
+    height: 10vw;
+
+    font-size: 1.5vw;
+    resize: none;
+}
+
+/*FIM RESPONDER ATIVO*/
 
 /*FIM FÓRUM TOPICO ABERTO*/
 
-    /*NOVO TÓPICO*/
+/*NOVO TÓPICO*/
 
-    .novoTopico {
-        color: #17A2FF;
-        font-family: "Raleway Medium";
-        font-size: 2vw;
-        font-weight: bold;
-        line-height: 38px;
-        margin-left: 4%;
-        padding-top: 5%;
-    }
+.novoTopico {
+    color: #17A2FF;
+    font-family: "Raleway medium";
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 38px;
+    margin-left: 4%;
+    padding-top: 5%;
+}
 
-    .div_tituloNovoTopico {
-        position: relative;
-        margin-top: 3%;
-        margin-left: 3.5%;
-        margin-right: 3%;
-        width: 90%;
-        height: 100%;
-        z-index: 5;
-        box-shadow: 0 1px 3px 1px #BCE4FF;
-    }
+.div_tituloNovoTopico {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    height: 100%;
+    z-index: 5;
+    box-shadow: 0 1px 3px 1px #BCE4FF;
+}
 
-    .textoTituloNovoTopico{
-        width: 95%;
-        height: auto;
-        opacity: 0.8;
-        color: #0970B5;
-        font-family: "Raleway Medium";
-        font-size: 1.5vw;
-        font-weight: 600;
-        line-height: 36px;
-        border: none;
-        margin-left: 2%;
-        padding-top: 3%;
-        padding-bottom: 3%;
-    }
-
-
-
-    .div_escolhaTipoTopico {
-        width: 100%;
-        height: auto;
-        margin-top: 2% ;
-    }
-
-    .div_escolhaAlimentacao{
-        position: relative;
-        float: left;
-        margin-left: 3.5%;
-        height: 20%;
-        width: 24vw;
-        border-radius: 6px;
-        background-color: #FFFFFF;
-        box-shadow: 0 2px 6px 2px rgba(242,166,24,0.2);
-    }
-
-
-    .div_escolhaConsumos{
-        position: relative;
-        float: left;
-        display: inline-block;
-        margin-left: 3.5%;
-        height: 20%;
-        width: 24vw;
-        border-radius: 6px;
-        background-color: #FFFFFF;
-        box-shadow: 0 2px 6px 2px rgba(36,215,180,0.2);
-    }
-
-    .div_escolhaSexualidade{
-        position: relative;
-        float: left;
-        display: inline-block;
-        margin-left: 3.5%;
-        height: 20%;
-        width: 24vw;
-        border-radius: 6px;
-        background-color: #FFFFFF;
-        box-shadow: 0 2px 6px 2px rgba(97,83,204,0.2);
-    }
-
-
-    .textoEscolha{
-        position: relative;
-        float: left;
-        opacity: 0.4;
-        color: #0970B5;
-        font-family: "Raleway Medium";
-        font-size: 1.5vw;
-        font-weight: 600;
-        line-height: 36px;
-        margin-left: 5%;
-        padding: 7% 5% 7% 6%;
-    }
-
-    .round {
-        position: relative;
-        float: right;
-        display: inline-block;
-        margin-top: 8%;
-        margin-right: 10%;
-    }
-
-    .round label {
-        background-color: #fff;
-        border: 3px solid #FFF2D9;
-        border-radius: 50%;
-        cursor: pointer;
-        height: 2vw;
-        width: 2vw;
-        left: 0;
-        position: absolute;
-        top: 0;
-
-    }
-
-    /*.round label:after {
-        border: 2px solid #fff;
-        border-top: none;
-        border-right: none;
-        content: "";
-        height: 6px;
-        left: 7px;
-        opacity: 0;
-        position: absolute;
-        top: 8px;
-        transform: rotate(-45deg);
-        width: 12px;
-    }*/
-
-    .round input[type="checkbox"] {
-        visibility: hidden;
-    }
-
-    .round input[type="checkbox"]:checked + label {
-        background-color: #9ce5ad;
-        /*border-color: #625e59;*/
-    }
-
-    .round input[type="checkbox"]:checked + label:after {
-        opacity: 1;
-    }
-
-    .div_descricaoNovoTopico {
-        position: relative;
-        margin-top: 3%;
-        margin-left: 3.5%;
-        margin-right: 3%;
-        width: 90%;
-        z-index: 5;
-        background-color: #F7FAFC;
-        box-shadow: 0 1px 3px 1px #BCE4FF;
-    }
-
-
-    .zonaTextoDescricao{
-        position: relative;
-        float: left;
-        width: 70vw;
-        height: auto;
-        background-color: #ffffff;
-        margin: 3% 3% 3% 3%;
-    }
-    .textoDescricao{
-       position: relative;
-        float: left;
-        width: 90%;
-        height: 25vh;
-        resize: none;
-        border: none;
-        overflow: hidden;
-        margin-top: 2%;
-        margin-left: 2%;
-        color: #A0C8E2;
-        font-family: "Raleway Medium";
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 36px;
-    }
-
-    .div_postarCancelar{
-        position: relative;
-        float: right;
-        width: 17vw;
-        height: auto;
-        padding-top: 2%;
-        padding-bottom: 3%;
-    }
-
-    .cancelar{
-        position: relative;
-        float: left;
-        color: #17A2FF;
-        font-family: "Raleway Medium";
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 21px;
-        text-align: right;
-        margin-top: 7%;
-        margin-right: 6%;
-    }
+.textoTituloNovoTopico{
+    width: 95%;
+    height: auto;
+    opacity: 0.8;
+    color: #0970B5;
+    font-family: "Raleway light";
+    font-size: 1.5vw;
+    font-weight: 600;
+    line-height: 36px;
+    border: none;
+    margin-left: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
 
 
-    .btn_postar {
-        position: relative;
-        float: left;
-        display: inline-block;
-        height: 4vw;
-        width:8vw;
-        border: none;
-        border-radius: 5px;
-        background-color: #17A2FF;
-        color: #FFFFFF;
-        font-family: "Raleway medium";
-        font-size: 18px;
-        font-weight: 900;
-        cursor: pointer;
-    }
+.div_escolhaTipoTopico {
+    height: auto;
+    margin-top: 2%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
 
-    /*FIM NOVO TÓPICO*/
+.div_escolhaAlimentacao{
+    position: relative;
+    float: left;
+    height: 20%;
+    width: 30.5%;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 6px 2px rgba(242,166,24,0.2);
+}
+
+
+.div_escolhaConsumos{
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-left: 3.3%;
+    height: 20%;
+    width: 24vw;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 6px 2px rgba(36,215,180,0.2);
+}
+
+.div_escolhaSexualidade{
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-left: 3.3%;
+    height: 20%;
+    width: 24vw;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 6px 2px rgba(97,83,204,0.2);
+}
+
+
+.textoEscolha{
+    position: relative;
+    float: left;
+    opacity: 0.4;
+    color: #0970B5;
+    font-family: "Raleway light";
+    font-size: 1.5vw;
+    font-weight: 600;
+    line-height: 36px;
+    margin-left: 5%;
+    padding: 7% 5% 7% 6%;
+}
+
+.round {
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin-top: 8%;
+    margin-right: 10%;
+}
+
+.round label {
+    background-color: #fff;
+    border: 3px solid #FFF2D9;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 2vw;
+    width: 2vw;
+    left: 0;
+    position: absolute;
+    top: 0;
+
+}
+
+/*.round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+}*/
+
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+    background-color: #9ce5ad;
+    /*border-color: #625e59;*/
+}
+
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+.div_descricaoNovoTopico {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    z-index: 5;
+    background-color: #F7FAFC;
+    box-shadow: 0 1px 3px 1px #BCE4FF;
+}
+
+
+.zonaTextoDescricao{
+    position: relative;
+    float: left;
+    width: 94%;
+    height: auto;
+    background-color: #ffffff;
+    margin: 3% 3% 3% 3%;
+}
+.textoDescricao{
+   position: relative;
+    float: left;
+    width: 90%;
+    height: 25vh;
+    resize: none;
+    border: none;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-left: 2%;
+    color: #A0C8E2;
+    font-family: "Raleway light";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.div_postarCancelar{
+    position: relative;
+    float: right;
+    width: 17vw;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.cancelar{
+    position: relative;
+    float: left;
+    color: #17A2FF;
+    font-family: "Raleway light";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21px;
+    text-align: right;
+    margin-top: 7%;
+    margin-right: 6%;
+    cursor: pointer;
+}
+
+
+
+.btn_postar {
+    position: relative;
+    float: left;
+    display: inline-block;
+    height: 4vw;
+    width:8vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #17A2FF;
+    color: #FFFFFF;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/*FIM NOVO TÓPICO*/

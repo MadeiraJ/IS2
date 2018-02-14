@@ -1,5 +1,9 @@
+var numeroDestaques = 0;
+var numeroVideos = 0;
+
 $(document).ready(function () {
     var classe = $('body').attr('class');
+
     if(classe.includes("alimentacao"))
         classe = "ALIMENTACAO";
     else if (classe.includes("sexualidade"))
@@ -7,37 +11,8 @@ $(document).ready(function () {
     else if(classe.includes("consumos"))
         classe = "CONSUMOS";
 
-    $.ajax({
-        url: `/handlers/HandlerTemas.ashx?type=1`,
-        type: "POST",
-        data: {classe: classe},
-        dataType: "json",
-        success: function (listaDestaques) {
-            for (var i = 0; i < listaDestaques.length; i++) {
-                listaDestaques[i] = JSON.parse(listaDestaques[i]);
-                var tipoBloco =  listaDestaques[i].tipo;
-                var esconde = i > 5 ? "esconde" : "";
-                if(tipoBloco == "ARTIGO"){
-                    addBlocoArtigo(
-                        i + 1,
-                        listaDestaques[i].imagem,
-                        listaDestaques[i].titulo,
-                        listaDestaques[i].texto,
-                        listaDestaques[i].url,
-                        esconde
-                    );
-                }
-
-                else if(tipoBloco == "SABIAS-QUE"){
-                    addBlocoSabiasQue(
-                        i + 1,
-                        listaDestaques[i].texto,
-                        esconde
-                    );
-                }
-            }
-        }
-    });
+    getDestaques(classe, 7);
+    
     $.ajax({
         url: `/handlers/HandlerTemas.ashx?type=2`,
         type: "POST",
@@ -52,23 +27,9 @@ $(document).ready(function () {
             );
         }
     });
-    $.ajax({
-        url: `/handlers/HandlerTemas.ashx?type=3`,
-        type: "POST",
-        data: { classe: classe },
-        dataType: "json",
-        success: function (listaDeVideos) {
-            for (var i = 0; i < listaDeVideos.length; i++) {
-                listaDeVideos[i] = JSON.parse(listaDeVideos[i]);
-                addVideo(
-                    listaDeVideos[i].link,
-                    listaDeVideos[i].titulo,
-                    listaDeVideos[i].texto
-                );
-            }
-            addClear('.listaVideos');
-        }
-    });
+
+    getVideos(classe, 3);
+
     $.ajax({
         url: `/handlers/HandlerTemas.ashx?type=4`,
         type: "POST",
@@ -85,6 +46,7 @@ $(document).ready(function () {
             }
         }
     });
+
     $.ajax({
         url: `/handlers/HandlerTemas.ashx?type=5`,
         type: "POST",
@@ -100,6 +62,21 @@ $(document).ready(function () {
                 );
             }
         }
+    });
+
+
+    $(".conteudo .carregarMais").click(function () {
+        var before = numeroDestaques;
+        getDestaques(classe, 6);
+        if(numeroDestaques == before)
+            $(".conteudo .carregarMais").hide();
+    });
+
+    $("#zonaDeVideos .carregarMais").click(function () {
+        var before = numeroVideos;
+        getVideos(classe, 6);
+        if(numeroVideos == before)
+            $("#zonaDeVideos .carregarMais").hide();
     });
 })
 
@@ -187,4 +164,65 @@ function addDocumento(classe, nome, url) {
 
 function addClear(classeCss) {
     $(classeCss).append('<div class="clear"></div>');
+}
+
+
+function getDestaques(classe, x){
+    $.ajax({
+        url: `/handlers/HandlerTemas.ashx?type=1`,
+        type: "POST",
+        data: {
+            classe: classe,
+            numeroArtigosRecebidos : numeroDestaques,
+            numeroDeArtigosPedidos : x
+        },
+        dataType: "json",
+        success: function (listaDestaques) {
+            for (var i = 0; i < listaDestaques.length; i++) {
+                listaDestaques[i] = JSON.parse(listaDestaques[i]);
+                var tipoBloco =  listaDestaques[i].tipo;
+                if(tipoBloco == "ARTIGO"){
+                    addBlocoArtigo(
+                        i + 1,
+                        listaDestaques[i].imagem,
+                        listaDestaques[i].titulo,
+                        listaDestaques[i].texto,
+                        listaDestaques[i].url
+                    );
+                }
+
+                else if(tipoBloco == "SABIAS-QUE"){
+                    addBlocoSabiasQue(
+                        i + 1,
+                        listaDestaques[i].texto
+                    );
+                }
+            }
+            numeroDestaques += listaDestaques.length;
+        }
+    });
+}
+
+function getVideos(classe, x) {
+    $.ajax({
+        url: `/handlers/HandlerTemas.ashx?type=3`,
+        type: "POST",
+        data: {
+            classe: classe,
+            numeroVideosRecebidos : numeroVideos,
+            numeroDeVideosPedidos : x
+        },
+        dataType: "json",
+        success: function (listaDeVideos) {
+            for (var i = 0; i < listaDeVideos.length; i++) {
+                listaDeVideos[i] = JSON.parse(listaDeVideos[i]);
+                addVideo(
+                    listaDeVideos[i].link,
+                    listaDeVideos[i].titulo,
+                    listaDeVideos[i].texto
+                );
+            }
+            addClear('.listaVideos');
+        }
+    });
 }
