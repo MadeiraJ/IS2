@@ -5,6 +5,7 @@ var zonavideoDetalhe,zonaVerVideo;
 var main, close;
 var titulo, descricao;
 var cor, corBorda;
+var elementoAtual;
 function verVideo(elemento){
   main = document.getElementById('zonaMain');
   zonavideoDetalhe = document.getElementById('zonavideoDetalhe');
@@ -12,7 +13,7 @@ function verVideo(elemento){
   close = document.getElementById('fechar');
   titulo = document.getElementById('tituloVideo') != null? document.getElementById('tituloVideo'):document.getElementById('titulo');
   descricao = document.getElementById('descricaoVideo') != null? document.getElementById('descricaoVideo'):document.getElementById('descricao');
-
+  elementoAtual = elemento;
   verCores(elemento);
   zonaVerVideo.style.border = "3px solid "+corBorda;
   urlVideo = elemento.getAttribute("name");
@@ -95,7 +96,9 @@ function buildHTML(data){ //Turns JSON data into HTML elements
   }
   vistaPlaylist.innerHTML = list_data; //After the for loop, insert that list of links into the html
   verificarQual();
-  mudarInfo(true, videos[index]);
+  if (document.body.className == "paginaTema destaques")
+      elementoAtual = videos[index];
+  mudarInfo(true, elementoAtual);
 }
 
 function verificarQual(){

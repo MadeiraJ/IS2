@@ -11,7 +11,7 @@ var fotoAtual = 0;
 
 function init(e){
 	displayGaleria = document.getElementById("fotoDetalhe");
-	displayDetalhe = document.getElementById("vistaGeral");
+	displayDetalhe = document.getElementById("zonaMain");
 	iframeInst = document.getElementById("img01");
 	comentInst = document.getElementById("coment");
 
