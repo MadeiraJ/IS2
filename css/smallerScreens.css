@@ -523,6 +523,10 @@
               line-height: normal;
           }
 
+          .index .colorizar{
+              height: 310vw !important;
+          }
+
       /*PAGINA DESTAQUES*/
 
           .destaques .card .blocoTopo .titulo {
