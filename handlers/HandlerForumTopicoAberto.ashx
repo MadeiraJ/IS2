@@ -37,7 +37,7 @@ public class HandlerForumTopicoAberto : IHttpHandler {
         //Valores a serem apagados
         json = serializer.Serialize(
             new {
-                texto = "TITULOOOOOOOOOOOOOOOO"
+                texto = "TITULO"
             });
 
         context.Response.ContentType = "plain/text";
@@ -55,8 +55,8 @@ public class HandlerForumTopicoAberto : IHttpHandler {
         //Valores a serem apagados
         json = serializer.Serialize(
             new {
-                texto = "TEXTOOOOOOOOOOOODESCRICAAAAAAAAAAAAAAAAAO",
-                data = "DATAAAAAAADESCRICAAAOOOAOAOAOAOAO"
+                texto = "TEXTO fsf sf fsffwf wef ewfew",
+                data = "DATA"
             });
 
         context.Response.ContentType = "plain/text";

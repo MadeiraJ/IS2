@@ -1181,9 +1181,12 @@
             margin-right: 3vw !important;
         }
 
-        .zonaMudançaTopicos{
-            margin-top: 8%; !important;
+        .zonaMudancaTopicos {
+            margin-top: 0% !important;
+            height: 12vw !important;
         }
+        
+        
         .linkVoltarLista{
             font-size: 3vw !important;
         }
@@ -1254,13 +1257,13 @@
             font-size: 5vw !important;
         }
 
-        .zonaMudançaPaginas{
+        .zonaMudancaPaginas {
             margin-left: 10% !important;
             padding-bottom: 3% !important;
             padding-top: 3% !important;
         }
 
-        .zonaMudançaPaginas a{
+        .zonaMudancaPaginas a{
             padding: 1vw 2.5vw !important;
             margin: 0 0.5vw !important;
             font-size: 3vw !important;
@@ -1759,8 +1762,9 @@
                 margin-right: 3vw !important;
             }
 
-            .zonaMudançaTopicos {
-                margin-top: 8%; !important;
+            .zonaMudancaTopicos {
+                margin-top: 8% !important;
+                height: 12vw !important;
             }
 
             .linkVoltarLista {
@@ -1841,13 +1845,13 @@
                 margin-left: 2% !important;
             }
 
-            .zonaMudançaPaginas {
+            .zonaMudancaPaginas {
                 margin-left: 10% !important;
                 padding-bottom: 3% !important;
                 padding-top: 3% !important;
             }
 
-            .zonaMudançaPaginas a {
+            .zonaMudancaPaginas a {
                 padding: 1vw 2.5vw !important;
                 margin: 0 0.5vw !important;
                 font-size: 3vw !important;

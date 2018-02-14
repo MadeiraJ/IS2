@@ -197,14 +197,14 @@
 /*FIM TÓPICOS*/
 
 /*PAGINAÇÃO*/
-.zonaMudançaPaginas{
+.zonaMudancaPaginas {
     display: inline-block;
     margin-left: 35%;
     padding-bottom: 3%;
     padding-top: 3%;
 }
 
-.zonaMudançaPaginas a{
+.zonaMudancaPaginas a{
     color: #17A2FF;
     float: left;
     padding: 8px 16px;
@@ -217,12 +217,12 @@
     font-weight: 800;
 }
 
-.zonaMudançaPaginas a.active {
+.zonaMudancaPaginas a.active {
     border: 1px solid #74B2DB;
     color: #17A2FF;
 }
 
-.zonaMudançaPaginas a:not(.active) {
+.zonaMudancaPaginas a:not(.active) {
     color: #BCE4FF;
 }
 /*FIM PAGINAÇÃO*/
@@ -370,9 +370,9 @@
     line-height: 21px;
 }
 
-.zonaMudançaTopicos{
+.zonaMudancaTopicos {
     width: 100%;
-    height: 3vw;
+    height: 6vw;
 }
 
 .zonaProximo{
