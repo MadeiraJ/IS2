@@ -1,0 +1,22 @@
+﻿Sempre que alguem entra numa pagina do site, verificar se a pessoa tem um cookie de sessao
+Se nao tiver, criar um cookie com um valor unico(o javascript tem funcao de rng)
+
+Sempre que alguem entrar numa pagina do site, verificar se a pessoa tem um cookie de visita
+Se nao tiver, criar um cookie de visita que dure uma hora e enviar me um json com os campos:
+tipo: "visita"
+id: valor do cookie de sessao
+dispositivo:"computador/smartphone/tablet"
+
+Sempre que alguem entrar na pagina de um dos temas, verificar se a pessoa tem um cookie desse tema
+Se nao tiver, criar um cookie desse tema que dure uma hora e enviar me um json com os campos:
+tipo: "tema"
+id: valor do cookie de sessao
+dispositivo:"computador/smartphone/tablet"
+tema: "alimentacao/sexualidade/substancias nocivas"
+
+Sempre que alguem entrar na pagina de um artigo, verificar se a pessoa tem um cookie desse artigo
+Se nao tiver, criar um cookie desse artigo que dure uma hora e enviar me um json com os campos:
+tipo: "artigo"
+id: valor do cookie de sessao
+dispositivo:"computador/smartphone/tablet"
+artigo: id do artigo, isto voces recebem da base de dados

@@ -1,0 +1,70 @@
+Página Destaques:
+	1) getDestaques() //temos que ver melhor isto, para ver quanto tempo demora
+		retorna um JSON com todos os videos, sabias que e artigos por ordem decrescente de data, num formato do tipo:
+		1 : destaque {
+		 tipo : video|artigo|sabias-que,
+		 imagem : imagem.png|null,
+		 video : https://youtube.com|null,
+
+		 titulo : "",
+		 texto : "",
+		 tema : sexualidade|alimentacao|consumos-nocivos,
+		 url : ""|null
+		} (...)
+
+
+Páginas Alimentacao, Sexualidade e Substancias Nocivas:
+	1) getDestaques()
+		retorna um JSON com todos os sabias que e artigos por ordem decrescente de data de um certo tema, num formato do tipo:
+		1 : destaque {
+		 tipo : artigo|sabias-que,
+		 imagem : imagem.png|null,
+		 video : https://youtube.com|null,
+
+		 titulo : "",
+		 texto : "",
+		 url : ""|null
+		} (...)
+
+	2) getArtigoEmDestaque()
+		Retorna um JSON com o artigo em destaque de um certo tema, num formato do tipo:
+		artigoEmDestaque {
+		 imagem : imagem.png,
+		 video : "https://youtube.com"|null,
+
+		 titulo : "",
+		 texto : "",
+		 url : ""|null
+		}
+
+	3) getDocumentosUteis()
+		retorna um JSON com todos os documentos uteis de um certo tema, num formato do tipo:
+		1 : documento {
+			descricao : "",
+			url : ""
+		} (...)
+
+	4) getLinksUteis()
+		retorna um JSON com todos os links uteis de um certo tema, num formato do tipo:
+		1 : link {
+			descricao : "",
+			url : ""
+		} (...)
+
+Página Artigo:
+	1) getArtigo (index)
+		retorna um JSON com os dados do artigo com o indice index, num formato do tipo:
+			artigo {
+				autor : "",
+				data : "",
+				imagemCapa : "",
+				texto : "",
+				artigosRelacionados : {
+					artigo {
+						autor : "",
+						data : "",
+						imagemCapa : "",
+						texto : ""
+					}
+				}
+			}

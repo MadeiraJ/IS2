@@ -55,12 +55,50 @@ public class TemasHandler : IHttpHandler {
             serializer.Serialize(
                 new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
         ));
-
         listaDeDestaques.Add(
             serializer.Serialize(
                 new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
         ));
-
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
+        ));
+        listaDeDestaques.Add(
+            serializer.Serialize(
+                new { tipo = "SABIAS-QUE", texto = "Texto sabias que" }
+        ));
         json = serializer.Serialize(listaDeDestaques);
 
 

@@ -35,7 +35,7 @@
     });
 })
     function addNoticia(imagem, data, titulo, texto, url) {
-        var inserirNaColuna = ".contentorNoticia";
+        var inserirNaColuna = ".contentorDasNoticias";
 
         var noticia =
                 ` <div class="contentorNoticia" onclick="window.location='${url}';">

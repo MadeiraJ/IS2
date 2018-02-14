@@ -16,20 +16,23 @@ $(document).ready(function () {
             for (var i = 0; i < listaDestaques.length; i++) {
                 listaDestaques[i] = JSON.parse(listaDestaques[i]);
                 var tipoBloco =  listaDestaques[i].tipo;
+                var esconde = i > 5 ? "esconde" : "";
                 if(tipoBloco == "ARTIGO"){
                     addBlocoArtigo(
                         i + 1,
                         listaDestaques[i].imagem,
                         listaDestaques[i].titulo,
                         listaDestaques[i].texto,
-                        listaDestaques[i].url
+                        listaDestaques[i].url,
+                        esconde
                     );
                 }
 
                 else if(tipoBloco == "SABIAS-QUE"){
                     addBlocoSabiasQue(
                         i + 1,
-                        listaDestaques[i].texto
+                        listaDestaques[i].texto,
+                        esconde
                     );
                 }
             }
@@ -116,7 +119,7 @@ function addArtigoEmDestaque(imagem, titulo, texto, url) {
     $(".col1").after(bloco);
 }
 
-function addBlocoArtigo(i, imagem, titulo, texto, url) {
+function addBlocoArtigo(i, imagem, titulo, texto, url, extra) {
     var inserirNaColuna = ".col1";
     if (i % 3 == 0)
         inserirNaColuna = ".col3";
@@ -126,7 +129,7 @@ function addBlocoArtigo(i, imagem, titulo, texto, url) {
     var bloco =
             `<a href="${url}">
                 <div class="wow fadeIn">
-                    <div class="bloco-1 post hvr-grow">
+                    <div class="bloco-1 post hvr-grow ${extra}">
                         <img src="${imagem}">
                         <div class="zonaTexto">
                             <p class="tituloArtigo">${titulo}</p>
@@ -139,7 +142,7 @@ function addBlocoArtigo(i, imagem, titulo, texto, url) {
     $(inserirNaColuna).append(bloco);
 }
 
-function addBlocoSabiasQue(i, texto) {
+function addBlocoSabiasQue(i, texto, extra) {
     var inserirNaColuna = ".col1";
     if (i % 3 == 0)
         inserirNaColuna = ".col3";
@@ -148,7 +151,7 @@ function addBlocoSabiasQue(i, texto) {
 
     var bloco =
             `<div class="wow fadeIn">
-                <div class="bloco-1 sabiasQue">
+                <div class="bloco-1 sabiasQue ${extra}">
                     <p class="tituloArtigo">SABIAS QUE</p>
                     <p class="textoArtigo">${texto}</p>
                 </div>

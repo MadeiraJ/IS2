@@ -1,4 +1,4 @@
-<%@ WebHandler Language="C#" Class="ArtigosHandler" %>
+<%@ WebHandler Language="C#" Class="NoticiasHandler" %>
 
 using System;
 using System.Text;
@@ -6,29 +6,29 @@ using System.Collections.Generic;
 using System.Web;
 using System.Web.Script.Serialization;
 
-public class ArtigosHandler : IHttpHandler {
+public class NoticiasHandler : IHttpHandler {
     public void ProcessRequest (HttpContext context) {
         var serializer = new JavaScriptSerializer();
         var listaDeRelacionados = new List<String>();
         
-        var artigo = context.Request["artigo"];
-        var id = Convert.ToInt32(artigo.ToString());
-       //fazer select na tabela de artigos com o id acima mencionado
+        var noticia = context.Request["noticia"];
+        var id = Convert.ToInt32(noticia.ToString());
+        //fazer select na tabela de noticias com o id acima mencionado
         
         //Valores a serem apagados
 
-        //Listar 3 ou menos artigos do mesmo tema
+        //Listar 3 ou menos noticias
         listaDeRelacionados.Add(
             serializer.Serialize(
-                new { imagemCapa = "imagens/alimentacao_1.png", titulo = "ARTIGO", resumo = "Isto e texto Alimentacaoo", numeroArtigo = "1" }
+                new { imagemCapa = "imagens/alimentacao_1.png", titulo = "Noticia", resumo = "Isto e texto noticiario", numeroNoticia = "1" }
         ));
         listaDeRelacionados.Add(
             serializer.Serialize(
-                new { imagemCapa = "imagens/alimentacao_1.png", titulo = "ARTIGO", resumo = "Isto e texto Alimentacaoo", numeroArtigo = "1" }
+                new { imagemCapa = "imagens/alimentacao_1.png", titulo = "Noticia", resumo = "Isto e texto noticiario", numeroNoticia = "1" }
         ));
         listaDeRelacionados.Add(
             serializer.Serialize(
-                new { imagemCapa = "imagens/alimentacao_1.png", titulo = "ARTIGO", resumo = "Isto e texto Alimentacaoo", numeroArtigo = "1" }
+                new { imagemCapa = "imagens/alimentacao_1.png", titulo = "Noticia", resumo = "Isto e texto noticiario", numeroNoticia = "1" }
         ));
 
         String texto = @"<p>As mudanças ocorridas nos últimos anos na saúde da população portuguesa melhoraram significativamente, contudo, os jovens requerem particular atenção relativamente, aos determinantes da saúde relacionados com o estilo de vida. A evidência científica em promoção da saúde em meio escolar, a inovação e a necessidade de recentrar a ação nos resultados implica o desenvolvimento de intervenções mais adequadas à população jovem. Além de capacitar as pessoas e as comunidades para agir, implica reconhecer as suas competências e potencialidades e facilitar as suas escolhas.</p>
@@ -52,11 +52,10 @@ public class ArtigosHandler : IHttpHandler {
             new {
                 autor = "AUTOR",
                 data = "16 de Novembro de 2017",
-                tipo = "ALIMENTACAO",
                 imagemCapa = "imagens/alimentacao_1.png",
                 titulo = "Por favor funcemina",
                 texto = texto,
-                artigosRelacionados = serializer.Serialize(listaDeRelacionados)
+                noticiasRelacionadas = serializer.Serialize(listaDeRelacionados)
             });
 
         context.Response.ContentType = "plain/text";

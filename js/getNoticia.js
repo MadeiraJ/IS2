@@ -41,11 +41,11 @@ $(document).ready(function () {
 function addNoticiasRelacionadas(imagem, titulo, texto, url) {
     var bloco =
             `<a href="noticia.html/?noticia=${url}">
-                <div class="bloco-1 post hvr-grow">
+                <div class="bloco-1 hvr-grow">
                     <img src="${imagem}">
                     <div class="zonaTexto">
                         <p class="tituloArtigo">${titulo}</p>
-                        <p class="textoArtigo">${texto}</p>
+                        <p class="textoNoticia">${texto}</p>
                     </div>
                 </div>
             </a>`;
