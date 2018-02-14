@@ -1153,6 +1153,15 @@
             margin-top: 25% !important;
         }
 
+        .div_descricao{
+            margin-top: 25% !important;
+        }
+
+        .zonaNrRespostasAberto{
+           margin-top: 15% !important;
+        }
+
+
         .dataResposta{
             font-size: 5.5vw !important;
             margin-right: 5vw !important;
@@ -1218,6 +1227,10 @@
 
         .zonaNrRespostas{
             float: left !important;
+        }
+
+        .zonaNrRespostasAberto{
+            margin-top: 15% !important;
         }
 
         .topicoNrRespostas{
@@ -1724,6 +1737,13 @@
                 font-size: 5.5vw !important;
                 margin-right: 5vw !important;
                 margin-bottom: 6%;
+            }
+
+            .dataDescricao {
+                font-size: 5.5vw !important;
+                margin-right: 5vw !important;
+                margin-bottom: 6% !important;
+                margin-left: 3% !important;
             }
 
             .textoResposta {

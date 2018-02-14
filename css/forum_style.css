@@ -245,7 +245,7 @@
 .zonaNrRespostasAberto{
     position:relative;
     float: left;
-    margin-top:1%;
+    margin-top:4%;
     margin-left: 3%;
     z-index: 5;
 
@@ -263,6 +263,19 @@
 .simboloResposta{
     display: inline-block;
     vertical-align: middle;
+}
+
+
+.div_descricao{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 3%;
+    width: 90%;
+    height: 100%;
+    z-index: 5;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 1px #BCE4FF;
 }
 
 .div_Respostas{
@@ -290,6 +303,18 @@
 
 }
 
+.dataDescricao{
+    position: relative;
+    float: right;
+    margin-right: 3%;
+    color: #74B2DB;
+    font-family: "Raleway medium";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
 
 .textoResposta{
     position: relative;
