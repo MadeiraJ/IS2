@@ -9,9 +9,9 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
         if (sParameterName[0] === sParam) {
             return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
+        } //if
+    } //for
+}; //getUrlParameter
 
 $(document).ready(function () {
     $.ajax({
@@ -32,11 +32,11 @@ $(document).ready(function () {
                 var artigoR = artigosRelacionados[i];
                 artigoR = JSON.parse(artigoR);
                 addArtigoRelacionado(artigoR.imagemCapa, artigoR.titulo, artigoR.resumo, artigoR.numeroArtigo);
-            }
+            } //for
             addClear(".artigosRelacionados");
-        }
-    })
-});
+        } //success
+    }) //ajax
+}); //document
 
 function addArtigoRelacionado(imagem, titulo, texto, url) {
     var bloco =
@@ -50,8 +50,8 @@ function addArtigoRelacionado(imagem, titulo, texto, url) {
                 </div>
             </a>`;
     $(".artigosRelacionados").append(bloco);
-}
+} //addArtigoRelacionado
 
 function addClear(classeCss) {
     $(classeCss).append('<div class="clear"></div>');
-}
+} //addClear

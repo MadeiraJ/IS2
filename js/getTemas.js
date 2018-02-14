@@ -25,8 +25,8 @@ $(document).ready(function () {
                 artigoEmDestaque.texto,
                 artigoEmDestaque.url
             );
-        }
-    });
+        } //success
+    }); //ajax
 
     getVideos(classe, 3);
 
@@ -43,9 +43,9 @@ $(document).ready(function () {
                     listaDeDocumentos[i].nome,
                     listaDeDocumentos[i].url
                 );
-            }
-        }
-    });
+            } //for
+        } //success
+    }); //ajax
 
     $.ajax({
         url: `/handlers/HandlerTemas.ashx?type=5`,
@@ -60,9 +60,9 @@ $(document).ready(function () {
                     listaDeLinks[i].nome,
                     listaDeLinks[i].url
                 );
-            }
-        }
-    });
+            } //for
+        } //success
+    }); //ajax
 
 
     $(".conteudo .carregarMais").click(function () {
@@ -70,15 +70,15 @@ $(document).ready(function () {
         getDestaques(classe, 6);
         if(numeroDestaques == before)
             $(".conteudo .carregarMais").hide();
-    });
+    }); //artigos button click
 
     $("#zonaDeVideos .carregarMais").click(function () {
         var before = numeroVideos;
         getVideos(classe, 6);
         if(numeroVideos == before)
             $("#zonaDeVideos .carregarMais").hide();
-    });
-})
+    }); //videos button click
+}); //document 
 
 function addArtigoEmDestaque(imagem, titulo, texto, url) {
     var bloco =
@@ -94,7 +94,7 @@ function addArtigoEmDestaque(imagem, titulo, texto, url) {
                 </div>
             </a>`;
     $(".col1").after(bloco);
-}
+} //addArtigoEmDestaque
 
 function addBlocoArtigo(i, imagem, titulo, texto, url, extra) {
     var inserirNaColuna = ".col1";
@@ -117,7 +117,7 @@ function addBlocoArtigo(i, imagem, titulo, texto, url, extra) {
             </a>`;
 
     $(inserirNaColuna).append(bloco);
-}
+} //addBlocoArtigo
 
 function addBlocoSabiasQue(i, texto, extra) {
     var inserirNaColuna = ".col1";
@@ -134,7 +134,7 @@ function addBlocoSabiasQue(i, texto, extra) {
                 </div>
             </div>`;
     $(inserirNaColuna).append(bloco);
-}
+} //addBlocoSabiasQue
 
 function addVideo(link, titulo, texto) {
     var video =
@@ -146,25 +146,25 @@ function addVideo(link, titulo, texto) {
         </div>
     </a>`;
     $('.listaVideos').append(video);
-}
+} //addVideo
 
 function addLink(classe, nome, url) {
     var imagem = "imagens/link_" + classe.toLowerCase() + ".png";
     var link = `<a href="${url}" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
         <br>`;
     $('#zonaLinks').append(link);
-}
+} //addLink
 
 function addDocumento(classe, nome, url) {
     var imagem = "imagens/pin_" + classe.toLowerCase() + ".png";
     var documento = `<a href="${url}" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
             <br>`;
     $('#zonaDocumentos').append(documento);
-}
+} //addDocumento
 
 function addClear(classeCss) {
     $(classeCss).append('<div class="clear"></div>');
-}
+} //addClear
 
 
 function getDestaques(classe, x){
@@ -189,19 +189,19 @@ function getDestaques(classe, x){
                         listaDestaques[i].texto,
                         listaDestaques[i].url
                     );
-                }
+                } //if
 
                 else if(tipoBloco == "SABIAS-QUE"){
                     addBlocoSabiasQue(
                         i + 1,
                         listaDestaques[i].texto
                     );
-                }
-            }
+                } //else if
+            } //for
             numeroDestaques += listaDestaques.length;
-        }
-    });
-}
+        } //success
+    }); //ajax
+} //getDestaques
 
 function getVideos(classe, x) {
     $.ajax({
@@ -221,8 +221,9 @@ function getVideos(classe, x) {
                     listaDeVideos[i].titulo,
                     listaDeVideos[i].texto
                 );
-            }
+            } //for
             addClear('.listaVideos');
-        }
-    });
-}
+            numeroVideos += listaVideos.length;
+        } //success
+    }); //ajax
+} //getVideos

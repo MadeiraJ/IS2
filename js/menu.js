@@ -4,8 +4,8 @@ $(document).ready(function () {
 
     var menu = $('.menu-mobile .topicosMenu');
     if (menu.is(":visible")){
-      $('html').css({"overflow": "auto"});
-      $('html').css({"overflow": "initial"});
+      $(document.body).css({"overflow": "auto"});
+      $(document.body).css({"overflow": "initial"});
       menu.slideToggle("slow", function () {
         $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
       });
@@ -15,14 +15,16 @@ $(document).ready(function () {
       indexColor = $('.index .zonaMenu').css("background-color");
       menu.slideToggle("slow", function () {});
       $('.index .zonaMenu').css("background-color", "rgba(6, 41, 64, 1)");
-      $('html').css({"overflow": "hidden"});
+      $(document.body).css({"position": "fixed"});
+      $(".zonaMenu").css({"position": "absolute"});
+      $(".zonaMenu").css({"overflow": "scroll"});
     }
   });
 
   $('.menu-mobile button').click(function() {
     var menu = $('.menu-mobile .topicosMenu');
-    $('html').css({"overflow": "auto"});
-    $('html').css({"overflow": "initial"});
+    $(document.body).css({"position": "initial"});
+    $(document.body).css({"overflow": "initial"});
     menu.slideToggle("slow", function () {
       $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
     });
