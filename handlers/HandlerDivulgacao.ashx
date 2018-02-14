@@ -56,12 +56,12 @@ public class HandlerDivulgacao : IHttpHandler {
         //Valores a serem apagados
         json = serializer.Serialize(
             new {
-                   proximo = "PROXIMO O CRLH",
-                   data = "METE A DATA NO CU",
-                   horas = "EPAH FODA-SE",
-                   local = "É LOCAL É",
-                   titulo = "VAI TE FODER FDP",
-                   descricao = "LEVEI O MEU O CAO A PASSEAAAAAAAR",
+                   proximo = "proximo",
+                   data = "data",
+                   horas = "horas",
+                   local = "local",
+                   titulo = "titulo",
+                   descricao = "descricao",
                    imagem = "imagens/evento1.png"
                });
 
