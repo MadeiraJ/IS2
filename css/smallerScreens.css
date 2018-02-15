@@ -537,6 +537,10 @@
           }
 
       /*PAGINA DESTAQUES*/
+          
+          .destaques .zonaVideos .video .imgVideo {
+              height: 40vw;
+          }
 
           .destaques .card .blocoTopo .titulo {
               font-size: 5vw;

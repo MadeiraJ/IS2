@@ -50,6 +50,10 @@
 	        color: inherit;
 	    }
 
+        .paginaTema .carregarMais {
+            cursor: pointer;
+        }
+
 	/*PAGINA E MENU*/
 	    #zonaConteudo{
 	        position: relative;
@@ -500,6 +504,7 @@
 		        font-weight: 900;
 		        line-height: 3.4vw;
 		        text-align: left;
+                margin-bottom: 3%;
 		    }
 
 		    #zonaLinks .linkUteis{
@@ -535,6 +540,7 @@
 		        font-weight: 900;
 		        line-height: 3.4vw;
 		        text-align: left;
+                margin-bottom: 3%;
 		    }
 
 		    #zonaDocumentos .documentos{
@@ -837,6 +843,10 @@
     	line-height: 0;
     }
 
+    .destaques .bloco-2 .tag{
+    /*.destaques a .tag{*/
+        padding: 1% !important;
+    }
 
 	/*TAG*/
 		.destaques .card .blocoTopo {
@@ -859,7 +869,7 @@
 		}
 
 		.destaques .card .blocoTopo .tag img {
-			width: 1vw;
+			width: 1vw;           
 		}
 
 		.destaques .card .blocoTopo .tag a {
