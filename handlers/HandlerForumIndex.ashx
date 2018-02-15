@@ -18,7 +18,7 @@ public class GenericHandler1 : IHttpHandler {
                 break;
             case "2":
                 getListaTopicosPorPesquisa(context);
-                break;
+            break;
         } //switch
     } //ProcessRequest
 
