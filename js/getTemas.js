@@ -82,7 +82,7 @@ $(document).ready(function () {
 
 function addArtigoEmDestaque(imagem, titulo, texto, url) {
     var bloco =
-            `<a href="${url}">
+            `<a href="artigo.html?artigo=${url}">
                 <div class="wow fadeIn">
                     <div class="bloco-2 post hvr-grow">
                         <img src="${imagem}">
@@ -104,7 +104,7 @@ function addBlocoArtigo(i, imagem, titulo, texto, url, extra) {
         inserirNaColuna = ".col2";
 
     var bloco =
-            `<a href="${url}">
+            `<a href="artigo.html?artigo=${url}">
                 <div class="wow fadeIn">
                     <div class="bloco-1 post hvr-grow ${extra}">
                         <img src="${imagem}">

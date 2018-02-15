@@ -18,7 +18,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 $(document).ready(function () {
     paginaAtual = getUrlParameter('pagina');
     paginaAtual = paginaAtual? parseInt(paginaAtual) : 1;
-    getPagina(paginaAtual);
+    mostrar(paginaAtual);
 
     $('.search_bar').keyup(function () {
         var texto = ($('.search_bar').val()).split(" ");
@@ -40,7 +40,9 @@ $(document).ready(function () {
                     todosTopico[i].numeroRespostas,
                     todosTopico[i].pergunta,
                     todosTopico[i].data,
-                    todosTopico[i].estado);
+                    todosTopico[i].estado,
+                    todosTopico[i].id
+                );
             } //if
         } //for
     }); //pesquisa keyup
@@ -54,11 +56,11 @@ $(document).ready(function () {
 
         $(".zona_topicos").empty();
 
-        getPagina(paginaAtual, classe);
+        mostrar(paginaAtual, classe);
     }); //filtroTema
 }); //document
 
-function addBlocoTopicos(tema, numeroRespostas, pergunta, data, estado) {
+function addBlocoTopicos(tema, numeroRespostas, pergunta, data, estado, id) {
     var bloco =
         `<div class="div_topico forum_${tema.toLowerCase()}">
             <div class ="tag">
@@ -71,7 +73,7 @@ function addBlocoTopicos(tema, numeroRespostas, pergunta, data, estado) {
                 </div>
                 <span class ="topicoNrRespostas">${numeroRespostas} respostas</span>
             </div>
-            <p class ="textoTopicos">${pergunta}</p>
+            <a href="forum_topicoAberto.html?post=${id}"><p class ="textoTopicos">${pergunta}</p></a>
             <div class ="zonaDiaHoraEstado">
                 <spam class ="textoDiaHora">${data}</spam>
                 <p class ="topico${estado}">&#9679; ${estado}</p>
@@ -95,9 +97,9 @@ function verNomeTema(tema) {
     }
 } //verNomeTema
 
-function getPagina(pagina, classe) {
+function mostrar(pagina, classe) {
     $.ajax({
-        url: `/handlers/HandlerForumIndex.ashx?type=1`,
+        url: `/handlers/HandlerForumIndex.ashx`,
         type: "POST",
         data: {
             classe: classe,
@@ -113,9 +115,10 @@ function getPagina(pagina, classe) {
                     listaTopicos[i].numeroRespostas,
                     listaTopicos[i].pergunta,
                     listaTopicos[i].data,
-                    listaTopicos[i].estado
+                    listaTopicos[i].estado,
+                    listaTopicos[i].id
                  );
             } //for
         } //success
     }); //ajax
-} //getPagina
+} //mostrar

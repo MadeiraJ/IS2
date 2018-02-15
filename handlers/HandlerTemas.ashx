@@ -58,7 +58,7 @@ public class TemasHandler : IHttpHandler {
         for(int i = 0; i < numeroDeArtigosPedidos; i++)
             listaDeDestaques.Add(
                 serializer.Serialize(
-                    new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", artigo = 1 }
+                    new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", url = "1" }
             ));
         json = serializer.Serialize(listaDeDestaques);
 
@@ -91,7 +91,7 @@ public class TemasHandler : IHttpHandler {
                 imagem = "imagens/alimentacao_1.png",
                 titulo = "Por favor funcemina",
                 texto = "Se isto funcionar eu mando-me de 2 janelas",
-                url = "artigo_exemplo.html"
+                url = "1"
             });
 
 
