@@ -2,7 +2,7 @@
 var numeroEventos = 0;
 $(document).ready(function () {
 
-    getNoticias(5);
+    getNoticias(3);
 
     getEventos(2);
 
@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
 
     $(".contentorDasNoticias .mostrarMais").click(function () {
-        getNoticias(3);
+        getNoticias(2);
     }); //noticias button click
 
     $(".contentorDosEventos .mostrarMais").click(function () {
