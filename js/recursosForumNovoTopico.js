@@ -35,11 +35,11 @@ $(document).on('click', '.btn_postar', function () {
                 tema: tema,
                 descricao: descricao
             },
-            dataType: "json",    
+            dataType: "json"
         });
         window.location.href = "./forum_index.html";
     } else {
-        $('.textoTituloNovoTopico').attr('style', 'color: red;');
+        //$('.textoTituloNovoTopico').attr('style', 'color: red;');
         $('.div_tituloNovoTopico').attr('style', 'border: red solid 3px;');
     }
 })
