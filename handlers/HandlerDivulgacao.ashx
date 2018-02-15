@@ -46,7 +46,7 @@ public class HandlerDivulgacao : IHttpHandler {
                         data = "12 Janeiro 2017",
                         titulo = "Va laaaaaaaa",
                         texto = "PLEEEEEEEASE",
-                        url = "artigo_exemplo.html"
+                        url = "1"
                     }
             ));
 

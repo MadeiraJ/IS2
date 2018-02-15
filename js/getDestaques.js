@@ -39,7 +39,7 @@ $(document).ready(function () {
 function addArtigoEmDestaque(tema, imagem, titulo, texto, url) {
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase();
     var bloco =
-        `<a href="${url}">
+        `<a href="artigo.html?artigo=${url}">
             <div class ="${tema.toLowerCase()} bloco-2 card artigo wow fadeIn hvr-grow">
                 <img src="${imagem}">
                 <div class ="textoBloco">
@@ -68,7 +68,7 @@ function addBlocoArtigo(i, tema, imagem, titulo, texto, url) {
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase();
 
     var bloco =
-            `<a href="${url}">
+            `<a href="artigo.html?artigo=${url}">
                 <div class ="${tema.toLowerCase()} bloco-1 card artigo wow fadeIn hvr-grow">
                     <img src="${imagem}">
                     <div class ="textoBloco">

@@ -40,7 +40,7 @@ $(document).ready(function () {
 
 function addArtigoRelacionado(imagem, titulo, texto, url) {
     var bloco =
-            `<a href="artigo.html/?artigo=${url}">
+            `<a href="artigo.html?artigo=${url}">
                 <div class="bloco-1 post hvr-grow">
                     <img src="${imagem}">
                     <div class="zonaTexto">

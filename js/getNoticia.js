@@ -31,7 +31,7 @@ $(document).ready(function () {
             for (var i = 0; i < noticiasRelacionadas.length; i++) {
                 var noticiaR = noticiasRelacionadas[i];
                 noticiaR = JSON.parse(noticiaR);
-                addNoticiasRelacionadas(noticiaR.imagemCapa, noticiaR.titulo, noticiaR.resumo, noticiaR.numeronoticia);
+                addNoticiasRelacionadas(noticiaR.imagemCapa, noticiaR.titulo, noticiaR.resumo, noticiaR.numeroNoticia);
             }
             addClear(".noticiasRelacionadas");
         }
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
 function addNoticiasRelacionadas(imagem, titulo, texto, url) {
     var bloco =
-            `<a href="noticia.html/?noticia=${url}">
+            `<a href="noticia.html?noticia=${url}">
                 <div class="bloco-1 hvr-grow">
                     <img src="${imagem}">
                     <div class="zonaTexto">
