@@ -17,61 +17,45 @@ public class HandlerForumTopicoAberto : IHttpHandler {
                 getRespostas(context);
                 break;
             case "2":
-                getDescricao(context);
+                getPergunta(context);
                 break;
-                    case "3":
-                getTitulo(context);
+            case "3":
+                getNextPerguntaId(context);
                 break;
         }
     } //ProcessRequest
             
 
-        /////////////////////////TITULO/////////////////////////
-    public void getTitulo(HttpContext context)
+    /////////////////////////PERGUNTA/////////////////////////
+    public void getPergunta(HttpContext context)
     {
         String json;
         var serializer = new JavaScriptSerializer();
+        var id = Convert.ToInt32(context.Request["id"].ToString());
 
-        //fazer a query de forma a ir buscar o artigo mais recente entre todos os temas
+        //fazer a query de forma a ir buscar um artigo, de acordo com o id recebido
 
         //Valores a serem apagados
         json = serializer.Serialize(
             new {
-                texto = "TITULO"
+                pergunta = "Será que 2 + 2 é 4?",
+                texto = "Eu acho que sim, mas verifiquem aí",
+                data = "15/08/2018"
             });
 
         context.Response.ContentType = "plain/text";
         context.Response.Write(json);
-    } //getRespostas
+    } //getPergunta
     
-    /////////////////////////DESCRICAO/////////////////////////
-    public void getDescricao(HttpContext context)
-    {
-        String json;
-        var serializer = new JavaScriptSerializer();
-
-        //fazer a query de forma a ir buscar o artigo mais recente entre todos os temas
-
-        //Valores a serem apagados
-        json = serializer.Serialize(
-            new {
-                texto = "TEXTO fsf sf fsffwf wef ewfew",
-                data = "DATA"
-            });
-
-        context.Response.ContentType = "plain/text";
-        context.Response.Write(json);
-    } //getRespostas
-
-
 
     /////////////////////////RESPOSTAS/////////////////////////
     public void getRespostas(HttpContext context)
     {
         String json;
         var serializer = new JavaScriptSerializer();
+        var id = Convert.ToInt32(context.Request["id"].ToString());
 
-        //fazer a query de forma a ir buscar o artigo mais recente entre todos os temas
+        //fazer a query de forma a ir buscar todas as respostas à pergunta com o id recebido
 
         //Valores a serem apagados
         json = serializer.Serialize(
@@ -81,6 +65,22 @@ public class HandlerForumTopicoAberto : IHttpHandler {
                 quemRespondeu = "MACOAAAASSSS"
             });
 
+        context.Response.ContentType = "plain/text";
+        context.Response.Write(json);
+    } //getRespostas
+
+    /////////////////////////NEXT PERGUNTA/////////////////////////
+    public void getNextPerguntaId(HttpContext context)
+    {
+        String json;
+        var serializer = new JavaScriptSerializer();
+        var id = Convert.ToInt32(context.Request["id"].ToString());
+
+        //fazer a query de forma a ir buscar o id da próxima pergunta
+
+        //Valores a serem apagados
+        json = "1";
+        
         context.Response.ContentType = "plain/text";
         context.Response.Write(json);
     } //getRespostas
