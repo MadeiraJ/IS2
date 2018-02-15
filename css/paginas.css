@@ -1198,7 +1198,7 @@
 		width: auto;
 	}
 
-	.parceiros .topo h1 {
+	/*.parceiros .topo h1 {
 		color: var(--geral-cor1);
 		font-family: "Raleway ExtraBold";
 		font-size: 4.3vw;
@@ -1215,6 +1215,27 @@
 		line-height: 2.81vw;
 		text-align: center;
 		margin: 0 auto;
+	}*/
+
+    .parceiros .destaquesTitulo{
+		margin-top: 2%;
+		font-size: 3vw;
+		text-align: center;
+		font-family: "Raleway ExtraBold";
+	}
+
+	.parceiros .aqui-podes-encontrar{
+		position: relative;
+		width: 40%;
+		font-size: 2vw;
+		font-weight: bold;
+		line-height: 3vw;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.parceiros .aqui-podes-encontrar mark{
+		color: inherit;
 	}
 
 	.parcerias {
@@ -1285,7 +1306,7 @@
 		background-color: #F7FAFC;
 	}
 
-	.galeria .topo h1 {
+	/*.galeria .topo h1 {
 		color: var(--geral-cor1);
 		font-family: "Raleway ExtraBold";
 		font-size: 4.3vw;
@@ -1302,9 +1323,9 @@
 		line-height: 2.81vw;
 		text-align: center;
 		margin: 0 auto;
-	}
+	}*/
 
-	/*.galeria .destaquesTitulo{
+	.galeria .destaquesTitulo{
 		margin-top: 2%;
 		font-size: 3vw;
 		text-align: center;
@@ -1323,7 +1344,7 @@
 
 	.galeria .aqui-podes-encontrar mark{
 		color: inherit;
-	}*/
+	}
 
 	.galeria .imagens{
 		width: 90%;
@@ -1452,43 +1473,39 @@
 	}
 
 /*INICIO SOBRE*/
-	.sobre .zona {
-		margin-top: 10%;
+	.sobre .zona{
 		width: auto;
 	}
 
-	.sobre .topo {
+    .sobre .destaquesTitulo{
+		margin-top: 2%;
+		font-size: 3vw;
 		text-align: center;
-	}
-
-	.sobre .topo h1 {
-		color: var(--geral-cor1);
 		font-family: "Raleway ExtraBold";
-		font-size: 4.3vw;
-		font-weight: 900;
-		line-height: 5.5vw;
-		text-align: center;
 	}
 
-	.sobre .topo p {
+	.sobre .aqui-podes-encontrar{
+		position: relative;
 		width: 40%;
-		color: var(--geral-cor2);	
-		font-size: 2.1vw;
+		font-size: 2vw;
 		font-weight: bold;
-		line-height: 2.81vw;
+		line-height: 3vw;
 		text-align: center;
 		margin: 0 auto;
 	}
 
-	.sobre .topo img {
+	.sobre .aqui-podes-encontrar mark{
+		color: inherit;
+	}
+
+    .sobre .tituloZonaConteudo img {
 		margin: 5%;
 		width: 60%;
 	}
 
-    .sobre .zona.descricao {
+    .sobre .zona .descricao {
         width: 42.4%;
     	margin: 0 auto;
-        margin-top: 5%;
         margin-bottom: 10%;
         text-align: center;
         font-family: "DroidSerif";

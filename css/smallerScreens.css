@@ -125,17 +125,17 @@
 
       /*PAGINA TEMAS*/
           /*TITULO PRINCIPAL*/
-              .paginaTema .destaquesTitulo{/*, .divulgacaoPag .destaquesTitulo, .galeria .destaquesTitulo{*/
+              .paginaTema .destaquesTitulo, .divulgacaoPag .destaquesTitulo, .galeria .destaquesTitulo, .sobre .destaquesTitulo, .parceiros .destaquesTitulo{
                   font-size: 10vw !important;
               }
 
-              .paginaTema .aqui-podes-encontrar{/*, .divulgacaoPag .aqui-podes-encontrar, .galeria .aqui-podes-encontrar{*/
+              .paginaTema .aqui-podes-encontrar, .divulgacaoPag .aqui-podes-encontrar, .galeria .aqui-podes-encontrar, .sobre .aqui-podes-encontrar, .parceiros .aqui-podes-encontrar{
                   font-size: 5vw !important;
                   line-height: normal !important;
                   width: 90% !important;
               }
 
-              .paginaTema .texto p{/*, .divulgacaoPag .texto p, .galeria .texto p {*/
+              .paginaTema .texto p, .divulgacaoPag .texto p, .galeria .texto p, .sobre .texto p, .parceiros .texto p{
                   display: none !important;
               }
 
