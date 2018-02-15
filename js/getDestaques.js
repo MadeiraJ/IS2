@@ -120,13 +120,13 @@ function addBlocoVideo(i, tema, link, titulo, texto) {
     else if (i % 2 == 0)
         inserirNaColuna = ".col2";
 
-    var urlParaVideo = `https://www.youtube.com/embed/${link.split('&list=')[0].split('watch?v=')[1]}`;
+    var urlParaVideo = `http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/0.jpg`;
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase();
 
     var bloco =
             `<div onclick="verVideo(this)" name="${link}" style="cursor: pointer;">
                 <div class ="${tema.toLowerCase()} bloco-1 card video wow fadeIn hvr-grow">
-                    <iframe src="${urlParaVideo}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <img class ="imgVideo" src="${urlParaVideo}">
                     <div class ="textoBloco">
                         <div class ="blocoTopo">
                             <p class ="titulo">VIDEOS</p>
@@ -144,10 +144,11 @@ function addBlocoVideo(i, tema, link, titulo, texto) {
 } //addBlocoVideo
 
 function addVideo(tema, link, titulo, texto) {
+    var urlParaVideo = `http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/0.jpg`;
     var video =
             `<div onclick="verVideo(this)" name="${link}" style="cursor: pointer;">
                 <div class ="${tema.toLowerCase()} video card wow fadeIn hvr-grow">
-                    <iframe src="https://www.youtube.com/embed/${link.split('&list=')[0].split('watch?v=')[1]}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <img class="imgVideo" src="${urlParaVideo}">
                     <div class ="textoBloco">
                         <div class ="blocoTopo">
                             <p class ="titulo">VIDEOS</p>

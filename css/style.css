@@ -77,7 +77,7 @@
 
         #rodape #logoRodape{
             position: relative;
-            width: 10.26%;
+            width: 12.26%;
             color: #FFFFFF;
             font-family: "Permanent Marker";
             font-size: 2vw;
@@ -101,16 +101,30 @@
             width: 3vw;
             height: 3vw;
             float: left;
+            cursor: pointer;
         }
 
+        #rodape #icons #facebookIcon:hover, #rodape #icons #youtubeIcon:hover, #rodape #icons #instagramIcon:hover {
+            transform: scale(1.4) !important;
+            transition-duration: .4s !important;
+        }
 
         #rodape #icons #youtubeIcon, #rodape #icons #instagramIcon{
             padding-left: 7.13%;
         }
 
+        #rodape #icons #instagramIcon:hover{
+            padding-left: 6.13%;
+            padding-right: 1.13%;
+        }
+
         #rodape .estilo{
-            text-decoration: none;
-            color: #17A2FF;
+             text-decoration: none;
+             color: #17A2FF;
+         }
+
+        #rodape .estilo:hover{
+            color: #BCE4FF;
         }
 
         #rodape .menu{
