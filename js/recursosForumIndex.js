@@ -1,29 +1,24 @@
-﻿var temaPesquisa;
-var todosTopico = [];
+﻿var todosTopico = [];
+var paginaAtual;
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? false : sParameterName[1];
+        } //if
+    } //for
+}; //getUrlParameter
+
 $(document).ready(function () {
-    $.ajax({
-        url: `/handlers/HandlerForumIndex.ashx?type=1`,
-        type: "POST",
-        data: {
-            classe: classe,
-            artigosRecebidos : artigosRecebidos,
-            numeroArtigosPedidos : numeroArtigosPedidos
-        },
-        dataType: "json",
-        success: function (listaTopicos) {
-            for (var i = 0; i < listaTopicos.length; i++) {
-                listaTopicos[i] = JSON.parse(listaTopicos[i]);
-                todosTopico.push(listaTopicos[i]);
-                addBlocoTopicos(
-                    listaTopicos[i].tema,
-                    listaTopicos[i].numeroRespostas,
-                    listaTopicos[i].pergunta,
-                    listaTopicos[i].data,
-                    listaTopicos[i].estado
-                 );
-            } //for
-        } //success
-    }); //ajax
+    paginaAtual = getUrlParameter('pagina');
+    paginaAtual = paginaAtual? parseInt(paginaAtual) : 1;
+    getPagina(paginaAtual);
 
     $('.search_bar').keyup(function () {
         var texto = ($('.search_bar').val()).split(" ");
@@ -49,62 +44,19 @@ $(document).ready(function () {
             } //if
         } //for
     }); //pesquisa keyup
+
+    $('.filtroTema').click(function() {
+        var classe = this.innerText;
+        if (classe == "ALIMENTAÇÃO")
+            classe = "ALIMENTACAO";
+        else if (classe == "CONSUMOS NOCIVOS")
+            classe = "CONSUMOS";
+
+        $(".zona_topicos").empty();
+
+        getPagina(paginaAtual, classe);
+    }); //filtroTema
 }); //document
-
-$('.filtroTema').click(function() {
-    var classe = this.innerText;
-    if (classe == "ALIMENTAÇÃO")
-        classe = "ALIMENTACAO";
-    else if (classe == "CONSUMOS NOCIVOS")
-        classe = "CONSUMOS";
-
-    $(".zona_topicos").empty();
-
-    $.ajax({
-        url: `/handlers/HandlerForumIndex.ashx?type=2`,
-        type: "POST",
-        data: { classe: classe },
-        dataType: "json",
-        success: function (listaTopicosTema) {
-            for (var i = 0; i < listaTopicosTema.length; i++) {
-                listaTopicosTema[i] = JSON.parse(listaTopicosTema[i]);
-                lTopicos[i] = listaTopicosTema[i].pergunta;
-                addBlocoTopicos(
-                    classe,
-                    listaTopicosTema[i].numeroRespostas,
-                    listaTopicosTema[i].pergunta,
-                    listaTopicosTema[i].data,
-                    listaTopicosTema[i].estado
-                );
-            } //for
-        } //success
-    }); //ajax
-}); //filtroTema
-
-function getPaginaForum(paginaAtual) {
-    $.ajax({
-        url: `/handlers/HandlerForumIndex.ashx?type=1`,
-        type: "POST",
-        data: {
-            classe: classe,
-            paginaAtual : paginaAtual
-        },
-        dataType: "json",
-        success: function (listaTopicos) {
-            for (var i = 0; i < listaTopicos.length; i++) {
-                listaTopicos[i] = JSON.parse(listaTopicos[i]);
-                todosTopico.push(listaTopicos[i]);
-                addBlocoTopicos(
-                    listaTopicos[i].tema,
-                    listaTopicos[i].numeroRespostas,
-                    listaTopicos[i].pergunta,
-                    listaTopicos[i].data,
-                    listaTopicos[i].estado
-                 );
-            } //for
-        } //success
-    }); //ajax
-} //getPaginaForum
 
 function addBlocoTopicos(tema, numeroRespostas, pergunta, data, estado) {
     var bloco =
@@ -142,3 +94,28 @@ function verNomeTema(tema) {
         return "SEXUALIDADE";
     }
 } //verNomeTema
+
+function getPagina(pagina, classe) {
+    $.ajax({
+        url: `/handlers/HandlerForumIndex.ashx?type=1`,
+        type: "POST",
+        data: {
+            classe: classe,
+            paginaAtual : pagina
+        },
+        dataType: "json",
+        success: function (listaTopicos) {
+            for (var i = 0; i < listaTopicos.length; i++) {
+                listaTopicos[i] = JSON.parse(listaTopicos[i]);
+                todosTopico.push(listaTopicos[i]);
+                addBlocoTopicos(
+                    listaTopicos[i].tema,
+                    listaTopicos[i].numeroRespostas,
+                    listaTopicos[i].pergunta,
+                    listaTopicos[i].data,
+                    listaTopicos[i].estado
+                 );
+            } //for
+        } //success
+    }); //ajax
+} //getPagina

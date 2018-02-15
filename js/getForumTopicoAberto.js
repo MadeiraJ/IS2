@@ -101,4 +101,4 @@ function goToNextPergunta(idPost) {
             window.location.href = `forum_topicoAberto.html/?pergunta=${id}`;
         } //success
     }); //ajax
-}
+} //goToNextPergunta

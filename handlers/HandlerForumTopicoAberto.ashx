@@ -22,7 +22,7 @@ public class HandlerForumTopicoAberto : IHttpHandler {
             case "3":
                 getNextPerguntaId(context);
                 break;
-        }
+        } //switch
     } //ProcessRequest
             
 

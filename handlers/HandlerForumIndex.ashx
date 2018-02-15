@@ -17,12 +17,9 @@ public class GenericHandler1 : IHttpHandler {
                 getListaTopicos(context);
                 break;
             case "2":
-                getListaTopicosPorTema(context);
-                break;
-            case "3":
                 getListaTopicosPorPesquisa(context);
-                break;          
-        }
+                break;
+        } //switch
     } //ProcessRequest
 
 
@@ -32,15 +29,31 @@ public class GenericHandler1 : IHttpHandler {
         var listaDeTopicos = new List<String>();
         var serializer = new JavaScriptSerializer();
 
-        //fazer a query de forma a a ir buscar todos os topicos de todos os temas ordenados pela data (de forma decrescente)
+        //fazer a query de forma a 10 topicos de um tópico em particular, ou de todos os temas caso nenhum tema seja passado, ordenados pela data (de forma decrescente), de acordo com a página atual
 
         //Valores a serem apagados
-        listaDeTopicos.Add(
-            serializer.Serialize(
-                new { tema = "ALIMENTACAO", numeroRespostas = "2", pergunta = "Faz mal comer muitos ovos diariamente?", data = "12 de Janeiro às 12:45", estado = "Ativo" }
-        ));
+        for(int i = 0; i < 10; i++)
+            listaDeTopicos.Add(
+                serializer.Serialize(
+                    new { tema = "ALIMENTACAO", numeroRespostas = "2", pergunta = "Faz mal comer muitos ovos diariamente?", data = "12 de Janeiro às 12:45", estado = "Ativo" }
+            ));
 
-        listaDeTopicos.Add(
+        var tema = context.Request.Form["classe"];
+        tema = tema == null? null : tema.ToString();
+        switch (tema)
+        {
+            //fazer a query de acordo com o tema, de forma a a ir buscar todos os topicos ordenados pela data (de forma decrescente)
+            case "ALIMENTACAO":
+                break;
+            case "SEXUALIDADE":
+                break;
+            case "CONSUMOS":
+                break;
+            default:
+                break;
+        } //switch
+
+        /*listaDeTopicos.Add(
             serializer.Serialize(
                 new { tema = "CONSUMOS", numeroRespostas = "2", pergunta = "O que é ser um Vieira?", data = "12 de Janeiro às 12:45", estado = "Fechado" }
         ));
@@ -63,7 +76,7 @@ public class GenericHandler1 : IHttpHandler {
         listaDeTopicos.Add(
             serializer.Serialize(
                 new { tema = "SEXUALIDADE", numeroRespostas = "2", pergunta = "Ser lésbica ou gay é normal?", data = "12 de Janeiro às 12:45", estado = "Fechado" }
-        ));
+        ));*/
 
         json = serializer.Serialize(listaDeTopicos);
 
@@ -95,7 +108,7 @@ public class GenericHandler1 : IHttpHandler {
             serializer.Serialize(
                 new {numeroRespostas = 2, pergunta = "Ser lésbica ou gay é normal?", data = "12 de Janeiro às 12:45", estado = "Fechado" }
         ));
-        
+
         listaDeTopicosPorTema.Add(
             serializer.Serialize(
                 new {numeroRespostas = 2, pergunta = "Qual a quantidade de água deve ser ingerida, diariamente, por um adulto?", data = "12 de Janeiro às 12:45", estado = "Ativo" }
