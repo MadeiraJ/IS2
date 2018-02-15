@@ -707,6 +707,7 @@
 
           .sobre .equipa .elementos .elemento img {
               width: 100%;
+              height: 25vw;
           }
 
           .sobre .equipa .elementos .elemento .nome {
@@ -802,6 +803,7 @@
 
           .sobre .equipa .elementos .elemento img {
               width: 100%;
+              height: 30vw;
           }
 
           .sobre .equipa .elementos .elemento .nome {
@@ -813,6 +815,7 @@
               font-size: 2.7vw;
               line-height: 4.2vw;
           }
+
 
       /*PAGINA GALERIA*/
           .galeria .topo h1 {
