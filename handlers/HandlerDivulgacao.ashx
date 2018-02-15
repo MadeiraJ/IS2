@@ -19,6 +19,9 @@ public class HandlerDivulgacao : IHttpHandler {
             case "2":
                 getEventos(context);
                 break;
+            case "3":
+                getPublicacoes(context);
+                break;
         }
     } //ProcessRequest
 
@@ -26,53 +29,127 @@ public class HandlerDivulgacao : IHttpHandler {
     /////////////////////////NOTICIAS/////////////////////////
     public void getNoticias(HttpContext context)
     {
-        String json;
+        String json = "";
+        var listaDeNoticias = new List<String>();
         var serializer = new JavaScriptSerializer();
 
-        //fazer a query de forma a ir buscar o artigo mais recente entre todos os temas
-
+        //fazer a query de forma a ir buscar todas as noticias
+        var numeroNoticiasRecebidos = Convert.ToInt32(context.Request.Form["numeroNoticiasRecebidos"].ToString());
+        var numeroDeNoticiasPedidos = Convert.ToInt32(context.Request.Form["numeroDeNoticiasPedidos"].ToString());
         //Valores a serem apagados
-        json = serializer.Serialize(
-            new {
-                imagem = "imagens/alimentacao_3.jpg",
-                data = "12 Janeiro 2017",
-                titulo = "Va laaaaaaaa",
-                texto = "PLEEEEEEEASE",
-                url = "artigo_exemplo.html"
-        });
-              
+        for (int i = 0; i < numeroDeNoticiasPedidos; i++)
+            listaDeNoticias.Add(
+                serializer.Serialize(
+                    new
+                    {
+                        imagem = "imagens/alimentacao_3.jpg",
+                        data = "12 Janeiro 2017",
+                        titulo = "Va laaaaaaaa",
+                        texto = "PLEEEEEEEASE",
+                        url = "artigo_exemplo.html"
+                    }
+            ));
+
+        json = serializer.Serialize(listaDeNoticias);
+
         context.Response.ContentType = "plain/text";
         context.Response.Write(json);
     } //getNoticias
 
-/////////////////////////EVENTOS/////////////////////////
- public void getEventos(HttpContext context)
+    /////////////////////////EVENTOS/////////////////////////
+    public void getEventos(HttpContext context)
     {
-        String json;
+        String json = "";
+        var listaDeEventos = new List<String>();
         var serializer = new JavaScriptSerializer();
 
-        //fazer a query de forma a ir buscar o artigo mais recente entre todos os temas
-
+        //fazer a query de forma a ir buscar todos os eventos
+        var numeroEventosRecebidos = Convert.ToInt32(context.Request.Form["numeroEventosRecebidos"].ToString());
+        var numeroDeEventosPedidos = Convert.ToInt32(context.Request.Form["numeroDeEventosPedidos"].ToString());
         //Valores a serem apagados
-        json = serializer.Serialize(
-            new {
-                   proximo = "proximo",
-                   data = "data",
-                   horas = "horas",
-                   local = "local",
-                   titulo = "titulo",
-                   descricao = "descricao",
-                   imagem = "imagens/evento1.png"
-               });
+        for (int i = 0; i < numeroDeEventosPedidos; i++)
+            listaDeEventos.Add(
+                serializer.Serialize(
+                    new {
+                        data = "data",
+                        horas = "horas",
+                        local = "local",
+                        titulo = "titulo",
+                        descricao = "descricao",
+                        imagem = "imagens/evento1.png"
+                    }
+            ));
+
+        json = serializer.Serialize(listaDeEventos);
 
         context.Response.ContentType = "plain/text";
         context.Response.Write(json);
     } //getEventos
 
-public bool IsReusable {
-    get {
-        return false;
+    /////////////////////////PUBLICAÇÕES/////////////////////////
+    public void getPublicacoes(HttpContext context)
+    {
+        String json = "";
+        var listaDePublicacoes = new List<String>();
+        var serializer = new JavaScriptSerializer();
+
+        //fazer a query de forma a ir buscar todas as publicações
+
+        //Valores a serem apagados
+        listaDePublicacoes.Add(
+            serializer.Serialize(
+                new {
+                    titulo = "Livros publicados/organizados ou edições",
+                    conteudo = "<ul>"+
+                            "<li>Amendoeira, José J. P. (2006). Uma biografia partilhada da enfermagem. a segunda metade do século XX. ed. 1, 1 vol., ISBN: 972-8485-67-0. Coimbra: Formasau.</li>"+
+                            "<li> Silva, Mário (2010). Adesão ao regime terapêutico. Coimbra. Formasau. ISBN 978-989-8269-10-2</li>"+
+                            "</ul>"
+                }
+            ));
+        
+       listaDePublicacoes.Add(
+            serializer.Serialize(
+                new {
+                    titulo = "Capítulos de livros publicados",
+                    conteudo = "<ul>"+
+                            "<li>Amendoeira, José J. P. (2006). Uma biografia partilhada da enfermagem. a segunda metade do século XX. ed. 1, 1 vol., ISBN: 972-8485-67-0. Coimbra: Formasau.</li>"+
+                            "<li> Silva, Mário (2010). Adesão ao regime terapêutico. Coimbra. Formasau. ISBN 978-989-8269-10-2</li>"+
+                            "</ul>"
+                }
+            ));
+
+       listaDePublicacoes.Add(
+            serializer.Serialize(
+                new {
+                    titulo = "Artigos em revistas com arbitragem científica",
+                    conteudo = "<ul>"+
+                            "<li>Amendoeira, José J. P. (2006). Uma biografia partilhada da enfermagem. a segunda metade do século XX. ed. 1, 1 vol., ISBN: 972-8485-67-0. Coimbra: Formasau.</li>"+
+                            "<li> Silva, Mário (2010). Adesão ao regime terapêutico. Coimbra. Formasau. ISBN 978-989-8269-10-2</li>"+
+                            "</ul>"
+                }
+            ));
+        
+       listaDePublicacoes.Add(
+            serializer.Serialize(
+                new {
+                    titulo = "Comunicações orais e posters em atividades científicas",
+                    conteudo = "<ul>"+
+                            "<li>Amendoeira, José J. P. (2006). Uma biografia partilhada da enfermagem. a segunda metade do século XX. ed. 1, 1 vol., ISBN: 972-8485-67-0. Coimbra: Formasau.</li>"+
+                            "<li> Silva, Mário (2010). Adesão ao regime terapêutico. Coimbra. Formasau. ISBN 978-989-8269-10-2</li>"+
+                            "</ul>"
+                }
+            ));
+
+        json = serializer.Serialize(listaDePublicacoes);
+
+        context.Response.ContentType = "plain/text";
+        context.Response.Write(json);
+    } //getEventos
+
+    public bool IsReusable {
+        get {
+            return false;
+        }
     }
-}
 
 }

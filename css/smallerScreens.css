@@ -116,18 +116,18 @@
 
       /*PAGINA TEMAS*/
           /*TITULO PRINCIPAL*/
-              .paginaTema .destaquesTitulo{
-                  font-size: 10vw;
+              .paginaTema .destaquesTitulo{/*, .divulgacaoPag .destaquesTitulo, .galeria .destaquesTitulo{*/
+                  font-size: 10vw !important;
               }
 
-              .paginaTema .aqui-podes-encontrar{
-                  font-size: 5vw;
-                  line-height: normal;
-                  width: 90%;
+              .paginaTema .aqui-podes-encontrar{/*, .divulgacaoPag .aqui-podes-encontrar, .galeria .aqui-podes-encontrar{*/
+                  font-size: 5vw !important;
+                  line-height: normal !important;
+                  width: 90% !important;
               }
 
-              .paginaTema .texto p {
-                  display: none;
+              .paginaTema .texto p{/*, .divulgacaoPag .texto p, .galeria .texto p {*/
+                  display: none !important;
               }
 
           /*POSTS E SABIAS QUE*/
@@ -705,6 +705,8 @@
               font-size: 2.7vw;
               line-height: 4.2vw;
           }
+
+
   }
 
   @media only screen and (max-width: 800px) and (min-width: 600px) {
