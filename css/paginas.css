@@ -348,19 +348,42 @@
 		        padding-top: 5%;
 		        padding-bottom: 2%;
 		    }
-		    
-		    #zonaDeVideos .postVideo{
-		        width:31%;
-		        margin: 1%;
-		        float: left;
-		        box-sizing: border-box;
-		        border: 3px solid #FFF2D9;
-		        border-radius: 6px;
-		        background-color: #FFFFFF;
-		        box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
-		    }
 
-		    #zonaDeVideos .postVideo img{
+				.alimentacao #zonaDeVideos .postVideo{
+					width:31%;
+					margin: 1%;
+					float: left;
+					box-sizing: border-box;
+					border: 3px solid #FFF2D9;
+					border-radius: 6px;
+					background-color: #FFFFFF;
+					box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
+				}
+
+				.sexualidade #zonaDeVideos .postVideo{
+					width:31%;
+					margin: 1%;
+					float: left;
+					box-sizing: border-box;
+					border: 3px solid #E8E6F8;
+					border-radius: 6px;
+					background-color: #FFFFFF;
+					box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
+				}
+
+				.consumos #zonaDeVideos .postVideo{
+					width:31%;
+					margin: 1%;
+					float: left;
+					box-sizing: border-box;
+					border: 3px solid #DCF8F3;
+					border-radius: 6px;
+					background-color: #FFFFFF;
+					box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
+				}
+
+
+			#zonaDeVideos .postVideo img{
 		         border-top-left-radius: 5px;
 		         border-top-right-radius: 5px;
                  width: 100%;
@@ -1575,8 +1598,9 @@
 
 	.sobre .equipa .elementos .elemento {
 		width: 15%;
+		height: 23vw;
 		margin: 1%;
-		display: inline-block;
+		display: inline-table;
 		border: 3px solid #BCE4FF;
 		border-radius: 6px;
 		background-color: #FFFFFF;
@@ -1586,6 +1610,7 @@
 
 	.sobre .equipa .elementos .elemento img {
 		width: 100%;
+		height: 12vw;
 	}
 
 	.sobre .equipa .elementos .elemento .nome {
