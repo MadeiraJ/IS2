@@ -19,23 +19,8 @@ public class GenericHandler1 : IHttpHandler {
         String json = "";
         var listaDeTopicos = new List<String>();
         var serializer = new JavaScriptSerializer();
-        var tema = context.Request.Form["classe"];
-        tema = tema == null? null : tema.ToString();
-
-        //fazer a query de todos os topicos de um tema em particular, ou de todos os temas caso nenhum tema seja passado, ordenados pela data (de forma decrescente)
-
-        switch (tema)
-        {
-            //fazer a query de acordo com o tema, de forma a a ir buscar todos os topicos ordenados pela data (de forma decrescente)
-            case "ALIMENTACAO":
-                break;
-            case "SEXUALIDADE":
-                break;
-            case "CONSUMOS":
-                break;
-            default:
-                break;
-        } //switch
+        
+        //fazer a query de todos os topicos de ordenados pela data (de forma decrescente)
 
         //Valores a serem apagados
         for(int i = 0; i < 10; i++){
