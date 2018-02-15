@@ -35,8 +35,8 @@ function montarDefinicoes() {
         tipoTema = "S";
     }
 
-    setaDireita.style.backgroundImage = 'url("./imagens/temas/setaDireita'+tipoTema+'.png")';
-    setaEsquerda.style.backgroundImage = 'url("./imagens/temas/setaEsquerda'+tipoTema+'.png")';
+    setaDireita.style.backgroundImage = 'url("./imagens/temas/setaDireita' + tipoTema + '.png")';
+    setaEsquerda.style.backgroundImage = 'url("./imagens/temas/setaEsquerda' + tipoTema + '.png")';
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -55,7 +55,7 @@ function myFunction(xml) {
 
     for (var i = 0; i <= letras.length - 1; i++){
         var divLetra = document.createElement("div");
-        divLetra.setAttribute("id", "l"+(letras[i].getAttribute('id')).toUpperCase());
+        divLetra.setAttribute("id", "l" + (letras[i].getAttribute('id')).toUpperCase());
         divLetra.setAttribute("style", "display: none");
         divLetra.setAttribute("class", "definicoes");
         var qualLetra = document.createElement("h1");
@@ -109,7 +109,7 @@ function verElementos(esconder){
         setaEsquerda.style.display = "none";
     } else if(nPaginas == 1){
         for (var i = 1; i < conteudoAtual.childNodes.length - 1; i++) {
-            conteudoAtual.childNodes[i].style.display = "inline-block";
+            conteudoAtual.childNodes[i].style.display = "inline-table";
         }
         setaDireita.style.display = "none";
         setaEsquerda.style.display = "none";
@@ -138,7 +138,7 @@ function mudardisplay(esconder,priPagina,displayD,displayE,fim){
         if(esconder)
             conteudoAtual.childNodes[i].style.display = "none";
         else{
-            conteudoAtual.childNodes[i].style.display = "inline-block";
+            conteudoAtual.childNodes[i].style.display = "inline-table";
             setaDireita.style.display = displayD;
             setaEsquerda.style.display = displayE;
         }

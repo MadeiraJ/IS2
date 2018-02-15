@@ -236,14 +236,40 @@
               }
 
           /*ZONA GLOSSARIO*/
+
+            #glossario h1 {
+              font-size: 6vw;
+              line-height: normal;
+            }
+
+            #glossario .definicao {
+              width: 80%;
+              padding: 2%;
+              margin: 0 auto;
+              text-align: center;
+            }
+
+            #glossario .definicao h1 {
+              font-size: 4vw;
+              line-height: normal;
+              text-align: left;
+            }
+
             #zonaGlossario .titulo {
-              font-size: 9vw;
+              font-size: 7vw;
               line-height: normal;
             }
 
             #zonaGlossario .descricao {
-              width: 95%;
-              font-size: 6vw;
+              width: 80%;
+              font-size: 5vw;
+              line-height: normal;
+              margin: 3vw;
+            }
+
+            #glossario .definicao p {
+              text-align: left;
+              font-size: 3vw;
               line-height: normal;
             }
 
@@ -261,7 +287,8 @@
               height: auto;
               margin: 0 auto;
               padding: 0;
-              padding-top: 5vw;
+              padding-top: 3vw;
+              padding-bottom: 1vw;
               border-top: 1px #FFF solid;
               background-color: #FFF!important;
               white-space: nowrap;
@@ -281,25 +308,38 @@
               border-color: var(--sexualidade-cor1);
             }
 
+            #glossario h1 {
+              font-family: "Raleway Bold";
+              font-size: 6vw;
+              font-weight: 800;
+              padding-left: 2%;
+          }
+
             #glossario .letra {
               display: inline-block;
               font-family: "Raleway Bold";
-              font-size: 12vw;
-              width: 17vw;
-              height: 17vw;
-              border-radius: 9vw;
+              font-size: 8vw;
+              width: 14vw;
+              height: 14vw;
+              border-radius: 7vw;
               font-weight: 800;
               box-sizing: border-box;
               border: 1px solid #FFF;
-              background-color: #FFF;
               box-shadow: 0 2px 6px 2px rgba(255,188,66,0.03);
               margin: 0 auto;
               padding: 0;
               text-align: center;
-              line-height: normal;
-              line-height: 17vw;
-              margin-left: 0.5vw;
-              margin-right: 0.5vw;
+              line-height: 13vw;
+              margin-left: 2vw;
+              margin-right: 2vw;
+            }
+
+            #glossario .abecedario li:first-child {
+              margin-left: 30vw;
+            }
+
+            #glossario .abecedario li:last-child {
+              margin-right: 30vw;
             }
 
             .alimentacao #glossario .letra {
@@ -343,6 +383,7 @@
               content: '';
               background-image: linear-gradient( to right, #FFF, transparent 30%, transparent 70%, #FFF );
               pointer-events: none;
+              margin-top: -2vw;
             }
 
             #glossario .zonaDefi {
