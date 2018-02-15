@@ -47,6 +47,11 @@
                 padding: 0;
             }
 
+            #rodape #icons #instagramIcon:hover {
+                margin-left: 0.5% !important;
+                margin-right: -1.5% !important;
+            }
+
             #rodape .menu {
                 position: relative;
                 margin-top: 0%;
@@ -90,6 +95,10 @@
                 line-height: 5.9vw;
             }
 
+            #rodape #icons {
+                padding-left: 6.8% !important;
+            }
+
             #rodape #icons #facebookIcon, #rodape #icons #youtubeIcon, #rodape #icons #instagramIcon{
                 width: 2.4vw;
                 height: 2.4vw;
@@ -116,17 +125,17 @@
 
       /*PAGINA TEMAS*/
           /*TITULO PRINCIPAL*/
-              .paginaTema .destaquesTitulo{/*, .divulgacaoPag .destaquesTitulo, .galeria .destaquesTitulo{*/
+              .paginaTema .destaquesTitulo, .divulgacaoPag .destaquesTitulo, .galeria .destaquesTitulo, .sobre .destaquesTitulo, .parceiros .destaquesTitulo{
                   font-size: 10vw !important;
               }
 
-              .paginaTema .aqui-podes-encontrar{/*, .divulgacaoPag .aqui-podes-encontrar, .galeria .aqui-podes-encontrar{*/
+              .paginaTema .aqui-podes-encontrar, .divulgacaoPag .aqui-podes-encontrar, .galeria .aqui-podes-encontrar, .sobre .aqui-podes-encontrar, .parceiros .aqui-podes-encontrar{
                   font-size: 5vw !important;
                   line-height: normal !important;
                   width: 90% !important;
               }
 
-              .paginaTema .texto p{/*, .divulgacaoPag .texto p, .galeria .texto p {*/
+              .paginaTema .texto p, .divulgacaoPag .texto p, .galeria .texto p, .sobre .texto p, .parceiros .texto p{
                   display: none !important;
               }
 
