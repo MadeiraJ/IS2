@@ -1283,6 +1283,27 @@
 		margin: 0 auto;
 	}
 
+	/*.galeria .destaquesTitulo{
+		margin-top: 2%;
+		font-size: 3vw;
+		text-align: center;
+		font-family: "Raleway ExtraBold";
+	}
+
+	.galeria .aqui-podes-encontrar{
+		position: relative;
+		width: 40%;
+		font-size: 2vw;
+		font-weight: bold;
+		line-height: 3vw;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.galeria .aqui-podes-encontrar mark{
+		color: inherit;
+	}*/
+
 	.galeria .imagens{
 		width: 90%;
 		margin: 0 auto;
