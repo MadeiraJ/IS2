@@ -5,13 +5,28 @@
     background-color: #F7FAFC;
 
 }
-
-/*.paginaTema .divulgacaoTitulo{
+/*
+.divulgacaoPag .destaquesTitulo{
     margin-top: 2%;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
     font-family: "Raleway ExtraBold";
+}
+
+.divulgacaoPag .aqui-podes-encontrar{
+    position: relative;
+    width: 40%;
+    font-size: 2vw;
+    font-weight: bold;
+    line-height: 3vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.divulgacaoPag .aqui-podes-encontrar mark{
+    color: inherit;
 }*/
+
 
 /*titulo*/
 
