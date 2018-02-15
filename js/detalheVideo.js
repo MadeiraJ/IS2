@@ -119,7 +119,7 @@ function verificarQual(){
 }
 
 function construirVideo(x){
-    vistaVideo.innerHTML = "<iframe src='https://www.youtube.com/embed/"+x+"'></iframe>";
+    vistaVideo.innerHTML = "<iframe src='https://www.youtube.com/embed/" + x + "?showinfo=0'></iframe>";
 }
 
 function mudarVideo(elemento){
