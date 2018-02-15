@@ -533,11 +533,10 @@
 .textoEscolha{
     position: relative;
     float: left;
-    opacity: 0.4;
-    color: #0970B5;
+    opacity: 0.8;
     font-family: "Raleway light";
     font-size: 1.5vw;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 36px;
     margin-left: 5%;
     padding: 7% 5% 7% 6%;
@@ -563,8 +562,8 @@
     top: 0;
 
 }
-
-/*.round label:after {
+/*
+.round label:after {
     border: 2px solid #fff;
     border-top: none;
     border-right: none;
@@ -582,11 +581,18 @@
     visibility: hidden;
 }
 
-.round input[type="checkbox"]:checked + label {
-    background-color: #9ce5ad;
+ .div_escolhaAlimentacao .round input[type="checkbox"]:checked + label {
+    background-color: #FFBC42
     /*border-color: #625e59;*/
 }
-
+.div_escolhaConsumos .round input[type="checkbox"]:checked + label {
+    background-color: #24D7B4;
+    /*border-color: #625e59;*/
+}
+.div_escolhaSexualidade .round input[type="checkbox"]:checked + label {
+    background-color: #6153CC;
+    /*border-color: #625e59;*/
+}
 .round input[type="checkbox"]:checked + label:after {
     opacity: 1;
 }
