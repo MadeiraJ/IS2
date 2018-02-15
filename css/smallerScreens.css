@@ -210,7 +210,9 @@
           /*ZONA VIDEOS*/
               #zonaDeVideos .postVideo{
                   float: none;
-                  width: auto;
+                  width: 100% !important;
+                  margin: 0 auto;
+                  margin-bottom: 3%;
               }
 
               #zonaDeVideos .titulo {
@@ -220,10 +222,7 @@
                   margin-bottom: 3%;
               }
 
-              #zonaDeVideos .postVideo{
-                  margin: 0 auto;
-                  margin-bottom: 3%;
-              }
+
 
               #zonaDeVideos .postVideo .titulo {
                   font-size: 6vw;
@@ -233,6 +232,10 @@
               #zonaDeVideos .postVideo .texto{
                   font-size: 5vw;
                   line-height: normal;
+              }
+
+              #zonaDeVideos .postVideo img{
+                  height: 40vw !important;
               }
 
           /*ZONA GLOSSARIO*/
