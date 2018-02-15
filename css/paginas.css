@@ -837,6 +837,10 @@
     	line-height: 0;
     }
 
+    .destaques .bloco-2 .tag{
+    /*.destaques a .tag{*/
+        padding: 1% !important;
+    }
 
 	/*TAG*/
 		.destaques .card .blocoTopo {
@@ -859,7 +863,7 @@
 		}
 
 		.destaques .card .blocoTopo .tag img {
-			width: 1vw;
+			width: 1vw;           
 		}
 
 		.destaques .card .blocoTopo .tag a {
