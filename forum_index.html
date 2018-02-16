@@ -65,11 +65,9 @@
         </nav>
     </div>
     <div class="main">
-        <div id="vistaGeral" style="display: block">
-            <div class="zona topo">
-                <h1>Fórum</h1>
-                <p>Usa este espaço para <mark>esclarecer</mark> as tuas dúvidas e <mark>aprender mais</mark></p>
-            </div>
+        <div class="tituloZonaConteudo">
+            <p class="destaquesTitulo">Fórum</p>
+            <p class="aqui-podes-encontrar">Usa este espaço para <mark>esclarecer</mark> as tuas dúvidas e <mark>aprender mais</mark></p>
         </div>
         <div class="conteudo">
             <input type="button" class="btn_novoTopico" value="Criar um tópico" onclick="window.location='forum_novoTopico.html';">
@@ -80,11 +78,11 @@
             </div>
 
             <div class="zonaMudancaPaginas">
-                <a style="border: none" href="#">Anterior</a>
-                <a href="#">1</a>
-                <a href="#" class="active">2</a>
-                <a href="#">3</a>
-                <a style="border:none" class="active" href="#">Próximo</a>
+                <a class="active anterior" style="display:block; border: none; cursor: pointer;">Anterior</a>
+                <a class="nAnterior" style="display:block; cursor: pointer;"></a>
+                <a class="active nAtual" style="display:block; cursor: default;"></a>
+                <a class="nSeguinte" style="display:block; cursor: pointer;"></a>
+                <a class="active seguinte" style="display:block; border:none; cursor: pointer;">Próximo</a>
             </div>
         </div>
     </div>
