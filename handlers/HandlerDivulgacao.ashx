@@ -44,8 +44,8 @@ public class HandlerDivulgacao : IHttpHandler {
                     {
                         imagem = "imagens/alimentacao_3.jpg",
                         data = "12 Janeiro 2017",
-                        titulo = "Va laaaaaaaa",
-                        texto = "PLEEEEEEEASE",
+                        titulo = "Estudos revelam que o YourPEL faz bem ao cérebro",
+                        texto = "Segundo os estudiosos, cerca de 23% das crianças entram na escola obesas…",
                         url = "1"
                     }
             ));
@@ -71,11 +71,11 @@ public class HandlerDivulgacao : IHttpHandler {
             listaDeEventos.Add(
                 serializer.Serialize(
                     new {
-                        data = "data",
-                        horas = "horas",
-                        local = "local",
-                        titulo = "titulo",
-                        descricao = "descricao",
+                        data = "20 setembro ",
+                        horas = "14:30 - 17:30",
+                        local = "Escola Superior de Saúde de Santarém ",
+                        titulo = "Open Day",
+                        descricao = "Apresentação do projeto: Your PEL - Promover e Empoderar para a Literacia em saúde na população jovem",
                         imagem = "imagens/evento1.png"
                     }
             ));

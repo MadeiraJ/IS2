@@ -1238,8 +1238,8 @@
 
         .contentorEvento {
             width: 145% !important;
-            /*height: auto !important;*/
-            margin-bottom: 20vw !important;
+            height: 144vw !important;
+            margin-bottom: 80% !important;
         }
 
         .zonaTextoEvento{
@@ -1253,6 +1253,7 @@
             width: 100% !important;
             height: 40vh !important;
             margin-top: 5% !important;
+            background-size: contain;
         }
 
         .proximoEvento{
@@ -1760,22 +1761,22 @@
 
             .postadoNoticia {
                 font-size: 4vw !important;
-                margin-left: 1vw !important;
+                margin-left: 3vw !important;
                 margin-right: 1vw !important;
             }
 
             .tituloNoticia {
                 font-size: 6vw !important;
                 line-height: 8vw !important;
-                margin-left: 1vw !important;
-                margin-right: 1vw !important;
+                margin-left: 3vw !important;
+                margin-right: 3vw !important;
             }
 
             .textoNoticia {
                 font-size: 4.5vw !important;
                 line-height: 8vw !important;
-                margin-left: 1vw !important;
-                margin-right: 1vw !important;
+                margin-left: 3vw !important;
+                margin-right: 3vw !important;
             }
 
             .mostrarMais {
@@ -1795,20 +1796,23 @@
 
             .contentorEvento {
                 width: 145% !important;
-                margin-bottom: 20vw !important;
+                height: 141vw !important;
+                margin-bottom: 15vw !important;
+                
             }
 
             .zonaTextoEvento {
-                float: left !important;
+                /*float: left !important;*/
                 width: 100% !important;
                 height: auto !important;
             }
 
             .imagemEventos {
-                float: left !important;
+                /*float: left !important;*/
                 width: 100% !important;
-                height: 40vh !important;
+                height: 40vw !important;
                 margin-top: 5% !important;
+                background-size: contain; 
             }
 
             .proximoEvento {
