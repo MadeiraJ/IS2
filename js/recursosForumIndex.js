@@ -72,15 +72,36 @@ $(document).ready(function () {
         clickTag();
     }); //pesquisa keyup
 
-    $('.seguinte, .nSeguinte').click(function () {
-        paginaAtual += 1;
-        queMostrar();
+    $('.seguinte').click(function () {
+        if (paginaAtual != nPaginas) {
+            paginaAtual += 1;
+            queMostrar();
+        }
     });//click seguinte
 
-    $('.anterior, .nAnterior').click(function () {
+    $('.nSeguinte').click(function () {
+        paginaAtual += 1;
+        queMostrar();
+    });//click nSeguinte
+
+    $('.nAtual').click(function () {
+        if (paginaAtual == nPaginas || paginaAtual == 1) {
+            paginaAtual = parseInt($('.nAtual').text());
+            queMostrar();
+        }
+    });
+
+    $('.anterior').click(function () {
+        if (paginaAtual != 1) {
+            paginaAtual -= 1;
+            queMostrar();
+        }
+    });//click anterior
+
+    $('.nAnterior').click(function () {
         paginaAtual -= 1;
         queMostrar();
-    });//click anterior
+    });//click nAnterior
 }); //document
 
 function clickTag() {
@@ -160,35 +181,60 @@ function mostrar(elementos) {
     var pAtual = paginaAtual - 1;
     nPaginas = Math.ceil(elementos.length / 10);
     if (nPaginas == 0) {
-        var a = 0;//teste
         //display numeros
-        $(".anterior, nAnterior, nAtual, nSeguinte, seguinte").css({display: "none"});
+        $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").removeClass("active");
+        $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").css('visibility', 'hidden');
     } else if (nPaginas == 1) {
         mudardisplay(1, elementos.length, elementos);
-        $(".anterior, .nAnterior, .nSeguinte, .seguinte").css({ display: "none" });
-        $(".nAtual").css({display: "block"});
+        $(".anterior, .nAnterior, .nSeguinte, .seguinte").removeClass("active");
+        $(".nAtual").addClass("active");
+
+        $(".anterior, .nAnterior, .nSeguinte, .seguinte").css('visibility', 'hidden');
+        $(".nAtual").css('visibility', 'visible');
         //display numeros
     } else {
         var priPagina;
+        $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").css('visibility', 'visible');
         if (pAtual == 0) {
             priPagina = pAtual + 1;
             var fim = priPagina + 10;
             mudardisplay(priPagina, fim, elementos);
-            $(".nAtual, .nSeguinte, .seguinte").css({ display: "block"});
-            $(".anterior, .nAnterior").css({ display: "none" });
+            $(".nAtual, .nSeguinte, .seguinte").css('cursor', 'pointer');
+            $(".anterior, .nAnterior").css('cursor', 'context-menu');
+
+            $(".anterior, .nAtual, .seguinte, .nSeguinte").css('visibility', 'visible');
+            $(".nAnterior").css('visibility', 'hidden');
+
+            $(".anterior, .nAnterior, .nSeguinte").removeClass("active");
+            $(".nAtual, .seguinte").addClass("active");
+
             //display numeros
         } else {
             priPagina = parseInt(pAtual + "0");
-            var fim = elementos.length;
+            var fim = elementos.length;            
             if (fim > priPagina && fim <= priPagina + 10) {
-                mudardisplay(priPagina, fim, elementos);
-                $(".nAtual, .anterior, .nAnterior").css({display: "block"})
-                $(".nSeguinte, .seguinte").css({display: "none"});
+                mudardisplay(priPagina, fim, elementos);                
+                $(".nAtual, .anterior, .nAnterior").css('cursor', 'pointer');
+                $(".nSeguinte, .seguinte").css('cursor', 'context-menu');
+            
+                $(".anterior, .nAnterior, .nAtual, .seguinte").css('visibility', 'visible');
+                $(".nSeguinte").css('visibility', 'hidden');
+
+                $(".nAnterior, .nSeguinte, .seguinte").removeClass("active");
+                $(".anterior, .nAtual").addClass("active");
+                
                 //display numeros
             } else {
                 fim = priPagina + 10;
                 mudardisplay(priPagina, fim, elementos);
-                $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").css({display: "block"});
+                $(".nSeguinte, .seguinte, .anterior, .nAnterior").css('cursor', 'pointer');
+                $(".nAtual").css('cursor', 'context-menu');
+
+                $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").css('visibility', 'visible');
+
+                $(".nAnterior, .nSeguinte").removeClass("active");
+                $(".nAtual, .anterior, .seguinte").addClass("active");
+                            
                 //display numeros
             }//else
         }//else
