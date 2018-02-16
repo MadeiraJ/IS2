@@ -199,9 +199,7 @@
             padding-top: 8vw;
             padding-bottom: 8vw;
             opacity: 0.96;
-            overflow: scroll;
-            position: absolute;
-            z-index: 10;
+            display: none;
         }
 
         .menu-mobile .topicosMenu a {
@@ -302,5 +300,10 @@
 
          .mobile {
             display: block;
+        }
+
+        .zonaMenu .topicosMenu .menu-contentor {
+            overflow: scroll !important;
+            height: 78vh;
         }
     }
