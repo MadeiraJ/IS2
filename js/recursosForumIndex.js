@@ -1,5 +1,10 @@
 ﻿var todosTopico = [];
+var todosPesquisa = [];
+var todosTema = [];
+var temaAtual = "";
+var tipoVista;
 var paginaAtual;
+var nPaginas;
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
@@ -17,16 +22,40 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 $(document).ready(function () {
     paginaAtual = getUrlParameter('pagina');
-    paginaAtual = paginaAtual? parseInt(paginaAtual) : 1;
-    mostrar(paginaAtual);
+    paginaAtual = paginaAtual ? parseInt(paginaAtual) : 1;
+    tipoVista = "Tudo";
+    $.ajax({
+        url: `/handlers/HandlerForumIndex.ashx`,
+        type: "POST",
+        dataType: "json",
+        success: function (listaTopicos) {
+            for (var i = 0; i < listaTopicos.length; i++) {
+                listaTopicos[i] = JSON.parse(listaTopicos[i]);
+                todosTopico.push(listaTopicos[i]);                
+            } //for
+            mostrar(todosTopico);
 
+            clickTag();
+        } //success
+    }); //ajax
+
+   
     $('.search_bar').keyup(function () {
+        tipoVista = "pesquisa";
+        paginaAtual = 1;
+        todosPesquisa = [];
+        var elementos = [];
+        if (temaAtual != "") 
+            elementos = todosTema;
+        else
+            elementos = todosTopico;
+        //ver se pesquisa tudo ou só de um determinado tema
         var texto = ($('.search_bar').val()).split(" ");
         $(".zona_topicos").empty();
-        for (var i = 0; i < todosTopico.length; i++) {
+        for (var i = 0; i < elementos.length; i++) {
             var e = true;
             for (var j = 0; j < texto.length; j++) {
-                var pergunta = todosTopico[i].pergunta;
+                var pergunta = elementos[i].pergunta;
                 pergunta = pergunta.toUpperCase();
                 var palavraASerPesquisada = texto[j].toUpperCase();
                 if (pergunta.indexOf(palavraASerPesquisada) == -1) {
@@ -35,37 +64,49 @@ $(document).ready(function () {
                 } //if
             } //for
             if (e) {
-                addBlocoTopicos(
-                    todosTopico[i].tema,
-                    todosTopico[i].numeroRespostas,
-                    todosTopico[i].pergunta,
-                    todosTopico[i].data,
-                    todosTopico[i].estado,
-                    todosTopico[i].id
-                );
+                todosPesquisa.push(elementos[i]);
             } //if
         } //for
+        mostrar(todosPesquisa);
+
+        clickTag();
     }); //pesquisa keyup
 
-    $('.filtroTema').click(function() {
+    $('.seguinte, .nSeguinte').click(function () {
+        paginaAtual += 1;
+        queMostrar();
+    });//click seguinte
+
+    $('.anterior, .nAnterior').click(function () {
+        paginaAtual -= 1;
+        queMostrar();
+    });//click anterior
+}); //document
+
+function clickTag() {
+    $('.filtroTema').click(function () {
+        paginaAtual = 1;
+        tipoVista = "tema";
         var classe = this.innerText;
         if (classe == "ALIMENTAÇÃO")
             classe = "ALIMENTACAO";
         else if (classe == "CONSUMOS NOCIVOS")
             classe = "CONSUMOS";
 
-        $(".zona_topicos").empty();
+        temaAtual = classe;
 
-        mostrar(paginaAtual, classe);
-    }); //filtroTema
-}); //document
+        elementosTema(classe);
+
+        mostrar(todosTema);
+    });
+}//clickTag
 
 function addBlocoTopicos(tema, numeroRespostas, pergunta, data, estado, id) {
     var bloco =
         `<div class="div_topico forum_${tema.toLowerCase()}">
             <div class ="tag">
                 <img src="imagens/tag_forum.png">
-                <spam class="filtroTema">${verNomeTema(tema)}</a>
+                <span class="filtroTema">${verNomeTema(tema)}</span>
             </div>
             <div class ="zonaNrRespostas">
                 <div class ="simboloResposta">
@@ -75,7 +116,7 @@ function addBlocoTopicos(tema, numeroRespostas, pergunta, data, estado, id) {
             </div>
             <a href="forum_topicoAberto.html?post=${id}"><p class ="textoTopicos">${pergunta}</p></a>
             <div class ="zonaDiaHoraEstado">
-                <spam class ="textoDiaHora">${data}</spam>
+                <span class ="textoDiaHora">${data}</span>
                 <p class ="topico${estado}">&#9679; ${estado}</p>
                 <div class ="clear"></div>
             </div>
@@ -97,28 +138,76 @@ function verNomeTema(tema) {
     }
 } //verNomeTema
 
-function mostrar(pagina, classe) {
-    $.ajax({
-        url: `/handlers/HandlerForumIndex.ashx`,
-        type: "POST",
-        data: {
-            classe: classe,
-            paginaAtual : pagina
-        },
-        dataType: "json",
-        success: function (listaTopicos) {
-            for (var i = 0; i < listaTopicos.length; i++) {
-                listaTopicos[i] = JSON.parse(listaTopicos[i]);
-                todosTopico.push(listaTopicos[i]);
-                addBlocoTopicos(
-                    listaTopicos[i].tema,
-                    listaTopicos[i].numeroRespostas,
-                    listaTopicos[i].pergunta,
-                    listaTopicos[i].data,
-                    listaTopicos[i].estado,
-                    listaTopicos[i].id
-                 );
-            } //for
-        } //success
-    }); //ajax
+function queMostrar(){
+    if(tipoVista == "tema")
+        mostrar(todosTema);
+    else if (tipoVista == "pesquisa")
+        mostrar(todosPesquisa);
+    else
+        mostrar(todosTopico);
+    clickTag();
+}//queMostrar
+
+function elementosTema(tema) {
+    for (var i = 0; i < todosTopico.length; i++) {
+        if (todosTopico[i].tema == tema)
+            todosTema.push(todosTopico[i]);
+    }
+}
+
+function mostrar(elementos) {
+    $(".zona_topicos").empty();
+    var pAtual = paginaAtual - 1;
+    nPaginas = Math.ceil(elementos.length / 10);
+    if (nPaginas == 0) {
+        var a = 0;//teste
+        //display numeros
+        $(".anterior, nAnterior, nAtual, nSeguinte, seguinte").css({display: "none"});
+    } else if (nPaginas == 1) {
+        mudardisplay(1, elementos.length, elementos);
+        $(".anterior, .nAnterior, .nSeguinte, .seguinte").css({ display: "none" });
+        $(".nAtual").css({display: "block"});
+        //display numeros
+    } else {
+        var priPagina;
+        if (pAtual == 0) {
+            priPagina = pAtual + 1;
+            var fim = priPagina + 10;
+            mudardisplay(priPagina, fim, elementos);
+            $(".nAtual, .nSeguinte, .seguinte").css({ display: "block"});
+            $(".anterior, .nAnterior").css({ display: "none" });
+            //display numeros
+        } else {
+            priPagina = parseInt(pAtual + "0");
+            var fim = elementos.length;
+            if (fim > priPagina && fim <= priPagina + 10) {
+                mudardisplay(priPagina, fim, elementos);
+                $(".nAtual, .anterior, .nAnterior").css({display: "block"})
+                $(".nSeguinte, .seguinte").css({display: "none"});
+                //display numeros
+            } else {
+                fim = priPagina + 10;
+                mudardisplay(priPagina, fim, elementos);
+                $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").css({display: "block"});
+                //display numeros
+            }//else
+        }//else
+    }//else
+    $(".nAtual").text(paginaAtual + "");
+    $(".nSeguinte").text((paginaAtual + 1) + "");
+    $(".nAnterior").text((paginaAtual - 1) + "");
 } //mostrar
+
+function mudardisplay(priPagina, fim, elementos) {
+    var i = priPagina;
+    for (i; i < fim; i++) {
+       addBlocoTopicos(
+            elementos[i].tema,
+            elementos[i].numeroRespostas,
+            elementos[i].pergunta,
+            elementos[i].data,
+            elementos[i].estado,
+            elementos[i].id
+       );
+    }//for
+}//mudardisplay
