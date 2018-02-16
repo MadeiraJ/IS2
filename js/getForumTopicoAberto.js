@@ -105,7 +105,7 @@ function goToNextPergunta(idPost) {
         data: { id : idPost },
         dataType: "json",
         success: function (idProximaPergunta) {
-            window.location.href = `forum_topicoAberto.html/?post=${id}`;
+            window.location.href = `forum_topicoAberto.html?post=${idProximaPergunta}`;
         } //success
     }); //ajax
 } //goToNextPergunta

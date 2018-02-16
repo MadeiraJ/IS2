@@ -152,14 +152,14 @@ function addVideo(link, titulo, texto) {
 function addLink(classe, nome, url) {
     var imagem = "imagens/link_" + classe.toLowerCase() + ".png";
     var link = `<a href="${url}" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
-        <br><br>`;
+        <br>`;
     $('#zonaLinks').append(link);
 } //addLink
 
 function addDocumento(classe, nome, url) {
     var imagem = "imagens/pin_" + classe.toLowerCase() + ".png";
     var documento = `<a href="${url}" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
-            <br><br>`;
+        <br>`;
     $('#zonaDocumentos').append(documento);
 } //addDocumento
 
@@ -224,7 +224,7 @@ function getVideos(classe, x) {
                 );
             } //for
             addClear('.listaVideos');
-            numeroVideos += listaVideos.length;
+            numeroVideos += listaDeVideos.length;
         } //success
     }); //ajax
 } //getVideos

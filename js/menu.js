@@ -4,8 +4,10 @@ $(document).ready(function () {
 
     var menu = $('.menu-mobile .topicosMenu');
     if (menu.is(":visible")){
-      $(document.body).css({"overflow": "auto"});
+      //$(document.body).css({"position": "initial"});
       $(document.body).css({"overflow": "initial"});
+      $(document.body).css({"overflow": "hidden"});
+  
       menu.slideToggle("slow", function () {
         $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
       });
@@ -15,15 +17,17 @@ $(document).ready(function () {
       indexColor = $('.index .zonaMenu').css("background-color");
       menu.slideToggle("slow", function () {});
       $('.index .zonaMenu').css("background-color", "rgba(6, 41, 64, 1)");
-      $(document.body).css({"position": "fixed"});
-      $(".zonaMenu").css({"position": "absolute"});
-      $(".zonaMenu").css({"overflow": "scroll"});
+      //$(document.body).css({"position": "fixed"});
+      $(document.body).css({"overflow": "initial"});
+      //$(".menu-mobile .topicosMenu").css({"position": "absolute"});
+      //$(".menu-mobile .topicosMenu").css({"overflow": "scroll"});
+      //$(".menu-mobile .topicosMenu").css({"z-index": "10"});
     }
   });
 
   $('.menu-mobile button').click(function() {
     var menu = $('.menu-mobile .topicosMenu');
-    $(document.body).css({"position": "initial"});
+    //$(document.body).css({"position": "initial"});
     $(document.body).css({"overflow": "initial"});
     menu.slideToggle("slow", function () {
       $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');

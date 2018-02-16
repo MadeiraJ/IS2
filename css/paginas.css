@@ -546,8 +546,14 @@
 		        width: 1.3vw;
 		        padding-right: 1vw;
 		    }
+		    #zonaLinks a {
+                display: block;
+              }
 
 		/*ZONA DOCUMENTOS*/
+			#zonaDocumentos a {
+                display: block;
+              }
 		    #zonaDocumentos{
 		        margin-top: 10%;
 		        margin-bottom: 10%;
