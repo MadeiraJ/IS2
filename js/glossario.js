@@ -176,4 +176,5 @@ function clickMudarPagina(onde){
     else
         paginaAtual -= 1;
     verElementos(false);
+    $("html, body").animate({ scrollTop: $('#zonaGlossario').offset().top + 50 }, 1000);
 }

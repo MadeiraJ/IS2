@@ -89,7 +89,7 @@ $(document).ready(function () {
             paginaAtual = parseInt($('.nAtual').text());
             queMostrar();
         }
-    });
+    });//click nAtual
 
     $('.anterior').click(function () {
         if (paginaAtual != 1) {
@@ -118,7 +118,7 @@ function clickTag() {
 
         elementosTema(classe);
 
-        mostrar(todosTema);
+        mostrar(todosTema);        
     });
 }//clickTag
 
@@ -167,6 +167,8 @@ function queMostrar(){
     else
         mostrar(todosTopico);
     clickTag();
+
+    $("html, body").animate({ scrollTop: $('.aqui-podes-encontrar').offset().top + 100 }, 1000);
 }//queMostrar
 
 function elementosTema(tema) {
@@ -181,7 +183,6 @@ function mostrar(elementos) {
     var pAtual = paginaAtual - 1;
     nPaginas = Math.ceil(elementos.length / 10);
     if (nPaginas == 0) {
-        //display numeros
         $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").removeClass("active");
         $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").css('visibility', 'hidden');
     } else if (nPaginas == 1) {
@@ -191,7 +192,6 @@ function mostrar(elementos) {
 
         $(".anterior, .nAnterior, .nSeguinte, .seguinte").css('visibility', 'hidden');
         $(".nAtual").css('visibility', 'visible');
-        //display numeros
     } else {
         var priPagina;
         $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").css('visibility', 'visible');
@@ -199,43 +199,28 @@ function mostrar(elementos) {
             priPagina = pAtual + 1;
             var fim = priPagina + 10;
             mudardisplay(priPagina, fim, elementos);
-            $(".nAtual, .nSeguinte, .seguinte").css('cursor', 'pointer');
-            $(".anterior, .nAnterior").css('cursor', 'context-menu');
 
             $(".anterior, .nAtual, .seguinte, .nSeguinte").css('visibility', 'visible');
             $(".nAnterior").css('visibility', 'hidden');
 
-            $(".anterior, .nAnterior, .nSeguinte").removeClass("active");
-            $(".nAtual, .seguinte").addClass("active");
-
-            //display numeros
+            displayNumPagina(".nSeguinte, .seguinte", ".nAtual, .anterior, .nAnterior", ".anterior, .nAnterior, .nSeguinte", ".nAtual, .seguinte");
         } else {
             priPagina = parseInt(pAtual + "0");
             var fim = elementos.length;            
             if (fim > priPagina && fim <= priPagina + 10) {
                 mudardisplay(priPagina, fim, elementos);                
-                $(".nAtual, .anterior, .nAnterior").css('cursor', 'pointer');
-                $(".nSeguinte, .seguinte").css('cursor', 'context-menu');
-            
+                            
                 $(".anterior, .nAnterior, .nAtual, .seguinte").css('visibility', 'visible');
                 $(".nSeguinte").css('visibility', 'hidden');
-
-                $(".nAnterior, .nSeguinte, .seguinte").removeClass("active");
-                $(".anterior, .nAtual").addClass("active");
                 
-                //display numeros
+                displayNumPagina(".anterior, .nAnterior", ".nAtual, .nSeguinte, .seguinte", ".nAnterior, .nSeguinte, .seguinte", ".anterior, .nAtual");
             } else {
                 fim = priPagina + 10;
                 mudardisplay(priPagina, fim, elementos);
-                $(".nSeguinte, .seguinte, .anterior, .nAnterior").css('cursor', 'pointer');
-                $(".nAtual").css('cursor', 'context-menu');
 
                 $(".anterior, .nAnterior, .nAtual, .nSeguinte, .seguinte").css('visibility', 'visible');
-
-                $(".nAnterior, .nSeguinte").removeClass("active");
-                $(".nAtual, .anterior, .seguinte").addClass("active");
-                            
-                //display numeros
+                           
+                displayNumPagina(".nSeguinte, .seguinte, .anterior, .nAnterior", ".nAtual", ".nAnterior, .nSeguinte", ".nAtual, .anterior, .seguinte");
             }//else
         }//else
     }//else
@@ -257,3 +242,11 @@ function mudardisplay(priPagina, fim, elementos) {
        );
     }//for
 }//mudardisplay
+
+function displayNumPagina(cursorPointer, cursorNormal, removerClasse, addClasse) {
+    $(cursorPointer).css('cursor', 'pointer');
+    $(cursorNormal).css('cursor', 'context-menu');
+
+    $(removerClasse).removeClass("active");
+    $(addClasse).addClass("active");
+}//displayNumPagina
