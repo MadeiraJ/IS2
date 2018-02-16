@@ -138,6 +138,16 @@
               .paginaTema .texto p, .divulgacaoPag .texto p, .galeria .texto p, .sobre .texto p, .parceiros .texto p{
                   display: none !important;
               }
+              .consumos .destaquesTitulo {
+                  width: 55%;
+                  margin-bottom: 7%;
+              }
+              .sexualidade .destaquesTitulo {
+                  margin-bottom: 7%;
+              }
+              .alimentacao .destaquesTitulo {
+                  margin-bottom: 8%;
+              }
 
           /*POSTS E SABIAS QUE*/
               .paginaTema .post .tituloArtigo {
