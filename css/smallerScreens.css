@@ -473,24 +473,24 @@
               line-height: normal;
           }
 
-          .artigo .artigosRelacionados a{
+          .artigo .outrosArtigos a{
               display: block;
               width: auto;
           }
 
-          .artigo .artigosRelacionados .bloco-1 {
+          .artigo .outrosArtigos .bloco-1 {
               width: 80%;
           }
 
-          .artigo .artigosRelacionados .bloco-1 .zonaTexto{
+          .artigo .outrosArtigos .bloco-1 .zonaTexto{
               padding: 5%;
           }
 
-          .artigo .artigosRelacionados .bloco-1 .tituloArtigo {
+          .artigo .outrosArtigos .bloco-1 .tituloArtigo {
               font-size: 3vw;
           }
 
-          .artigo .artigosRelacionados .bloco-1 .textoArtigo {
+          .artigo .outrosArtigos .bloco-1 .textoArtigo {
               font-size: 2.6vw;
           }
 
@@ -551,25 +551,30 @@
 
           .index .metade h1 {
               width: 90%;
-              font-size: 5vw;
+              font-size: 5.5vw;
               line-height: normal;
               margin-bottom: 5%;
           }
 
           .index .metade p {
               width: 90%;
-              font-size: 4vw;
+              font-size: 5vw;
               line-height: normal;
           }
           
           .index .metade a {
-              font-size: 4vw;
+              font-size: 4.5vw;
               line-height: normal;
           }
 
+         .index .metade a img{
+             width: 3.5%;
+             margin-left: 2.5%;
+         }
+
           .index .zona .titulo {
-              width: 80%;
-              font-size: 5vw;
+              width: 90%;
+              font-size: 5.5vw;
               line-height: normal;
           }
 
@@ -602,7 +607,7 @@
           }
 
           .index .colorizar{
-              height: 310vw !important;
+              height: 330vw !important;
           }
 
       /*PAGINA DESTAQUES*/
@@ -750,43 +755,50 @@
           }
 
           .sobre .zona.descricao p {
-              font-size: 3vw;
-              line-height: 5vw;
+              font-size: 5vw;
+              line-height: 6vw;
+              text-align: left;
+              margin-top: 7%;
           }
 
           .sobre .zona.descricao .destacar {
-              font-size: 3vw;
-              line-height: 4.5vw;
+              font-size: 6vw;
+              line-height: 7.5vw;
+              margin-bottom: 4%;
           }
 
           .sobre .zona.descricao li {
-              font-size: 3vw;
-              line-height: 5vw;
+              font-size: 5vw;
+              line-height: 6vw;
           }
 
-          .sobre .zona.equipa h1 {   
-              font-size: 5vw;
+          .sobre .zona.equipa h1 {
+              font-size: 6vw;
               line-height: 7vw;
           }
 
           
           .sobre .equipa .elementos .elemento {
-              width: 45%;
+              width: 52%;
+              height: 55vw;
+              margin-bottom: 10%;
           }
 
           .sobre .equipa .elementos .elemento img {
               width: 100%;
-              height: 25vw;
+              height: 30vw;
           }
 
           .sobre .equipa .elementos .elemento .nome {
-              font-size: 3vw;
+              font-size: 5vw;
               line-height: 5vw;
+              margin-top: 6%;
           }
 
           .sobre .equipa .elementos .elemento .cargo {
-              font-size: 2.7vw;
-              line-height: 4.2vw;
+              font-size: 4vw;
+              line-height: 5.2vw;
+              margin-top: 5%;
           }
 
 
@@ -865,25 +877,29 @@
               line-height: 7vw;
           }
 
-          
-          .sobre .equipa .elementos .elemento {
-              width: 30%;
-          }
 
-          .sobre .equipa .elementos .elemento img {
-              width: 100%;
-              height: 30vw;
-          }
+      .sobre .equipa .elementos .elemento {
+          width: 52%;
+          height: 55vw;
+          margin-bottom: 10%;
+      }
 
-          .sobre .equipa .elementos .elemento .nome {
-              font-size: 3vw;
-              line-height: 5vw;
-          }
+      .sobre .equipa .elementos .elemento img {
+          width: 100%;
+          height: 30vw;
+      }
 
-          .sobre .equipa .elementos .elemento .cargo {
-              font-size: 2.7vw;
-              line-height: 4.2vw;
-          }
+      .sobre .equipa .elementos .elemento .nome {
+          font-size: 5vw;
+          line-height: 5vw;
+          margin-top: 6%;
+      }
+
+      .sobre .equipa .elementos .elemento .cargo {
+          font-size: 4vw;
+          line-height: 5.2vw;
+          margin-top: 5%;
+      }
 
 
       /*PAGINA GALERIA*/
@@ -1087,24 +1103,29 @@
                 line-height: 7vw;
             }
 
-            
-            .sobre .equipa .elementos .elemento {
-                width: 30%;
-            }
 
-            .sobre .equipa .elementos .elemento img {
-                width: 100%;
-            }
+        .sobre .equipa .elementos .elemento {
+            width: 52%;
+            height: 55vw;
+            margin-bottom: 10%;
+        }
 
-            .sobre .equipa .elementos .elemento .nome {
-                font-size: 3vw;
-                line-height: 5vw;
-            }
+        .sobre .equipa .elementos .elemento img {
+            width: 100%;
+            height: 30vw;
+        }
 
-            .sobre .equipa .elementos .elemento .cargo {
-                font-size: 2.7vw;
-                line-height: 4.2vw;
-            }
+        .sobre .equipa .elementos .elemento .nome {
+            font-size: 5vw;
+            line-height: 5vw;
+            margin-top: 6%;
+        }
+
+        .sobre .equipa .elementos .elemento .cargo {
+            font-size: 4vw;
+            line-height: 5.2vw;
+            margin-top: 5%;
+        }
 
         /*PAGINA GALERIA*/
             .galeria .topo h1 {
@@ -1169,8 +1190,7 @@
 
         .contentorNoticia {
             width: 145% !important;
-            height: auto !important;
-            margin-bottom: 7vw !important;
+            margin-bottom: 20vw !important;
         }
 
         .imagemNoticia {
@@ -1218,8 +1238,8 @@
 
         .contentorEvento {
             width: 145% !important;
-            height: auto !important;
-            margin-bottom: 7vw !important;
+            /*height: auto !important;*/
+            margin-bottom: 20vw !important;
         }
 
         .zonaTextoEvento{
@@ -1775,8 +1795,7 @@
 
             .contentorEvento {
                 width: 145% !important;
-                height: auto !important;
-                margin-bottom: 7vw !important;
+                margin-bottom: 20vw !important;
             }
 
             .zonaTextoEvento {

@@ -403,23 +403,23 @@
 		color: var(--sexualidade-cor1);
 	}
 
-	.alimentacao .artigosRelacionados{
+	.alimentacao .outrosArtigos {
 		color: var(--alimentacao-cor1);
 	}
-	.consumos .artigosRelacionados{
+	.consumos .outrosArtigos {
 		color: var(--consumos-cor1);
 	}
-	.sexualidade .artigosRelacionados{
+	.sexualidade .outrosArtigos {
 		color: var(--sexualidade-cor1);
 	}
 
-	.alimentacao .artigosRelacionados{
+	.alimentacao .outrosArtigos {
 		background-color: var(--alimentacao-back);
 	}
-	.consumos .artigosRelacionados{
+	.consumos .outrosArtigos {
 		background-color: var(--consumos-back);
 	}
-	.sexualidade .artigosRelacionados{
+	.sexualidade .outrosArtigos {
 		background-color: var(--sexualidade-back);
 	}
 
