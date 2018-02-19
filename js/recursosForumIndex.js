@@ -72,7 +72,7 @@ $(document).ready(function () {
         clickTag();
     }); //pesquisa keyup
 
-    $('.seguinte').click(function () {
+    $('.seguinte').click(function () {       
         if (paginaAtual != nPaginas) {
             paginaAtual += 1;
             queMostrar();
