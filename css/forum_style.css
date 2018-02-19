@@ -237,10 +237,11 @@
     padding-top: 4.5%;
     margin-left: 3.5%;
     color: #062940;
-    font-family: "Raleway medium";
+    font-family: "Raleway Bold";
     font-size: 24px;
     font-weight: 900;
 }
+
 
 .zonaNrRespostasAberto{
     position:relative;
@@ -269,7 +270,7 @@
 .div_descricao{
     position: relative;
     margin-top: 3%;
-    margin-left: 5%;
+    margin-left: 3.5%;
     margin-right: 3%;
     width: 90%;
     height: 100%;
@@ -281,7 +282,7 @@
 .div_Respostas{
     position: relative;
     margin-top: 3%;
-    margin-left: 5%;
+    margin-left: 3.5%;
     margin-right: 3%;
     width: 90%;
     height: 100%;

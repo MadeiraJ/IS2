@@ -2021,11 +2021,13 @@
 
             .zonaNrRespostas {
                 float: left !important;
+                width: 50vw !important;
             }
 
             .topicoNrRespostas {
                 font-size: 5vw !important;
-            }
+                vertical-align: sub;
+            }   
 
             .textoTopicos {
                 margin-top: 25% !important;
