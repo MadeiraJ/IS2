@@ -118,9 +118,7 @@ function verificarPalavras(texto) {
         for (var j = 0; j < indices.length; j++) {
             palavraNoTexto = texto.substring(indices[j], indices[j] + procurar.length);          
         }
-        texto = texto.replace(regEx, '<span data-tooltip aria-haspopup="true" ' +
-                'class="hoverDefin" data-disable-hover="false" tabindex="1" title="' + contdef[i] +
-                '"> <mark>' + palavraNoTexto + '</mark></span>');
+        texto = texto.replace(regEx, '<mark class="hoverDefin">' + palavraNoTexto + '<span class="hoverDefin-bottom"> ' + contdef[i] + '</span></mark>');
     }
     
     $(".conteudo").append(texto);
