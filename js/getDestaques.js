@@ -120,7 +120,7 @@ function addBlocoVideo(i, tema, link, titulo, texto) {
     else if (i % 2 == 0)
         inserirNaColuna = ".col2";
 
-    var urlParaVideo = `http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/0.jpg`;
+    var urlParaVideo = `http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/maxresdefault.jpg`;
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase();
 
     var bloco =
