@@ -94,7 +94,11 @@ function init(){
     letraAtual = document.querySelector("#a");
     conteudoAtual = document.querySelector("#lA");
 
-    verElementos(false);
+    if ($(window).width() <= 600) {
+        elementosMobile();
+    } else {
+        verElementos(false);
+    }
 
     letraAtual.setAttribute("class","letra "+ativo);
     conteudoAtual.style.display = "block";
@@ -147,10 +151,11 @@ function mudardisplay(esconder,priPagina,displayD,displayE,fim){
 
 function mudarConteudo(e) {
     var oClicado = e.target;
-    idLetra = oClicado.id;
-    if(idLetra != "abecedario"){}
+    if (oClicado.id != "naoLetra" && oClicado.nodeName == "LI") {
+        idLetra = oClicado.id;
+        if (idLetra != "abecedario") { }
         contCorresp();
-
+    }   
 }
 
 function contCorresp(){
@@ -166,7 +171,17 @@ function contCorresp(){
     letraAtual = aLetra;
     conteudoAtual = oConteudo;
 
-    verElementos(false);
+    if ($(window).width() <= 600) {
+        elementosMobile();
+    } else {
+        verElementos(false);
+    }
+}
+
+function elementosMobile() {
+    for (var i = 1; i < conteudoAtual.childNodes.length - 1; i++) {
+        conteudoAtual.childNodes[i].style.display = "inline-table";
+    }
 }
 
 function clickMudarPagina(onde){
