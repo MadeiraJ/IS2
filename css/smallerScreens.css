@@ -504,6 +504,13 @@
               font-size: 3.6vw;
           }
 
+          .btn_voltarInicio{
+            width: 45vw !important;
+            height: 13vw !important;
+            font-size: 4.5vw !important;
+            margin-top: 5% !important;
+        }
+
       /*PAGINA INDEX*/
           .index .main {
             padding-top: 0;
@@ -1568,6 +1575,10 @@
 
         }
 
+        .btn_voltarInicio{
+             height: 5vw !important;
+            width: 17vw !important;
+        }
         .div_postarCancelar {
             width: 20vw !important;
         }
@@ -2157,7 +2168,12 @@
 
             /*FIM FORUM NOVO TOPICO*/
 
-        }
+            .btn_voltarInicio{
+                width: 45vw !important;
+                height: 13vw !important;
+                font-size: 4.5vw !important;
+                margin-top: 5% !important;
+            }
 
 
 
