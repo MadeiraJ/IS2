@@ -503,16 +503,16 @@
                     }
 
                     .zonaMenu .dropdown .submenus {
-                        margin-left: 1vw;
-                        margin-right: 0.2vw;
-                        margin-top: 0.5vw;
-                        margin-bottom: 0.5vw;
+                        margin-left: 7%;
+                        margin-right: 4%;
+                        margin-top: 5%;
+                        margin-bottom: 5%;
                     }
 
                     .zonaMenu .dropdown .submenus a {
                         margin: 0 auto;
                         padding: 0.5vw;
-                        margin-top: 0.5vw;
+                        margin-top: 5%;
                         color: #032133;
                         font-family: "Raleway Bold";
                         font-size: 1vw;
@@ -1548,22 +1548,35 @@
                     }
 
                     .alimentacao #zonaDeVideos .postVideo{
-                        border-color: #FFF2D9;
-                        border-color: var(--alimentacao-cor2);
+                        border: 1px solid #FFF2D9;
                     }
                     .sexualidade #zonaDeVideos .postVideo{
-                        border-color: #DBF8F3;
-                        border-color: var(--sexualidade-cor2);
+                        border: 1px solid #DBF8F3;
                     }
                     .consumos #zonaDeVideos .postVideo{
-                        border-color: #E8E6F8;
-                        border-color: var(--consumos-cor2);
+                        border: 1px solid #E8E6F8;
                     }
 
                 #zonaDeVideos .postVideo img{
                     border-top-left-radius: 5px;
                     border-top-right-radius: 5px;
                     width: 100%;
+                }
+
+                #zonaDeVideos .postVideo .botaoClickImagem {
+                    position: absolute;
+                    width: 40%;
+                    height: auto!important;
+                    top: 0;
+                    margin: 0 auto;
+                    margin-left: 30%;
+                    margin-top: 8%;
+                    margin-bottom: 8%;
+                    filter: opacity(0.8);
+                }
+
+                .postVideo:hover .botaoClickImagem {
+                    filter: opacity(0);
                 }
 
                 #zonaDeVideos .postVideo .titulo{
