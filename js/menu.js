@@ -4,34 +4,53 @@ $(document).ready(function () {
 
     var menu = $('.menu-mobile .topicosMenu');
     if (menu.is(":visible")){
-      //$(document.body).css({"position": "initial"});
+      //Fazer o menu desaparecer
       $(document.body).css({"overflow": "initial"});
-      //$(document.body).css({"overflow": "hidden"});
-  
-      menu.slideToggle("slow", function () {
+      $('.menu-mobile .topicosMenu ul').slideToggle("slow", function () {
         $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
+        //$('.menu-mobile .topicosMenu').slideToggle("fast", function () {});
+        $('.menu-mobile .topicosMenu').hide();
       });
+
+      /*$('.menu-mobile .topicosMenu').slideToggle("slow", function () {
+        $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
+        //$('.menu-mobile .topicosMenu').slideToggle("fast", function () {});
+      });*/
+        $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {});
     }
 
     else {
+      //Fazer o menu reaparecer
       indexColor = $('.index .zonaMenu').css("background-color");
-      menu.slideToggle("slow", function () {});
+      //$('.menu-mobile .topicosMenu').show();
+      $('.menu-mobile .topicosMenu').slideToggle("slow", function () {
+        $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {});
+      });
+
       $('.index .zonaMenu').css("background-color", "rgba(6, 41, 64, 1)");
-      //$(document.body).css({"position": "fixed"});
-      //$(document.body).css({"overflow": "initial"});
       $(".menu-mobile .topicosMenu").css({"position": "absolute"}, {"overflow": "scroll"}, {"z-index": "10"});
-      $(document.body).css({"overflow": "hidden"})
-    }
-  });
+      $(document.body).css({"overflow": "hidden"});
+      indexColor = $('.index .zonaMenu').css("background-color");
+      $('.menu-mobile .topicosMenu').slideToggle("slow", function () {
+        //$('.menu-mobile .topicosMenu').slideToggle("fast", function () {});
+      });
+      $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {
+      $('.index .zonaMenu').css("background-color", "rgba(6, 41, 64, 1)");
+      $(".menu-mobile .topicosMenu").css({"position": "absolute"}, {"overflow": "scroll"}, {"z-index": "10"});
+      $(document.body).css({"overflow": "hidden"});
+    });
+  }
+});
 
   $('.menu-mobile button').click(function() {
     var menu = $('.menu-mobile .topicosMenu');
-    //$(document.body).css({"position": "initial"});
-    //$(document.body).css({"overflow": "initial"});
-    menu.slideToggle("slow", function () {
+    $(document.body).css({"overflow": "initial"});
+    $('.menu-mobile .topicosMenu ul').slideToggle("slow", function () {
       $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
+      //$('.menu-mobile .topicosMenu').slideToggle("fast", function () {});
+      $('.menu-mobile .topicosMenu').hide();
     });
-    $(document.body).css({"overflow": "hidden"})
+    $(document.body).css({"overflow": "initial"});
   })
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();

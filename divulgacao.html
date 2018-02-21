@@ -3,19 +3,14 @@
 <head lang="pt">
     <meta charset="UTF-8">
     <title>Divulgação Your PEL</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/paginas.css"/>
-    <link rel="stylesheet" href="css/paginas_cor.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/smallerScreens.css"/>
-    <link rel="stylesheet" href="css/divulgacao_style.css"/>
-    <link rel="stylesheet" href="css/menu.css"/>
-    <script src="js/wow.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/getDivulgacao.js"></script>
     <script src="js/jquery.color-2.1.2.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/publicacoes.js"></script>
+    <script src="js/wow.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script>
       new WOW().init();
@@ -42,7 +37,7 @@
                 </li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="parceiros.html">Parceiros</a></li>
-                <li><a href="divulgacao.html" style="color:#17A2FF;">Divulgação</a></li>
+                <li><a class="selected" href="divulgacao.html">Divulgação</a></li>
             </ul>
             <a href="forum_index.html"><input type="button" class="active" value="Fórum"></a>
         </nav>
@@ -75,12 +70,6 @@
             <p class="destaquesTitulo">Divulgação</p>
             <p class="aqui-podes-encontrar">Espaço reservado para mostrar as noticias mais recentes, eventos e publicações UMIS</p>
         </div>
-        <!--<div id="vistaGeral" style="display: block">
-            <div class="zona topo">
-                <h1>Divulgação</h1>
-                <p>Espaço reservado para mostrar as <mark>noticias mais recentes, eventos e publicações</mark> dos parceiros</p>
-            </div>
-        </div>-->
         <div class="contentorDasNoticias">
             <p class="noticias">Noticias</p>        
             <p class="mostrarMais" style="margin="5%">Mostrar mais</p>
@@ -96,15 +85,14 @@
         <div class="contentorDaGaleria">
             <p class="galeria">Galeria</p>
             <p class="introGaleria">Venha ver a nossa Galeria onde também poderá ver publicações dos nossos eventos.</p>
-            <input type="button" class="wow fadeIn hvr-grow btn_galeria" value="Ir para a Galeria" onclick="window.location='galeria.html';">
+            <!--<a class="wow fadeIn hvr-grow carregarMais">Ir para a Galeria</a>-->
+            <!--<input type="button" class="wow fadeIn hvr-grow btn_galeria" value="Ir para a Galeria" onclick="window.location='galeria.html';">-->
         </div>
 
         <div class="contentorDasPublicacoes">
             <p class="publicacoes">Publicações</p>
             <p class="tituloPublicacao">Principais publicações associadas à suboperação dos nossos parceiros.</p>
-            <div class="contentorPublicacoes">
-               
-            </div>        
+            <div class="contentorPublicacoes"></div>        
         </div>
         <div class="clear"></div>
     </div>
