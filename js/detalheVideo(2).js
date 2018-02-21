@@ -2,12 +2,11 @@ var vistaVideo, playlistID, vistaPlaylist, index;
 var urlVideo, id;
 var videos;
 var zonavideoDetalhe,zonaVerVideo;
-var main, close;
+var close;
 var titulo, descricao;
 var cor, corBorda;
 var elementoAtual;
 function verVideo(elemento){
-  main = document.getElementById('zonaMain');
   zonavideoDetalhe = document.getElementById('zonavideoDetalhe');
   zonaVerVideo = document.getElementById('zonaVerVideo');
   close = document.getElementById('fechar');
@@ -135,5 +134,4 @@ function mudarVideo(elemento){
 
 function fechar(){
   zonavideoDetalhe.style.display = "none";
-  main.style.display = "block";
 }

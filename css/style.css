@@ -853,8 +853,8 @@
                 line-height: 5.5vw;
                 text-align: center;
                 font-family: "Raleway ExtraBold";
-                color: #17A2FF;
-                color: var(--geral-cor2);
+                color: #062940;
+                color: var(--geral-cor1);
             }
             /*CORES*/
                 .alimentacao .destaquesTitulo{
@@ -875,8 +875,8 @@
                 padding-bottom: 6%;
                 margin: 0 auto;
                 text-align: center;
-                color: #062940;
-                color: var(--geral-cor1);
+                color: #17A2FF;
+                color: var(--geral-cor2);
             }
             /*CORES*/
                 .alimentacao .tituloZonaConteudo{
@@ -922,8 +922,8 @@
                 line-height: 3vw;
                 text-align: center;
                 margin: 0 auto;
-                color: #062940;
-                color: var(--geral-cor1);
+                color: #17A2FF;
+                color: var(--geral-cor2);
             }
             /*CORES*/
                 .alimentacao .aqui-podes-encontrar{
@@ -1460,6 +1460,16 @@
                     width: 100%;
                 }
 
+                #zonavideoDetalhe {
+                    z-index: 10;
+                    position: fixed;
+                    top: 0;
+                    display: block;
+                    background: rgba(0,0,0,0.8);
+                    width: 100vw;
+                    height: 100vh;
+                }
+
                 #zonaDeVideos .titulo{
                     width: 50%;
                     font-family: "Raleway Bold";
@@ -1585,9 +1595,8 @@
             /*ZONA VIDEOS DETALHE*/
                 #zonavideoDetalhe #fechar{
                     position: absolute;
-                    float: right;
-                    right: 3%;
-                    top: 4%;
+                    right: 5%;
+                    top: 10%;
                     width: 3.4vw;
                     height: 3.4vw;
                     background-size: cover;
@@ -1595,13 +1604,13 @@
                 }
 
                 #zonavideoDetalhe #zonaVerVideo{
-                    position: relative;
-                    width: 70%;
-                    margin: auto;
-                    margin-top: 5%;
+                    width: max-content;
+                    margin: 0 auto;
+                    margin-top: 15%;
                     border-radius: 6px;
                     padding: 1vw;
                     padding-bottom: 2vw;
+                    background-color: #FFF;
                 }
 
                 #zonavideoDetalhe #zonaVerVideo .video {
@@ -1627,6 +1636,7 @@
                     margin-right: 0vw;
                     list-style-type: none;
                     padding: 0 !important;
+                    margin: 0 auto;
                 }
 
                 #zonavideoDetalhe #vistaPlaylist li div {
@@ -3271,7 +3281,7 @@
                 width: 100%;
                 margin: 0;
                 z-index: 10;
-                padding-top: 5%;
+                padding-top: 5vw;
             }
 
             #fotoDetalhe .imagem{

@@ -2,12 +2,11 @@ var vistaVideo, playlistID, vistaPlaylist, index;
 var urlVideo, id;
 var videos;
 var zonavideoDetalhe,zonaVerVideo;
-var main, close;
+var close;
 var titulo, descricao;
 var cor, corBorda;
 var elementoAtual;
 function verVideo(elemento){
-  main = document.getElementsByClass('main')[0];
   zonavideoDetalhe = document.getElementById('zonavideoDetalhe');
   zonaVerVideo = document.getElementById('zonaVerVideo');
   close = document.getElementById('fechar');
@@ -115,7 +114,6 @@ function verificarQual(){
   vistaPlaylist.childNodes[index].childNodes[0].style.display = "block";
   vistaPlaylist.childNodes[index].childNodes[0].style.color = cor;
   zonavideoDetalhe.style.display = "block";
-  main.style.display = "none";
 }
 
 function construirVideo(x){
@@ -135,5 +133,4 @@ function mudarVideo(elemento){
 
 function fechar(){
   zonavideoDetalhe.style.display = "none";
-  main.style.display = "block";
 }

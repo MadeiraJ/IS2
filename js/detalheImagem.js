@@ -35,7 +35,7 @@ function fotosNoArray(){
 //element corresponde á foto que foi clicada
 function clickDetalhe(element) {
 	displayGaleria.style.display = "block";
-	displayDetalhe.style.display = "none";
+	//displayDetalhe.style.display = "none";
 
 	iframeInst.src = element.name.split("*")[0]+"embed";
 	iframeInst.style.backgroundSize = element.style.backgroundSize;
