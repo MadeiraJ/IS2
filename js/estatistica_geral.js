@@ -4,7 +4,7 @@ $(document).ready(function () {
         $.ajax({
             url: `/handlers/HandlerArtigos.ashx`,
             type: "POST",
-            tipo: {"visita", id: existemCookies, dispositivo: "smartphone"}
+            tipo: {fghj: "visita", id: existemCookies, dispositivo: "smartphone"},
             dataType: "json"
         }) //ajax
     } else {
