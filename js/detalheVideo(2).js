@@ -114,6 +114,7 @@ function verificarQual(){
   vistaPlaylist.childNodes[index].childNodes[0].style.display = "block";
   vistaPlaylist.childNodes[index].childNodes[0].style.color = cor;
   zonavideoDetalhe.style.display = "block";
+  main.style.display = "none";
 }
 
 function construirVideo(x){

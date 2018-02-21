@@ -21,10 +21,10 @@ $(document).ready(function () {
         dataType: "json",
         success: function (noticia) {
             $(document.body).addClass(noticia.tipo);
-            $(".cabecalhoNoticia .titulo").append(noticia.titulo);
-            $(".cabecalhoNoticia .detalhe .autor").append(`Autor: <br>${noticia.autor}`);
-            $(".cabecalhoNoticia .detalhe .data").append(`Publicado em<br>${noticia.data}`);
-            $(".cabecalhoNoticia .imagemCapa").append(`<img src="${noticia.imagemCapa}">`);
+            $(".tituloZonaConteudo .destaquesTitulo").append(noticia.titulo);
+            $(".tituloZonaConteudo .detalhe .autor").append(`Autor: <br>${noticia.autor}`);
+            $(".tituloZonaConteudo .detalhe .data").append(`Publicado em<br>${noticia.data}`);
+            $(".tituloZonaConteudo .imagemCapa").append(`<img src="${noticia.imagemCapa}">`);
             $(".conteudo").append(noticia.texto);
 
             noticiasRelacionadas = JSON.parse(noticia.noticiasRelacionadas)

@@ -24,12 +24,13 @@ $(document).ready(function () {
         data: {artigo : getUrlParameter('artigo')},
         dataType: "json",
         success: function (artigo) {
-            $(document.body).addClass((artigo.tipo).toLowerCase());
+            $(document.body).addClass(artigo.tipo);
             $(document).attr('title', `Artigo: ${artigo.titulo}`);
-            $(".cabecalhoArtigo .titulo").append(artigo.titulo);
-            $(".cabecalhoArtigo .detalhe .autor").append(`Palavras de<br>${artigo.autor}`);
-            $(".cabecalhoArtigo .detalhe .data").append(`Publicado em<br>${artigo.data}`);
-            $(".cabecalhoArtigo .imagemCapa").append(`<img src="${artigo.imagemCapa}">`);
+            $(".tituloZonaConteudo .destaquesTitulo").append(artigo.titulo);
+            $(".tituloZonaConteudo .detalhe .autor").append(`Palavras de<br>${artigo.autor}`);
+            $(".tituloZonaConteudo .detalhe .data").append(`Publicado em<br>${artigo.data}`);
+            $(".tituloZonaConteudo .imagemCapa").append(`<img src="${artigo.imagemCapa}">`);
+            $(".conteudo").append(artigo.texto);
 
             montarConteudo(artigo.texto, artigo.tipo)
             
@@ -39,7 +40,7 @@ $(document).ready(function () {
                 artigoR = JSON.parse(artigoR);
                 addArtigoRelacionado(artigoR.imagemCapa, artigoR.titulo, artigoR.resumo, artigoR.numeroArtigo);
             } //for
-            addClear(".artigosRelacionados");
+            addClear(".outrosArtigos");
         } //success
     }) //ajax
 }); //document
@@ -55,7 +56,7 @@ function addArtigoRelacionado(imagem, titulo, texto, url) {
                     </div>
                 </div>
             </a>`;
-    $(".artigosRelacionados").append(bloco);
+    $(".outrosArtigos").append(bloco);
 } //addArtigoRelacionado
 
 function addClear(classeCss) {

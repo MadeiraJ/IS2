@@ -1,111 +1,141 @@
 /*PAGINA TEMAS*/
-	.alimentacao mark{
+/*	.alimentacao mark{
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
 		color: inherit;
 	}
 	.consumos mark{
+		background-color: #DBF8F3;
 		background-color: var(--consumos-cor2);
 		color: inherit;
 	}
 	.sexualidade mark{
+		background-color: #E8E6F8;
 		background-color: var(--sexualidade-cor2);
 		color: inherit;
 	}
 
 	.alimentacao .tituloZonaConteudo{
+		background-color: #FFFCF7;
 		background-color: var(--alimentacao-back);
 	}
 	.consumos .tituloZonaConteudo{
+		background-color: #F0FFFC;
 		background-color: var(--consumos-back);
 	}
 	.sexualidade .tituloZonaConteudo{
+		background-color: #EFEDFF;
 		background-color: var(--sexualidade-back);
 	}
 
 	.alimentacao .destaquesTitulo{
-		color:var(--alimentacao-cor1);
+		color: #F2A618;
+		color: var(--alimentacao-cor1);
 	}
 	.consumos .destaquesTitulo{
-		color:var(--consumos-cor1);
+		color: #24D7B4;
+		color: var(--consumos-cor1);
 	}
 	.sexualidade .destaquesTitulo{
-		color:var(--sexualidade-cor1);
+		color: #6153CC;
+		color: var(--sexualidade-cor1);
 	}
 
-
 	.alimentacao .aqui-podes-encontrar{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .aqui-podes-encontrar{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .aqui-podes-encontrar{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 
 	.alimentacao .aqui-podes.encontrar mark{
+		background-color: #FFF2D9;
 		background-color: var(alimentacao-cor2);
 	}
 	.consumos .aqui-podes.encontrar mark{
+		background-color: #DBF8F3;
 		background-color: var(consumos-cor2);
 	}
 	.sexualidade .aqui-podes.encontrar mark{
+		background-color: #E8E6F8;
 		background-color: var(sexualidade-cor2);
 	}
 
 
 	.alimentacao .texto{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .texto{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .texto{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 
 	.alimentacao .texto p{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .texto p{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .texto p{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
+*/
 
 	.alimentacao .tag {
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
     }
     .consumos .tag {
+    	background-color: #DBF8F3;
 		background-color: var(--consumos-cor2);
     }
     .sexualidade .tag {
+		background-color: #E8E6F8;
 		background-color: var(--sexualidade-cor2);
     }
 
 	.forum_alimentacao .tag {
+		background-color: #F2A618;
 		background-color: var(--alimentacao-cor1);
 	}
 
 	.forum_consumos .tag {
+		background-color: #24D7B4;
 		background-color: var(--consumos-cor1);
 	}
 
 	.forum_sexualidade .tag {
+		background-color: #6153CC;
 		background-color: var(--sexualidade-cor1);
 	}
 
 
 	.alimentacao .tag a {
+		color: #F2A618;
     	color: var(--alimentacao-cor1);
     }
     .consumos .tag a {
+    	color: #24D7B4;
     	color: var(--consumos-cor1);
     }
     .sexualidade .tag a {
+    	color: #6153CC;
     	color: var(--sexualidade-cor1);
     }
 
@@ -119,18 +149,25 @@
 		color: #ffffff;
 	}
 
-	.alimentacao .texto p mark{
+	/*.alimentacao .texto p mark{
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .texto p mark{
+		background-color: #DBF8F3;
 		background-color: var(--consumos-cor2);
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .texto p mark{
+		background-color: #E8E6F8;
 		background-color: var(--sexualidade-cor2);
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
-	}
+	}*/
+
 
     .alimentacao .hoverDefin {
 		background-color: var(--alimentacao-cor2);
@@ -148,332 +185,427 @@
 	.conteudo .alimentacao {
 		border: 3px solid #FFF;
     	border-radius: 6px;
+
+	/*.conteudo .alimentacao {
+		border-color: #FFF2D9;
+>>>>>>> cleanup
 		border-color: var(--alimentacao-cor2);
 	}
 	.conteudo .consumos {
-		border: 3px solid #FFF;
-    	border-radius: 6px;
+    	border-color: #DBF8F3;
 		border-color: var(--consumos-cor2);
 	}
 	.conteudo .sexualidade {
-		border: 3px solid #FFF;
-    	border-radius: 6px;
+		border-color: #E8E6F8;
 		border-color: var(--sexualidade-cor2);
-	}
+	}*/
 
-	.alimentacao .post{
+/*	.alimentacao .post{
+		border-color: #FFF2D9;
 		border-color: var(--alimentacao-cor2);
 	}
 	.consumos .post{
+		border-color: #DBF8F3;
 		border-color: var(--consumos-cor2);
 	}
 	.conteudo .consumos .post {
     	border: none;
 	}
 	.sexualidade .post{
+		border-color: #E8E6F8;
 		border-color: var(--sexualidade-cor2);
-	}
+	}*/
 
 
-	.alimentacao .post .tituloArtigo{
+/*	.alimentacao .post .tituloArtigo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .post .tituloArtigo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .post .tituloArtigo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
-	}
+	}*/
 
-	.alimentacao .tituloArtigo{
+/*	.alimentacao .tituloArtigo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .tituloArtigo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .tituloArtigo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
-	}
+	}*/
 
-	.alimentacao .titulo{
+	/*.alimentacao .titulo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .titulo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .titulo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 	.alimentacao .sabiasQue{
+		border-color: #FFF2D9;
 		border-color: var(--alimentacao-cor2);
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
 	} 
 	.consumos .sabiasQue{
+		border-color: #DBF8F3;
 		border-color: var(--consumos-cor2);
+		background-color: #DBF8F3;
 		background-color: var(--consumos-cor2);
 	} 
 	.sexualidade .sabiasQue{
+		border-color: #E8E6F8;
 		border-color: var(--sexualidade-cor2);
+		background-color: #E8E6F8;
 		background-color: var(--sexualidade-cor2);
-	} 
+	} */
 
-
+/*
 
 	.alimentacao .sabiasQue .tituloArtigo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .sabiasQue .tituloArtigo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .sabiasQue .tituloArtigo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
-	}
+	}*/
 
 
-	.alimentacao .carregarMais{
+	/*.alimentacao .carregarMais{
+		background-color: #F2A618;
 		background-color: var(--alimentacao-cor1);
 	}
 	.consumos .carregarMais{
+		background-color: #24D7B4;
 		background-color: var(--consumos-cor1);
 	}
 	.sexualidade .carregarMais{
+		background-color: #6153CC;
 		background-color: var(--sexualidade-cor1);
-	}
+	}*/
 
-
+/*
 
 	.alimentacao #zonaGlossario .titulo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos #zonaGlossario .titulo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade #zonaGlossario .titulo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 
 	.alimentacao #zonaGlossario .descricao{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos #zonaGlossario .descricao{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade #zonaGlossario .descricao{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
+*/
 
-
-	.alimentacao #zonaLinks .titulo{
+	/*.alimentacao #zonaLinks .titulo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos #zonaLinks .titulo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade #zonaLinks .titulo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
-	}
+	}*/
 
 
-	.alimentacao #zonaLinks .linkUteis{
+/*	.alimentacao #zonaLinks .linkUteis{
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
 	}
 	.consumos #zonaLinks .linkUteis{
+		background-color: #DBF8F3;
 		background-color: var(--consumos-cor2);
 	}
 	.sexualidade #zonaLinks .linkUteis{
+		background-color: #E8E6F8;
 		background-color: var(--sexualidade-cor2);
 	}
-
-
+*/
+/*
 	.alimentacao #zonaDocumentos .titulo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos #zonaDocumentos .titulo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade #zonaDocumentos .titulo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 
 	.alimentacao #zonaDocumentos .documentos{
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
 	}
 	.consumos #zonaDocumentos .documentos{
+		background-color: #DBF8F3;
 		background-color: var(--consumos-cor2);
 	}
 	.sexualidade #zonaDocumentos .documentos{
+		background-color: #E8E6F8;
 		background-color: var(--sexualidade-cor2);
-	}
+	}*/
 
 
-	.alimentacao #zonaDeVideos .titulo, .alimentacao #zonavideoDetalhe #zonaVerVideo #info #tituloVideo{
+	/*.alimentacao #zonaDeVideos .titulo, .alimentacao #zonavideoDetalhe #zonaVerVideo #info #tituloVideo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos #zonaDeVideos .titulo, .consumos #zonavideoDetalhe #zonaVerVideo #info #tituloVideo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade #zonaDeVideos .titulo, .sexualidade #zonavideoDetalhe #zonaVerVideo #info #tituloVideo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 
 	.alimentacao #zonaDeVideos .titulo mark{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
 	}
 	.alimentacao #zonaDeVideos .titulo mark{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
 	}
 	.alimentacao #zonaDeVideos .titulo mark{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
 	}
 
 
 	.alimentacao #zonaDeVideos .postVideo .titulo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos #zonaDeVideos .postVideo .titulo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade #zonaDeVideos .postVideo .titulo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 
 	.alimentacao .hvr-overline-from-left:before {
+		background: #F2A618;
 		background: var(--alimentacao-cor1);
 	}
 	.consumos .hvr-overline-from-left:before {
+		background: #24D7B4;
 		background: var(--consumos-cor1);
 	}
 	.sexualidade .hvr-overline-from-left:before {
+		background: #6153CC;
 		background: var(--sexualidade-cor1);
-	}
-
+	}*/
+/*
 	.alimentacao #glossario .abecedario{
+		background-color: #F2A618;
 		background-color: var(--alimentacao-cor1);
 	}
 	.consumos #glossario .abecedario{
+		background-color: #24D7B4;
 		background-color: var(--consumos-cor1);
 	}
 	.sexualidade #glossario .abecedario{
+		background-color: #6153CC;
 		background-color: var(--sexualidade-cor1);
 	}
 
 	.alimentacao #glossario .letra:hover, .alimentacao #glossario .ativo{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos #glossario .letra:hover, .consumos #glossario .ativo{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade #glossario .letra:hover, .sexualidade #glossario .ativo{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 	.alimentacao #glossario h1{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos #glossario h1{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade #glossario h1{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
-	}
+	}*/
 
 /*PAGINA_ARTIGO*/
-	.alimentacao .cabecalhoArtigo p{
+	/*.alimentacao .cabecalhoArtigo p{
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .cabecalhoArtigo p{
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .cabecalhoArtigo p{
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 	.alimentacao cite:before {
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos cite:before {
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade cite:before {
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 	.alimentacao cite:after {
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos cite:after {
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade cite:after {
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 	.alimentacao .outrosArtigos {
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.consumos .outrosArtigos {
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.sexualidade .outrosArtigos {
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 	.alimentacao .outrosArtigos {
+		background-color: #FFFCF7;
 		background-color: var(--alimentacao-back);
 	}
 	.consumos .outrosArtigos {
+		background-color: #F0FFFC;
 		background-color: var(--consumos-back);
 	}
 	.sexualidade .outrosArtigos {
+		background-color: #EFEDFF;
 		background-color: var(--sexualidade-back);
-	}
+	}*/
 
 /*PAGINA DESTAQUES*/
 	.destaques .comprido .alimentacao h1 {
+		color: #F2A618;
 		color: var(--alimentacao-cor1);
 	}
 	.destaques .comprido .consumos h1 {
+		color: #24D7B4;
 		color: var(--consumos-cor1);
 	}
 	.destaques .comprido .sexualidade h1 {
+		color: #6153CC;
 		color: var(--sexualidade-cor1);
 	}
 
 	.destaques .comprido .alimentacao {
+		border-color: #FFF2D9;
 		border-color: var(--alimentacao-cor2);
 	}
 	.destaques .comprido .consumos {
+		border-color: #DBF8F3;
 		border-color: var(--consumos-cor2);
 	}
 	.destaques .comprido .sexualidade {
+		border-color: #E8E6F8;
 		border-color: var(--sexualidade-cor2);
 	}
 
 	.destaques .alimentacao.sabias-que {
+		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
 	}
 	.destaques .consumos.sabias-que {
+		background-color: #DBF8F3;
 		background-color: var(--consumos-cor2);
 	}
 	.destaques .sexualidade.sabias-que {
+		background-color: #E8E6F8;
 		background-color: var(--sexualidade-cor2);
 	}
 
 /*INDICE*/
 .alimentacao.bloco h1 {
+	color: #F2A618;
 	color: var(--alimentacao-cor1);
 }
 .consumos.bloco h1 {
+	color: #24D7B4;
 	color: var(--consumos-cor1);
 }
 .sexualidade.bloco h1 {
+	color: #6153CC;
 	color: var(--sexualidade-cor1);
 }

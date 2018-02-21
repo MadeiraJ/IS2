@@ -34,8 +34,8 @@ function fotosNoArray(){
 
 //element corresponde á foto que foi clicada
 function clickDetalhe(element) {
-	displayGaleria.style.display = "block";
-	//displayDetalhe.style.display = "none";
+	$("#fotoDetalhe").show();
+	$(document.body).css({position: 'fixed'});
 
 	iframeInst.src = element.name.split("*")[0]+"embed";
 	iframeInst.style.backgroundSize = element.style.backgroundSize;
@@ -64,8 +64,8 @@ function verFotoAtual(url){
 }
 
 function clickFechar(){
-	displayGaleria.style.display = "none";
-	displayDetalhe.style.display = "block";
+	$("#fotoDetalhe").hide();
+	$(document.body).css({position: 'initial'});
 	iframeInst.src = "#";
 	comentInst.innerHTML = "";
 	fotoAtual = 0;
