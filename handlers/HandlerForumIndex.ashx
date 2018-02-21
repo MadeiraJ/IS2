@@ -4,10 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.Web;
 using System.Web.Script.Serialization;
+using System.Data.SqlClient;
 
-public class GenericHandler1 : IHttpHandler {
+public class GenericHandler1 : IHttpHandler
+{
 
-    public void ProcessRequest(HttpContext context) {
+    public void ProcessRequest(HttpContext context)
+    {
         context.Response.ContentType = "json";
         var x = context.Request;
         getListaTopicos(context);
@@ -15,43 +18,23 @@ public class GenericHandler1 : IHttpHandler {
 
 
     /////////////////////////LISTA DE TOPICOS/////////////////////////
-    public void getListaTopicos(HttpContext context) {
+    public void getListaTopicos(HttpContext context)
+    {
         String json = "";
         var listaDeTopicos = new List<String>();
         var serializer = new JavaScriptSerializer();
-        
-        //fazer a query de todos os topicos de ordenados pela data (de forma decrescente)
+        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-N8IQH97\\SQLEXPRESS;Initial Catalog=yourPEL;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework");
+        Connected(conn);
 
         //Valores a serem apagados
-        for(int i = 0; i < 10; i++){
-            listaDeTopicos.Add(
+        //leghnt das linhas da BD
+        for (int i = 0; i < 10 ; i++)
+        {
+            /*listaDeTopicos.Add(
                 serializer.Serialize(
-                    new { tema = "ALIMENTACAO", numeroRespostas = "2", pergunta = "Faz mal comer muitos ovos diariamente?", data = "12 de Janeiro às 12:45", estado = "Ativo", id="2" }
+                    new { tema = [i], numeroRespostas = "2", pergunta = "Faz mal comer muitos ovos diariamente?", data = "12 de Janeiro às 12:45", estado = "Ativo", id = "2" }
             ));
-            listaDeTopicos.Add(
-                serializer.Serialize(
-                    new { tema = "CONSUMOS", numeroRespostas = "2", pergunta = "O que é ser um Vieira?", data = "12 de Janeiro às 12:45", estado = "Fechado", id="2" }
-            ));
-
-            listaDeTopicos.Add(
-                serializer.Serialize(
-                    new { tema = "SEXUALIDADE", numeroRespostas = "2", pergunta = "Porque é que as hormonas andam aos “saltos”?", data = "12 de Janeiro às 12:45", estado = "Ativo", id="2" }
-            ));
-
-            listaDeTopicos.Add(
-                serializer.Serialize(
-                    new { tema = "ALIMENTACAO", numeroRespostas = "2", pergunta = "Qual a quantidade de água deve ser ingerida, diariamente, por um adulto?", data = "12 de Janeiro às 12:45", estado = "Ativo", id="2" }
-            ));
-
-            listaDeTopicos.Add(
-                serializer.Serialize(
-                    new { tema = "CONSUMOS", numeroRespostas = "2", pergunta = "O que é síndrome de abstinência?", data = "12 de Janeiro às 12:45", estado = "Fechado", id="2" }
-            ));
-
-            listaDeTopicos.Add(
-                serializer.Serialize(
-                    new { tema = "SEXUALIDADE", numeroRespostas = "2", pergunta = "Ser lésbica ou gay é normal?", data = "12 de Janeiro às 12:45", estado = "Fechado", id="2" }
-            ));
+            */
         }
 
         json = serializer.Serialize(listaDeTopicos);
@@ -60,8 +43,32 @@ public class GenericHandler1 : IHttpHandler {
     } //getListaTopicos
 
 
-    public bool IsReusable {
-        get {
+    public void Connected(SqlConnection conn)
+    {
+        /*conn.Open();
+        //fazer a query de todos os topicos de ordenados pela data (de forma decrescente
+        SqlCommand cmd = new SqlCommand(
+            "SELECT * FROM RESPOSTA ORDER BY DATA_HORA DESC "
+            , conn);
+        cmd.ExecuteNonQuery();
+        conn.Close();*/
+
+        String json = "";
+        var listaDeTopicos = new List<String>();
+        var serializer = new JavaScriptSerializer();
+        //Ficas-te aqui, usar LINQ
+        /*using (App_code.YourPELEntities db = new Models.YourPELEntities())
+        {
+            var query = select new {
+                titulo = evento.titulo,
+                conteudo = evento.conteudo,
+            }).ToList();
+            json = serializer.Serialize(query);*/
+    }
+    public bool IsReusable
+    {
+        get
+        {
             return false;
         }
     }
