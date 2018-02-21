@@ -7,7 +7,7 @@ var titulo, descricao;
 var cor, corBorda;
 var elementoAtual;
 function verVideo(elemento){
-  main = document.getElementById('zonaMain');
+  main = document.getElementsByClass('main')[0];
   zonavideoDetalhe = document.getElementById('zonavideoDetalhe');
   zonaVerVideo = document.getElementById('zonaVerVideo');
   close = document.getElementById('fechar');
