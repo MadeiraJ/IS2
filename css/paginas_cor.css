@@ -132,15 +132,15 @@
 		color: var(--sexualidade-cor1);
 	}
 
-    .alimentacao .hoverDefin mark{
+    .alimentacao .hoverDefin {
 		background-color: var(--alimentacao-cor2);
 		color: var(--alimentacao-cor1);
 	}
-	.consumos .hoverDefin mark{
+	.consumos .hoverDefin {
 		background-color: var(--consumos-cor2);
 		color: var(--consumos-cor1);
 	}
-	.sexualidade .hoverDefin mark{
+	.sexualidade .hoverDefin {
 		background-color: var(--sexualidade-cor2);
 		color: var(--sexualidade-cor1);
 	}
