@@ -52,18 +52,8 @@ public class GenericHandler1 : IHttpHandler
             , conn);
         cmd.ExecuteNonQuery();
         conn.Close();
-        ConnectedInsert(conn);
-
-
-        //fazer adicionar topico na base de dados
-
-
     } //setNovoTopicos
-    public void ConnectedInsert(SqlConnection conn)
-    {
-        //fazer adicionar topico na base de dados
 
-    }
 
 
     public bool IsReusable
