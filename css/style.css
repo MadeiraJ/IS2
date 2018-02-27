@@ -1603,8 +1603,8 @@
                     filter: opacity(0.8);
                 }
 
-                .postVideo:hover .botaoClickImagem {
-                    filter: opacity(0);
+                #zonaDeVideos .postVideo:hover .botaoClickImagem {
+                    filter: opacity(0.9);
                 }
 
                 #zonaDeVideos .postVideo .titulo{
@@ -2051,6 +2051,11 @@
                   #zonaDeVideos .postVideo img{
                       height: 40vw !important;
                   }
+
+                #zonaDeVideos .postVideo .botaoClickImagem {
+                    margin-top: 4%;
+                    margin-bottom: 4%;
+                }
 
                 /*ZONA GLOSSARIO*/
                     #glossario h1 {
@@ -2985,8 +2990,8 @@
                     filter: opacity(0.8);
                 }
 
-                .video:hover .video .botaoClickImagem {
-                    filter: opacity(1);
+                .video.card:hover .botaoClickImagem {
+                    filter: opacity(0.9);
                 }
 
                 .destaques .metade {
@@ -3076,6 +3081,11 @@
                   margin: 0 auto;
                   margin-bottom: 10%;
               }
+
+              .destaques .zonaVideos .video .botaoClickImagem {
+                    margin-top: 4%;
+                    margin-bottom: 4%;
+                }
 
               .destaques .zonaForum .metade {
                   float: none;
@@ -3689,6 +3699,15 @@
                     margin: 0 auto !important;
                     margin-top: 5% !important;
                     margin-bottom: 5% !important;
+                }
+
+                #fotoDetalhe .imagem {
+                    width: 80%;
+                }
+
+                #fotoDetalhe #coment {
+                    font-size: 4vw;
+                    line-height: normal;
                 }
             }
 
@@ -5074,6 +5093,12 @@
                     font-weight: 900;
                     cursor: pointer;
                 }
+
+                #fotoDetalhe .imagem img {
+                    max-width: 80vw;
+                    max-height: 80vh;
+                }
+
 
         /*SMARTPHONE*/
             @media only screen and (max-width: 600px) {

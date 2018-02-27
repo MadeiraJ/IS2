@@ -1,7 +1,6 @@
 ﻿var numeroNoticias = 0;
 var numeroEventos = 0;
 $(document).ready(function () {
-
     getNoticias(3);
 
     getEventos(2);
@@ -28,7 +27,12 @@ $(document).ready(function () {
     $(".contentorDosEventos .mostrarMais").click(function () {
         getEventos(2);
     }); //eventos button click
-})
+
+    $("#fotoDetalhe #fechar").click(function () {
+        $("#fotoDetalhe").hide();
+    }); //eventos button click
+
+});
 
 function getNoticias(x){
     $.ajax({
@@ -77,6 +81,12 @@ function getEventos(x) {
                 );
             }//for
             numeroEventos += listaEventos.length;
+            $(".imagemEventos").click(function () {
+                var bg = $(this).css('background-image');
+                bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+                $("#fotoDetalhe .imagem img").attr("src", bg);
+                $("#fotoDetalhe").show();
+            }); //eventos imagem click
         }//success
     });
 }//getEventos

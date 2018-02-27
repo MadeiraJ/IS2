@@ -18,73 +18,71 @@
   </script>
 </head>
 <body class="galeria">
-    <div id="zonaMain">
-        <div class="zonaMenu">
-            <nav class="navbar">
-                <a class="logo" href="index.html">YourPEL</a>
-                <ul class="topicosMenu">
-                    <li><a href="destaques.html">Destaques</a></li>
-                    <li class="dropdownMenu">Temas<button class="setaTemasMenu"></button>
-                        <div class="helper"></div>
-                        <div class="triangulo"></div>
-                        <div class="dropdown">
-                            <div class="submenus">
-                                <a href="alimentacao.html">Alimentação</a>
-                                <a href="sexualidade.html">Sexualidade</a>
-                                <a href="substancias.html">Consumos Nocivos</a>
-                                <div class="clear"></div>
-                            </div>
+    <div class="zonaMenu">
+        <nav class="navbar">
+            <a class="logo" href="index.html">YourPEL</a>
+            <ul class="topicosMenu">
+                <li><a href="destaques.html">Destaques</a></li>
+                <li class="dropdownMenu">Temas<button class="setaTemasMenu"></button>
+                    <div class="helper"></div>
+                    <div class="triangulo"></div>
+                    <div class="dropdown">
+                        <div class="submenus">
+                            <a href="alimentacao.html">Alimentação</a>
+                            <a href="sexualidade.html">Sexualidade</a>
+                            <a href="substancias.html">Consumos Nocivos</a>
+                            <div class="clear"></div>
                         </div>
-                        <div class="clear"></div>
-                    </li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="parceiros.html">Parceiros</a></li>
-                    <li class="selected"><a href="divulgacao.html">Divulgação</a></li>
-                </ul>
-                <input type="button" class="active" value="Fórum">
-            </nav>
-            <div class="navbar-mobile mobile">
-                <a class="logo" href="index.html">YourPEL</a>
-                <button class="botao-mobile">☰</button>
-                <div class="clear"></div>
-            </div>
-            <nav class="menu-mobile mobile">
-                <div class="topicosMenu">
-                    <div class="menu-contentor">
-                        <button>x</button>
-                        <a href="destaques.html">Destaques</a>
-                        <a class="temas" href="alimentacao.html">Alimentação</a>
-                        <a class="temas" href="sexualidade.html">Sexualidade</a>
-                        <a class="temas" href="substancias.html">Consumos Nocivos</a>
-                        <a href="sobre.html">Sobre</a>
-                        <a href="parceiros.html">Parceiros</a>
-                        <a href="divulgacao.html">Divulgação</a>
-                        <a href="forum_index.html">Fórum</a>
-                        <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
-                </div>
-            </nav>
+                </li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li class="selected"><a href="divulgacao.html">Divulgação</a></li>
+            </ul>
+            <input type="button" class="active" value="Fórum">
+        </nav>
+        <div class="navbar-mobile mobile">
+            <a class="logo" href="index.html">YourPEL</a>
+            <button class="botao-mobile">☰</button>
+            <div class="clear"></div>
         </div>
-        <div class="main">           
-            <div class="tituloZonaConteudo">
-                <p class="destaquesTitulo">Galeria</p>
-                <p class="aqui-podes-encontrar">Uma seleção das nossas <mark>fotografias preferidas</mark> tiradas ao longos dos nossos eventos</p>
-            </div>
-            <div class="imagens">
-                <script type="text/javascript">
-                    var feed = new ody({
-                        get: "user",
-                        resolution: "standard_resolution",
-                        template: '<li class="imagem fadeIn hvr-grow"><a onclick="clickDetalhe(this)" name="{{link}}*{{caption}}" target="_blank" style="background-image:url({{image}});background-size: cover;"><img src="https://lh3.googleusercontent.com/-P-gOTAfNfZ4/V2RPSYvECxI/AAAAAAAABng/Efqy2Oxjqm4lrmDhT07PBtlgYRb_MlJ7QCCo/s576/questyerror.png"></img></a></li>',
-                        userId: 7032903222,
-                        accessToken: "7032903222.1677ed0.d8d9e20287354164b8b4b226ed11be64"
-                    });
-                    feed.run();
-                </script>
-                <div id='ody'></div>
+        <nav class="menu-mobile mobile">
+            <div class="topicosMenu">
+                <div class="menu-contentor">
+                    <button>x</button>
+                    <a href="destaques.html">Destaques</a>
+                    <a class="temas" href="alimentacao.html">Alimentação</a>
+                    <a class="temas" href="sexualidade.html">Sexualidade</a>
+                    <a class="temas" href="substancias.html">Consumos Nocivos</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="parceiros.html">Parceiros</a>
+                    <a href="divulgacao.html">Divulgação</a>
+                    <a href="forum_index.html">Fórum</a>
+                    <div class="clear"></div>
+                </div>
                 <div class="clear"></div>
             </div>
+        </nav>
+    </div>
+    <div class="main">           
+        <div class="tituloZonaConteudo">
+            <p class="destaquesTitulo">Galeria</p>
+            <p class="aqui-podes-encontrar">Uma seleção das nossas <mark>fotografias preferidas</mark> tiradas ao longos dos nossos eventos</p>
+        </div>
+        <div class="imagens">
+            <script type="text/javascript">
+                var feed = new ody({
+                    get: "user",
+                    resolution: "standard_resolution",
+                    template: '<li class="imagem fadeIn hvr-grow"><a onclick="clickDetalhe(this)" name="{{link}}*{{caption}}" target="_blank" style="background-image:url({{image}});background-size: cover;"><img src="https://lh3.googleusercontent.com/-P-gOTAfNfZ4/V2RPSYvECxI/AAAAAAAABng/Efqy2Oxjqm4lrmDhT07PBtlgYRb_MlJ7QCCo/s576/questyerror.png"></img></a></li>',
+                    userId: 7032903222,
+                    accessToken: "7032903222.1677ed0.d8d9e20287354164b8b4b226ed11be64"
+                });
+                feed.run();
+            </script>
+            <div id='ody'></div>
+            <div class="clear"></div>
         </div>
         <footer>
             <div id="rodape">
