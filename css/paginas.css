@@ -773,7 +773,6 @@
          opacity: 1;
        }
         
-
 /*INICIO NOTICIAS*/
     .noticia{
         font-family: "Raleway Medium";
@@ -1091,7 +1090,7 @@
 			margin-top: 5%;
 		}
 
-		.destques .sabias-que {
+		.destaques .sabias-que {
 			box-sizing: border-box;
     		border: 3px solid #FFF;
     		border-radius: 6px;
@@ -1709,3 +1708,31 @@
 			height: auto;
 			background-color: #F7FAFC;
 		}
+
+	.alimentacao .tag {
+		background-color: #FFF2D9;
+		background-color: var(--alimentacao-cor2);
+    }
+    .consumos .tag {
+    	background-color: #DBF8F3;
+		background-color: var(--consumos-cor2);
+    }
+    .sexualidade .tag {
+		background-color: #E8E6F8;
+		background-color: var(--sexualidade-cor2);
+    }
+
+	.forum_alimentacao .tag {
+		background-color: #F2A618;
+		background-color: var(--alimentacao-cor1);
+	}
+
+	.forum_consumos .tag {
+		background-color: #24D7B4;
+		background-color: var(--consumos-cor1);
+	}
+
+	.forum_sexualidade .tag {
+		background-color: #6153CC;
+		background-color: var(--sexualidade-cor1);
+	}

@@ -503,7 +503,7 @@
                     }
 
                     .zonaMenu .dropdown .submenus {
-                        margin-left: 7%;
+                        margin-left: 6%;
                         margin-right: 4%;
                         margin-top: 5%;
                         margin-bottom: 5%;
@@ -952,6 +952,34 @@
                     background-color: #E8E6F8;
                     background-color: var(--sexualidade-cor2);
                 }
+
+                /*CORES*/
+                    .alimentacao .tag {
+                        background-color: #FFF2D9;
+                        background-color: var(--alimentacao-cor2);
+                    }
+                    .consumos .tag {
+                        background-color: #DBF8F3;
+                        background-color: var(--consumos-cor2);
+                    }
+                    .sexualidade .tag {
+                        background-color: #E8E6F8;
+                        background-color: var(--sexualidade-cor2);
+                    }
+
+                /*CORES*/
+                    .alimentacao .tag a {
+                        color: #F2A618;
+                        color: var(--alimentacao-cor1);
+                    }
+                    .consumos .tag a {
+                        color: #24D7B4;
+                        color: var(--consumos-cor1);
+                    }
+                    .sexualidade .tag a {
+                        color: #6153CC;
+                        color: var(--sexualidade-cor1);
+                    }
 
         /*MOBILE*/
             @media only screen and (max-width: 600px) {
@@ -1705,6 +1733,107 @@
                     line-height: 1.779vw;
                 }
 
+            /*ZONA VIDEOS DETALHE*/
+            
+                #zonavideoDetalhe #fechar{
+                    float: right;
+                    right: 3%;
+                    top: 4%;
+                    width: 3.4vw;
+                    height: 3.4vw;
+                    background-size: cover;
+                    cursor: pointer;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo{
+                    position: relative;
+                    width: 70%;
+                    margin: auto;
+                    margin-top: 5%;
+                    /*border: 3px solid #FFF2D9;*/
+                    border-radius: 6px;
+                    padding: 1vw;
+                    padding-bottom: 2vw;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo .video {
+                    position: relative;
+                    float: left;
+                    width: 62%;
+                    height: 27vw;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo .video iframe {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                }
+
+                #zonavideoDetalhe #vistaPlaylist {
+                    position: relative;
+                    width: 35%;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    height: 27vw;
+                    margin-right: 0vw;
+                    list-style-type: none;
+                    padding: 0 !important;
+                }
+
+                #zonavideoDetalhe #vistaPlaylist li div {
+                    font-family: "Raleway Bold";
+                    font-size: 15px;
+                    background: rgba(0, 0, 0, 0.5);
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    height: 48%;
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #vistaPlaylist li p {
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                    margin-top: 5%;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #vistaPlaylist li:hover div {
+                    display: block !important;
+                    cursor: pointer;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #vistaPlaylist li img {
+                    width: 100%;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #info {
+                    position: relative;
+                    float: left;
+                    margin-left: 5%;
+                    margin-right: 2%;
+                    margin-top: 2%;
+                    width: 96%;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #info #tituloVideo {
+                    position: relative;
+                    font-family: "Raleway Bold";
+                    font-size: 2.37vw;
+                    font-weight: 900;
+                    line-height: 3.4vw;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #info #descricaoVideo {
+                    position: relative;
+                    font-family: "Raleway Light";
+                    font-size: 1.186vw;
+                    font-weight: 600;
+                    line-height: 1.779vw;
+                }
+
             /*ZONA LINKS*/
                 #zonaLinks{
                     margin-top: 10%;
@@ -1952,7 +2081,7 @@
                       width: 80%;
                       font-size: 5vw;
                       line-height: normal;
-                      margin: 3vw;
+                      margin-top: 3vw;
                     }
 
                     #glossario .definicao p {
@@ -2129,6 +2258,153 @@
                   }
             }
 
+    /*INICIO VIDEOS (POP UP)*/
+        /*PC*/
+            #zonavideoDetalhe #fechar{
+                position: absolute;
+                float: right;
+                right: 3%;
+                top: 4%;
+                width: 3.4vw;
+                height: 3.4vw;
+                background-size: cover;
+                cursor: pointer;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo{
+                position: relative;
+                width: 70%;
+                margin: auto;
+                margin-top: 5%;
+                /*border: 3px solid #FFF2D9;*/
+                border-radius: 6px;
+                padding: 1vw;
+                padding-bottom: 2vw;
+                overflow: scroll;
+                height: 70vh;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo .video {
+                position: relative;
+                float: left;
+                width: 62%;
+                height: 27vw;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo .video iframe {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+
+            #zonavideoDetalhe #vistaPlaylist {
+                position: relative;
+                width: 35%;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                height: 27vw;
+                margin-right: 0vw;
+                list-style-type: none;
+                padding: 0 !important;
+            }
+
+            #zonavideoDetalhe #vistaPlaylist li div {
+                font-family: "Raleway Bold";
+                font-size: 15px;
+                background: rgba(0, 0, 0, 0.5);
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 48%;
+                color: #FFFFFF;
+                margin: 0;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo #vistaPlaylist li p {
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 5%;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo #vistaPlaylist li:hover div {
+                display: block !important;
+                cursor: pointer;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo #vistaPlaylist li img {
+                width: 100%;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo #info {
+                position: relative;
+                float: left;
+                margin-left: 5%;
+                margin-right: 2%;
+                margin-top: 2%;
+                width: 96%;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo #info #tituloVideo {
+                position: relative;
+                font-family: "Raleway Bold";
+                font-size: 2.37vw;
+                font-weight: 900;
+                line-height: 3.4vw;
+            }
+
+            #zonavideoDetalhe #zonaVerVideo #info #descricaoVideo {
+                position: relative;
+                font-family: "Raleway Light";
+                font-size: 1.186vw;
+                font-weight: 600;
+                line-height: 1.779vw;
+            }
+
+        /*SMARTPHONE*/
+            @media only screen and (max-width: 800px) {
+                #zonavideoDetalhe #fechar {
+                    width: 4.4vw;
+                    height: 4.4vw;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo .video {
+                    width: 100%;
+                    height: 40vw;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #vistaPlaylist {
+                    width: 90%;
+                    float: left;
+                    height: 56vw;
+                    margin-left: 5%;
+                    margin-top: 4%;
+                    padding: 0;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo {
+                    margin-bottom: 3%;
+                    overflow: scroll;
+                    height: max-content;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #vistaPlaylist li div {
+                    height: 59%;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #info #tituloVideo {
+                    font-size: 3.37vw;
+                    line-height: 5.4vw;
+                }
+
+                #zonavideoDetalhe #zonaVerVideo #info #descricaoVideo {
+                    font-size: 2.186vw;
+                    line-height: 2.779vw;
+                    letter-spacing: 0.2vw;
+                }
+            }
+
     /*INICIO PAGINA ARTIGO*/
         /*PC*/
             .artigo {
@@ -2163,9 +2439,10 @@
                 text-align: center;
             }
 
-            .artigo .conteudo p{
+            .artigo .conteudo p {
                 width: 42.4%;
-                display: inline-block;
+                margin: 0 auto;
+                display: block;
                 color: #4A4A4A;
                 font-family: "DroidSerif";
                 font-size: 1.8vw;
@@ -2180,7 +2457,6 @@
 
             .artigo blockquote{
                 width: 42.4%;
-                display: inline-block;
                 color: #4A4A4A;
                 font-family: "DroidSerif";
                 font-size: 1.8vw;
@@ -2188,8 +2464,10 @@
                 text-align: left;
                 margin-top: 5%;
                 margin-bottom: 5%;
+                margin-left: 2%;
+                margin-right: 2%;
                 quotes: "\201C""\201D""\2018""\2019";
-                display: -webkit-inline-box;
+                display: inline-block;
                 padding-left: 5%;
                 font-style: normal;
                 font-size: 2vw;
@@ -2242,6 +2520,19 @@
             .artigo blockquote p {
                 display: inline;
                 line-height: normal;
+            }
+
+            .alimentacao .hoverDefin {
+                background-color: var(--alimentacao-cor2);
+                color: var(--alimentacao-cor1);
+            }
+            .consumos .hoverDefin {
+                background-color: var(--consumos-cor2);
+                color: var(--consumos-cor1);
+            }
+            .sexualidade .hoverDefin {
+                background-color: var(--sexualidade-cor2);
+                color: var(--sexualidade-cor1);
             }
 
             .artigo .outrosArtigos {
@@ -2380,7 +2671,8 @@
 
             .noticia .conteudo p{
                 width: 42.4%;
-                display: inline-block;
+                margin: 0 auto;
+                display: block;
                 color: #4A4A4A;
                 font-family: "DroidSerif";
                 font-size: 1.8vw;
@@ -2404,7 +2696,6 @@
                 margin-top: 5%;
                 margin-bottom: 5%;
                 quotes: "\201C""\201D""\2018""\2019";
-                display: -webkit-inline-box;
                 padding-left: 5%;
                 font-style: normal;
                 font-size: 2vw;
@@ -2676,11 +2967,26 @@
                     font-family: "Raleway Bold";
                 }
 
-
                 .destaques .zonaVideos .video {
                     width: 30%;
                     margin: 1%;
                     float: left;
+                }
+
+                .destaques .zonaVideos .video .botaoClickImagem {
+                    position: absolute;
+                    width: 40%;
+                    height: auto!important;
+                    top: 0;
+                    margin: 0 auto;
+                    margin-left: 30%;
+                    margin-top: 8%;
+                    margin-bottom: 8%;
+                    filter: opacity(0.8);
+                }
+
+                .video:hover .video .botaoClickImagem {
+                    filter: opacity(1);
                 }
 
                 .destaques .metade {
@@ -3640,8 +3946,7 @@
                     float: right;
                     margin-top: 3.5%;
                     margin-right: 3%;
-                    height: 5vw;
-                    width: 13vw;
+                    padding: 2%;
                     border: none;
                     border-radius: 5px;
                     background-color: #17A2FF;
@@ -3696,7 +4001,23 @@
                     font-family: "Raleway medium";
                     letter-spacing: 2px;
                     color: #ffffff;
+                    vertical-align: middle;
                 }
+                /*CORES*/
+                    .div_topico.forum_alimentacao .tag {
+                        background-color: #F2A618;
+                        background-color: var(--alimentacao-cor1);
+                    }
+
+                    .div_topico.forum_consumos .tag {
+                        background-color: #24D7B4;
+                        background-color: var(--consumos-cor1);
+                    }
+
+                    .div_topico.forum_sexualidade .tag {
+                        background-color: #6153CC;
+                        background-color: var(--sexualidade-cor1);
+                    }
 
                 .textoTopicos {
                     margin-left: 2%;
@@ -4916,5 +5237,3 @@
                         font-size: 5vw !important;
                     }
             }
-
-    

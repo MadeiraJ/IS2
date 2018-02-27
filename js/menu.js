@@ -1,57 +1,51 @@
 $(document).ready(function () {
   var indexColor;
+  var safe = true;
   $('.navbar-mobile .botao-mobile').click(function () {
 
     var menu = $('.menu-mobile .topicosMenu');
-    if (menu.is(":visible")){
+    if (menu.is(":visible") && safe){
       //Fazer o menu desaparecer
+      safe = false;
       $(document.body).css({"overflow": "initial"});
-      $('.menu-mobile .topicosMenu ul').slideToggle("slow", function () {
-        $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
-        //$('.menu-mobile .topicosMenu').slideToggle("fast", function () {});
-        $('.menu-mobile .topicosMenu').hide();
-      });
-
-      /*$('.menu-mobile .topicosMenu').slideToggle("slow", function () {
-        $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
-        //$('.menu-mobile .topicosMenu').slideToggle("fast", function () {});
-      });*/
-        $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {});
-    }
-
-    else {
-      //Fazer o menu reaparecer
-      indexColor = $('.index .zonaMenu').css("background-color");
-      //$('.menu-mobile .topicosMenu').show();
+      $('.menu-mobile .topicosMenu ul').slideToggle("slow", function () {});
       $('.menu-mobile .topicosMenu').slideToggle("slow", function () {
-        $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {});
-      });
-
-      $('.index .zonaMenu').css("background-color", "rgba(6, 41, 64, 1)");
-      $(".menu-mobile .topicosMenu").css({"position": "absolute"}, {"overflow": "scroll"}, {"z-index": "10"});
-      $(document.body).css({"overflow": "hidden"});
-      indexColor = $('.index .zonaMenu').css("background-color");
-      $('.menu-mobile .topicosMenu').slideToggle("slow", function () {
-        //$('.menu-mobile .topicosMenu').slideToggle("fast", function () {});
+        $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow', function(){safe = true;});
       });
       $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {
+        //safe = true;
+      });
+    } //if
+
+    else if(safe) {
+      //Fazer o menu reaparecer
+      safe = false;
+      indexColor = $('.index .zonaMenu').css("background-color");
       $('.index .zonaMenu').css("background-color", "rgba(6, 41, 64, 1)");
-      $(".menu-mobile .topicosMenu").css({"position": "absolute"}, {"overflow": "scroll"}, {"z-index": "10"});
-      $(document.body).css({"overflow": "hidden"});
-    });
-  }
-});
+      $('.menu-mobile .topicosMenu').slideToggle("fast", function () {
+        $(".menu-mobile .topicosMenu").css({"position": "absolute"}, {"overflow": "scroll"}, {"z-index": "10"});
+        $(document.body).css({"overflow": "hidden"});
+        safe = true;
+      });
+      $('.menu-mobile .menu-contentor').slideToggle("slow", function () {});
+    } //else
+  });
 
   $('.menu-mobile button').click(function() {
-    var menu = $('.menu-mobile .topicosMenu');
-    $(document.body).css({"overflow": "initial"});
-    $('.menu-mobile .topicosMenu ul').slideToggle("slow", function () {
-      $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow');
-      //$('.menu-mobile .topicosMenu').slideToggle("fast", function () {});
-      $('.menu-mobile .topicosMenu').hide();
-    });
-    $(document.body).css({"overflow": "initial"});
-  })
+    if(safe) {
+      //Fazer o menu desaparecer
+      safe = false;
+      $(document.body).css({"overflow": "initial"});
+      $('.menu-mobile .topicosMenu ul').slideToggle("slow", function () {});
+      $('.menu-mobile .topicosMenu').slideToggle("slow", function () {
+        $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow', function(){safe = true;});
+      });
+      $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {
+        //safe = true;
+      });
+    }
+  });
+
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();
       if (scrollTop >= 100)

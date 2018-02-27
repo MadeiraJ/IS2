@@ -97,7 +97,7 @@
 	}
 */
 
-	.alimentacao .tag {
+/*	.alimentacao .tag {
 		background-color: #FFF2D9;
 		background-color: var(--alimentacao-cor2);
     }
@@ -125,7 +125,6 @@
 		background-color: var(--sexualidade-cor1);
 	}
 
-
 	.alimentacao .tag a {
 		color: #F2A618;
     	color: var(--alimentacao-cor1);
@@ -138,6 +137,7 @@
     	color: #6153CC;
     	color: var(--sexualidade-cor1);
     }
+*/
 
 	.forum_alimentacao .tag a {
 		color: #ffffff;
@@ -169,7 +169,7 @@
 	}*/
 
 
-    .alimentacao .hoverDefin {
+    /*.alimentacao .hoverDefin {
 		background-color: var(--alimentacao-cor2);
 		color: var(--alimentacao-cor1);
 	}
@@ -185,7 +185,7 @@
 	.conteudo .alimentacao {
 		border: 3px solid #FFF;
     	border-radius: 6px;
-
+*/
 	/*.conteudo .alimentacao {
 		border-color: #FFF2D9;
 >>>>>>> cleanup

@@ -149,6 +149,7 @@ function addVideo(tema, link, titulo, texto) {
             `<div onclick="verVideo(this)" name="${link}" style="cursor: pointer;">
                 <div class ="${tema.toLowerCase()} video card wow fadeIn hvr-grow">
                     <img class="imgVideo" src="${urlParaVideo}">
+                    <img class="botaoClickImagem" src="imagens/play_btn.png">
                     <div class ="textoBloco">
                         <div class ="blocoTopo">
                             <p class ="titulo">VIDEOS</p>
