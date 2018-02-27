@@ -4,91 +4,122 @@ using System;
 using System.Collections.Generic;
 using System.Web;
 using System.Web.Script.Serialization;
+using System.Data.SqlClient;
+using System.Data;
 
-public class HandlerForumTopicoAberto : IHttpHandler {
+public class HandlerForumTopicoAberto : IHttpHandler
+{
 
-    public void ProcessRequest (HttpContext context) {
+    public void ProcessRequest(HttpContext context)
+    {
+        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-N8IQH97\\SQLEXPRESS;Initial Catalog=yourPEL;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework");
         context.Response.ContentType = "json";
         var x = context.Request;
         String tipo = context.Request["type"].ToString();
         switch (tipo)
         {
             case "1":
-                getRespostas(context);
+                getRespostas(context, conn);
                 break;
             case "2":
-                getPergunta(context);
+                getPergunta(context, conn);
                 break;
             case "3":
-                getNextPerguntaId(context);
+                getNextPerguntaId(context, conn);
                 break;
         } //switch
     } //ProcessRequest
-            
+
 
     /////////////////////////PERGUNTA/////////////////////////
-    public void getPergunta(HttpContext context)
+    public void getPergunta(HttpContext context, SqlConnection conn)
     {
         String json;
         var serializer = new JavaScriptSerializer();
         var id = Convert.ToInt32(context.Request["id"].ToString());
 
-        //fazer a query de forma a ir buscar um artigo, de acordo com o id recebido
+        conn.Open();
+        SqlCommand cmd = new SqlCommand("SELECT [POST].[TITULO], [POST].[TEXTO], [POST].[DATA_HORA]" +
+            "FROM [YourPEL].[dbo].[RESPOSTA], [YourPEL].[dbo].[POST] WHERE [RESPOSTA].[ID_POST] = [POST].[ID_POST]", conn);
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        conn.Close();
+        DataTable dt = new DataTable();
+        da.Fill(dt);
+        foreach (DataRow dr in dt.Rows)
+        {
+            json = serializer.Serialize(
+                new
+                {
+                    pergunta = dr["TITULO"],
+                    texto = dr["TEXTO"],
+                    data = dr["DATA_HORA"]
+                });
 
-        //Valores a serem apagados
-        json = serializer.Serialize(
-            new {
-                pergunta = "Será que 2 + 2 é 4?",
-                texto = "Eu acho que sim, mas verifiquem aí",
-                data = "15/08/2018"
-            });
-
-        context.Response.ContentType = "plain/text";
-        context.Response.Write(json);
+            context.Response.ContentType = "plain/text";
+            context.Response.Write(json);
+        }
     } //getPergunta
-    
+
 
     /////////////////////////RESPOSTAS/////////////////////////
-    public void getRespostas(HttpContext context)
+    public void getRespostas(HttpContext context, SqlConnection conn)
     {
         String json;
         var serializer = new JavaScriptSerializer();
         var id = Convert.ToInt32(context.Request["id"].ToString());
-
-        //fazer a query de forma a ir buscar todas as respostas à pergunta com o id recebido
-
-        //Valores a serem apagados
-        json = serializer.Serialize(
-            new {
-                data = "DATAAAAAAA",
-                texto = "TEXTOOOOOOOOOOOO",
-                quemRespondeu = "MACOAAAASSSS"
-            });
-
-        context.Response.ContentType = "plain/text";
-        context.Response.Write(json);
+        conn.Open();
+        SqlCommand cmd = new SqlCommand("SELECT [RESPOSTA].[ID_UTILIZADOR], [RESPOSTA].[ID_RESPOSTA], [RESPOSTA].[TEXTO], [RESPOSTA].[DATA_HORA]" +
+            "FROM [YourPEL].[dbo].[RESPOSTA], [YourPEL].[dbo].[POST] WHERE [RESPOSTA].[ID_POST] = [POST].[ID_POST]", conn);
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        conn.Close();
+        DataTable dt = new DataTable();
+        da.Fill(dt);
+        foreach (DataRow dr in dt.Rows)
+        {
+            json = serializer.Serialize(
+                new
+                {
+                    data = dr["DATA_HORA"],
+                    texto = dr["TEXTO"],
+                    quemRespondeu = dr["ID_UTILIZADOR"]
+                });
+            context.Response.ContentType = "plain/text";
+            context.Response.Write(json);
+        }
     } //getRespostas
 
     /////////////////////////NEXT PERGUNTA/////////////////////////
-    public void getNextPerguntaId(HttpContext context)
+    public void getNextPerguntaId(HttpContext context, SqlConnection conn)
     {
         String json;
         var serializer = new JavaScriptSerializer();
         var id = Convert.ToInt32(context.Request["id"].ToString());
+        conn.Open();
+        SqlCommand cmd = new SqlCommand("SELECT [RESPOSTA].[ID_POST]-1 FROM [YourPEL].[dbo].[RESPOSTA], [YourPEL].[dbo].[POST] " +
+            "WHERE [RESPOSTA].[ID_POST] = [POST].[ID_POST] " +
+            "ORDER BY [RESPOSTA].[DATA_HORA] DESC", conn);
+        SqlDataAdapter da = new SqlDataAdapter(cmd);
+        conn.Close();
+        DataTable dt = new DataTable();
+        da.Fill(dt);
+        foreach (DataRow dr in dt.Rows)
+        {
+            if (dr != null)
+            {
+                json = id.ToString();
 
-        //fazer a query de forma a ir buscar o id da próxima pergunta
-
-        //Valores a serem apagados
-        json = "1";
-        
-        context.Response.ContentType = "plain/text";
-        context.Response.Write(json);
+                context.Response.ContentType = "plain/text";
+                context.Response.Write(json);
+            }
+        }
     } //getRespostas
 
 
 
-    public bool IsReusable {
-        get {
+    public bool IsReusable
+    {
+        get
+        {
             return false;
         }
     }

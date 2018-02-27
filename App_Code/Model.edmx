@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="yourPELModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="POST">
+          <Key>
+            <PropertyRef Name="ID_POST" />
+          </Key>
+          <Property Name="ID_POST" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TITULO" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TEXTO" Type="text" Nullable="false" />
+          <Property Name="DATA_HORA" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="TEMA" Type="nvarchar" MaxLength="50" />
+          <Property Name="ATIVO" Type="bit" Nullable="false" />
+          <Property Name="FECHADO" Type="bit" />
+        </EntityType>
+        <EntityType Name="RESPOSTA">
+          <Key>
+            <PropertyRef Name="ID_RESPOSTA" />
+          </Key>
+          <Property Name="ID_RESPOSTA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TEXTO" Type="text" Nullable="false" />
+          <Property Name="DATA_HORA" Type="date" Nullable="false" />
+          <Property Name="ID_UTILIZADOR" Type="int" Nullable="false" />
+          <Property Name="ID_POST" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UTILIZADOR">
+          <Key>
+            <PropertyRef Name="ID_UTILIZADOR" />
+          </Key>
+          <Property Name="ID_UTILIZADOR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USERNAME" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PASSWORD" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="TIPO" Type="char" MaxLength="1" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="yourPELModel1StoreContainer">
+          <EntitySet Name="POST" EntityType="Self.POST" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RESPOSTA" EntityType="Self.RESPOSTA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UTILIZADOR" EntityType="Self.UTILIZADOR" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="yourPELModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="POST">
+          <Key>
+            <PropertyRef Name="ID_POST" />
+          </Key>
+          <Property Name="ID_POST" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TITULO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TEXTO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DATA_HORA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TEMA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ATIVO" Type="Boolean" Nullable="false" />
+          <Property Name="FECHADO" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="RESPOSTA">
+          <Key>
+            <PropertyRef Name="ID_RESPOSTA" />
+          </Key>
+          <Property Name="ID_RESPOSTA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TEXTO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DATA_HORA" Type="DateTime" Nullable="false" />
+          <Property Name="ID_UTILIZADOR" Type="Int32" Nullable="false" />
+          <Property Name="ID_POST" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UTILIZADOR">
+          <Key>
+            <PropertyRef Name="ID_UTILIZADOR" />
+          </Key>
+          <Property Name="ID_UTILIZADOR" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TIPO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="yourPELEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="POST" EntityType="Self.POST" />
+          <EntitySet Name="RESPOSTA" EntityType="Self.RESPOSTA" />
+          <EntitySet Name="UTILIZADOR" EntityType="Self.UTILIZADOR" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="yourPELModel1StoreContainer" CdmEntityContainer="yourPELEntities">
+          <EntitySetMapping Name="POST">
+            <EntityTypeMapping TypeName="yourPELModel1.POST">
+              <MappingFragment StoreEntitySet="POST">
+                <ScalarProperty Name="ID_POST" ColumnName="ID_POST" />
+                <ScalarProperty Name="TITULO" ColumnName="TITULO" />
+                <ScalarProperty Name="TEXTO" ColumnName="TEXTO" />
+                <ScalarProperty Name="DATA_HORA" ColumnName="DATA_HORA" />
+                <ScalarProperty Name="TEMA" ColumnName="TEMA" />
+                <ScalarProperty Name="ATIVO" ColumnName="ATIVO" />
+                <ScalarProperty Name="FECHADO" ColumnName="FECHADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RESPOSTA">
+            <EntityTypeMapping TypeName="yourPELModel1.RESPOSTA">
+              <MappingFragment StoreEntitySet="RESPOSTA">
+                <ScalarProperty Name="ID_RESPOSTA" ColumnName="ID_RESPOSTA" />
+                <ScalarProperty Name="TEXTO" ColumnName="TEXTO" />
+                <ScalarProperty Name="DATA_HORA" ColumnName="DATA_HORA" />
+                <ScalarProperty Name="ID_UTILIZADOR" ColumnName="ID_UTILIZADOR" />
+                <ScalarProperty Name="ID_POST" ColumnName="ID_POST" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UTILIZADOR">
+            <EntityTypeMapping TypeName="yourPELModel1.UTILIZADOR">
+              <MappingFragment StoreEntitySet="UTILIZADOR">
+                <ScalarProperty Name="ID_UTILIZADOR" ColumnName="ID_UTILIZADOR" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
