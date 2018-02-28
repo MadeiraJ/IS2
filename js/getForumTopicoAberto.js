@@ -17,6 +17,7 @@ var idPost = 1;
 
 $(document).ready(function () {
     idPost = getUrlParameter("post");
+    
     $.ajax({
         url: `/handlers/HandlerForumTopicoAberto.ashx?type=1`,
         type: "POST",
@@ -47,9 +48,7 @@ $(document).ready(function () {
         } //success
     }); //ajax
 
-    $(".zonaProximo").click(function () {
-        goToNextPergunta(idPost);
-    })
+    goToNextPergunta(idPost);
 }); //document
 
 function addTitulo(texto) {
@@ -105,7 +104,10 @@ function goToNextPergunta(idPost) {
         data: { id : idPost },
         dataType: "json",
         success: function (idProximaPergunta) {
-            window.location.href = `forum_topicoAberto.html?post=${idProximaPergunta}`;
+            if(idProximaPergunta)
+                $(".zonaProximo a").attr("href", `forum_topicoAberto.html?post=${idProximaPergunta}`);
+            else
+                $(".zonaProximo").hide();
         } //success
     }); //ajax
 } //goToNextPergunta

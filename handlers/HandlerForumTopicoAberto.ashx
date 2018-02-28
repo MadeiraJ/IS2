@@ -72,14 +72,14 @@ public class HandlerForumTopicoAberto : IHttpHandler {
     /////////////////////////NEXT PERGUNTA/////////////////////////
     public void getNextPerguntaId(HttpContext context)
     {
-        String json;
+        String json = null;
         var serializer = new JavaScriptSerializer();
         var id = Convert.ToInt32(context.Request["id"].ToString());
 
         //fazer a query de forma a ir buscar o id da próxima pergunta
 
         //Valores a serem apagados
-        json = "1";
+        json = "null";
         
         context.Response.ContentType = "plain/text";
         context.Response.Write(json);

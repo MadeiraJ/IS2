@@ -13,7 +13,8 @@ $(document).ready(function () {
         $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow', function(){safe = true;});
       });
       $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {
-        //safe = true;
+        if(document.body.className.indexOf("index") == -1)
+          safe = true;
       });
     } //if
 
@@ -41,9 +42,10 @@ $(document).ready(function () {
         $('.index .zonaMenu').animate({backgroundColor: indexColor}, 'slow', function(){safe = true;});
       });
       $('.menu-mobile .topicosMenu .menu-contentor').slideToggle("slow", function () {
-        //safe = true;
+        if(document.body.className.indexOf("index") == -1)
+          safe = true;
       });
-    }
+    } //if
   });
 
   $(window).scroll(function(){

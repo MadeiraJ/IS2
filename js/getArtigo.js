@@ -56,7 +56,7 @@ function addArtigoRelacionado(imagem, titulo, texto, url) {
                     </div>
                 </div>
             </a>`;
-    $(".outrosArtigos").append(bloco);
+    $(".outrosArtigos")..prepend(bloco);
 } //addArtigoRelacionado
 
 function addClear(classeCss) {

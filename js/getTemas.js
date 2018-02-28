@@ -141,8 +141,8 @@ function addVideo(link, titulo, texto) {
         `<a onclick="verVideo(this)" name="${link}">
         <div class="bloco-1 postVideo hvr-grow wow fadeIn">
             
-            <img src="http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/maxresdefault.jpg">
             <img class="botaoClickImagem" src="imagens/play_btn.png">
+            <img src="http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/maxresdefault.jpg">
 
             <p class="titulo">${titulo}</p>
             <p class="texto">${texto}</p>
