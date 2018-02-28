@@ -24,7 +24,7 @@ $(document).ready(function () {
         data: {artigo : getUrlParameter('artigo')},
         dataType: "json",
         success: function (artigo) {
-            $(document.body).addClass(artigo.tipo);
+            $(document.body).addClass((artigo.tipo).toLowerCase());
             $(document).attr('title', `Artigo: ${artigo.titulo}`);
             $(".tituloZonaConteudo .destaquesTitulo").append(artigo.titulo);
             $(".tituloZonaConteudo .detalhe .autor").append(`Palavras de<br>${artigo.autor}`);
@@ -41,8 +41,12 @@ $(document).ready(function () {
                 addArtigoRelacionado(artigoR.imagemCapa, artigoR.titulo, artigoR.resumo, artigoR.numeroArtigo);
             } //for
             addClear(".outrosArtigos");
+
+            $(".btn_voltarInicio").click(function(){
+                window.location.href = (artigo.tipo).toLowerCase() + ".html";
+            });
         } //success
-    }) //ajax
+    }) //ajax  
 }); //document
 
 function addArtigoRelacionado(imagem, titulo, texto, url) {
@@ -56,7 +60,9 @@ function addArtigoRelacionado(imagem, titulo, texto, url) {
                     </div>
                 </div>
             </a>`;
-    $(".outrosArtigos").append(bloco);
+    $(bloco).insertBefore(".btn_voltarInicio");
+    
+    //$(".outrosArtigos").append(bloco);
 } //addArtigoRelacionado
 
 function addClear(classeCss) {
