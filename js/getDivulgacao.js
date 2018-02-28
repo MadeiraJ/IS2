@@ -87,6 +87,8 @@ function getEventos(x) {
                 $("#fotoDetalhe .imagem img").attr("src", bg);
                 $("#fotoDetalhe").show();
             }); //eventos imagem click
+
+            addClear(".contentorDosEventos .mostrarMais");
         }//success
     });
 }//getEventos

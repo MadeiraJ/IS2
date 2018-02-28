@@ -1695,7 +1695,7 @@
 
                 #zonavideoDetalhe #vistaPlaylist li div {
                     font-family: "Raleway Bold";
-                    font-size: 15px;
+                    font-size: 1.112vw;
                     background: rgba(0, 0, 0, 0.5);
                     display: none;
                     position: absolute;
@@ -1796,7 +1796,7 @@
 
                 #zonavideoDetalhe #vistaPlaylist li div {
                     font-family: "Raleway Bold";
-                    font-size: 15px;
+                    font-size: 1.112vw;
                     background: rgba(0, 0, 0, 0.5);
                     display: none;
                     position: absolute;
@@ -2329,7 +2329,7 @@
 
             #zonavideoDetalhe #vistaPlaylist li div {
                 font-family: "Raleway Bold";
-                font-size: 15px;
+                font-size: 1.112vw;
                 background: rgba(0, 0, 0, 0.5);
                 display: none;
                 position: absolute;
@@ -2592,9 +2592,9 @@
                 box-shadow: 0 2px 4px 0 rgba(3,44,72,0.09);
                 color: #FFFFFF;
                 font-family: "Raleway Medium";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 900;
-                line-height: 21px;
+                line-height: 1.557vw;
                 text-align: center;
                 padding: 1%;
             }
@@ -4063,7 +4063,7 @@
                     background-color: #17A2FF;
                     color: #FFFFFF;
                     font-family: "Raleway medium";
-                    font-size: 18px;
+                    font-size: 1.334vw;
                     font-weight: 900;
                     cursor: pointer;
                 }
@@ -4135,9 +4135,9 @@
                     margin-top: 1%;
                     color: #062940;
                     font-family: "Raleway Bold";
-                    font-size: 24px;
+                    font-size: 1.779vw;
                     font-weight: 800;
-                    line-height: 34px;
+                    line-height: 1.779vw;
                 }
 
                 .zonaDiaHoraEstado{
@@ -4153,7 +4153,7 @@
                     font-family: "Raleway medium";
                     font-size: 16px;
                     font-weight: 800;
-                    line-height: 24px;
+                    line-height: 1.779vw;
                     float: left;
                 }
 
@@ -4191,7 +4191,7 @@
                     position: relative;
                     color: #74B2DB;
                     font-family: "Raleway Bold";
-                    font-size: 18px;
+                    font-size: 1.334vw;
                     font-weight: 800;
                 }
 
@@ -4216,7 +4216,7 @@
                     border: 1px solid #BCE4FF;
                     margin: 0 4px;
                     font-family: "Raleway medium";
-                    font-size: 18px;
+                    font-size: 1.334vw;
                     font-weight: 800;
                 }
 
@@ -4321,7 +4321,7 @@
                 margin-left: 3.5%;
                 color: #062940;
                 font-family: "Raleway medium";
-                font-size: 24px;
+                font-size: 1.779vw;
                 font-weight: 900;
             }
 
@@ -4338,7 +4338,7 @@
                 position: relative;
                 color: #74B2DB;
                 font-family: "Raleway medium";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 800;
 
             }
@@ -4379,9 +4379,9 @@
                 margin-left: 3%;
                 color: #74B2DB;
                 font-family: "Raleway medium";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 800;
-                line-height: 26px;
+                line-height: 1.927vw;
                 padding-top: 3%;
             }
 
@@ -4391,9 +4391,9 @@
                 margin-right: 3%;
                 color: #74B2DB;
                 font-family: "Raleway medium";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 800;
-                line-height: 26px;
+                line-height: 1.927vw;
                 padding-top: 3%;
                 padding-bottom: 2%;
             }
@@ -4402,7 +4402,7 @@
                 position: relative;
                 color: #062940;
                 font-family: "Raleway medium";
-                font-size: 22px;
+                font-size: 1.631vw;
                 font-weight: 600;
                 margin-left: 3%;
                 margin-right: 3%;
@@ -4445,9 +4445,9 @@
             .topicoResponder{
                 color: #17A2FF;
                 font-family: "Raleway medium";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 900;
-                line-height: 21px;
+                line-height: 1.557vw;
             }
 
             .zonaMudancaTopicos {
@@ -4474,17 +4474,17 @@
             .linkProximoTopico{
                 color: #74B2DB;
                 font-family: "Raleway medium";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 800;
-                line-height: 26px;
+                line-height: 1.927vw;
             }
 
             .linkVoltarLista{
                 color: #74B2DB;
                 font-family: "Raleway medium";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 800;
-                line-height: 26px;
+                line-height: 1.927vw;
 
             }
 
@@ -4560,7 +4560,6 @@
                    margin-top: 15% !important;
                 }
 
-
                 .dataResposta{
                     font-size: 5.5vw !important;
                     margin-right: 5vw !important;
@@ -4602,7 +4601,7 @@
                 font-family: "Raleway medium";
                 font-size: 2vw;
                 font-weight: bold;
-                line-height: 38px;
+                line-height: 2.816vw;
                 margin-left: 4%;
                 padding-top: 5%;
             }
@@ -4759,7 +4758,7 @@
                 margin-left: 2%;
                 color: #A0C8E2;
                 font-family: "Raleway light";
-                font-size: 22px;
+                font-size: 1.631vw;
                 font-weight: 600;
                 line-height: 36px;
             }
@@ -4778,9 +4777,9 @@
                 float: left;
                 color: #17A2FF;
                 font-family: "Raleway light";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 900;
-                line-height: 21px;
+                line-height: 1.557vw;
                 text-align: right;
                 margin-top: 7%;
                 margin-right: 6%;
@@ -4800,7 +4799,7 @@
                 background-color: #17A2FF;
                 color: #FFFFFF;
                 font-family: "Raleway medium";
-                font-size: 18px;
+                font-size: 1.334vw;
                 font-weight: 900;
                 cursor: pointer;
             }
@@ -4890,7 +4889,7 @@
                 .divulgacaoPag .contentorDasNoticias {
                     margin-top: 9%;
                     margin-left: 10%;
-                    width: 55%;
+                    margin-right: 10%;
                     height: auto;
                     margin-bottom: 10%;
                 }
@@ -4899,17 +4898,15 @@
                     position: relative;
                     color: #062940;
                     font-family: "Raleway ExtraBold";
-                    font-size: 58px;
+                    font-size: 4.3vw;
                     font-weight: 900;
-                    line-height: 74px;
+                    line-height: 5.486vw;
                     margin-bottom: 3%;
                 }
 
                 .contentorNoticia{
-                    position: relative;
                     margin-top: 3.5%;
-                    min-width: 110%;
-                    height: 30vw;
+                    width: 100%;
                     background-color: #ffffff;
                     border-radius: 6px;
                     box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
@@ -4917,56 +4914,57 @@
                 }
 
                 .imagemNoticia {
-                    position: relative;
-                    width: 30%;
-                    height: 100%;
-                    background-position: left;
-                    background-repeat: no-repeat;
+                    width: 25vw;
+                    height: 20vw;
+                    background-position: center;
                     background-size: cover;
+                    border-radius: 6px;
+                    box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
+                    cursor: pointer;
                     float: left;
-                    border-radius: 6px 0 0 6px;
                 }
 
                 .zonaTextoNoticia {
-                    position: relative;
-                    margin-left: 2%;
-                    width: 65%;
+                    width: 50%;
                     height: 100%;
                     float: left;
+                    padding: 4%;
                 }
 
                 .postadoNoticia{
                     color: #74B2DB;
                     font-family: "Raleway Medium";
-                    font-size: 18px;
+                    font-size: 1.334vw;
                     font-weight: 800;
-                    line-height: 26px;
+                    line-height: 1.927vw;
+                    margin-bottom: 3%;
                 }
 
                 .tituloNoticia{
                     color: #17A2FF;
                     font-family: "Raleway Medium";
-                    font-size: 24px;
+                    font-size: 1.779vw;
                     font-weight: 800;
-                    line-height: 34px;
+                    line-height: 1.779vw;
                 }
 
                 .textoNoticia{
                     color: #032133;
                     font-family: "Raleway Medium";
-                    font-size: 18px;
+                    font-size: 1.334vw;
                     font-weight: 600;
-                    line-height: 28px;
+                    line-height: 2.0756vw;
+                    margin-top: 3%;
                 }
 
                 .mostrarMais{
                     position: relative;
                     margin-top: 4%;
                     color: #17A2FF;
-                    font-family: "Raleway Medium";
-                    font-size: 22px;
+                    font-family: "Raleway ExtraBold";
+                    font-size: 1.631vw;
                     font-weight: 900;
-                    line-height: 26px;
+                    line-height: 1.927vw;
                     cursor: pointer;
                 }
 
@@ -4975,7 +4973,7 @@
                     position: relative;
                     margin-top: 12%;
                     margin-left: 10%;
-                    width: 75%;
+                    width: 80%;
                     height:auto;
                     margin-bottom: 10%;
                 }
@@ -4984,9 +4982,9 @@
                     position: relative;
                     color: #062940;
                     font-family: "Raleway ExtraBold";
-                    font-size: 58px;
+                    font-size: 4.3vw;
                     font-weight: 900;
-                    line-height: 74px;
+                    line-height: 5.486vw;
                     margin-bottom: 3%;
                 }
 
@@ -5000,19 +4998,17 @@
                     box-shadow: 0 2px 6px 2px rgba(170,170,170,0.05);
                 }
 
-                .zonaTextoEvento{
-                    position: relative;
+                .zonaTextoEvento {
                     margin-left: 2%;
-                    width: 58%;
+                    width: 60%;
                     height: 100%;
                     float: left;
                 }
 
                 .imagemEventos{
-                    position: relative;
-                    width: 40%;
-                    height: 100%;
-                    background-image: url("../imagens/evento1.png");
+                    width: 35%;
+                    height: 34vw;
+                    background-image: url(../imagens/evento1.png);
                     background-position: left;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -5025,7 +5021,7 @@
                     margin-top: 5%;
                     color: #17A2FF;
                     font-family: "Raleway Medium";
-                    font-size: 15px;
+                    font-size: 1.112vw;
                     font-weight: 800;
                     letter-spacing: 2px;
                 }
@@ -5034,44 +5030,43 @@
                     position: relative;
                     margin-top: 0%;
                     color: #17A2FF;
-                    font-family: "Raleway Medium";
-                    font-size: 42px;
+                    font-family: "Raleway ExtraBold";
+                    font-size: 3.1135vw;
                     font-weight: 900;
 
-                }.horasEvento{
-                     position: relative;
+                }
+                .horasEvento{
                      margin-top: 1%;
                      color: #17A2FF;
                      font-family: "Raleway Medium";
-                     font-size: 22px;
+                     font-size: 1.631vw;
                      font-weight: bold;
                  }
 
                 .localEvento{
-                    position: relative;
                     margin-top: 1%;
                     color: #17A2FF;
                     font-family: "Raleway Medium";
-                    font-size: 22px;
+                    font-size: 1.631vw;
                     font-weight: bold;
                 }
 
                 .tituloEvento{
-                    position: relative;
                     margin-top: 10%;
                     color: #0A81D1;
-                    font-family: "Raleway Medium";
-                    font-size: 45px;
+                    font-family: "Raleway ExtraBold";
+                    font-size: 4.5vw;
                     font-weight: 900;
                     margin-bottom: 0;
                 }
 
-                .descricaoEvento{
-                    position: relative;
+                .descricaoEvento {
                     color: #032133;
-                    font-family: "Raleway Medium";
-                    font-size: 27px;
+                    font-family: "Raleway Bold";
+                    font-size: 2.2vw;
+                    line-height: 3.2vw;
                     font-weight: 700;
+                    margin-top: 3%;
                 }
 
             /*PUBLICAÇOES*/
@@ -5088,9 +5083,9 @@
                     position: relative;
                     color: #062940;
                     font-family: "Raleway ExtraBold";
-                    font-size: 58px;
+                    font-size: 4.3vw;
                     font-weight: 900;
-                    line-height: 74px;
+                    line-height: 5.486vw;
                     margin-bottom: 2%;
                 }
 
@@ -5099,9 +5094,9 @@
                     margin-left: 0;
                     color: #0A81D1;
                     font-family: "Raleway Medium";
-                    font-size: 22px;
+                    font-size: 1.631vw;
                     font-weight: bold;
-                    line-height: 38px;
+                    line-height: 2.816vw;
                 }
 
 
@@ -5114,9 +5109,9 @@
                     position: relative;
                     color: #17A2FF;
                     font-family: "Raleway Medium";
-                    font-size: 32px;
+                    font-size: 2.37vw;
                     font-weight: 900;
-                    line-height: 46px;
+                    line-height: 3.5vw;
                 }
 
                 .iconMaisMenos{
@@ -5127,7 +5122,7 @@
                 .zonaPublicacoes{
                     color: #062940;
                     font-family: "Raleway Medium";
-                    font-size: 22px;
+                    font-size: 1.631vw;
                     font-weight: 600;
                     line-height: 36px;
                 }
@@ -5141,21 +5136,22 @@
 
             /*GALERIA*/
                 .contentorDaGaleria{
-                    position: relative;
-                    margin-top: 7%;
-                    margin-left: 10%;
-                    width: 75%;
-                    height:auto;
-                    margin-bottom: 20%;
+                    height: auto;
+                    margin: 10%;
+                }
+
+                .contentorDaGaleria .carregarMais {
+                    background-color: #17A2FF;
+                    margin-top: 5%;
                 }
 
                 .galeria {
                     position: relative;
                     color: #062940;
                     font-family: "Raleway ExtraBold";
-                    font-size: 58px;
+                    font-size: 4.3vw;
                     font-weight: 900;
-                    line-height: 74px;
+                    line-height: 5.486vw;
                     margin-bottom: 2%;
                 }
 
@@ -5164,9 +5160,9 @@
                     margin-left: 0;
                     color: #0A81D1;
                     font-family: "Raleway Medium";
-                    font-size: 22px;
+                    font-size: 1.631vw;
                     font-weight: bold;
-                    line-height: 38px;
+                    line-height: 2.816vw;
                 }
 
                 .btn_galeria {
@@ -5181,7 +5177,7 @@
                     background-color: #17A2FF;
                     color: #FFFFFF;
                     font-family: "Raleway Medium";
-                    font-size: 18px;
+                    font-size: 1.334vw;
                     font-weight: 900;
                     cursor: pointer;
                 }
@@ -5191,24 +5187,32 @@
                     max-height: 80vh;
                 }
 
-
         /*SMARTPHONE*/
             @media only screen and (max-width: 600px) {
+                .divulgacaoPag .contentorDasNoticias {
+                    margin: 0 auto;
+                }                
+                
                 /*NOTICIAS*/
                     .noticias{
                         font-size: 10vw !important;
+                        line-height: normal;
                     }
 
                     .eventos{
                         font-size: 10vw !important;
+                        line-height: normal;
+                        margin-top: 15%;
                     }
 
                     .publicacoes{
                         font-size: 10vw !important;
+                        line-height: normal;
                     }
 
                     .tituloSeccao{
                         font-size: 6vw !important;
+                        line-height: normal;
                     }
 
                     .contentorDasNoticias {
@@ -5229,19 +5233,21 @@
                     }
 
                     .zonaTextoNoticia {
-                        width: 100% !important;
+                        width: 90% !important;
                         height: auto !important;
 
                     }
 
                     .postadoNoticia{
                         font-size: 4vw !important;
+                        line-height: normal;
                         margin-left: 1vw  !important;
                         margin-right: 1vw  !important;
                     }
 
                     .tituloNoticia{
                         font-size: 6vw !important;
+                        line-height: normal;
                         line-height: 8vw !important;
                         margin-left: 1vw  !important;
                         margin-right: 1vw  !important;
@@ -5249,6 +5255,7 @@
 
                     .textoNoticia{
                         font-size: 4.5vw !important;
+                        line-height: normal;
                         line-height: 8vw !important;
                         margin-left: 1vw  !important;
                         margin-right: 1vw !important;
@@ -5256,10 +5263,23 @@
 
                     .mostrarMais{
                         font-size: 6vw !important;
+                        line-height: normal;
                         margin: 0 auto;
                         text-align: center;
                     }
 
+                    .galeria {
+                        font-size: 10vw !important;
+                        line-height: normal;
+                    }
+
+                    .introGaleria {
+                        font-size: 6vw !important;
+                        line-height: normal;
+                        line-height: 8vw !important;
+                        width: 100%;
+                        margin-bottom: 20% !important;
+                    }
                 /*EVENTOS*/
                     .contentorDosEventos {
                         margin: 0 auto;
@@ -5275,27 +5295,29 @@
                     }
 
                     .zonaTextoEvento{
-                        float: left !important;
+                        float: none;
                         width: 100% !important;
                         height: auto !important;
                     }
 
                     .imagemEventos{
-                        float: left !important;
-                        width: 100% !important;
-                        height: 40vh !important;
+                        float: none;
+                        width: 50% !important;
+                        height: 60vw !important;
                         margin-top: 5% !important;
                         background-size: contain;
                     }
 
                     .proximoEvento{
                         font-size: 4vw !important;
+                        line-height: normal;
                         margin-left: 1vw  !important;
                         margin-right: 1vw  !important;
                     }
 
                     .dataEvento{
                         font-size: 8vw !important;
+                        line-height: normal;
                         margin-left: 1vw  !important;
                         margin-right: 1vw  !important;
                         margin-top: 3% !important;
@@ -5303,6 +5325,7 @@
 
                     .horasEvento{
                         font-size: 6vw !important;
+                        line-height: normal;
                         margin-left: 1vw  !important;
                         margin-right: 1vw  !important;
                         margin-top: 3% !important;
@@ -5310,6 +5333,7 @@
 
                     .localEvento{
                         font-size: 6vw !important;
+                        line-height: normal;
                         margin-left: 1vw  !important;
                         margin-right: 1vw  !important;
                         margin-top: 3% !important;
@@ -5317,6 +5341,7 @@
 
                     .tituloEvento{
                         font-size: 8vw !important;
+                        line-height: normal;
                         margin-left: 1vw  !important;
                         margin-right: 1vw  !important;
                         margin-top: 6% !important;
@@ -5324,6 +5349,7 @@
 
                     .descricaoEvento{
                         font-size: 6vw !important;
+                        line-height: normal;
                         margin-left: 1vw  !important;
                         margin-right: 1vw  !important;
                         margin-top: 3% !important;
@@ -5336,6 +5362,7 @@
 
                     .tituloPublicacao{
                         font-size: 6vw !important;
+                        line-height: normal;
                         line-height: 8vw !important;
                         width: 150% !important;
                         margin-bottom: 20% !important;
@@ -5353,6 +5380,7 @@
 
                     .tituloSeccao{
                         font-size: 6vw !important;
+                        line-height: normal;
                         line-height:13vw !important ;
                         width: 100% !important;
                         letter-spacing: 0.3vw !important;
@@ -5360,5 +5388,6 @@
 
                     .zonaPublicacoes{
                         font-size: 5vw !important;
+                        line-height: normal;
                     }
             }
