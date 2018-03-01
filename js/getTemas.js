@@ -98,9 +98,14 @@ function addArtigoEmDestaque(imagem, titulo, texto, url) {
 
 function addBlocoArtigo(i, imagem, titulo, texto, url, extra) {
     var inserirNaColuna = ".col1";
-    if (i % 3 == 0)
-        inserirNaColuna = ".col3";
-    else if (i % 2 == 0)
+
+    if ($(document).width() > 320) {
+        if (i % 3 == 0)
+            inserirNaColuna = ".col3";
+        else if (i % 2 == 0)
+            inserirNaColuna = ".col2";
+    } //if
+    else
         inserirNaColuna = ".col2";
 
     var bloco =

@@ -60,9 +60,14 @@ function addArtigoEmDestaque(tema, imagem, titulo, texto, url) {
 
 function addBlocoArtigo(i, tema, imagem, titulo, texto, url) {
     var inserirNaColuna = ".col1";
-    if (i % 3 == 0)
-        inserirNaColuna = ".col3";
-    else if (i % 2 == 0)
+    
+    if ($(document).width() > 320) {
+        if (i % 3 == 0)
+            inserirNaColuna = ".col3";
+        else if (i % 2 == 0)
+            inserirNaColuna = ".col2";
+    } //if
+    else
         inserirNaColuna = ".col2";
 
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase();
