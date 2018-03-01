@@ -38,6 +38,10 @@ $(document).ready(function () {
                     addNoticiasRelacionadas(noticiaR.imagemCapa, noticiaR.titulo, noticiaR.resumo, noticiaR.numeroNoticia);
                 }
                 addClear(".noticiasRelacionadas");
+
+                $(".btn_voltarInicio").click(function () {
+                    window.location.href = "divulgacao.html";
+                });
             } //else
         }, //success
         error: function (args) {

@@ -231,7 +231,7 @@ function getVideos(classe, x) {
                         listaDeVideos[i].texto
                     );
                 } else {
-                    $(".zonaDeVideos .carregarMais").css('visibility', 'hidden');
+                    $("#zonaDeVideos .carregarMais").css('visibility', 'hidden');
                     break;
                 }
             } //for
