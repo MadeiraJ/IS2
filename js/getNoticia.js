@@ -20,21 +20,28 @@ $(document).ready(function () {
         data: {noticia : getUrlParameter('noticia')},
         dataType: "json",
         success: function (noticia) {
-            $(document.body).addClass(noticia.tipo);
-            $(".tituloZonaConteudo .destaquesTitulo").append(noticia.titulo);
-            $(".tituloZonaConteudo .detalhe .autor").append(`Autor: <br>${noticia.autor}`);
-            $(".tituloZonaConteudo .detalhe .data").append(`Publicado em<br>${noticia.data}`);
-            $(".tituloZonaConteudo .imagemCapa").append(`<img src="${noticia.imagemCapa}">`);
-            $(".conteudo").append(noticia.texto);
+            if(!noticia)
+                window.location.href = "404.html";
+            else {
+                $(document.body).addClass(noticia.tipo);
+                $(".tituloZonaConteudo .destaquesTitulo").append(noticia.titulo);
+                $(".tituloZonaConteudo .detalhe .autor").append(`Autor: <br>${noticia.autor}`);
+                $(".tituloZonaConteudo .detalhe .data").append(`Publicado em<br>${noticia.data}`);
+                $(".tituloZonaConteudo .imagemCapa").append(`<img src="${noticia.imagemCapa}">`);
+                $(".conteudo").append(noticia.texto);
 
-            noticiasRelacionadas = JSON.parse(noticia.noticiasRelacionadas)
-            for (var i = 0; i < noticiasRelacionadas.length; i++) {
-                var noticiaR = noticiasRelacionadas[i];
-                noticiaR = JSON.parse(noticiaR);
-                addNoticiasRelacionadas(noticiaR.imagemCapa, noticiaR.titulo, noticiaR.resumo, noticiaR.numeroNoticia);
-            }
-            addClear(".noticiasRelacionadas");
-        }
+                noticiasRelacionadas = JSON.parse(noticia.noticiasRelacionadas)
+                for (var i = 0; i < noticiasRelacionadas.length; i++) {
+                    var noticiaR = noticiasRelacionadas[i];
+                    noticiaR = JSON.parse(noticiaR);
+                    addNoticiasRelacionadas(noticiaR.imagemCapa, noticiaR.titulo, noticiaR.resumo, noticiaR.numeroNoticia);
+                }
+                addClear(".noticiasRelacionadas");
+            } //else
+        }, //success
+        error: function (args) {
+            window.location.href = "404.html";
+        } //error
     })
 });
 
