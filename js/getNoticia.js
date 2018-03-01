@@ -24,6 +24,7 @@ $(document).ready(function () {
                 window.location.href = "404.html";
             else {
                 $(document.body).addClass(noticia.tipo);
+                $(document).attr('title', `Noticia: ${noticia.titulo}`);
                 $(".tituloZonaConteudo .destaquesTitulo").append(noticia.titulo);
                 $(".tituloZonaConteudo .detalhe .autor").append(`Autor: <br>${noticia.autor}`);
                 $(".tituloZonaConteudo .detalhe .data").append(`Publicado em<br>${noticia.data}`);
@@ -48,7 +49,7 @@ $(document).ready(function () {
 function addNoticiasRelacionadas(imagem, titulo, texto, url) {
     var bloco =
             `<a href="noticia.html?noticia=${url}">
-                <div class="bloco-1 hvr-grow">
+                <div class ="bloco-1 post hvr-grow">
                     <img src="${imagem}">
                     <div class="zonaTexto">
                         <p class="tituloArtigo">${titulo}</p>
@@ -56,7 +57,7 @@ function addNoticiasRelacionadas(imagem, titulo, texto, url) {
                     </div>
                 </div>
             </a>`;
-    $(".noticiasRelacionadas").append(bloco);
+    $(bloco).insertBefore(".btn_voltarInicio");
 }
 
 function addClear(classeCss) {
