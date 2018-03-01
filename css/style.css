@@ -2670,6 +2670,10 @@
 
         /*SMARTPHONE*/
             @media only screen and (max-width: 600px) {
+                .artigo .tituloZonaConteudo {
+                    width: 95%;
+                }
+
                 .artigo .tituloZonaConteudo .detalhe {
                     width: auto;
                 }
@@ -2714,18 +2718,24 @@
                 }
 
 
-            .hoverDefin:hover span {
-                width: auto;
-                min-width: 50vw;
-                left: 0;
-                font-size: 2.8vw;
-                line-height: 3.5vw;
-                margin: 0 auto;
-            }
+                .hoverDefin:hover span {
+                    width: auto;
+                    min-width: 50vw;
+                    left: 0;
+                    font-size: 2.8vw;
+                    line-height: 3.5vw;
+                    margin: 0 auto;
+                }
 
-            .hoverDefin span::after {
-                left: 10%;
-            }
+                .hoverDefin span::after {
+                    left: 10%;
+                }
+
+                .btn_voltarInicio {
+                    font-size: 4vw;
+                    padding: 5% 3% 5% 3%;
+                    cursor: pointer;
+                }
         }
 
     /*INICIO PAGINA NOTICIA*/
@@ -4279,7 +4289,8 @@
                 }
 
                 .forum .div_topico .tag {
-                    padding: 2% !important;
+                    padding: 2%;
+                    float: none;
                 }
 
                 .forum .div_topico .tag img {
@@ -4291,7 +4302,7 @@
                 }
 
                 .zonaNrRespostas {
-                    float: left !important;
+                    float: none;
                 }
 
                 .topicoNrRespostas {
@@ -4299,9 +4310,10 @@
                 }
 
                 .textoTopicos {
-                    margin-top: 25% !important;
-                    font-size: 7vw !important;
-                    line-height: 10vw !important;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    font-size: 7vw;
+                    line-height: 10vw;
                 }
 
                 .zonaDiaHoraEstado{
@@ -4309,22 +4321,31 @@
                 }
 
                 .textoDiaHora {
-                    font-size: 5vw !important;
-                    float: none !important;
+                    font-size: 5vw;
+                    float: none;
+                    line-height: normal;
                 }
 
                 .topicoAtivo {
-                    font-size: 5vw !important;
-                    position: absolute !important;
-                    margin-top: 1% !important;
-                    margin-left: 2% !important;
+                    font-size: 5vw;
+                    line-height: normal;
+                    position: relative;
+                    margin-top: 1%;
+                    margin-left: 2%;
+                    float: none;
                 }
 
                 .topicoFechado {
-                    font-size: 5vw !important;
-                    position: absolute !important;
-                    margin-top: 1% !important;
-                    margin-left: 2% !important;
+                    font-size: 5vw;
+                    line-height: normal;
+                    position: relative;
+                    margin-top: 1%;
+                    margin-left: 2%;
+                    float: none;
+                }
+
+                .div_topico.forum_consumos a {
+                    display: inline-block;
                 }
 
                 .zonaMudancaPaginas {
@@ -5046,6 +5067,7 @@
                     background-size: cover;
                     float: left;
                     border-radius: 0 6px 6px 0;
+                    cursor: pointer;
                 }
 
                 .proximoEvento{
@@ -5175,6 +5197,8 @@
                 .contentorDaGaleria .carregarMais {
                     background-color: #17A2FF;
                     margin-top: 5%;
+                    margin: 0;
+                    margin-top: 5%;
                 }
 
                 .galeria {
@@ -5220,8 +5244,6 @@
                 }
 
         /*SMARTPHONE*/
-
-
             @media only screen and (max-width: 600px) {
                 .divulgacaoPag .contentorDasNoticias {
                     margin: 0 auto;
@@ -5425,5 +5447,15 @@
                     .zonaPublicacoes{
                         font-size: 5vw !important;
                         line-height: normal;
+                    }
+
+                    .contentorDaGaleria .carregarMais {
+                        margin: 0 auto;
+                        margin-top: 5%;
+                    }
+
+                    .divulgacaoPag #fotoDetalhe #fechar {
+                        width: 6vw;
+                        height: 6vw;
                     }
             }
