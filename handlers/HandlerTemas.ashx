@@ -37,6 +37,7 @@ public class TemasHandler : IHttpHandler {
     public void getDestaques(HttpContext context) {
         String json = "";
         var listaDeDestaques = new List<String>();
+        var listaDeDestaquesTeste = new List<String>();
         var serializer = new JavaScriptSerializer();
 
         String tema = context.Request.Form["classe"].ToString();
@@ -55,16 +56,33 @@ public class TemasHandler : IHttpHandler {
         } //switch
 
         //Valores a serem apagados
-        for(int i = 0; i < numeroDeArtigosPedidos; i++)
-            listaDeDestaques.Add(
-                serializer.Serialize(
-                    new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", url = "1" }
-            ));
-        json = serializer.Serialize(listaDeDestaques);
+        try
+        {
+            for (int i = numeroArtigosRecebidos; i < numeroArtigosRecebidos + numeroDeArtigosPedidos; i++) {
+                if (i < 10)
+                {
+                     listaDeDestaques.Add(
+                        serializer.Serialize(
+                            new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", url = "1" }
+                     ));
+                }                                
+                else
+                {
+                    listaDeDestaques.Add(
+                        serializer.Serialize(null));
+                }
 
+            }
+            json = serializer.Serialize(listaDeDestaques);
 
-        context.Response.ContentType = "plain/text";
-        context.Response.Write(json);
+            context.Response.ContentType = "plain/text";
+            context.Response.Write(json);
+        }
+        catch (Exception ex)
+        {
+
+        }
+
     } //getDestaques
 
     /////////////////////////ARTIGO EM DESTAQUE/////////////////////////
@@ -122,17 +140,31 @@ public class TemasHandler : IHttpHandler {
         } //switch
 
         //Valores a serem apagados
-        for(int i = 0; i < numeroDeVideosPedidos; i++)
-            listaDeVideos.Add(
-                serializer.Serialize(
-                    new { link = @"https://www.youtube.com/watch?v=GMbn7JY9D1U&list=PLUvc3rGqV5iOiYzMuKRaSU2KW3KiWDw7L&t=0s&index=1", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
-            ));
-            
-        json = serializer.Serialize(listaDeVideos);
+        try
+        {
+            for (int i = numeroVideosRecebidos; i < numeroVideosRecebidos + numeroDeVideosPedidos; i++) {
+                if (i < 10)
+                {
+                    listaDeVideos.Add(
+                        serializer.Serialize(
+                            new { link = @"https://www.youtube.com/watch?v=GMbn7JY9D1U&list=PLUvc3rGqV5iOiYzMuKRaSU2KW3KiWDw7L&t=0s&index=1", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
+                    ));
+                }                                
+                else
+                {
+                    listaDeVideos.Add(
+                        serializer.Serialize(null));
+                }
+            }
+            json = serializer.Serialize(listaDeVideos);
 
+            context.Response.ContentType = "plain/text";
+            context.Response.Write(json);
+        }
+        catch (Exception ex)
+        {
 
-        context.Response.ContentType = "plain/text";
-        context.Response.Write(json);
+        }
     } //getVideos
 
     /////////////////////////DOCUMENTOS/////////////////////////

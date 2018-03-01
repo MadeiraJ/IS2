@@ -37,23 +37,39 @@ public class HandlerDivulgacao : IHttpHandler {
         var numeroNoticiasRecebidos = Convert.ToInt32(context.Request.Form["numeroNoticiasRecebidos"].ToString());
         var numeroDeNoticiasPedidos = Convert.ToInt32(context.Request.Form["numeroDeNoticiasPedidos"].ToString());
         //Valores a serem apagados
-        for (int i = 0; i < numeroDeNoticiasPedidos; i++)
-            listaDeNoticias.Add(
-                serializer.Serialize(
-                    new
-                    {
-                        imagem = "imagens/alimentacao_3.jpg",
-                        data = "12 Janeiro 2017",
-                        titulo = "Estudos revelam que o YourPEL faz bem ao cérebro",
-                        texto = "Segundo os estudiosos, cerca de 23% das crianças entram na escola obesas…",
-                        url = "1"
-                    }
-            ));
 
-        json = serializer.Serialize(listaDeNoticias);
+        try
+        {
+            for (int i = numeroNoticiasRecebidos; i < numeroNoticiasRecebidos + numeroDeNoticiasPedidos; i++) {
+                if (i < 10)
+                {
+                    listaDeNoticias.Add(
+                        serializer.Serialize(
+                            new
+                            {
+                                imagem = "imagens/alimentacao_3.jpg",
+                                data = "12 Janeiro 2017",
+                                titulo = "Estudos revelam que o YourPEL faz bem ao cérebro",
+                                texto = "Segundo os estudiosos, cerca de 23% das crianças entram na escola obesas…",
+                                url = "1"
+                            }
+                     ));
+                }                                
+                else
+                {
+                    listaDeNoticias.Add(
+                        serializer.Serialize(null));
+                }
+            }
+            json = serializer.Serialize(listaDeNoticias);
 
-        context.Response.ContentType = "plain/text";
-        context.Response.Write(json);
+            context.Response.ContentType = "plain/text";
+            context.Response.Write(json);
+        }
+        catch (Exception ex)
+        {
+
+        }
     } //getNoticias
 
     /////////////////////////EVENTOS/////////////////////////
@@ -67,23 +83,38 @@ public class HandlerDivulgacao : IHttpHandler {
         var numeroEventosRecebidos = Convert.ToInt32(context.Request.Form["numeroEventosRecebidos"].ToString());
         var numeroDeEventosPedidos = Convert.ToInt32(context.Request.Form["numeroDeEventosPedidos"].ToString());
         //Valores a serem apagados
-        for (int i = 0; i < numeroDeEventosPedidos; i++)
-            listaDeEventos.Add(
-                serializer.Serialize(
-                    new {
-                        data = "20 setembro ",
-                        horas = "14:30 - 17:30",
-                        local = "Escola Superior de Saúde de Santarém ",
-                        titulo = "Open Day",
-                        descricao = "Apresentação do projeto: Your PEL - Promover e Empoderar para a Literacia em saúde na população jovem",
-                        imagem = "imagens/evento1.png"
-                    }
-            ));
+        try
+        {
+            for (int i = numeroEventosRecebidos; i < numeroEventosRecebidos + numeroDeEventosPedidos; i++) {
+                if (i < 10)
+                {
+                    listaDeEventos.Add(
+                        serializer.Serialize(
+                            new {
+                                data = "20 setembro ",
+                                horas = "14:30 - 17:30",
+                                local = "Escola Superior de Saúde de Santarém ",
+                                titulo = "Open Day",
+                                descricao = "Apresentação do projeto: Your PEL - Promover e Empoderar para a Literacia em saúde na população jovem",
+                                imagem = "imagens/evento1.png"
+                            }
+                     ));                    
+                }                                
+                else
+                {
+                    listaDeEventos.Add(
+                        serializer.Serialize(null));
+                }
+            }
+            json = serializer.Serialize(listaDeEventos);
 
-        json = serializer.Serialize(listaDeEventos);
+            context.Response.ContentType = "plain/text";
+            context.Response.Write(json);
+        }
+        catch (Exception ex)
+        {
 
-        context.Response.ContentType = "plain/text";
-        context.Response.Write(json);
+        }
     } //getEventos
 
     /////////////////////////PUBLICAÇÕES/////////////////////////
