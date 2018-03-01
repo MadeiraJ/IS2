@@ -41,7 +41,7 @@ $(document).ready(function () {
                 addDocumento(
                     classe,
                     listaDeDocumentos[i].nome,
-                    listaDeDocumentos[i].url
+                    listaDeDocumentos[i].link
                 );
             } //for
         } //success
@@ -58,7 +58,7 @@ $(document).ready(function () {
                 addLink(
                     classe,
                     listaDeLinks[i].nome,
-                    listaDeLinks[i].url
+                    listaDeLinks[i].link
                 );
             } //for
         } //success

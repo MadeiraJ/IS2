@@ -98,7 +98,7 @@ function addNoticia(imagem, data, titulo, texto, url) {
     var inserirNaColuna = ".contentorDasNoticias .mostrarMais";
 
     var noticia =
-        `<div class="hvr-grow wow fadeIn contentorNoticia" onclick="window.location='${url}';">
+        `<div class="hvr-grow wow fadeIn contentorNoticia" onclick="window.location='noticia.html?noticia=${url}';">
             <div class ="imagemNoticia" style="background-image: url('${imagem}');"></div>
             <div class ="zonaTextoNoticia">
                 <p class ="postadoNoticia">Postado a ${data}</p>
