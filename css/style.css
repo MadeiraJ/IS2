@@ -4084,7 +4084,7 @@
                 }
 
                 .search_bar:focus {
-                    width: 60%;
+                    width: 55%;
                     border: 2px solid #4bc4f3;
                     border-radius: 4px;
                 }
@@ -4267,8 +4267,133 @@
                     color: #BCE4FF;
                 }
 
-        /*SMARTPHONE*/
+        /*TABLET*/
+
+            @media only screen and (max-width:1100px) {
+                /*Forum index*/
+                .div_escolhaTipoTopico{
+                    width: 77vw; 
+                }
+
+                .forum .div_topico .tag .filtroTema {
+                    font-size: 1.3vw;
+                }
+
+                .topicoNrRespostas {
+                    font-size: 2vw;
+                }
+
+                .btn_novoTopico {
+                        font-size: 1.9vw;
+                   }
+
+                .textoTopicos {
+                    font-size: 2.3vw;
+                    line-height: 3vw;
+                }
+                
+
+                .topicoAtivo{
+                    font-size:2.2vw;
+                }
+              
+                .topicoFechado{
+                    font-size:2.2vw;
+                }
+
+                .textoDiaHora{
+                    font-size:2.2vw;
+                    line-height: 3vw;
+                }
+
+                .zonaMudancaPaginas {
+                    margin-left: 20vw;
+                }
+
+                .search_bar{
+                    font-size:2.2vw;
+                }
+                
+                /*Forum novo topico*/
+                .round label {
+                    margin-top:30%;
+                }
+
+                .novoTopico {
+                    font-size: 2.6vw !important;
+                }
+
+                .textoTituloNovoTopico {
+                    font-size:2vw !important;
+                }
+
+                .textoEscolha {
+                    font-size: 1.6vw !important;
+                }
+
+                .textoDescricao {
+                    font-size: 2vw !important;
+                }
+
+                .div_postarCancelar {
+                    width:20vw !important;
+                }
+
+                .cancelar {
+                    font-size: 2vw !important;
+                }
+
+                .btn_postar {
+                    width:8vw !important;
+                    height:4vw !important;
+                    font-size: 2vw !important;
+                }
+
+                /*Forum Topico Aberto*/
+
+                .tituloTopico {
+                    font-size:2.5vw !important;
+                }
+
+                .textoResposta {
+                    font-size:2vw !important;
+                }
+
+                .dataDescricao {
+                    font-size: 1.7vw !important;
+                }
+
+                .div_Respostas {
+                    margin-top:8vw !important;
+                }
+
+                .dataResposta {
+                    font-size: 1.7vw !important;
+                }
+
+                .quemRespondeu {
+                    font-size: 1.7vw !important;
+                }
+
+                .linkVoltarLista {
+                    font-size: 1.7vw !important;
+                }
+
+                .topicoNrRespostasAberto {
+                    font-size: 1.6vw !important;
+                }
+            }
+
+            /*SMARTPHONE*/
             @media only screen and (max-width: 600px) {
+                .div_escolhaTipoTopico{
+                    width: auto; 
+                }
+
+                .round label {
+                    margin-top: 50% !important;
+                }
+
                 .div_topico {
                     margin-bottom: 7% !important;
                 }
@@ -4283,10 +4408,14 @@
                 }
 
                 .search_bar {
-                    margin-top: 10% !important;
-                    width: 30% !important;
+                    margin-top: 8% !important;
+                    width: 60% !important;
                     margin-left: 5% !important;
+                    padding: 10px 25px 10px 40px;
+                    font-size: 14px;
                 }
+
+               
 
                 .forum .div_topico .tag {
                     padding: 2%;
@@ -4589,20 +4718,20 @@
 
 
                 .tituloTopico{
-                    font-size: 6vw !important;
+                    font-size: 5vw !important;
                     margin-bottom: 2%;
                 }
 
                 .topicoNrRespostasAberto{
-                    font-size: 5vw !important;
+                    font-size: 4vw !important;
                 }
 
                 .div_Respostas{
-                    margin-top: 25% !important;
+                    margin-top: 30% !important;
                 }
 
                 .div_descricao{
-                    margin-top: 25% !important;
+                    margin-top: 10% !important;
                 }
 
                 .zonaNrRespostasAberto{
@@ -4610,20 +4739,24 @@
                 }
 
                 .dataResposta{
-                    font-size: 5.5vw !important;
+                    font-size: 3vw !important;
                     margin-right: 5vw !important;
                     margin-bottom: 6%;
                 }
 
+                .dataDescricao {
+                    font-size: 3vw !important;
+                    margin-top: 3vw !important;
+                }
                 .textoResposta{
-                    font-size: 5vw !important;
+                    font-size: 4vw !important;
                     margin-left: 3vw !important;
                     margin-right: 3vw !important;
                 }
 
                 .quemRespondeu{
                     margin-top: 6% !important;
-                    font-size: 5vw !important;
+                    font-size: 3vw !important;
                     margin-left: 3vw !important;
                     margin-right: 3vw !important;
                 }
@@ -4915,17 +5048,17 @@
 
                 .cancelar{
                     margin-top: 3%;
-                    font-size: 5vw;
+                    font-size: 4vw !important;
                     line-height: normal;
                 }
 
                 .btn_postar {
-                    width: auto;
-                    height: auto;
-                    font-size: 5vw;
-                    padding-left: 5%;
-                    padding-right: 5%;
-                    padding: 3% 5% 3% 5%;
+                    width: auto !important;
+                    height: auto !important;
+                    font-size: 4vw !important;
+                    padding-left: 6%!important;
+                    padding-right: 6% !important;
+                    padding: 3% 5% 3% 5% !important; 
                 }
             }
 
