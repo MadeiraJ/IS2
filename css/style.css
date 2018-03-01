@@ -2744,6 +2744,14 @@
                 font-family: "Raleway Medium";
             }
 
+            .noticia .main{
+                padding-bottom: 0%;
+            }
+
+            .noticia .tituloZonaConteudo{
+                background-color: #F7FAFC;
+            }
+
             .noticia .tituloZonaConteudo .detalhe{
                 width: 16%;
                 font-size: 1.186vw;
@@ -2839,8 +2847,21 @@
                 margin-right: 1%;
             }
 
+            .noticia .noticiasRelacionadas{
+                background-color: #F7FAFC;
+                padding-bottom: 7%;
+            }
+
+            .noticia .noticiasRelacionadas h1, .noticia .noticiasRelacionadas .post{
+                color: var(--geral-cor2);
+            }
+
+            .noticia .noticiasRelacionadas .btn_voltarInicio{
+                background-color: var(--geral-cor2);
+            }
+
             .noticia .noticiasRelacionadas img {
-                width: 100%;'is'
+                width: 100%;
             }
 
             .noticia .noticiasRelacionadas .bloco-1 .zonaTexto{

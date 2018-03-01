@@ -49,8 +49,8 @@ function verCores(elemento){
 
 function mudarInfo(infoDoSite, elemento){
   if(infoDoSite && document.body.className != "paginaTema destaques"){
-    titulo.innerHTML = elemento.firstElementChild.children[1].innerHTML;
-    descricao.innerHTML = elemento.firstElementChild.children[2].innerHTML;
+    titulo.innerHTML = elemento.firstElementChild.children[2].innerHTML;
+    descricao.innerHTML = elemento.firstElementChild.children[3].innerHTML;
   } else {
     titulo.innerHTML = elemento.snippet.title;
     descricao.innerHTML = elemento.snippet.description;
