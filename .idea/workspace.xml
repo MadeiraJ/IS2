@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a25bfe7-bd6b-4626-8347-acd1d59154d8" name="Default" comment="corrigido marks, links, seta forum Destaques, links parceiros, parcerias para parceiros">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/404.html" afterPath="$PROJECT_DIR$/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/destaques.html" afterPath="$PROJECT_DIR$/destaques.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/detalheVideo.js" afterPath="$PROJECT_DIR$/js/detalheVideo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getNoticia.js" afterPath="$PROJECT_DIR$/js/getNoticia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/noticia.html" afterPath="$PROJECT_DIR$/noticia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handlers/HandlerTemas.ashx" afterPath="$PROJECT_DIR$/handlers/HandlerTemas.ashx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/getTemas.js" afterPath="$PROJECT_DIR$/js/getTemas.js" />
     </list>
     <ignored path="Versão 1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +50,8 @@
       <file leaf-file-name="sobre.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sobre.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9357798" vertical-offset="2499" max-vertical-offset="3893">
-              <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
+            <state vertical-scroll-proportion="-0.09357798" vertical-offset="2907" max-vertical-offset="3893">
+              <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -383,7 +378,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -832,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sobre.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9357798" vertical-offset="2499" max-vertical-offset="3893">
-          <caret line="117" column="38" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
+        <state vertical-scroll-proportion="-0.09357798" vertical-offset="2907" max-vertical-offset="3893">
+          <caret line="168" column="14" selection-start-line="168" selection-start-column="14" selection-end-line="168" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
