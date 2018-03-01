@@ -24,28 +24,35 @@ $(document).ready(function () {
         data: {artigo : getUrlParameter('artigo')},
         dataType: "json",
         success: function (artigo) {
-            $(document.body).addClass((artigo.tipo).toLowerCase());
-            $(document).attr('title', `Artigo: ${artigo.titulo}`);
-            $(".tituloZonaConteudo .destaquesTitulo").append(artigo.titulo);
-            $(".tituloZonaConteudo .detalhe .autor").append(`Palavras de<br>${artigo.autor}`);
-            $(".tituloZonaConteudo .detalhe .data").append(`Publicado em<br>${artigo.data}`);
-            $(".tituloZonaConteudo .imagemCapa").append(`<img src="${artigo.imagemCapa}">`);
-            $(".conteudo").append(artigo.texto);
+            if(!artigo)
+                window.location.href = "404.html";
+            else {
+                $(document.body).addClass((artigo.tipo).toLowerCase());
+                $(document).attr('title', `Artigo: ${artigo.titulo}`);
+                $(".tituloZonaConteudo .destaquesTitulo").append(artigo.titulo);
+                $(".tituloZonaConteudo .detalhe .autor").append(`Palavras de<br>${artigo.autor}`);
+                $(".tituloZonaConteudo .detalhe .data").append(`Publicado em<br>${artigo.data}`);
+                $(".tituloZonaConteudo .imagemCapa").append(`<img src="${artigo.imagemCapa}">`);
+                $(".conteudo").append(artigo.texto);
 
-            montarConteudo(artigo.texto, artigo.tipo)
-            
-            artigosRelacionados = JSON.parse(artigo.artigosRelacionados)
-            for (var i = 0; i < artigosRelacionados.length; i++) {
-                var artigoR = artigosRelacionados[i];
-                artigoR = JSON.parse(artigoR);
-                addArtigoRelacionado(artigoR.imagemCapa, artigoR.titulo, artigoR.resumo, artigoR.numeroArtigo);
-            } //for
-            addClear(".outrosArtigos");
+                montarConteudo(artigo.texto, artigo.tipo)
+                
+                artigosRelacionados = JSON.parse(artigo.artigosRelacionados)
+                for (var i = 0; i < artigosRelacionados.length; i++) {
+                    var artigoR = artigosRelacionados[i];
+                    artigoR = JSON.parse(artigoR);
+                    addArtigoRelacionado(artigoR.imagemCapa, artigoR.titulo, artigoR.resumo, artigoR.numeroArtigo);
+                } //for
+                addClear(".outrosArtigos");
 
-            $(".btn_voltarInicio").click(function(){
-                window.location.href = (artigo.tipo).toLowerCase() + ".html";
-            });
-        } //success
+                $(".btn_voltarInicio").click(function(){
+                    window.location.href = (artigo.tipo).toLowerCase() + ".html";
+                });
+            } //else 
+        }, //success
+        error: function (args) {
+            window.location.href = "404.html";
+        } //error
     }) //ajax  
 }); //document
 
