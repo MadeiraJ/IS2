@@ -46,13 +46,18 @@ function getNoticias(x){
         success: function (listaNoticias) {
             for (var i = 0; i < listaNoticias.length; i++) {
                 listaNoticias[i] = JSON.parse(listaNoticias[i]);
-                addNoticia(
-                    listaNoticias[i].imagem,
-                    listaNoticias[i].data,
-                    listaNoticias[i].titulo,
-                    listaNoticias[i].texto,
-                    listaNoticias[i].url
-                );                
+                if (listaNoticias[i] != null) {
+                    addNoticia(
+                        listaNoticias[i].imagem,
+                        listaNoticias[i].data,
+                        listaNoticias[i].titulo,
+                        listaNoticias[i].texto,
+                        listaNoticias[i].url
+                    );
+                } else {
+                    $(".contentorDasNoticias .mostrarMais").css('visibility', 'hidden');
+                    break;
+                }
             }//for
             numeroNoticias += listaNoticias.length;
         }//success
@@ -71,14 +76,19 @@ function getEventos(x) {
         success: function (listaEventos) {
             for (var i = 0; i < listaEventos.length; i++) {
                 listaEventos[i] = JSON.parse(listaEventos[i]);
-                addEvento(
-                   listaEventos[i].data,
-                   listaEventos[i].horas,
-                   listaEventos[i].local,
-                   listaEventos[i].titulo,
-                   listaEventos[i].descricao,
-                   listaEventos[i].imagem
-                );
+                if (listaEventos[i] != null) {
+                    addEvento(
+                       listaEventos[i].data,
+                       listaEventos[i].horas,
+                       listaEventos[i].local,
+                       listaEventos[i].titulo,
+                       listaEventos[i].descricao,
+                       listaEventos[i].imagem
+                    );
+                } else {
+                    $(".contentorDosEventos .mostrarMais").css('visibility', 'hidden');
+                    break;
+                }               
             }//for
             numeroEventos += listaEventos.length;
             $(".imagemEventos").click(function () {

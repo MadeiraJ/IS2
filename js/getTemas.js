@@ -188,23 +188,28 @@ function getDestaques(classe, x){
         success: function (listaDestaques) {
             for (var i = 0; i < listaDestaques.length; i++) {
                 listaDestaques[i] = JSON.parse(listaDestaques[i]);
-                var tipoBloco =  listaDestaques[i].tipo;
-                if(tipoBloco == "ARTIGO"){
-                    addBlocoArtigo(
-                        i + 1,
-                        listaDestaques[i].imagem,
-                        listaDestaques[i].titulo,
-                        listaDestaques[i].texto,
-                        listaDestaques[i].url
-                    );
-                } //if
+                if (listaDestaques[i] != null) {
+                    var tipoBloco = listaDestaques[i].tipo;
+                    if (tipoBloco == "ARTIGO") {
+                        addBlocoArtigo(
+                            i + 1,
+                            listaDestaques[i].imagem,
+                            listaDestaques[i].titulo,
+                            listaDestaques[i].texto,
+                            listaDestaques[i].url
+                        );
+                    } //if
 
-                else if(tipoBloco == "SABIAS-QUE"){
-                    addBlocoSabiasQue(
-                        i + 1,
-                        listaDestaques[i].texto
-                    );
-                } //else if
+                    else if (tipoBloco == "SABIAS-QUE") {
+                        addBlocoSabiasQue(
+                            i + 1,
+                            listaDestaques[i].texto
+                        );
+                    } //else if
+                } else {
+                    $(".conteudo .carregarMais").css('visibility', 'hidden');
+                    break;
+                }
             } //for
             numeroDestaques += listaDestaques.length;
         } //success
@@ -224,11 +229,16 @@ function getVideos(classe, x) {
         success: function (listaDeVideos) {
             for (var i = 0; i < listaDeVideos.length; i++) {
                 listaDeVideos[i] = JSON.parse(listaDeVideos[i]);
-                addVideo(
-                    listaDeVideos[i].link,
-                    listaDeVideos[i].titulo,
-                    listaDeVideos[i].texto
-                );
+                if (listaDeVideos[i] != null) {
+                    addVideo(
+                        listaDeVideos[i].link,
+                        listaDeVideos[i].titulo,
+                        listaDeVideos[i].texto
+                    );
+                } else {
+                    $("#zonaDeVideos .carregarMais").css('visibility', 'hidden');
+                    break;
+                }
             } //for
             addClear('.listaVideos');
             numeroVideos += listaDeVideos.length;
