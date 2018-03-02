@@ -4414,6 +4414,13 @@
 
             /*SMARTPHONE*/
             @media only screen and (max-width: 600px) {
+
+                .erro a.carregarMais{
+                    width: 40vw !important;
+                    height: 5vw !important;
+                    margin-top: 10vw !important;
+                }
+
                 .div_escolhaTipoTopico{
                     width: auto; 
                 }
