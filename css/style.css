@@ -5373,7 +5373,7 @@
                     margin-top: 5%;
                 }
 
-                .galeria {
+                .divulgacaoPag .galeria {
                     position: relative;
                     color: #062940;
                     font-family: "Raleway ExtraBold";
@@ -5496,7 +5496,7 @@
                         text-align: center;
                     }
 
-                    .galeria {
+                    .divulgacaoPag .galeria {
                         font-size: 10vw !important;
                         line-height: normal;
                     }

@@ -197,36 +197,41 @@ function getDestaques(x) {
         success: function (listaDestaques) {
             for (var i = 0; i < listaDestaques.length; i++) {
                 listaDestaques[i] = JSON.parse(listaDestaques[i]);
-                var tipoBloco = listaDestaques[i].tipo;
-                if (tipoBloco == "ARTIGO") {
-                    addBlocoArtigo(
-                        i + 1,
-                        listaDestaques[i].tema,
-                        listaDestaques[i].imagem,
-                        listaDestaques[i].titulo,
-                        listaDestaques[i].texto,
-                        listaDestaques[i].url
-                    );
-                } //if
+                if (listaDestaques[i] != null) {
+                    var tipoBloco = listaDestaques[i].tipo;              
+                    if (tipoBloco == "ARTIGO") {
+                        addBlocoArtigo(
+                            i + 1,
+                            listaDestaques[i].tema,
+                            listaDestaques[i].imagem,
+                            listaDestaques[i].titulo,
+                            listaDestaques[i].texto,
+                            listaDestaques[i].url
+                        );
+                    } //if
 
-                else if (tipoBloco == "SABIAS-QUE") {
-                    addBlocoSabiasQue(
-                        i + 1,
-                        listaDestaques[i].tema,
-                        listaDestaques[i].imagem,
-                        listaDestaques[i].texto
-                    );
-                } //else if
+                    else if (tipoBloco == "SABIAS-QUE") {
+                        addBlocoSabiasQue(
+                            i + 1,
+                            listaDestaques[i].tema,
+                            listaDestaques[i].imagem,
+                            listaDestaques[i].texto
+                        );
+                    } //else if
                 
-                else if (tipoBloco == "VIDEO") {
-                    addBlocoVideo(
-                        i + 1,
-                        listaDestaques[i].tema,
-                        listaDestaques[i].link,
-                        listaDestaques[i].titulo,
-                        listaDestaques[i].texto
-                    );
-                } //else if
+                    else if (tipoBloco == "VIDEO") {
+                        addBlocoVideo(
+                            i + 1,
+                            listaDestaques[i].tema,
+                            listaDestaques[i].link,
+                            listaDestaques[i].titulo,
+                            listaDestaques[i].texto
+                        );
+                    } //else if
+                } else {
+                    $(".listaDestaques .carregarMais").css('visibility', 'hidden');
+                    break;
+                }
             } //for
             numeroDestaques += listaDestaques.length;
         } //sucess
@@ -246,12 +251,17 @@ function getVideos(x) {
         success: function (listaDeVideos) {
             for (var i = 0; i < listaDeVideos.length; i++) {
                 listaDeVideos[i] = JSON.parse(listaDeVideos[i]);
-                addVideo(
-                    listaDeVideos[i].tema,
-                    listaDeVideos[i].link,
-                    listaDeVideos[i].titulo,
-                    listaDeVideos[i].texto
-                );
+                if (listaDeVideos[i] != null) {
+                    addVideo(
+                        listaDeVideos[i].tema,
+                        listaDeVideos[i].link,
+                        listaDeVideos[i].titulo,
+                        listaDeVideos[i].texto
+                    );
+                } else {
+                    $(".zonaVideos .carregarMais").css('visibility', 'hidden');
+                    break;
+                }
             } //for
             addClear('.listaVideos');
             numeroVideos += listaDeVideos.length;
