@@ -41,10 +41,18 @@ public class HandlerDestaques : IHttpHandler {
             for (int i = numeroArtigosRecebidos; i < numeroArtigosRecebidos + numeroDeArtigosPedidos; i++) {
                 if (i < 20)
                 {
-                     listaDeDestaques.Add(
+                    /*listaDeDestaques.Add(
                         serializer.Serialize(
                             new { tema = "ALIMENTACAO", tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo Alimentação", texto = "Isto é texto Alimentação", url = "1" }
-                    ));
+                    ));*/
+                    listaDeDestaques.Add(
+                        serializer.Serialize(
+                            new { tema = "ALIMENTACAO", tipo = "SABIAS-QUE", texto = "Isto é texto" }
+                     ));
+                    /*listaDeDestaques.Add(
+                        serializer.Serialize(
+                            new { tema = "ALIMENTACAO", tipo = "VIDEO", link = @"https://www.youtube.com/watch?v=3M_5oYU-IsU&list=PLJQeCC1As9Poqoy_3R13mI1ReVD-P-bqt", titulo = "Man never hot", texto = "The thing goes skraaaaa" }
+                    ));*/
                 }                                
                 else
                 {
