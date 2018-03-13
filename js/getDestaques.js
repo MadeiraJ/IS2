@@ -268,3 +268,21 @@ function getVideos(x) {
         } //sucess
     }); //ajax
 } //getVideos
+
+function emQueColunaDeveriaAdicionar(nrElemento){
+    inserirNaColuna = ".col1";
+    if ($(document).width() > 320){
+        inserirNaColuna = ".col2";
+        if (i % 3 == 0)
+            inserirNaColuna = ".col3";
+        else if (i % 2 == 0)
+            inserirNaColuna = ".col2";
+    } //if mobile
+    else {
+        if (i % 3 == 0)
+            inserirNaColuna = ".col3";
+        else if (i % 2 == 0)
+            inserirNaColuna = ".col2";
+    } //else (PC)
+    return inserirNaColuna;
+}
