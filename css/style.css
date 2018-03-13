@@ -2026,6 +2026,8 @@
 
                   .bloco-1{
                       display: inline-block;
+                      width: 100%;
+                      float: none;
                   }
                   .bloco-2{
                       display: inline-block;
@@ -2946,6 +2948,10 @@
                 padding: 1vw;
             }
 
+            .destaques .sabias-que .textoBloco {
+                padding: 10%;
+            }
+
             .destaques .titulo {
                 line-height: 0;
             }
@@ -3122,7 +3128,7 @@
                     float: left;
                 }
 
-                .destaques .zonaVideos .video .botaoClickImagem {
+                .destaques .zonaVideos .video .botaoClickImagem,  .destaques .listaDestaques .video .botaoClickImagem{
                     position: absolute;
                     width: 40%;
                     height: auto!important;

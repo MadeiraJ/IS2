@@ -131,6 +131,7 @@ function addBlocoVideo(i, tema, link, titulo, texto) {
     var bloco =
             `<div onclick="verVideo(this)" name="${link}" style="cursor: pointer;">
                 <div class ="${tema.toLowerCase()} bloco-1 card video wow fadeIn hvr-grow">
+                <img class ="botaoClickImagem" src="imagens/play_btn.png">
                     <img class ="imgVideo" src="${urlParaVideo}">
                     <div class ="textoBloco">
                         <div class ="blocoTopo">
@@ -149,7 +150,8 @@ function addBlocoVideo(i, tema, link, titulo, texto) {
 } //addBlocoVideo
 
 function addVideo(tema, link, titulo, texto) {
-    var urlParaVideo = `http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/0.jpg`;
+    var urlParaVideo = `http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/maxresdefault.jpg`;
+    var nomeFicheiroImagem = tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase();
     var video =
             `<div onclick="verVideo(this)" name="${link}" style="cursor: pointer;">
                 <div class ="${tema.toLowerCase()} video card wow fadeIn hvr-grow">
@@ -159,7 +161,7 @@ function addVideo(tema, link, titulo, texto) {
                         <div class ="blocoTopo">
                             <p class ="titulo">VIDEOS</p>
                             <div class ="tag">
-                                <img src="imagens/tag${tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase()}.png">
+                                <img src="imagens/tag${nomeFicheiroImagem}.png">
                                 <a href="${tema.toLowerCase()}.html"> ${verNomeTema(tema)} </a>
                             </div>
                             <div class ="clear"></div>
