@@ -23,7 +23,7 @@ $(document).ready(function () {
             if(!noticia)
                 window.location.href = "404.html";
             else {
-                $(document.body).addClass(noticia.tipo);
+                $(document.body).addClass(noticia);
                 $(document).attr('title', `Noticia: ${noticia.titulo}`);
                 $(".tituloZonaConteudo .destaquesTitulo").append(noticia.titulo);
                 $(".tituloZonaConteudo .detalhe .autor").append(`Autor: <br>${noticia.autor}`);

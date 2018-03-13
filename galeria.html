@@ -126,7 +126,7 @@
             <div class="zonaContactos menu">
                 <p class="styConta" style="color: #1070B0;">Contactos</p>
                 <p class="styConta" style="color: #17A2FF;">+351 243 307 200</p>
-                <p class="styConta" style="color: #17A2FF;">geral@essaude.ipsantarem.pt</p>
+                <p class="styConta" style="color: #17A2FF;">yourpel@essaude.ipsantarem.pt</p>
             </div>
             <div class="clear"></div>
         </div>
@@ -142,12 +142,15 @@
     </footer>
     <div id="fotoDetalhe" style="display: none;">
         <a id="fechar" onclick="clickFechar()"></a>
-        <a id="direita" onclick="clickMudar('direita')" style="display: none;"></a>
-        <a id="esquerda" onclick="clickMudar('esquerda')" style="display: none;"></a>
-        <div class="imagem">
-            <iframe id="img01" target="_blank" scrolling='NO' style="background-size: cover;"></iframe>
+        <div class="zonaMovimentoImagem">
+            <a id="esquerda" onclick="clickMudar('esquerda')" style="display: none;"></a>
+            <div class="imagem">
+                <iframe id="img01" target="_blank" scrolling='NO' style="background-size: cover;"></iframe>
+                <p id="coment"></p>
+            </div>
+            <a id="direita" onclick="clickMudar('direita')" style="display: none;"></a>
+            <div class="clear"></div>
         </div>
-        <p id="coment"></p>
     </div>
 </body>
 </html>
