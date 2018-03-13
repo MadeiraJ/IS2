@@ -61,9 +61,13 @@ public class TemasHandler : IHttpHandler {
             for (int i = numeroArtigosRecebidos; i < numeroArtigosRecebidos + numeroDeArtigosPedidos; i++) {
                 if (i < 10)
                 {
-                     listaDeDestaques.Add(
+                     /*listaDeDestaques.Add(
                         serializer.Serialize(
                             new { tipo = "ARTIGO", imagem = "imagens/alimentacao_1.png", titulo = "Titulo Artigo", texto = "Isto é texto", url = "1" }
+                     ));*/
+                     listaDeDestaques.Add(
+                        serializer.Serialize(
+                            new { tipo = "SABIAS-QUE", texto = "Isto é texto" }
                      ));
                 }                                
                 else
