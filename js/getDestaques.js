@@ -59,17 +59,8 @@ function addArtigoEmDestaque(tema, imagem, titulo, texto, url) {
 } //addArtigoEmDestaque
 
 function addBlocoArtigo(i, tema, imagem, titulo, texto, url) {
-    var inserirNaColuna = ".col1";
+    var inserirNaColuna = emQueColunaDeveriaAdicionar(i);
     
-    if ($(document).width() > 320) {
-        if (i % 3 == 0)
-            inserirNaColuna = ".col3";
-        else if (i % 2 == 0)
-            inserirNaColuna = ".col2";
-    } //if
-    else
-        inserirNaColuna = ".col2";
-
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase();
 
     var bloco =
@@ -94,12 +85,8 @@ function addBlocoArtigo(i, tema, imagem, titulo, texto, url) {
 } //addBlocoArtigo
 
 function addBlocoSabiasQue(i, tema, imagem, texto) {
-    var inserirNaColuna = ".col1";
-    if (i % 3 == 0)
-        inserirNaColuna = ".col3";
-    else if (i % 2 == 0)
-        inserirNaColuna = ".col2";
-
+    var inserirNaColuna emQueColunaDeveriaAdicionar(i);
+    
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() +tema.substr(1).toLowerCase();
     var bloco =
             `<div class="${tema.toLowerCase()} bloco-1 card sabias-que wow fadeIn">
@@ -119,11 +106,7 @@ function addBlocoSabiasQue(i, tema, imagem, texto) {
 } //addBlocoSabiasQue
 
 function addBlocoVideo(i, tema, link, titulo, texto) {
-    var inserirNaColuna = ".col1";
-    if (i % 3 == 0)
-        inserirNaColuna = ".col3";
-    else if (i % 2 == 0)
-        inserirNaColuna = ".col2";
+    var inserirNaColuna = emQueColunaDeveriaAdicionar(i);
 
     var urlParaVideo = `http://img.youtube.com/vi/${link.split('&list=')[0].split('watch?v=')[1]}/maxresdefault.jpg`;
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() + tema.substr(1).toLowerCase();
@@ -270,3 +253,21 @@ function getVideos(x) {
         } //sucess
     }); //ajax
 } //getVideos
+
+function emQueColunaDeveriaAdicionar(nrElemento){
+    inserirNaColuna = ".col1";
+    if ($(document).width() > 320){
+        inserirNaColuna = ".col2";
+        if (i % 3 == 0)
+            inserirNaColuna = ".col3";
+        else if (i % 2 == 0)
+            inserirNaColuna = ".col2";
+    } //if mobile
+    else {
+        if (i % 3 == 0)
+            inserirNaColuna = ".col3";
+        else if (i % 2 == 0)
+            inserirNaColuna = ".col2";
+    } //else (PC)
+    return inserirNaColuna;
+}

@@ -52,13 +52,13 @@ $(document).ready(function () {
         type: "POST",
         data: { classe: classe },
         dataType: "json",
-        success: function (listaDeLinks) {
+*        success: function (listaDeLinks) {
             for (var i = 0; i < listaDeLinks.length; i++) {
                 listaDeLinks[i] = JSON.parse(listaDeLinks[i]);
                 addLink(
                     classe,
                     listaDeLinks[i].nome,
-                    listaDeLinks[i].link
+                    listaDeLinks[i].url
                 );
             } //for
         } //success
@@ -158,14 +158,14 @@ function addVideo(link, titulo, texto) {
 
 function addLink(classe, nome, url) {
     var imagem = "imagens/link_" + classe.toLowerCase() + ".png";
-    var link = `<a href="${url}" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
+    var link = `<a href="${url}" target="_blank" class="wow fadeIn"><p class="linkUteis hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
         <br>`;
     $('#zonaLinks').append(link);
 } //addLink
 
 function addDocumento(classe, nome, url) {
     var imagem = "imagens/pin_" + classe.toLowerCase() + ".png";
-    var documento = `<a href="${url}" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
+    var documento = `<a href="${url}" target="_blank" class="wow fadeIn"> <p class="documentos hvr-overline-from-left"><img src="${imagem}">${nome}</p></a>
         <br>`;
     $('#zonaDocumentos').append(documento);
 } //addDocumento
