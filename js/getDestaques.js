@@ -85,7 +85,7 @@ function addBlocoArtigo(i, tema, imagem, titulo, texto, url) {
 } //addBlocoArtigo
 
 function addBlocoSabiasQue(i, tema, imagem, texto) {
-    var inserirNaColuna emQueColunaDeveriaAdicionar(i);
+    var inserirNaColuna = emQueColunaDeveriaAdicionar(i);
     
     var nomeFicheiroImagem = tema.charAt(0).toUpperCase() +tema.substr(1).toLowerCase();
     var bloco =
@@ -186,7 +186,7 @@ function getDestaques(x) {
                     var tipoBloco = listaDestaques[i].tipo;              
                     if (tipoBloco == "ARTIGO") {
                         addBlocoArtigo(
-                            i + 1,
+                            numeroDestaques + 1 + i,
                             listaDestaques[i].tema,
                             listaDestaques[i].imagem,
                             listaDestaques[i].titulo,
@@ -197,7 +197,7 @@ function getDestaques(x) {
 
                     else if (tipoBloco == "SABIAS-QUE") {
                         addBlocoSabiasQue(
-                            i + 1,
+                            numeroDestaques + 1 + i,
                             listaDestaques[i].tema,
                             listaDestaques[i].imagem,
                             listaDestaques[i].texto
@@ -206,7 +206,7 @@ function getDestaques(x) {
                 
                     else if (tipoBloco == "VIDEO") {
                         addBlocoVideo(
-                            i + 1,
+                            numeroDestaques + 1 + i,
                             listaDestaques[i].tema,
                             listaDestaques[i].link,
                             listaDestaques[i].titulo,
@@ -254,20 +254,19 @@ function getVideos(x) {
     }); //ajax
 } //getVideos
 
-function emQueColunaDeveriaAdicionar(nrElemento){
+function emQueColunaDeveriaAdicionar(i) {
+    valor = i - 2;
+    i = valor % 3;
+
     inserirNaColuna = ".col1";
-    if ($(document).width() > 320){
+    if ($(document).width() <= 320){
         inserirNaColuna = ".col2";
-        if (i % 3 == 0)
-            inserirNaColuna = ".col3";
-        else if (i % 2 == 0)
-            inserirNaColuna = ".col2";
     } //if mobile
-    else {
-        if (i % 3 == 0)
+    else if (i >= 0){
+        if (i == 2)
             inserirNaColuna = ".col3";
-        else if (i % 2 == 0)
+        else if (i == 1)
             inserirNaColuna = ".col2";
     } //else (PC)
     return inserirNaColuna;
-}
+} //emQueColunaDeveriaAdicionar

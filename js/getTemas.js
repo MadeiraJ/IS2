@@ -97,16 +97,7 @@ function addArtigoEmDestaque(imagem, titulo, texto, url) {
 } //addArtigoEmDestaque
 
 function addBlocoArtigo(i, imagem, titulo, texto, url, extra) {
-    var inserirNaColuna = ".col1";
-
-    if ($(document).width() > 320) {
-        if (i % 3 == 0)
-            inserirNaColuna = ".col3";
-        else if (i % 2 == 0)
-            inserirNaColuna = ".col2";
-    } //if
-    else
-        inserirNaColuna = ".col2";
+    var inserirNaColuna = emQueColunaDeveriaAdicionar(i);
 
     var bloco =
             `<a href="artigo.html?artigo=${url}">
@@ -125,11 +116,7 @@ function addBlocoArtigo(i, imagem, titulo, texto, url, extra) {
 } //addBlocoArtigo
 
 function addBlocoSabiasQue(i, texto, extra) {
-    var inserirNaColuna = ".col1";
-    if (i % 3 == 0)
-        inserirNaColuna = ".col3";
-    else if (i % 2 == 0)
-        inserirNaColuna = ".col2";
+    var inserirNaColuna = emQueColunaDeveriaAdicionar(i);
 
     var bloco =
             `<div class="wow fadeIn">
@@ -245,3 +232,20 @@ function getVideos(classe, x) {
         } //success
     }); //ajax
 } //getVideos
+
+function emQueColunaDeveriaAdicionar(i) {
+    valor = i - 2;
+    i = valor % 3;
+
+    inserirNaColuna = ".col1";
+    if ($(document).width() <= 320){
+        inserirNaColuna = ".col2";
+    } //if mobile
+    else if (i >= 0){
+        if (i == 2)
+            inserirNaColuna = ".col3";
+        else if (i == 1)
+            inserirNaColuna = ".col2";
+    } //else (PC)
+    return inserirNaColuna;
+} //emQueColunaDeveriaAdicionar
