@@ -12,7 +12,7 @@ var fotoAtual = 0;
 function init(e){
 	displayGaleria = document.getElementById("fotoDetalhe");
 	displayDetalhe = document.getElementById("zonaMain");
-	//iframeInst = document.getElementById("img01");
+	iframeInst = document.getElementById("img01");
 	comentInst = document.getElementById("coment");
 
 	setaDireita = document.getElementById("direita");
@@ -39,21 +39,17 @@ function clickDetalhe(element) {
 	setaDireita.style.display = "block";
 	setaEsquerda.style.display = "block";
 
-	//iframeInst.src = element.name.split("*")[0]+"embed";
-	//iframeInst.style.backgroundSize = element.style.backgroundSize;
-	var url = element.name.split("*")[0] + "embed";
-	$.ajax({
-	   url: element.name.split("*")[0] + "embed",
-	   type:'GET',
-	   success: function(data){
-	   		//var corpo = $(data).find('.EmbedFrame').html();
-	       	//$('.zonaMovimentoImagem .imagem').html(corpo);
-	   }
-	});
+	iframeInst.src = element.name.split("*")[0]+"embed";
+	iframeInst.style.backgroundSize = element.style.backgroundSize;
 
 	comentInst.innerHTML = element.name.split("*")[1];
 
-	verFotoAtual(url);
+	verFotoAtual(iframeInst.src);
+	var cssLink = document.createElement("link");
+	cssLink.href = "style.css"; 
+	cssLink.rel = "stylesheet"; 
+	cssLink.type = "text/css"; 
+	iframeInst.document.body.appendChild(cssLink);
 
 }
 
@@ -78,7 +74,7 @@ function verFotoAtual(url){
 function clickFechar(){
 	displayGaleria.style.display = "none";
 	displayDetalhe.style.display = "block";
-	//iframeInst.src = "#";
+	iframeInst.src = "#";
 	comentInst.innerHTML = "";
 	fotoAtual = 0;
 }
@@ -88,7 +84,7 @@ function clickMudar(onde){
 		fotoAtual += 1;
 	else 
 		fotoAtual -= 1;
-	//iframeInst.src = fotosGaleria[fotoAtual];
+	iframeInst.src = fotosGaleria[fotoAtual];
 	comentInst.innerHTML = legendas[fotoAtual];
 	verFotoAtual(fotosGaleria[fotoAtual]);
 	$(".Feedback").hide();
