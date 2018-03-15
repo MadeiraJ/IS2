@@ -108,6 +108,9 @@ function goToNextPergunta(idPost) {
                 $(".zonaProximo a").attr("href", `forum_topicoAberto.html?post=${idProximaPergunta}`);
             else
                 $(".zonaProximo").hide();
-        } //success
+        }, //success
+        error: function (erro) {
+            $(".zonaProximo").hide();
+        } //error
     }); //ajax
 } //goToNextPergunta
