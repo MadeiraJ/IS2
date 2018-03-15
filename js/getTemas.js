@@ -52,7 +52,7 @@ $(document).ready(function () {
         type: "POST",
         data: { classe: classe },
         dataType: "json",
-*        success: function (listaDeLinks) {
+        success: function (listaDeLinks) {
             for (var i = 0; i < listaDeLinks.length; i++) {
                 listaDeLinks[i] = JSON.parse(listaDeLinks[i]);
                 addLink(

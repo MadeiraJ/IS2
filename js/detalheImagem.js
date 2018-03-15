@@ -34,7 +34,8 @@ function fotosNoArray(){
 
 //element corresponde á foto que foi clicada
 function clickDetalhe(element) {
-	displayGaleria.style.display = "block";
+    displayGaleria.style.display = "block";
+    document.body.style.overflow = 'hidden';
 	
 	setaDireita.style.display = "block";
 	setaEsquerda.style.display = "block";
@@ -42,15 +43,13 @@ function clickDetalhe(element) {
 	iframeInst.src = element.name.split("*")[0]+"embed";
 	iframeInst.style.backgroundSize = element.style.backgroundSize;
 
+	if (element.name.split("*")[1].trim() != "")
+	    comentInst.style.display = "block";
+	else
+	    comentInst.style.display = "none";
 	comentInst.innerHTML = element.name.split("*")[1];
 
 	verFotoAtual(iframeInst.src);
-	var cssLink = document.createElement("link");
-	cssLink.href = "style.css"; 
-	cssLink.rel = "stylesheet"; 
-	cssLink.type = "text/css"; 
-	iframeInst.document.body.appendChild(cssLink);
-
 }
 
 //para ver se deve colocar as duas setas ou não
@@ -74,6 +73,7 @@ function verFotoAtual(url){
 function clickFechar(){
 	displayGaleria.style.display = "none";
 	displayDetalhe.style.display = "block";
+	document.body.style.overflow = 'scroll';
 	iframeInst.src = "#";
 	comentInst.innerHTML = "";
 	fotoAtual = 0;
@@ -85,9 +85,13 @@ function clickMudar(onde){
 	else 
 		fotoAtual -= 1;
 	iframeInst.src = fotosGaleria[fotoAtual];
+	if (legendas[fotoAtual].trim() != "")
+	    comentInst.style.display = "block";
+	else
+	    comentInst.style.display = "none";
 	comentInst.innerHTML = legendas[fotoAtual];
 	verFotoAtual(fotosGaleria[fotoAtual]);
-	$(".Feedback").hide();
-	$(".SocialProof").hide();
+	//$(".Feedback").hide();
+	//$(".SocialProof").hide();
 
 }
