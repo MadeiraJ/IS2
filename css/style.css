@@ -3786,6 +3786,7 @@
                 padding-top: 1%;
                 padding-right: 1%;
                 padding-bottom: 1%;
+                margin-top: 1%;
             }         
 
             #fotoDetalhe .zonaMovimentoImagem {
@@ -3795,6 +3796,7 @@
                 margin-left: 5%;
                 margin-right: 5%;
                 min-height: 74vh;
+                margin-top: 2%;
                 /* margin-left: 20%; */
                 /* margin-right: 20%; */
                 /* height: 56vw; */
@@ -3863,19 +3865,31 @@
         /*TABLET*/
 
         /*SMARTPHONE*/
+            @media only screen and (max-width: 1000px) {
+                #fotoDetalhe .zonaMovimentoImagem .imagem {
+                    height: 40vw;
+                }
+            }
+
+            @media only screen and (max-width: 850px) {
+                #fotoDetalhe .zonaMovimentoImagem .imagem {
+                    height: 46vw;
+                }
+            }
+            
             @media only screen and (max-width: 800px) {
                 #fotoDetalhe .zonaMovimentoImagem .imagem .caixote {
                     height: 66vw;
                 }
 
                 #fotoDetalhe .zonaMovimentoImagem .imagem {
-                    height: 36vw;
+                    height: 50vw;
                 }
             }
 
             @media only screen and (max-width: 700px) {
                 #fotoDetalhe .zonaMovimentoImagem .imagem {
-                    height: 40vw;
+                    height: 57vw;
                 }
             }
 
@@ -3936,7 +3950,7 @@
                     margin-left: 10%;
                     width: 80%;
                     margin-right: 10%;
-                    height: 47vw;
+                    height: 67vw;
                 }
 
                 #fotoDetalhe .zonaMovimentoImagem .imagem .caixote {
@@ -3947,7 +3961,7 @@
 
             @media only screen and (max-width: 500px) {
                 #fotoDetalhe .zonaMovimentoImagem .imagem {
-                    height: 64vw;
+                    height: 79vw;
                 }
             }
 
@@ -3956,7 +3970,7 @@
                     margin-left: 5%;
                     width: 90%;
                     margin-right: 5%;
-                    height: 80vw;
+                    height: 98vw;
                 }
 
                 #fotoDetalhe .zonaMovimentoImagem .imagem .caixote {
@@ -3974,11 +3988,15 @@
 
             @media only screen and (max-width: 330px) {
                 #fotoDetalhe .zonaMovimentoImagem .imagem {
-                    height: 100vw;
+                    height: 114vw;
                 }
 
                 #fotoDetalhe .zonaMovimentoImagem .imagem .caixote {
                     height: 120vw;
+                }
+
+                #fotoDetalhe .zonaMovimentoImagem {
+                    min-height: 130vw;
                 }
             }
 
